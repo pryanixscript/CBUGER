@@ -1124,7 +1124,7 @@ do
     end)
 end
 Data.neon_loaded_fonts      = {}
-Data.neon_loaded_font_names = { u8"Системный" }
+Data.neon_loaded_font_names = { u8"РЎРёСЃС‚РµРјРЅС‹Р№" }
 Data.neon_loaded_font_files = {}
 Data.CHILD_BG_KEY = Lib.imgui.Col.ChildBg or 10
 Lib.imgui.OnInitialize(function()
@@ -1284,47 +1284,47 @@ local neon = {
 }
 Data.neon_lists = {
     cursor_fx = {
-        u8"Обычный", u8"Крестики", u8"Всплывающие кольца", u8"Капли", u8"Замедленный след",
-        u8"Огонь", u8"Кольца", u8"Линии", u8"Туманность", u8"Горизонтальные штрихи",
-        u8"Тёмная дыра", u8"Случайный", u8"Падающие штрихи", u8"Диагональ", u8"Взрыв",
-        u8"Спираль", u8"Крупные кольца", u8"Зигзаг", u8"Конфетти", u8"Шестиугольники"
+        u8"РћР±С‹С‡РЅС‹Р№", u8"РљСЂРµСЃС‚РёРєРё", u8"Р’СЃРїР»С‹РІР°СЋС‰РёРµ РєРѕР»СЊС†Р°", u8"РљР°РїР»Рё", u8"Р—Р°РјРµРґР»РµРЅРЅС‹Р№ СЃР»РµРґ",
+        u8"РћРіРѕРЅСЊ", u8"РљРѕР»СЊС†Р°", u8"Р›РёРЅРёРё", u8"РўСѓРјР°РЅРЅРѕСЃС‚СЊ", u8"Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Рµ С€С‚СЂРёС…Рё",
+        u8"РўС‘РјРЅР°СЏ РґС‹СЂР°", u8"РЎР»СѓС‡Р°Р№РЅС‹Р№", u8"РџР°РґР°СЋС‰РёРµ С€С‚СЂРёС…Рё", u8"Р”РёР°РіРѕРЅР°Р»СЊ", u8"Р’Р·СЂС‹РІ",
+        u8"РЎРїРёСЂР°Р»СЊ", u8"РљСЂСѓРїРЅС‹Рµ РєРѕР»СЊС†Р°", u8"Р—РёРіР·Р°Рі", u8"РљРѕРЅС„РµС‚С‚Рё", u8"РЁРµСЃС‚РёСѓРіРѕР»СЊРЅРёРєРё"
     },
     waves_modes = {
-        u8"Волны", u8"Эквалайзер", u8"Расходящиеся круги", u8"Цифровой шум",
-        u8"Кардиограмма", u8"Двойная спираль", u8"Радар", u8"Соты", u8"Пузыри",
-        u8"Тройные волны", u8"Спираль", u8"Маятник", u8"Лабиринт", u8"Звёздный поток",
-        u8"Пульсирующие круги", u8"Шестиугольники на волне", u8"Спектр", u8"Фигуры Лиссажу", u8"Деформация поля"
+        u8"Р’РѕР»РЅС‹", u8"Р­РєРІР°Р»Р°Р№Р·РµСЂ", u8"Р Р°СЃС…РѕРґСЏС‰РёРµСЃСЏ РєСЂСѓРіРё", u8"Р¦РёС„СЂРѕРІРѕР№ С€СѓРј",
+        u8"РљР°СЂРґРёРѕРіСЂР°РјРјР°", u8"Р”РІРѕР№РЅР°СЏ СЃРїРёСЂР°Р»СЊ", u8"Р Р°РґР°СЂ", u8"РЎРѕС‚С‹", u8"РџСѓР·С‹СЂРё",
+        u8"РўСЂРѕР№РЅС‹Рµ РІРѕР»РЅС‹", u8"РЎРїРёСЂР°Р»СЊ", u8"РњР°СЏС‚РЅРёРє", u8"Р›Р°Р±РёСЂРёРЅС‚", u8"Р—РІС‘Р·РґРЅС‹Р№ РїРѕС‚РѕРє",
+        u8"РџСѓР»СЊСЃРёСЂСѓСЋС‰РёРµ РєСЂСѓРіРё", u8"РЁРµСЃС‚РёСѓРіРѕР»СЊРЅРёРєРё РЅР° РІРѕР»РЅРµ", u8"РЎРїРµРєС‚СЂ", u8"Р¤РёРіСѓСЂС‹ Р›РёСЃСЃР°Р¶Сѓ", u8"Р”РµС„РѕСЂРјР°С†РёСЏ РїРѕР»СЏ"
     },
     ambient_modes = {
-        u8"Полиция мигает", u8"Мигающие вспышки", u8"Вертикальный скан",
-        u8"Пульс", u8"Стробоскоп", u8"Световые полосы", u8"Расходящийся круг",
-        u8"Прожектор", u8"Острый импульс", u8"Молния", u8"Световой мерцатель",
-        u8"Горизонтальный скан", u8"Хроматик", u8"Кольцо", u8"Морзе", u8"Градиент"
+        u8"РџРѕР»РёС†РёСЏ РјРёРіР°РµС‚", u8"РњРёРіР°СЋС‰РёРµ РІСЃРїС‹С€РєРё", u8"Р’РµСЂС‚РёРєР°Р»СЊРЅС‹Р№ СЃРєР°РЅ",
+        u8"РџСѓР»СЊСЃ", u8"РЎС‚СЂРѕР±РѕСЃРєРѕРї", u8"РЎРІРµС‚РѕРІС‹Рµ РїРѕР»РѕСЃС‹", u8"Р Р°СЃС…РѕРґСЏС‰РёР№СЃСЏ РєСЂСѓРі",
+        u8"РџСЂРѕР¶РµРєС‚РѕСЂ", u8"РћСЃС‚СЂС‹Р№ РёРјРїСѓР»СЊСЃ", u8"РњРѕР»РЅРёСЏ", u8"РЎРІРµС‚РѕРІРѕР№ РјРµСЂС†Р°С‚РµР»СЊ",
+        u8"Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Р№ СЃРєР°РЅ", u8"РҐСЂРѕРјР°С‚РёРє", u8"РљРѕР»СЊС†Рѕ", u8"РњРѕСЂР·Рµ", u8"Р“СЂР°РґРёРµРЅС‚"
     },
-    tabs = { fa.KEYBOARD.." "..u8"Основные", fa.PALETTE.." "..u8"Стиль", fa.LIST_UL.." "..u8"Комбо" },
+    tabs = { fa.KEYBOARD.." "..u8"РћСЃРЅРѕРІРЅС‹Рµ", fa.PALETTE.." "..u8"РЎС‚РёР»СЊ", fa.LIST_UL.." "..u8"РљРѕРјР±Рѕ" },
     tab_icons  = { fa.KEYBOARD, fa.PALETTE, fa.LIST_UL },
-    tab_labels = { u8"Основные", u8"Стиль", u8"Комбо" },
+    tab_labels = { u8"РћСЃРЅРѕРІРЅС‹Рµ", u8"РЎС‚РёР»СЊ", u8"РљРѕРјР±Рѕ" },
     imgui_colors = {
-        {id = Lib.imgui.Col.WindowBg,            name = "Фон основного окна",          cat = 1},
-        {id = Data.CHILD_BG_KEY,                   name = "Фон дочернего виджета",         cat = 1},
-        {id = Lib.imgui.Col.FrameBg,             name = "Фон слайдера/чекбокса",        cat = 2},
-        {id = Lib.imgui.Col.FrameBgHovered,      name = "Наведение слайдера",     cat = 2},
-        {id = Lib.imgui.Col.FrameBgActive,       name = "Активный слайдер",        cat = 2},
-        {id = Lib.imgui.Col.Button,              name = "Кнопка",                         cat = 2},
-        {id = Lib.imgui.Col.ButtonHovered,       name = "Кнопка наведение",        cat = 2},
-        {id = Lib.imgui.Col.ButtonActive,        name = "Кнопка нажатие",           cat = 2},
-        {id = Lib.imgui.Col.CheckMark,           name = "Галочка",                     cat = 2},
-        {id = Lib.imgui.Col.Header,              name = "Заголовок",                      cat = 3},
-        {id = Lib.imgui.Col.HeaderHovered,       name = "Заголовок наведение",     cat = 3},
-        {id = Lib.imgui.Col.HeaderActive,        name = "Заголовок нажатие",        cat = 3},
-        {id = Lib.imgui.Col.ScrollbarBg,         name = "Фон скролла",               cat = 4},
-        {id = Lib.imgui.Col.ScrollbarGrab,       name = "Ползунок скролла",                 cat = 4},
-        {id = Lib.imgui.Col.ScrollbarGrabHovered,name = "Ползунок наведение",        cat = 4},
-        {id = Lib.imgui.Col.ScrollbarGrabActive, name = "Ползунок нажатие",           cat = 4},
-        {id = Lib.imgui.Col.Text,                name = "Основной текст",                   cat = 5},
-        {id = Lib.imgui.Col.TextDisabled,        name = "Заголовки секций",         cat = 5},
-        {id = Lib.imgui.Col.Border,              name = "Граница",                        cat = 5},
-        {id = Lib.imgui.Col.Separator,           name = "Разделитель",                 cat = 5},
+        {id = Lib.imgui.Col.WindowBg,            name = "Р¤РѕРЅ РѕСЃРЅРѕРІРЅРѕРіРѕ РѕРєРЅР°",          cat = 1},
+        {id = Data.CHILD_BG_KEY,                   name = "Р¤РѕРЅ РґРѕС‡РµСЂРЅРµРіРѕ РІРёРґР¶РµС‚Р°",         cat = 1},
+        {id = Lib.imgui.Col.FrameBg,             name = "Р¤РѕРЅ СЃР»Р°Р№РґРµСЂР°/С‡РµРєР±РѕРєСЃР°",        cat = 2},
+        {id = Lib.imgui.Col.FrameBgHovered,      name = "РќР°РІРµРґРµРЅРёРµ СЃР»Р°Р№РґРµСЂР°",     cat = 2},
+        {id = Lib.imgui.Col.FrameBgActive,       name = "РђРєС‚РёРІРЅС‹Р№ СЃР»Р°Р№РґРµСЂ",        cat = 2},
+        {id = Lib.imgui.Col.Button,              name = "РљРЅРѕРїРєР°",                         cat = 2},
+        {id = Lib.imgui.Col.ButtonHovered,       name = "РљРЅРѕРїРєР° РЅР°РІРµРґРµРЅРёРµ",        cat = 2},
+        {id = Lib.imgui.Col.ButtonActive,        name = "РљРЅРѕРїРєР° РЅР°Р¶Р°С‚РёРµ",           cat = 2},
+        {id = Lib.imgui.Col.CheckMark,           name = "Р“Р°Р»РѕС‡РєР°",                     cat = 2},
+        {id = Lib.imgui.Col.Header,              name = "Р—Р°РіРѕР»РѕРІРѕРє",                      cat = 3},
+        {id = Lib.imgui.Col.HeaderHovered,       name = "Р—Р°РіРѕР»РѕРІРѕРє РЅР°РІРµРґРµРЅРёРµ",     cat = 3},
+        {id = Lib.imgui.Col.HeaderActive,        name = "Р—Р°РіРѕР»РѕРІРѕРє РЅР°Р¶Р°С‚РёРµ",        cat = 3},
+        {id = Lib.imgui.Col.ScrollbarBg,         name = "Р¤РѕРЅ СЃРєСЂРѕР»Р»Р°",               cat = 4},
+        {id = Lib.imgui.Col.ScrollbarGrab,       name = "РџРѕР»Р·СѓРЅРѕРє СЃРєСЂРѕР»Р»Р°",                 cat = 4},
+        {id = Lib.imgui.Col.ScrollbarGrabHovered,name = "РџРѕР»Р·СѓРЅРѕРє РЅР°РІРµРґРµРЅРёРµ",        cat = 4},
+        {id = Lib.imgui.Col.ScrollbarGrabActive, name = "РџРѕР»Р·СѓРЅРѕРє РЅР°Р¶Р°С‚РёРµ",           cat = 4},
+        {id = Lib.imgui.Col.Text,                name = "РћСЃРЅРѕРІРЅРѕР№ С‚РµРєСЃС‚",                   cat = 5},
+        {id = Lib.imgui.Col.TextDisabled,        name = "Р—Р°РіРѕР»РѕРІРєРё СЃРµРєС†РёР№",         cat = 5},
+        {id = Lib.imgui.Col.Border,              name = "Р“СЂР°РЅРёС†Р°",                        cat = 5},
+        {id = Lib.imgui.Col.Separator,           name = "Р Р°Р·РґРµР»РёС‚РµР»СЊ",                 cat = 5},
     }
 }
 Data.neon_ui_anim          = { last_time = os.clock(), dt = 0 }
@@ -2621,56 +2621,56 @@ local function CBUGER_REPEAT_STAGES(prefix_stages, keys, count, suffix_stages)
 end
 
 S.default_combos = {
-    { name = u8"+C | C-bug", guide_text = "", data = {{u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}} },
-    { name = u8"Отвод | Otvod", guide_text = "", data = {{u8"ЛКМ", u8"Ф", u8"ПКМ", "C"}} },
-    { name = u8"Полуслайд | RP Litefoot", guide_text = "", data = {
-        {u8"ЛКМ", CBUGER_HOLD(u8"ПКМ", 1.5), CBUGER_HOLD(u8"Ф", 1.5)},
-        {"D", "Q", u8"ПРОБЕЛ"}
+    { name = u8"+C | C-bug", guide_text = "", data = {{u8"РџРљРњ", u8"Р›РљРњ", u8"Р¤", "C"}} },
+    { name = u8"РћС‚РІРѕРґ | Otvod", guide_text = "", data = {{u8"Р›РљРњ", u8"Р¤", u8"РџРљРњ", "C"}} },
+    { name = u8"РџРѕР»СѓСЃР»Р°Р№Рґ | RP Litefoot", guide_text = "", data = {
+        {u8"Р›РљРњ", CBUGER_HOLD(u8"РџРљРњ", 1.5), CBUGER_HOLD(u8"Р¤", 1.5)},
+        {"D", "Q", u8"РџР РћР‘Р•Р›"}
     } },
-    { name = u8"Перекаты | Riffles", guide_text = "", data = {{
-        u8"ЛКМ", CBUGER_HOLD(u8"ПКМ", 1.5), "C", u8"ЛКМ",
+    { name = u8"РџРµСЂРµРєР°С‚С‹ | Riffles", guide_text = "", data = {{
+        u8"Р›РљРњ", CBUGER_HOLD(u8"РџРљРњ", 1.5), "C", u8"Р›РљРњ",
         CBUGER_HOLD("D", 1.5), CBUGER_HOLD("C", 1.5)
     }} },
-    { name = u8"ДаблХит + Перекаты | DubleHit + Riffles", guide_text = "", data = {{
-        u8"ЛКМ", u8"Ф", CBUGER_HOLD(u8"ПКМ", 2.0), "C", u8"ЛКМ", "C", u8"ЛКМ",
+    { name = u8"Р”Р°Р±Р»РҐРёС‚ + РџРµСЂРµРєР°С‚С‹ | DubleHit + Riffles", guide_text = "", data = {{
+        u8"Р›РљРњ", u8"Р¤", CBUGER_HOLD(u8"РџРљРњ", 2.0), "C", u8"Р›РљРњ", "C", u8"Р›РљРњ",
         CBUGER_HOLD("D", 1.0), CBUGER_HOLD("C", 1.0)
     }} },
-    { name = u8"Слайд | Litefoot", guide_text = "", data = {
-        {u8"ЛКМ", CBUGER_HOLD("D", 1.0), u8"ПКМ", "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)},
-        {u8"ЛКМ", CBUGER_HOLD(u8"Ф", 1.0), u8"ПКМ", "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)}
+    { name = u8"РЎР»Р°Р№Рґ | Litefoot", guide_text = "", data = {
+        {u8"Р›РљРњ", CBUGER_HOLD("D", 1.0), u8"РџРљРњ", "C", CBUGER_HOLD(u8"РџР РћР‘Р•Р›", 1.0)},
+        {u8"Р›РљРњ", CBUGER_HOLD(u8"Р¤", 1.0), u8"РџРљРњ", "C", CBUGER_HOLD(u8"РџР РћР‘Р•Р›", 1.0)}
     }},
-    { name = u8"Рывок | Hardgun Slide", guide_text = "", data = {
-        {u8"ЛКМ", "D", u8"ПКМ", "C", "Q", "E", u8"ПРОБЕЛ"},
-        {u8"ЛКМ", u8"Ф", u8"ПКМ", "C", "E", "Q", u8"ПРОБЕЛ"}
+    { name = u8"Р С‹РІРѕРє | Hardgun Slide", guide_text = "", data = {
+        {u8"Р›РљРњ", "D", u8"РџРљРњ", "C", "Q", "E", u8"РџР РћР‘Р•Р›"},
+        {u8"Р›РљРњ", u8"Р¤", u8"РџРљРњ", "C", "E", "Q", u8"РџР РћР‘Р•Р›"}
     }},
-    { name = u8"ДаблХит | DoubleHit", guide_text = "", data = {{
-        u8"ЛКМ", u8"Ф", CBUGER_HOLD(u8"ПКМ", 1.0), "C", u8"ЛКМ"
+    { name = u8"Р”Р°Р±Р»РҐРёС‚ | DoubleHit", guide_text = "", data = {{
+        u8"Р›РљРњ", u8"Р¤", CBUGER_HOLD(u8"РџРљРњ", 1.0), "C", u8"Р›РљРњ"
     }} },
-    { name = u8"ДаблХит + Слайд | DoubleHit + Litefoot", guide_text = "", data = {
-        {u8"ЛКМ", u8"Ф", CBUGER_HOLD(u8"ПКМ", 0.5), "C", u8"ЛКМ"},
-        {CBUGER_HOLD("D", 1.0), "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)}
+    { name = u8"Р”Р°Р±Р»РҐРёС‚ + РЎР»Р°Р№Рґ | DoubleHit + Litefoot", guide_text = "", data = {
+        {u8"Р›РљРњ", u8"Р¤", CBUGER_HOLD(u8"РџРљРњ", 0.5), "C", u8"Р›РљРњ"},
+        {CBUGER_HOLD("D", 1.0), "C", CBUGER_HOLD(u8"РџР РћР‘Р•Р›", 1.0)}
     }},
-    { name = u8"ДаблХит + Рывок | DoubleHit + Hardgun Slide", guide_text = "", data = {
-        {u8"ЛКМ", u8"Ф", u8"ПКМ", "C", u8"ЛКМ"},
-        {"D", "C", "Q", "E", u8"ПРОБЕЛ"}
+    { name = u8"Р”Р°Р±Р»РҐРёС‚ + Р С‹РІРѕРє | DoubleHit + Hardgun Slide", guide_text = "", data = {
+        {u8"Р›РљРњ", u8"Р¤", u8"РџРљРњ", "C", u8"Р›РљРњ"},
+        {"D", "C", "Q", "E", u8"РџР РћР‘Р•Р›"}
     }},
-    { name = u8"Фаст | Fast", guide_text = "", data = CBUGER_REPEAT_STAGES({}, {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 6, {}) },
-    { name = u8"Отвод + Фаст | Fast", guide_text = "", data = CBUGER_REPEAT_STAGES({{u8"ЛКМ", u8"ПКМ", u8"Ф", "C"}}, {u8"ПКМ", u8"ПКМ", u8"Ф", "C"}, 6, {}) },
-    { name = u8"ДаблХит + Фаст | Fast + DubleHit", guide_text = "", data = CBUGER_REPEAT_STAGES(
-        {{u8"ЛКМ", u8"Ф", u8"ПКМ", "C", u8"ЛКМ"},
-         {"C", u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}},
-        {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 3, {}) },
-    { name = u8"Фаст + Слайд | Fast + Litefoot", guide_text = "", data = CBUGER_REPEAT_STAGES(
-        {}, {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 6,
-        {{"D", "C", u8"ПРОБЕЛ"}}) },
-    { name = u8"Фаст + Рывок | Fast + Hardgun", guide_text = "", data = CBUGER_REPEAT_STAGES(
-        {}, {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 5,
-        {{"D", "C", "Q", "E", u8"ПРОБЕЛ"}}) },
-    { name = u8"ДаблХит + Фаст + Рывок | Fast + DubleHit + Hardgun", guide_text = "", data = CBUGER_REPEAT_STAGES(
-        {{u8"ЛКМ", u8"Ф", u8"ПКМ", "C", u8"ЛКМ"},
-         {"C", u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}},
-        {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 3,
-        {{"D", "C", "Q", "E", u8"ПРОБЕЛ"}}) },
+    { name = u8"Р¤Р°СЃС‚ | Fast", guide_text = "", data = CBUGER_REPEAT_STAGES({}, {u8"РџРљРњ", u8"Р›РљРњ", u8"Р¤", "C"}, 6, {}) },
+    { name = u8"РћС‚РІРѕРґ + Р¤Р°СЃС‚ | Fast", guide_text = "", data = CBUGER_REPEAT_STAGES({{u8"Р›РљРњ", u8"РџРљРњ", u8"Р¤", "C"}}, {u8"РџРљРњ", u8"РџРљРњ", u8"Р¤", "C"}, 6, {}) },
+    { name = u8"Р”Р°Р±Р»РҐРёС‚ + Р¤Р°СЃС‚ | Fast + DubleHit", guide_text = "", data = CBUGER_REPEAT_STAGES(
+        {{u8"Р›РљРњ", u8"Р¤", u8"РџРљРњ", "C", u8"Р›РљРњ"},
+         {"C", u8"РџРљРњ", u8"Р›РљРњ", u8"Р¤", "C"}},
+        {u8"РџРљРњ", u8"Р›РљРњ", u8"Р¤", "C"}, 3, {}) },
+    { name = u8"Р¤Р°СЃС‚ + РЎР»Р°Р№Рґ | Fast + Litefoot", guide_text = "", data = CBUGER_REPEAT_STAGES(
+        {}, {u8"РџРљРњ", u8"Р›РљРњ", u8"Р¤", "C"}, 6,
+        {{"D", "C", u8"РџР РћР‘Р•Р›"}}) },
+    { name = u8"Р¤Р°СЃС‚ + Р С‹РІРѕРє | Fast + Hardgun", guide_text = "", data = CBUGER_REPEAT_STAGES(
+        {}, {u8"РџРљРњ", u8"Р›РљРњ", u8"Р¤", "C"}, 5,
+        {{"D", "C", "Q", "E", u8"РџР РћР‘Р•Р›"}}) },
+    { name = u8"Р”Р°Р±Р»РҐРёС‚ + Р¤Р°СЃС‚ + Р С‹РІРѕРє | Fast + DubleHit + Hardgun", guide_text = "", data = CBUGER_REPEAT_STAGES(
+        {{u8"Р›РљРњ", u8"Р¤", u8"РџРљРњ", "C", u8"Р›РљРњ"},
+         {"C", u8"РџРљРњ", u8"Р›РљРњ", u8"Р¤", "C"}},
+        {u8"РџРљРњ", u8"Р›РљРњ", u8"Р¤", "C"}, 3,
+        {{"D", "C", "Q", "E", u8"РџР РћР‘Р•Р›"}}) },
 }
 S.combos_list = {}
 S.KEY_COLORS  = { NORMAL = 0xFFFFFFFF, HELD = 0xFF006400 }
@@ -2723,17 +2723,17 @@ S.state = {
 S.log_buffer = {}
 S.MAX_LOGS   = 50
 S.all_monitored_keys = {
-    {code = 0x01, name = u8"ЛКМ"},
-    {code = 0x02, name = u8"ПКМ"},
+    {code = 0x01, name = u8"Р›РљРњ"},
+    {code = 0x02, name = u8"РџРљРњ"},
     {code = 0x41, name = "A"},
     {code = 0x57, name = "W"},
     {code = 0x45, name = "E"},
     {code = 0x44, name = "D"},
-    {code = 0x46, name = u8"А"},
+    {code = 0x46, name = u8"Рђ"},
     {code = 0x53, name = "S"},
     {code = 0x43, name = "C"},
     {code = 0x51, name = "Q"},
-    {code = 0x20, name = u8"ПРОБЕЛ"},
+    {code = 0x20, name = u8"РџР РћР‘Р•Р›"},
 }
 S.prev_key_states = {}
 Data.iniFile = 'cbuger.ini'
@@ -3184,20 +3184,20 @@ end
 end
  Fn.shotmapStatLines = function(st)
    Lib.imgui.TextColored(Fn.statColorVec(st.spread, true),
-        Fn.T(u8"Разброс: ") .. string.format("%.1f%%", st.spread))
+        Fn.T(u8"Р Р°Р·Р±СЂРѕСЃ: ") .. string.format("%.1f%%", st.spread))
    Lib.imgui.TextColored(Fn.statColorVec(st.kpd, true),
-        Fn.T(u8"КПД: ") .. string.format("%.1f%%", st.kpd))
+        Fn.T(u8"РљРџР”: ") .. string.format("%.1f%%", st.kpd))
 end
  Fn.shotmapTooltip = function()
    Lib.imgui.BeginTooltip()
     local head_col = Lib.imgui.ImVec4(0.55, 0.85, 1.0, 1.0)
     if ui.shotmap_view_mode[0] == 2 then
         local ss = Fn.shotmapSessionStats()
-       Lib.imgui.TextColored(head_col, Fn.T(u8"Общая сессия"))
+       Lib.imgui.TextColored(head_col, Fn.T(u8"РћР±С‰Р°СЏ СЃРµСЃСЃРёСЏ"))
         if ss.n == 0 then
-           Lib.imgui.Text(Fn.T(u8"Нет данных"))
+           Lib.imgui.Text(Fn.T(u8"РќРµС‚ РґР°РЅРЅС‹С…"))
         else
-           Lib.imgui.Text(Fn.T(u8"Выстрелов: ") .. ss.n .. "   " .. Fn.T(u8"Карточек: ") .. ((ss.cards or 0) + 1))
+           Lib.imgui.Text(Fn.T(u8"Р’С‹СЃС‚СЂРµР»РѕРІ: ") .. ss.n .. "   " .. Fn.T(u8"РљР°СЂС‚РѕС‡РµРє: ") .. ((ss.cards or 0) + 1))
            Fn.shotmapStatLines(ss)
         end
     else
@@ -3205,18 +3205,18 @@ end
         local card, is_current = Fn.shotmapGetCard(idx)
         local pts  = card and card.points or {}
         local st   = Fn.shotmapStatsCached("card", pts, "card" .. idx)
-        local head = is_current and Fn.T(u8"Сейчас")
-            or (Fn.T(u8"Карточка ") .. idx .. "  " .. Fn.shotmapCardDate(card and card.ts))
+        local head = is_current and Fn.T(u8"РЎРµР№С‡Р°СЃ")
+            or (Fn.T(u8"РљР°СЂС‚РѕС‡РєР° ") .. idx .. "  " .. Fn.shotmapCardDate(card and card.ts))
        Lib.imgui.TextColored(head_col, head)
         if st.n == 0 then
-           Lib.imgui.Text(Fn.T(u8"Нет данных"))
+           Lib.imgui.Text(Fn.T(u8"РќРµС‚ РґР°РЅРЅС‹С…"))
         else
-           Lib.imgui.Text(Fn.T(u8"Выстрелов: ") .. st.n)
+           Lib.imgui.Text(Fn.T(u8"Р’С‹СЃС‚СЂРµР»РѕРІ: ") .. st.n)
            Fn.shotmapStatLines(st)
         end
     end
    Lib.imgui.Separator()
-   Lib.imgui.TextColored(Lib.imgui.ImVec4(0.6, 0.6, 0.65, 1), Fn.T(u8"ЛКМ — график по карточкам"))
+   Lib.imgui.TextColored(Lib.imgui.ImVec4(0.6, 0.6, 0.65, 1), Fn.T(u8"Р›РљРњ вЂ” РіСЂР°С„РёРє РїРѕ РєР°СЂС‚РѕС‡РєР°Рј"))
    Lib.imgui.EndTooltip()
 end
 Data.shotmap_chart_open   = false
@@ -3247,7 +3247,7 @@ end
     local bc = neon_fx.neon_border_color
     dl:AddRect(p_min, p_max,
        Data.nfn.pack_color(bc[1], bc[2], bc[3], 0.6, true, alpha_mult), 8, 15, 1.5)
-    local titles = { Fn.T(u8"Разброс"), Fn.T(u8"КПД") }
+    local titles = { Fn.T(u8"Р Р°Р·Р±СЂРѕСЃ"), Fn.T(u8"РљРџР”") }
     local title  = titles[Data.shotmap_chart_metric] or titles[1]
     local higher = Data.shotmap_chart_metric == 2
     local padL, padT, padB, padR = 26, 22, 18, 8
@@ -3266,7 +3266,7 @@ end
     local series = Fn.shotmapChartSeries()
     local n = #series
     if n == 0 then
-        dl:AddText(Lib.imgui.ImVec2(x0 + 6, (y0 + y1) / 2), dim, Fn.T(u8"Нет данных"))
+        dl:AddText(Lib.imgui.ImVec2(x0 + 6, (y0 + y1) / 2), dim, Fn.T(u8"РќРµС‚ РґР°РЅРЅС‹С…"))
         return
     end
     local stepX = n > 1 and (x1 - x0 - 8) / (n - 1) or 0
@@ -3293,7 +3293,7 @@ end
     end
     local function label(i)
         local e = series[i]
-        return e.current and Fn.T(u8"Сейчас") or Fn.shotmapCardDate(e.ts)
+        return e.current and Fn.T(u8"РЎРµР№С‡Р°СЃ") or Fn.shotmapCardDate(e.ts)
     end
     dl:AddText(Lib.imgui.ImVec2(x0 - 2, y1 + 3), dim, label(1))
     if n > 2 then
@@ -3316,9 +3316,9 @@ end
         dl:AddCircle(Lib.imgui.ImVec2(pt.x, pt.y), 5, Fn.getColorU32(1, 1, 1, 0.9 * alpha_mult, false), 12, 1.5)
        Lib.imgui.BeginTooltip()
        Lib.imgui.TextColored(Lib.imgui.ImVec4(0.55, 0.85, 1.0, 1.0),
-            (pt.e.current and Fn.T(u8"Сейчас") or (Fn.T(u8"Карточка ") .. pt.e.idx))
+            (pt.e.current and Fn.T(u8"РЎРµР№С‡Р°СЃ") or (Fn.T(u8"РљР°СЂС‚РѕС‡РєР° ") .. pt.e.idx))
             .. "  " .. Fn.shotmapCardDate(pt.e.ts))
-       Lib.imgui.Text(Fn.T(u8"Выстрелов: ") .. pt.e.st.n)
+       Lib.imgui.Text(Fn.T(u8"Р’С‹СЃС‚СЂРµР»РѕРІ: ") .. pt.e.st.n)
        Fn.shotmapStatLines(pt.e.st)
        Lib.imgui.EndTooltip()
     end
@@ -3357,273 +3357,273 @@ end
     end
 end
 Data.UI_TRANSLATIONS_RAW = {
-    [u8"(пустой — перетащите сюда)"] = "(empty — drag here)",
-    [u8"+ Добавить этап"] = "+ Add stage",
-    [u8"2xЛКМ - настройки зажатия. ПКМ - удалить. Перетаскивание - перемещение."] = "2xLMB - hold settings. RMB - delete. Drag - move.",
-    [u8"< Назад"] = "< Back",
+    [u8"(РїСѓСЃС‚РѕР№ вЂ” РїРµСЂРµС‚Р°С‰РёС‚Рµ СЃСЋРґР°)"] = "(empty вЂ” drag here)",
+    [u8"+ Р”РѕР±Р°РІРёС‚СЊ СЌС‚Р°Рї"] = "+ Add stage",
+    [u8"2xР›РљРњ - РЅР°СЃС‚СЂРѕР№РєРё Р·Р°Р¶Р°С‚РёСЏ. РџРљРњ - СѓРґР°Р»РёС‚СЊ. РџРµСЂРµС‚Р°СЃРєРёРІР°РЅРёРµ - РїРµСЂРµРјРµС‰РµРЅРёРµ."] = "2xLMB - hold settings. RMB - delete. Drag - move.",
+    [u8"< РќР°Р·Р°Рґ"] = "< Back",
     [u8"OK"] = "OK",
-    [u8"RGB (Логи / Комбо)"] = "RGB (Logs / Combo)",
-    [u8"[CBUGER]: Ожидалась: "] = "[CBUGER]: Expected: ",
-    [u8"[CBUGER]: Ошибка, лишнее нажатие: "] = "[CBUGER]: Error, extra press: ",
-    [u8"[CBUGER]: Ошибка, нажата не та клавиша: "] = "[CBUGER]: Error, wrong key pressed: ",
-    [u8", но нажата: "] = ", but pressed: ",
-    [u8"[CBUGER]: Ошибка, вы зажали слишком долго: "] = "[CBUGER]: Error, you held too long: ",
-    [u8"[CBUGER]: Ошибка, вы зажали: "] = "[CBUGER]: Error, you held: ",
-    [u8"[CBUGER]: Ошибка, вы не зажимали: "] = "[CBUGER]: Error, you did not hold: ",
-    [u8"Анимация вкладок"] = "Tab animation",
-    [u8"Базовый цвет интерфейса"] = "Base interface color",
-    [u8"Вариант клавиатуры"] = "Keyboard variant",
-    [u8"Вкл"] = "On",
-    [u8"Вкл##pborder"] = "On##pborder",
-    [u8"Вкл##pfill"] = "On##pfill",
-    [u8"Вкл##ptext"] = "On##ptext",
-    [u8"Включить волну"] = "Enable wave",
-    [u8"Волна на клавишах"] = "Wave on keys",
-    [u8"Клавиши"] = "Keys",
-    [u8"Всё"] = "All",
-    [u8"Режим волны:"] = "Wave mode:",
-    [u8"RGB волна"] = "RGB wave",
-    [u8"Рандомные цвета волны"] = "Random wave colors",
-    [u8"Контроль +С"] = "Recoil Control (+C)",
-    [u8"Включить контроль"] = "Enable control",
-    [u8"Поставить линию"] = "Place the line",
-    [u8"Линия ещё не установлена"] = "Line not placed yet",
-    [u8"Ожидание выстрела..."] = "Waiting for a shot...",
-    [u8"Наведитесь и выстрелите, чтобы поставить линию"] = "Aim and fire to place the line",
-    [u8"Толщина линии"] = "Line thickness",
-    [u8"Длительность вспышки"] = "Flash duration",
-    [u8"Яркость вспышки"] = "Flash brightness",
-    [u8"Цвет вспышки"] = "Flash color",
-    [u8"Показывать линию"] = "Show line",
-    [u8"Поставить черту"] = "Set the line",
-    [u8"Высота черты: "] = "Line height: ",
-    [u8" м"] = " m",
-    [u8"Выше"] = "Up",
-    [u8"Ниже"] = "Down",
-    [u8"По центру"] = "Center",
-    [u8"Черта ещё не установлена"] = "Line not set yet",
-    [u8"Наведитесь и выстрелите, чтобы задать высоту черты"] = "Aim and fire to set the line height",
-    [u8"Правильно: "] = "Correct: ",
-    [u8"Неправильно: "] = "Incorrect: ",
-    [u8"КПД: "] = "Efficiency: ",
-    [u8"Сбросить статистику"] = "Reset statistics",
-    [u8"Карта выстрелов"] = "Shot Map",
-    [u8"Записывать карту"] = "Record map",
-    [u8"Выстрелов на карточку"] = "Shots per card",
-    [u8"По сессиям"] = "By session",
-    [u8"Общий вид"] = "Overall view",
-    [u8"Сейчас"] = "Now",
-    [u8"Карточка "] = "Card ",
-    [u8"Очистить карту"] = "Clear map",
-    [u8"Точность"] = "Accuracy",
-    [u8"ЛКМ — график по карточкам"] = "LMB — chart by cards",
-    [u8"Общая сессия"] = "Whole session",
-    [u8"Выстрелов: "] = "Shots: ",
-    [u8"Разброс: "] = "Spread: ",
-    [u8"Разброс"] = "Spread",
-    [u8"Карточек: "] = "Cards: ",
-    [u8"Нет данных"] = "No data",
-    [u8"Время (сек):"] = "Time (sec):",
-    [u8"Время зажатия (сек):"] = "Hold time (sec):",
-    [u8"Вся клавиатура"] = "Full keyboard",
-    [u8"Выбор шрифта"] = "Font selection",
-    [u8"Выкл"] = "Off",
-    [u8"Гайд"] = "Guide",
-    [u8"Глаз (свернуть)"] = "Eye (minimize)",
-    [u8"Добавить клавишу в последний этап:"] = "Add key to last stage:",
-    [u8"Дублировать"] = "Duplicate",
-    [u8"Зажатие включено"] = "Hold enabled",
-    [u8"Зажатие выключено"] = "Hold disabled",
-    [u8"Закрыть"] = "Close",
-    [u8"Заливка"] = "Fill",
-    [u8"Иконки"] = "Icons",
-    [u8"Иконки вкладок окна"] = "Window tab icons",
-    [u8"Иконки и элементы"] = "Icons and elements",
-    [u8"Клавиатура"] = "Keyboard",
-    [u8"Клавиатура без NumPad"] = "Keyboard without NumPad",
-    [u8"Кнопки и элементы"] = "Buttons and elements",
-    [u8"Кнопок в ряд"] = "Buttons per row",
-    [u8"Комбинаций: "] = "Combos: ",
-    [u8"Крестик (закрытие)"] = "Cross (close)",
-    [u8"Курсор-частицы"] = "Cursor particles",
-    [u8"Логи нажатий"] = "Press logs",
-    [u8"Логи нажатий##logwin"] = "Press logs##logwin",
-    [u8"Масштаб комбо"] = "Combo scale",
-    [u8"Мышь"] = "Mouse",
-    [u8"Нажмите последовательно:"] = "Press in sequence:",
-    [u8"Направление:"] = "Direction:",
-    [u8"Настройки для: "] = "Settings for: ",
-    [u8"Настройки клавиши:"] = "Key settings:",
-    [u8"Нет комбинаций"] = "No combos",
-    [u8"Нет нажатий..."] = "No presses...",
-    [u8"Новая комбинация"] = "New combo",
-    [u8"Обводка"] = "Outline",
-    [u8"Обводка:"] = "Outline:",
-    [u8"Обводки кнопок"] = "Button outlines",
-    [u8"Общие настройки"] = "General settings",
-    [u8"Обычные:"] = "Regular:",
-    [u8"Ожидалась: "] = "Expected: ",
-    [u8"Окно комбинаций"] = "Combo window",
-    [u8"Очистить"] = "Clear",
-    [u8"Ошибка"] = "Error",
-    [u8"ПРОБЕЛ"] = "SPACE",
-    [u8"Переключатель вкладок"] = "Tab switcher",
-    [u8"Перемещение клавиатуры"] = "Move keyboard",
-    [u8"Плавное закрытие окна"] = "Smooth window closing",
-    [u8"Плашки##cwm"] = "Badges##cwm",
-    [u8"Плашки##lwm"] = "Badges##lwm",
-    [u8"Показывать логи"] = "Show logs",
-    [u8"Показывать окно"] = "Show window",
-    [u8"Показывать последних"] = "Show last",
-    [u8"Правильно"] = "Correct",
-    [u8"При нажатии"] = "On press",
-    [u8"При нажатии:"] = "On press:",
-    [u8"Пробел = Shift"] = "Space = Shift",
-    [u8"Прозрачность"] = "Transparency",
-    [u8"Прозрачность интерфейса"] = "Interface transparency",
-    [u8"Прозрачность клавиш"] = "Key transparency",
-    [u8"Прозрачность текста"] = "Text transparency",
-    [u8"Прямоугольное выделение"] = "Rectangular selection",
-    [u8"Размер"] = "Size",
-    [u8"Размер частиц"] = "Particle size",
-    [u8"Рамка окна"] = "Window border",
-    [u8"Расширенные настройки цветов"] = "Advanced color settings",
-    [u8"Редактировать"] = "Edit",
-    [u8"Редактор комбинации"] = "Combo editor",
-    [u8"Редактор стиля"] = "Style editor",
-    [u8"Режим анимации"] = "Animation mode",
-    [u8"Режим курсора"] = "Cursor mode",
-    [u8"Режим свечения"] = "Glow mode",
-    [u8"Сбросить комбинацию"] = "Reset combo",
-    [u8"Сбросить комбо"] = "Reset combo",
-    [u8"Скорость"] = "Speed",
-    [u8"Скорость RGB"] = "RGB speed",
-    [u8"Скорость анимации"] = "Animation speed",
-    [u8"Скорость свечения"] = "Glow speed",
-    [u8"Скорость частиц"] = "Particle speed",
-    [u8"Скрипт"] = "Script",
-    [u8"Общая активация"] = "Global activation",
-    [u8"Скроллбар"] = "Scrollbar",
-    [u8"Сообщения в чате"] = "Chat messages",
-    [u8"Сохранить"] = "Save",
-    [u8"Текст"] = "Text",
-    [u8"Текст и рамки"] = "Text and borders",
-    [u8"Текст##cwm"] = "Text##cwm",
-    [u8"Текст##lwm"] = "Text##lwm",
-    [u8"Толщина обводки"] = "Outline thickness",
-    [u8"Тренировочная (W A S D Q E / C / ПРОБЕЛ)"] = "Training (W A S D Q E / C / SPACE)",
-    [u8"Удалить"] = "Delete",
-    [u8"Удержание"] = "Held",
-    [u8"Фон и окна"] = "Background and windows",
-    [u8"Фоновое свечение"] = "Background glow",
-    [u8"Цвет анимаций вкладок"] = "Tab animation color",
-    [u8"Цвет вкладок"] = "Tabs color",
-    [u8"Цвет волны"] = "Wave color",
-    [u8"Цвет подписи"] = "Label color",
-    [u8"Цвет свечения (1)"] = "Glow color (1)",
-    [u8"Цвет свечения (2)"] = "Glow color (2)",
-    [u8"Цвет частиц"] = "Particle color",
-    [u8"Цвета"] = "Colors",
-    [u8"Цвета клавиш"] = "Key colors",
-    [u8"Цвета комбо-клавиш"] = "Combo-key colors",
-    [u8"Шестерёнка (настройки)"] = "Gear (settings)",
-    [u8"Эффекты"] = "Effects",
-    [u8"Язык клавиатуры"] = "Keyboard language",
+    [u8"RGB (Р›РѕРіРё / РљРѕРјР±Рѕ)"] = "RGB (Logs / Combo)",
+    [u8"[CBUGER]: РћР¶РёРґР°Р»Р°СЃСЊ: "] = "[CBUGER]: Expected: ",
+    [u8"[CBUGER]: РћС€РёР±РєР°, Р»РёС€РЅРµРµ РЅР°Р¶Р°С‚РёРµ: "] = "[CBUGER]: Error, extra press: ",
+    [u8"[CBUGER]: РћС€РёР±РєР°, РЅР°Р¶Р°С‚Р° РЅРµ С‚Р° РєР»Р°РІРёС€Р°: "] = "[CBUGER]: Error, wrong key pressed: ",
+    [u8", РЅРѕ РЅР°Р¶Р°С‚Р°: "] = ", but pressed: ",
+    [u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ Р·Р°Р¶Р°Р»Рё СЃР»РёС€РєРѕРј РґРѕР»РіРѕ: "] = "[CBUGER]: Error, you held too long: ",
+    [u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ Р·Р°Р¶Р°Р»Рё: "] = "[CBUGER]: Error, you held: ",
+    [u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ РЅРµ Р·Р°Р¶РёРјР°Р»Рё: "] = "[CBUGER]: Error, you did not hold: ",
+    [u8"РђРЅРёРјР°С†РёСЏ РІРєР»Р°РґРѕРє"] = "Tab animation",
+    [u8"Р‘Р°Р·РѕРІС‹Р№ С†РІРµС‚ РёРЅС‚РµСЂС„РµР№СЃР°"] = "Base interface color",
+    [u8"Р’Р°СЂРёР°РЅС‚ РєР»Р°РІРёР°С‚СѓСЂС‹"] = "Keyboard variant",
+    [u8"Р’РєР»"] = "On",
+    [u8"Р’РєР»##pborder"] = "On##pborder",
+    [u8"Р’РєР»##pfill"] = "On##pfill",
+    [u8"Р’РєР»##ptext"] = "On##ptext",
+    [u8"Р’РєР»СЋС‡РёС‚СЊ РІРѕР»РЅСѓ"] = "Enable wave",
+    [u8"Р’РѕР»РЅР° РЅР° РєР»Р°РІРёС€Р°С…"] = "Wave on keys",
+    [u8"РљР»Р°РІРёС€Рё"] = "Keys",
+    [u8"Р’СЃС‘"] = "All",
+    [u8"Р РµР¶РёРј РІРѕР»РЅС‹:"] = "Wave mode:",
+    [u8"RGB РІРѕР»РЅР°"] = "RGB wave",
+    [u8"Р Р°РЅРґРѕРјРЅС‹Рµ С†РІРµС‚Р° РІРѕР»РЅС‹"] = "Random wave colors",
+    [u8"РљРѕРЅС‚СЂРѕР»СЊ +РЎ"] = "Recoil Control (+C)",
+    [u8"Р’РєР»СЋС‡РёС‚СЊ РєРѕРЅС‚СЂРѕР»СЊ"] = "Enable control",
+    [u8"РџРѕСЃС‚Р°РІРёС‚СЊ Р»РёРЅРёСЋ"] = "Place the line",
+    [u8"Р›РёРЅРёСЏ РµС‰С‘ РЅРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅР°"] = "Line not placed yet",
+    [u8"РћР¶РёРґР°РЅРёРµ РІС‹СЃС‚СЂРµР»Р°..."] = "Waiting for a shot...",
+    [u8"РќР°РІРµРґРёС‚РµСЃСЊ Рё РІС‹СЃС‚СЂРµР»РёС‚Рµ, С‡С‚РѕР±С‹ РїРѕСЃС‚Р°РІРёС‚СЊ Р»РёРЅРёСЋ"] = "Aim and fire to place the line",
+    [u8"РўРѕР»С‰РёРЅР° Р»РёРЅРёРё"] = "Line thickness",
+    [u8"Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІСЃРїС‹С€РєРё"] = "Flash duration",
+    [u8"РЇСЂРєРѕСЃС‚СЊ РІСЃРїС‹С€РєРё"] = "Flash brightness",
+    [u8"Р¦РІРµС‚ РІСЃРїС‹С€РєРё"] = "Flash color",
+    [u8"РџРѕРєР°Р·С‹РІР°С‚СЊ Р»РёРЅРёСЋ"] = "Show line",
+    [u8"РџРѕСЃС‚Р°РІРёС‚СЊ С‡РµСЂС‚Сѓ"] = "Set the line",
+    [u8"Р’С‹СЃРѕС‚Р° С‡РµСЂС‚С‹: "] = "Line height: ",
+    [u8" Рј"] = " m",
+    [u8"Р’С‹С€Рµ"] = "Up",
+    [u8"РќРёР¶Рµ"] = "Down",
+    [u8"РџРѕ С†РµРЅС‚СЂСѓ"] = "Center",
+    [u8"Р§РµСЂС‚Р° РµС‰С‘ РЅРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅР°"] = "Line not set yet",
+    [u8"РќР°РІРµРґРёС‚РµСЃСЊ Рё РІС‹СЃС‚СЂРµР»РёС‚Рµ, С‡С‚РѕР±С‹ Р·Р°РґР°С‚СЊ РІС‹СЃРѕС‚Сѓ С‡РµСЂС‚С‹"] = "Aim and fire to set the line height",
+    [u8"РџСЂР°РІРёР»СЊРЅРѕ: "] = "Correct: ",
+    [u8"РќРµРїСЂР°РІРёР»СЊРЅРѕ: "] = "Incorrect: ",
+    [u8"РљРџР”: "] = "Efficiency: ",
+    [u8"РЎР±СЂРѕСЃРёС‚СЊ СЃС‚Р°С‚РёСЃС‚РёРєСѓ"] = "Reset statistics",
+    [u8"РљР°СЂС‚Р° РІС‹СЃС‚СЂРµР»РѕРІ"] = "Shot Map",
+    [u8"Р—Р°РїРёСЃС‹РІР°С‚СЊ РєР°СЂС‚Сѓ"] = "Record map",
+    [u8"Р’С‹СЃС‚СЂРµР»РѕРІ РЅР° РєР°СЂС‚РѕС‡РєСѓ"] = "Shots per card",
+    [u8"РџРѕ СЃРµСЃСЃРёСЏРј"] = "By session",
+    [u8"РћР±С‰РёР№ РІРёРґ"] = "Overall view",
+    [u8"РЎРµР№С‡Р°СЃ"] = "Now",
+    [u8"РљР°СЂС‚РѕС‡РєР° "] = "Card ",
+    [u8"РћС‡РёСЃС‚РёС‚СЊ РєР°СЂС‚Сѓ"] = "Clear map",
+    [u8"РўРѕС‡РЅРѕСЃС‚СЊ"] = "Accuracy",
+    [u8"Р›РљРњ вЂ” РіСЂР°С„РёРє РїРѕ РєР°СЂС‚РѕС‡РєР°Рј"] = "LMB вЂ” chart by cards",
+    [u8"РћР±С‰Р°СЏ СЃРµСЃСЃРёСЏ"] = "Whole session",
+    [u8"Р’С‹СЃС‚СЂРµР»РѕРІ: "] = "Shots: ",
+    [u8"Р Р°Р·Р±СЂРѕСЃ: "] = "Spread: ",
+    [u8"Р Р°Р·Р±СЂРѕСЃ"] = "Spread",
+    [u8"РљР°СЂС‚РѕС‡РµРє: "] = "Cards: ",
+    [u8"РќРµС‚ РґР°РЅРЅС‹С…"] = "No data",
+    [u8"Р’СЂРµРјСЏ (СЃРµРє):"] = "Time (sec):",
+    [u8"Р’СЂРµРјСЏ Р·Р°Р¶Р°С‚РёСЏ (СЃРµРє):"] = "Hold time (sec):",
+    [u8"Р’СЃСЏ РєР»Р°РІРёР°С‚СѓСЂР°"] = "Full keyboard",
+    [u8"Р’С‹Р±РѕСЂ С€СЂРёС„С‚Р°"] = "Font selection",
+    [u8"Р’С‹РєР»"] = "Off",
+    [u8"Р“Р°Р№Рґ"] = "Guide",
+    [u8"Р“Р»Р°Р· (СЃРІРµСЂРЅСѓС‚СЊ)"] = "Eye (minimize)",
+    [u8"Р”РѕР±Р°РІРёС‚СЊ РєР»Р°РІРёС€Сѓ РІ РїРѕСЃР»РµРґРЅРёР№ СЌС‚Р°Рї:"] = "Add key to last stage:",
+    [u8"Р”СѓР±Р»РёСЂРѕРІР°С‚СЊ"] = "Duplicate",
+    [u8"Р—Р°Р¶Р°С‚РёРµ РІРєР»СЋС‡РµРЅРѕ"] = "Hold enabled",
+    [u8"Р—Р°Р¶Р°С‚РёРµ РІС‹РєР»СЋС‡РµРЅРѕ"] = "Hold disabled",
+    [u8"Р—Р°РєСЂС‹С‚СЊ"] = "Close",
+    [u8"Р—Р°Р»РёРІРєР°"] = "Fill",
+    [u8"РРєРѕРЅРєРё"] = "Icons",
+    [u8"РРєРѕРЅРєРё РІРєР»Р°РґРѕРє РѕРєРЅР°"] = "Window tab icons",
+    [u8"РРєРѕРЅРєРё Рё СЌР»РµРјРµРЅС‚С‹"] = "Icons and elements",
+    [u8"РљР»Р°РІРёР°С‚СѓСЂР°"] = "Keyboard",
+    [u8"РљР»Р°РІРёР°С‚СѓСЂР° Р±РµР· NumPad"] = "Keyboard without NumPad",
+    [u8"РљРЅРѕРїРєРё Рё СЌР»РµРјРµРЅС‚С‹"] = "Buttons and elements",
+    [u8"РљРЅРѕРїРѕРє РІ СЂСЏРґ"] = "Buttons per row",
+    [u8"РљРѕРјР±РёРЅР°С†РёР№: "] = "Combos: ",
+    [u8"РљСЂРµСЃС‚РёРє (Р·Р°РєСЂС‹С‚РёРµ)"] = "Cross (close)",
+    [u8"РљСѓСЂСЃРѕСЂ-С‡Р°СЃС‚РёС†С‹"] = "Cursor particles",
+    [u8"Р›РѕРіРё РЅР°Р¶Р°С‚РёР№"] = "Press logs",
+    [u8"Р›РѕРіРё РЅР°Р¶Р°С‚РёР№##logwin"] = "Press logs##logwin",
+    [u8"РњР°СЃС€С‚Р°Р± РєРѕРјР±Рѕ"] = "Combo scale",
+    [u8"РњС‹С€СЊ"] = "Mouse",
+    [u8"РќР°Р¶РјРёС‚Рµ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ:"] = "Press in sequence:",
+    [u8"РќР°РїСЂР°РІР»РµРЅРёРµ:"] = "Direction:",
+    [u8"РќР°СЃС‚СЂРѕР№РєРё РґР»СЏ: "] = "Settings for: ",
+    [u8"РќР°СЃС‚СЂРѕР№РєРё РєР»Р°РІРёС€Рё:"] = "Key settings:",
+    [u8"РќРµС‚ РєРѕРјР±РёРЅР°С†РёР№"] = "No combos",
+    [u8"РќРµС‚ РЅР°Р¶Р°С‚РёР№..."] = "No presses...",
+    [u8"РќРѕРІР°СЏ РєРѕРјР±РёРЅР°С†РёСЏ"] = "New combo",
+    [u8"РћР±РІРѕРґРєР°"] = "Outline",
+    [u8"РћР±РІРѕРґРєР°:"] = "Outline:",
+    [u8"РћР±РІРѕРґРєРё РєРЅРѕРїРѕРє"] = "Button outlines",
+    [u8"РћР±С‰РёРµ РЅР°СЃС‚СЂРѕР№РєРё"] = "General settings",
+    [u8"РћР±С‹С‡РЅС‹Рµ:"] = "Regular:",
+    [u8"РћР¶РёРґР°Р»Р°СЃСЊ: "] = "Expected: ",
+    [u8"РћРєРЅРѕ РєРѕРјР±РёРЅР°С†РёР№"] = "Combo window",
+    [u8"РћС‡РёСЃС‚РёС‚СЊ"] = "Clear",
+    [u8"РћС€РёР±РєР°"] = "Error",
+    [u8"РџР РћР‘Р•Р›"] = "SPACE",
+    [u8"РџРµСЂРµРєР»СЋС‡Р°С‚РµР»СЊ РІРєР»Р°РґРѕРє"] = "Tab switcher",
+    [u8"РџРµСЂРµРјРµС‰РµРЅРёРµ РєР»Р°РІРёР°С‚СѓСЂС‹"] = "Move keyboard",
+    [u8"РџР»Р°РІРЅРѕРµ Р·Р°РєСЂС‹С‚РёРµ РѕРєРЅР°"] = "Smooth window closing",
+    [u8"РџР»Р°С€РєРё##cwm"] = "Badges##cwm",
+    [u8"РџР»Р°С€РєРё##lwm"] = "Badges##lwm",
+    [u8"РџРѕРєР°Р·С‹РІР°С‚СЊ Р»РѕРіРё"] = "Show logs",
+    [u8"РџРѕРєР°Р·С‹РІР°С‚СЊ РѕРєРЅРѕ"] = "Show window",
+    [u8"РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕСЃР»РµРґРЅРёС…"] = "Show last",
+    [u8"РџСЂР°РІРёР»СЊРЅРѕ"] = "Correct",
+    [u8"РџСЂРё РЅР°Р¶Р°С‚РёРё"] = "On press",
+    [u8"РџСЂРё РЅР°Р¶Р°С‚РёРё:"] = "On press:",
+    [u8"РџСЂРѕР±РµР» = Shift"] = "Space = Shift",
+    [u8"РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ"] = "Transparency",
+    [u8"РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ РёРЅС‚РµСЂС„РµР№СЃР°"] = "Interface transparency",
+    [u8"РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ РєР»Р°РІРёС€"] = "Key transparency",
+    [u8"РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ С‚РµРєСЃС‚Р°"] = "Text transparency",
+    [u8"РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРѕРµ РІС‹РґРµР»РµРЅРёРµ"] = "Rectangular selection",
+    [u8"Р Р°Р·РјРµСЂ"] = "Size",
+    [u8"Р Р°Р·РјРµСЂ С‡Р°СЃС‚РёС†"] = "Particle size",
+    [u8"Р Р°РјРєР° РѕРєРЅР°"] = "Window border",
+    [u8"Р Р°СЃС€РёСЂРµРЅРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё С†РІРµС‚РѕРІ"] = "Advanced color settings",
+    [u8"Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ"] = "Edit",
+    [u8"Р РµРґР°РєС‚РѕСЂ РєРѕРјР±РёРЅР°С†РёРё"] = "Combo editor",
+    [u8"Р РµРґР°РєС‚РѕСЂ СЃС‚РёР»СЏ"] = "Style editor",
+    [u8"Р РµР¶РёРј Р°РЅРёРјР°С†РёРё"] = "Animation mode",
+    [u8"Р РµР¶РёРј РєСѓСЂСЃРѕСЂР°"] = "Cursor mode",
+    [u8"Р РµР¶РёРј СЃРІРµС‡РµРЅРёСЏ"] = "Glow mode",
+    [u8"РЎР±СЂРѕСЃРёС‚СЊ РєРѕРјР±РёРЅР°С†РёСЋ"] = "Reset combo",
+    [u8"РЎР±СЂРѕСЃРёС‚СЊ РєРѕРјР±Рѕ"] = "Reset combo",
+    [u8"РЎРєРѕСЂРѕСЃС‚СЊ"] = "Speed",
+    [u8"РЎРєРѕСЂРѕСЃС‚СЊ RGB"] = "RGB speed",
+    [u8"РЎРєРѕСЂРѕСЃС‚СЊ Р°РЅРёРјР°С†РёРё"] = "Animation speed",
+    [u8"РЎРєРѕСЂРѕСЃС‚СЊ СЃРІРµС‡РµРЅРёСЏ"] = "Glow speed",
+    [u8"РЎРєРѕСЂРѕСЃС‚СЊ С‡Р°СЃС‚РёС†"] = "Particle speed",
+    [u8"РЎРєСЂРёРїС‚"] = "Script",
+    [u8"РћР±С‰Р°СЏ Р°РєС‚РёРІР°С†РёСЏ"] = "Global activation",
+    [u8"РЎРєСЂРѕР»Р»Р±Р°СЂ"] = "Scrollbar",
+    [u8"РЎРѕРѕР±С‰РµРЅРёСЏ РІ С‡Р°С‚Рµ"] = "Chat messages",
+    [u8"РЎРѕС…СЂР°РЅРёС‚СЊ"] = "Save",
+    [u8"РўРµРєСЃС‚"] = "Text",
+    [u8"РўРµРєСЃС‚ Рё СЂР°РјРєРё"] = "Text and borders",
+    [u8"РўРµРєСЃС‚##cwm"] = "Text##cwm",
+    [u8"РўРµРєСЃС‚##lwm"] = "Text##lwm",
+    [u8"РўРѕР»С‰РёРЅР° РѕР±РІРѕРґРєРё"] = "Outline thickness",
+    [u8"РўСЂРµРЅРёСЂРѕРІРѕС‡РЅР°СЏ (W A S D Q E / C / РџР РћР‘Р•Р›)"] = "Training (W A S D Q E / C / SPACE)",
+    [u8"РЈРґР°Р»РёС‚СЊ"] = "Delete",
+    [u8"РЈРґРµСЂР¶Р°РЅРёРµ"] = "Held",
+    [u8"Р¤РѕРЅ Рё РѕРєРЅР°"] = "Background and windows",
+    [u8"Р¤РѕРЅРѕРІРѕРµ СЃРІРµС‡РµРЅРёРµ"] = "Background glow",
+    [u8"Р¦РІРµС‚ Р°РЅРёРјР°С†РёР№ РІРєР»Р°РґРѕРє"] = "Tab animation color",
+    [u8"Р¦РІРµС‚ РІРєР»Р°РґРѕРє"] = "Tabs color",
+    [u8"Р¦РІРµС‚ РІРѕР»РЅС‹"] = "Wave color",
+    [u8"Р¦РІРµС‚ РїРѕРґРїРёСЃРё"] = "Label color",
+    [u8"Р¦РІРµС‚ СЃРІРµС‡РµРЅРёСЏ (1)"] = "Glow color (1)",
+    [u8"Р¦РІРµС‚ СЃРІРµС‡РµРЅРёСЏ (2)"] = "Glow color (2)",
+    [u8"Р¦РІРµС‚ С‡Р°СЃС‚РёС†"] = "Particle color",
+    [u8"Р¦РІРµС‚Р°"] = "Colors",
+    [u8"Р¦РІРµС‚Р° РєР»Р°РІРёС€"] = "Key colors",
+    [u8"Р¦РІРµС‚Р° РєРѕРјР±Рѕ-РєР»Р°РІРёС€"] = "Combo-key colors",
+    [u8"РЁРµСЃС‚РµСЂС‘РЅРєР° (РЅР°СЃС‚СЂРѕР№РєРё)"] = "Gear (settings)",
+    [u8"Р­С„С„РµРєС‚С‹"] = "Effects",
+    [u8"РЇР·С‹Рє РєР»Р°РІРёР°С‚СѓСЂС‹"] = "Keyboard language",
     [u8"<>"] = "<->",
     [u8"^v"] = "^v",
     [u8"><"] = "-><-",
     [u8"v^"] = "v^",
-    [u8"Гайд: "] = "Guide: ",
-    [u8"Обычный"] = "Normal",
-    [u8"Крестики"] = "Crosses",
-    [u8"Огненный хвост"] = "Fire trail",
-    [u8"Капли"] = "Drops",
-    [u8"Замедленный след"] = "Slow trail",
-    [u8"Огненный взрыв"] = "Fire burst",
-    [u8"Кольца"] = "Rings",
-    [u8"Линии"] = "Lines",
-    [u8"Туманность"] = "Nebula",
-    [u8"Волна"] = "Wave",
-    [u8"Тёмная дыра"] = "Black hole",
-    [u8"Случайный"] = "Random",
-    [u8"Капли-газ"] = "Gas drops",
-    [u8"Диагональ"] = "Diagonal",
-    [u8"Взрыв"] = "Explosion",
-    [u8"Спираль"] = "Spiral",
-    [u8"Шар"] = "Orb",
-    [u8"Зигзаг"] = "Zigzag",
-    [u8"Конфетти"] = "Confetti",
-    [u8"Кристаллический шар"] = "Crystal orb",
-    [u8"Волны"] = "Waves",
-    [u8"Эквалайзер"] = "Equalizer",
-    [u8"Расходящийся"] = "Diverging",
-    [u8"Цифровой шум"] = "Digital noise",
-    [u8"Прямоугольная"] = "Rectangular",
-    [u8"Ноды"] = "Nodes",
-    [u8"Радар"] = "Radar",
-    [u8"Соты"] = "Honeycomb",
-    [u8"Пузыри"] = "Bubbles",
-    [u8"Синусоиды V2"] = "Sine waves V2",
-    [u8"Маятник"] = "Pendulum",
-    [u8"Зигзаги"] = "Zigzags",
-    [u8"Звёздный дождь"] = "Star rain",
-    [u8"Пузырьки круги"] = "Bubble circles",
-    [u8"Шестиугольники V2"] = "Hexagons V2",
-    [u8"Стрелки"] = "Arrows",
-    [u8"Фигуры Лиссажу"] = "Lissajous figures",
-    [u8"Деформация поля"] = "Field distortion",
-    [u8"Полиция мигает"] = "Police lights",
-    [u8"Мигающие вспышки"] = "Flashing bursts",
-    [u8"Скользящий луч"] = "Sliding beam",
-    [u8"Пульсар"] = "Pulsar",
-    [u8"Стробоскоп"] = "Strobe",
-    [u8"Световые полосы"] = "Light stripes",
-    [u8"Пульс"] = "Pulse",
-    [u8"Прожектор"] = "Spotlight",
-    [u8"Острый импульс"] = "Sharp pulse",
-    [u8"Молния"] = "Lightning",
-    [u8"Световой мерцатель"] = "Light flicker",
-    [u8"Метла"] = "Sweep",
-    [u8"Хроматик"] = "Chromatic",
-    [u8"Кольцо"] = "Ring",
-    [u8"Морзе"] = "Morse",
-    [u8"Горизонтальный скан"] = "Horizontal scan",
-    [u8"Системный"] = "System",
-    [u8"Фон основного окна"] = "Main window background",
-    [u8"Фон дочернего виджета"] = "Child widget background",
-    [u8"Фон слайдера/чекбокса"] = "Slider/checkbox background",
-    [u8"Наведение слайдера"] = "Slider hover",
-    [u8"Активный слайдер"] = "Active slider",
-    [u8"Кнопка"] = "Button",
-    [u8"Кнопка наведение"] = "Button hover",
-    [u8"Кнопка нажатие"] = "Button pressed",
-    [u8"Галочка"] = "Checkmark",
-    [u8"Заголовок"] = "Header",
-    [u8"Заголовок наведение"] = "Header hover",
-    [u8"Заголовок нажатие"] = "Header pressed",
-    [u8"Фон скролла"] = "Scrollbar background",
-    [u8"Ползунок скролла"] = "Scrollbar grab",
-    [u8"Ползунок наведение"] = "Grab hover",
-    [u8"Ползунок нажатие"] = "Grab pressed",
-    [u8"Основной текст"] = "Main text",
-    [u8"Заголовки секций"] = "Section headers",
-    [u8"Граница"] = "Border",
-    [u8"Разделитель"] = "Separator",
-    [u8"Настройки интерфейса"] = "Interface settings",
-    [u8"Основные"] = "General",
-    [u8"Стиль"] = "Style",
-    [u8"Комбо"] = "Combo",
-    [u8"Тренировочная"] = "Training",
-    [u8"Язык интерфейса"] = "Interface language",
-    [u8"Цвет##gcol"] = "Color##gcol",
-    [u8"Белый##gcr"] = "White##gcr",
-    [u8"Выбрать##gcapply"] = "Apply##gcapply",
-    [u8"Размер##gsize"] = "Size##gsize",
-    [u8"Сохранить и обновить экспорт"] = "Save and refresh export",
-    [u8"Скопировать настройки в буфер"] = "Copy settings to clipboard",
-    [u8"Сбросить отступы этой вкладки"] = "Reset spacing on this tab",
-    [u8"Сдвиг всей вкладки"] = "Whole tab X offset",
-    [u8"Меняйте интервалы ниже, затем проверьте вкладку. Значения сохраняются в cbuger.ini."] = "Change the gaps below, then check the tab. Values are saved to cbuger.ini.",
+    [u8"Р“Р°Р№Рґ: "] = "Guide: ",
+    [u8"РћР±С‹С‡РЅС‹Р№"] = "Normal",
+    [u8"РљСЂРµСЃС‚РёРєРё"] = "Crosses",
+    [u8"РћРіРЅРµРЅРЅС‹Р№ С…РІРѕСЃС‚"] = "Fire trail",
+    [u8"РљР°РїР»Рё"] = "Drops",
+    [u8"Р—Р°РјРµРґР»РµРЅРЅС‹Р№ СЃР»РµРґ"] = "Slow trail",
+    [u8"РћРіРЅРµРЅРЅС‹Р№ РІР·СЂС‹РІ"] = "Fire burst",
+    [u8"РљРѕР»СЊС†Р°"] = "Rings",
+    [u8"Р›РёРЅРёРё"] = "Lines",
+    [u8"РўСѓРјР°РЅРЅРѕСЃС‚СЊ"] = "Nebula",
+    [u8"Р’РѕР»РЅР°"] = "Wave",
+    [u8"РўС‘РјРЅР°СЏ РґС‹СЂР°"] = "Black hole",
+    [u8"РЎР»СѓС‡Р°Р№РЅС‹Р№"] = "Random",
+    [u8"РљР°РїР»Рё-РіР°Р·"] = "Gas drops",
+    [u8"Р”РёР°РіРѕРЅР°Р»СЊ"] = "Diagonal",
+    [u8"Р’Р·СЂС‹РІ"] = "Explosion",
+    [u8"РЎРїРёСЂР°Р»СЊ"] = "Spiral",
+    [u8"РЁР°СЂ"] = "Orb",
+    [u8"Р—РёРіР·Р°Рі"] = "Zigzag",
+    [u8"РљРѕРЅС„РµС‚С‚Рё"] = "Confetti",
+    [u8"РљСЂРёСЃС‚Р°Р»Р»РёС‡РµСЃРєРёР№ С€Р°СЂ"] = "Crystal orb",
+    [u8"Р’РѕР»РЅС‹"] = "Waves",
+    [u8"Р­РєРІР°Р»Р°Р№Р·РµСЂ"] = "Equalizer",
+    [u8"Р Р°СЃС…РѕРґСЏС‰РёР№СЃСЏ"] = "Diverging",
+    [u8"Р¦РёС„СЂРѕРІРѕР№ С€СѓРј"] = "Digital noise",
+    [u8"РџСЂСЏРјРѕСѓРіРѕР»СЊРЅР°СЏ"] = "Rectangular",
+    [u8"РќРѕРґС‹"] = "Nodes",
+    [u8"Р Р°РґР°СЂ"] = "Radar",
+    [u8"РЎРѕС‚С‹"] = "Honeycomb",
+    [u8"РџСѓР·С‹СЂРё"] = "Bubbles",
+    [u8"РЎРёРЅСѓСЃРѕРёРґС‹ V2"] = "Sine waves V2",
+    [u8"РњР°СЏС‚РЅРёРє"] = "Pendulum",
+    [u8"Р—РёРіР·Р°РіРё"] = "Zigzags",
+    [u8"Р—РІС‘Р·РґРЅС‹Р№ РґРѕР¶РґСЊ"] = "Star rain",
+    [u8"РџСѓР·С‹СЂСЊРєРё РєСЂСѓРіРё"] = "Bubble circles",
+    [u8"РЁРµСЃС‚РёСѓРіРѕР»СЊРЅРёРєРё V2"] = "Hexagons V2",
+    [u8"РЎС‚СЂРµР»РєРё"] = "Arrows",
+    [u8"Р¤РёРіСѓСЂС‹ Р›РёСЃСЃР°Р¶Сѓ"] = "Lissajous figures",
+    [u8"Р”РµС„РѕСЂРјР°С†РёСЏ РїРѕР»СЏ"] = "Field distortion",
+    [u8"РџРѕР»РёС†РёСЏ РјРёРіР°РµС‚"] = "Police lights",
+    [u8"РњРёРіР°СЋС‰РёРµ РІСЃРїС‹С€РєРё"] = "Flashing bursts",
+    [u8"РЎРєРѕР»СЊР·СЏС‰РёР№ Р»СѓС‡"] = "Sliding beam",
+    [u8"РџСѓР»СЊСЃР°СЂ"] = "Pulsar",
+    [u8"РЎС‚СЂРѕР±РѕСЃРєРѕРї"] = "Strobe",
+    [u8"РЎРІРµС‚РѕРІС‹Рµ РїРѕР»РѕСЃС‹"] = "Light stripes",
+    [u8"РџСѓР»СЊСЃ"] = "Pulse",
+    [u8"РџСЂРѕР¶РµРєС‚РѕСЂ"] = "Spotlight",
+    [u8"РћСЃС‚СЂС‹Р№ РёРјРїСѓР»СЊСЃ"] = "Sharp pulse",
+    [u8"РњРѕР»РЅРёСЏ"] = "Lightning",
+    [u8"РЎРІРµС‚РѕРІРѕР№ РјРµСЂС†Р°С‚РµР»СЊ"] = "Light flicker",
+    [u8"РњРµС‚Р»Р°"] = "Sweep",
+    [u8"РҐСЂРѕРјР°С‚РёРє"] = "Chromatic",
+    [u8"РљРѕР»СЊС†Рѕ"] = "Ring",
+    [u8"РњРѕСЂР·Рµ"] = "Morse",
+    [u8"Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Р№ СЃРєР°РЅ"] = "Horizontal scan",
+    [u8"РЎРёСЃС‚РµРјРЅС‹Р№"] = "System",
+    [u8"Р¤РѕРЅ РѕСЃРЅРѕРІРЅРѕРіРѕ РѕРєРЅР°"] = "Main window background",
+    [u8"Р¤РѕРЅ РґРѕС‡РµСЂРЅРµРіРѕ РІРёРґР¶РµС‚Р°"] = "Child widget background",
+    [u8"Р¤РѕРЅ СЃР»Р°Р№РґРµСЂР°/С‡РµРєР±РѕРєСЃР°"] = "Slider/checkbox background",
+    [u8"РќР°РІРµРґРµРЅРёРµ СЃР»Р°Р№РґРµСЂР°"] = "Slider hover",
+    [u8"РђРєС‚РёРІРЅС‹Р№ СЃР»Р°Р№РґРµСЂ"] = "Active slider",
+    [u8"РљРЅРѕРїРєР°"] = "Button",
+    [u8"РљРЅРѕРїРєР° РЅР°РІРµРґРµРЅРёРµ"] = "Button hover",
+    [u8"РљРЅРѕРїРєР° РЅР°Р¶Р°С‚РёРµ"] = "Button pressed",
+    [u8"Р“Р°Р»РѕС‡РєР°"] = "Checkmark",
+    [u8"Р—Р°РіРѕР»РѕРІРѕРє"] = "Header",
+    [u8"Р—Р°РіРѕР»РѕРІРѕРє РЅР°РІРµРґРµРЅРёРµ"] = "Header hover",
+    [u8"Р—Р°РіРѕР»РѕРІРѕРє РЅР°Р¶Р°С‚РёРµ"] = "Header pressed",
+    [u8"Р¤РѕРЅ СЃРєСЂРѕР»Р»Р°"] = "Scrollbar background",
+    [u8"РџРѕР»Р·СѓРЅРѕРє СЃРєСЂРѕР»Р»Р°"] = "Scrollbar grab",
+    [u8"РџРѕР»Р·СѓРЅРѕРє РЅР°РІРµРґРµРЅРёРµ"] = "Grab hover",
+    [u8"РџРѕР»Р·СѓРЅРѕРє РЅР°Р¶Р°С‚РёРµ"] = "Grab pressed",
+    [u8"РћСЃРЅРѕРІРЅРѕР№ С‚РµРєСЃС‚"] = "Main text",
+    [u8"Р—Р°РіРѕР»РѕРІРєРё СЃРµРєС†РёР№"] = "Section headers",
+    [u8"Р“СЂР°РЅРёС†Р°"] = "Border",
+    [u8"Р Р°Р·РґРµР»РёС‚РµР»СЊ"] = "Separator",
+    [u8"РќР°СЃС‚СЂРѕР№РєРё РёРЅС‚РµСЂС„РµР№СЃР°"] = "Interface settings",
+    [u8"РћСЃРЅРѕРІРЅС‹Рµ"] = "General",
+    [u8"РЎС‚РёР»СЊ"] = "Style",
+    [u8"РљРѕРјР±Рѕ"] = "Combo",
+    [u8"РўСЂРµРЅРёСЂРѕРІРѕС‡РЅР°СЏ"] = "Training",
+    [u8"РЇР·С‹Рє РёРЅС‚РµСЂС„РµР№СЃР°"] = "Interface language",
+    [u8"Р¦РІРµС‚##gcol"] = "Color##gcol",
+    [u8"Р‘РµР»С‹Р№##gcr"] = "White##gcr",
+    [u8"Р’С‹Р±СЂР°С‚СЊ##gcapply"] = "Apply##gcapply",
+    [u8"Р Р°Р·РјРµСЂ##gsize"] = "Size##gsize",
+    [u8"РЎРѕС…СЂР°РЅРёС‚СЊ Рё РѕР±РЅРѕРІРёС‚СЊ СЌРєСЃРїРѕСЂС‚"] = "Save and refresh export",
+    [u8"РЎРєРѕРїРёСЂРѕРІР°С‚СЊ РЅР°СЃС‚СЂРѕР№РєРё РІ Р±СѓС„РµСЂ"] = "Copy settings to clipboard",
+    [u8"РЎР±СЂРѕСЃРёС‚СЊ РѕС‚СЃС‚СѓРїС‹ СЌС‚РѕР№ РІРєР»Р°РґРєРё"] = "Reset spacing on this tab",
+    [u8"РЎРґРІРёРі РІСЃРµР№ РІРєР»Р°РґРєРё"] = "Whole tab X offset",
+    [u8"РњРµРЅСЏР№С‚Рµ РёРЅС‚РµСЂРІР°Р»С‹ РЅРёР¶Рµ, Р·Р°С‚РµРј РїСЂРѕРІРµСЂСЊС‚Рµ РІРєР»Р°РґРєСѓ. Р—РЅР°С‡РµРЅРёСЏ СЃРѕС…СЂР°РЅСЏСЋС‚СЃСЏ РІ cbuger.ini."] = "Change the gaps below, then check the tab. Values are saved to cbuger.ini.",
 }
 Data.UI_TRANSLATIONS = {}
 for k, v in pairs(Data.UI_TRANSLATIONS_RAW) do
@@ -3657,288 +3657,288 @@ end
 
 do
     local extra_translations = {
-        [u8("  вы по нему")] = "  you hit them",
-        [u8("  он по вам")] = "  they hit you",
-        [u8("%s  |  %d:%02d  |  Счёт: %d  Комбо: %d  Промахи: %d/%d")] = "%s  |  %d:%02d  |  Score: %d  Combo: %d  Misses: %d/%d",
-        [u8("(нет файлов в pt_tiles)")] = "(no files in pt_tiles)",
-        [u8("--- Цвет FA-иконок ---")] = "--- FA icon colors ---",
-        [u8("--- Цвет плиток ---")] = "--- Tile colors ---",
-        [u8("... ещё %d — уточните поиск")] = "... and %d more — refine your search",
-        [u8("? Текущая сессия")] = "? Current session",
-        [u8("FA-иконки вместо плиток")] = "FA icons instead of tiles",
-        [u8("FA-иконки недоступны — не найдена библиотека")] = "FA icons unavailable — library not found",
+        [u8("  РІС‹ РїРѕ РЅРµРјСѓ")] = "  you hit them",
+        [u8("  РѕРЅ РїРѕ РІР°Рј")] = "  they hit you",
+        [u8("%s  |  %d:%02d  |  РЎС‡С‘С‚: %d  РљРѕРјР±Рѕ: %d  РџСЂРѕРјР°С…Рё: %d/%d")] = "%s  |  %d:%02d  |  Score: %d  Combo: %d  Misses: %d/%d",
+        [u8("(РЅРµС‚ С„Р°Р№Р»РѕРІ РІ pt_tiles)")] = "(no files in pt_tiles)",
+        [u8("--- Р¦РІРµС‚ FA-РёРєРѕРЅРѕРє ---")] = "--- FA icon colors ---",
+        [u8("--- Р¦РІРµС‚ РїР»РёС‚РѕРє ---")] = "--- Tile colors ---",
+        [u8("... РµС‰С‘ %d вЂ” СѓС‚РѕС‡РЅРёС‚Рµ РїРѕРёСЃРє")] = "... and %d more вЂ” refine your search",
+        [u8("? РўРµРєСѓС‰Р°СЏ СЃРµСЃСЃРёСЏ")] = "? Current session",
+        [u8("FA-РёРєРѕРЅРєРё РІРјРµСЃС‚Рѕ РїР»РёС‚РѕРє")] = "FA icons instead of tiles",
+        [u8("FA-РёРєРѕРЅРєРё РЅРµРґРѕСЃС‚СѓРїРЅС‹ вЂ” РЅРµ РЅР°Р№РґРµРЅР° Р±РёР±Р»РёРѕС‚РµРєР°")] = "FA icons unavailable вЂ” library not found",
         [u8("Kills")] = "Kills",
-        [u8("Авто-переключение")] = "Auto switching",
-        [u8("Авто-режим выключен")] = "Auto mode disabled",
-        [u8("Авто-ускорение")] = "Auto acceleration",
-        [u8("Активация")] = "Activation",
-        [u8("Базовый цвет плитки")] = "Base tile color",
-        [u8("Без музыки")] = "No music",
-        [u8("Включить")] = "Enable",
-        [u8("Включить авто-слайдшоу")] = "Enable auto slideshow",
-        [u8("Включить дыры от пуль")] = "Enable bullet holes",
-        [u8("Включить переливание")] = "Enable color cycling",
-        [u8("Включить прицел")] = "Enable crosshair",
-        [u8("Воспроизвести")] = "Play",
-        [u8("Время")] = "Time",
-        [u8("Время (сек)")] = "Time (sec)",
-        [u8("Время: ")] = "Time: ",
-        [u8("Встреч между этими игроками не зафиксировано")] = "No encounters between these players have been recorded",
-        [u8("Всё")] = "All",
-        [u8("Выберите станцию")] = "Select a station",
-        [u8("Высота над головой")] = "Height above head",
-        [u8("Высота подъёма")] = "Rise height",
-        [u8("Выстрелов: ")] = "Shots: ",
-        [u8("Геймплей")] = "Gameplay",
-        [u8("Горячая клавиша")] = "Hotkey",
-        [u8("Громкость")] = "Volume",
-        [u8("Дал.:")] = "Dist.:",
-        [u8("Движение меток")] = "Marker movement",
-        [u8("Действие")] = "Action",
-        [u8("Длинные плитки")] = "Long tiles",
-        [u8("Длительность паузы")] = "Pause duration",
-        [u8("Добавить")] = "Add",
-        [u8("Добавить этап")] = "Add stage",
-        [u8("Дыр:")] = "Bullet holes:",
-        [u8("Дыра #")] = "Hole #",
-        [u8("Дыра #:")] = "Bullet hole #:",
-        [u8("Дыры")] = "Holes",
-        [u8("Дыры от пуль")] = "Bullet holes",
-        [u8("Его по мне")] = "Their hits on me",
-        [u8("Задержка подъёма")] = "Rise delay",
-        [u8("Задержка растворения")] = "Fade delay",
-        [u8("Зазор")] = "Gap",
-        [u8("Закрыть")] = "Close",
-        [u8("Заново")] = "Restart",
-        [u8("Запустить игру")] = "Start game",
-        [u8("Зона")] = "Zone",
-        [u8("Игра")] = "Game",
-        [u8("Игра остановлена.")] = "Game stopped.",
-        [u8("Изображение плитки:")] = "Tile image:",
-        [u8("Изображения плиток:")] = "Tile images:",
-        [u8("Иконка плиток:")] = "Tile icon:",
-        [u8("Иконка:")] = "Icon:",
-        [u8("Индивидуальная")] = "Individual",
-        [u8("Индивидуальная:")] = "Individual:",
-        [u8("Индивидуальные текстуры дыр")] = "Individual bullet-hole textures",
-        [u8("Индивидуальные текстуры меток")] = "Individual marker textures",
-        [u8("Интенс. подъёма")] = "Rise intensity",
-        [u8("Интенс. раств.")] = "Fade intensity",
-        [u8("Интервал иконок")] = "Icon interval",
-        [u8("Интервал плиток")] = "Tile interval",
-        [u8("Интервал появления")] = "Spawn interval",
-        [u8("Интервал смены")] = "Change interval",
-        [u8("Интервал смены иконки")] = "Icon change interval",
-        [u8("Интервал фона")] = "Background interval",
-        [u8("Использовать кастомные текстуры дыр")] = "Use custom hole textures",
-        [u8("Использовать кастомные текстуры меток")] = "Use custom marker textures",
-        [u8("Использует глобальную / стандартную")] = "Using global / default",
-        [u8("История")] = "History",
-        [u8("Итого:")] = "Total:",
-        [u8("КПД: ")] = "Efficiency: ",
-        [u8("Каждая новая плитка получает случайное\nизображение из папки moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles")] = "Each new tile gets a random image from the moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles folder",
-        [u8("Количество полос")] = "Number of lanes",
-        [u8("Команды:")] = "Commands:",
-        [u8("Команды: /hm  |  /hitmarker")] = "Commands: /hm  |  /hitmarker",
-        [u8("Комбо")] = "Combo",
-        [u8("ЛКМ — выбрать изображение для маркеров. ПКМ — добавить/убрать из очереди. Порядок = порядок кликов.")] = "LMB selects a marker image. RMB adds/removes it from the queue. Queue order follows click order.",
-        [u8("Личная")] = "Personal",
-        [u8("Личная статистика...")] = "Personal statistics...",
-        [u8("Личную")] = "Personal",
-        [u8("Макс. скорость")] = "Max speed",
-        [u8("Максимум промахов")] = "Maximum misses",
-        [u8("Масштаб")] = "Scale",
-        [u8("Масштаб визуала")] = "Visual scale",
-        [u8("Масштаб текста")] = "Text scale",
-        [u8("Менять цвет при попадании")] = "Change color on hit",
-        [u8("Метка #")] = "Marker #",
-        [u8("Метка #:")] = "Marker #:",
-        [u8("Метки")] = "Markers",
-        [u8("Метки:")] = "Markers:",
-        [u8("Мои по нему")] = "My hits on them",
-        [u8("Мои попадания по всем игрокам")] = "My hits on all players",
-        [u8("Музыка")] = "Music",
-        [u8("Нажмите любую клавишу...")] = "Press any key...",
-        [u8("Название")] = "Name",
-        [u8("Назначить клавишу")] = "Assign key",
-        [u8("Настройки")] = "Settings",
-        [u8("Настройки цветов")] = "Color settings",
-        [u8("Не удалось подключиться к радиостанции. Повторная попытка будет выполнена автоматически.")] = "Could not connect to the radio station. It will retry automatically.",
-        [u8("Нет (цвет)")] = "None (color)",
-        [u8("Нет активных дыр")] = "No active bullet holes",
-        [u8("Нет активных меток")] = "No active markers",
-        [u8("Нет записанных сессий. Сыграйте хотя бы одну партию.")] = "No recorded sessions. Play at least one game.",
-        [u8("Нет изображений — поместите файлы в:")] = "No images — place files in:",
-        [u8("Нет песен — поместите файлы в:")] = "No songs — place files in:",
-        [u8("Ник")] = "Nickname",
-        [u8("Ник[ID]")] = "Nickname [ID]",
-        [u8("Ник[ID] и статистику")] = "Nickname [ID] and stats",
-        [u8("Новое сравнение")] = "New comparison",
-        [u8("Нужно выстрелов")] = "Required shots",
-        [u8("Обводка")] = "Outline",
-        [u8("Обн.")] = "Refresh",
-        [u8("Обновить")] = "Refresh",
-        [u8("Общая")] = "General",
-        [u8("Общую")] = "Overall",
-        [u8("Обычная плитка")] = "Regular tile",
-        [u8("Ожидание первого нажатия для начала игры")] = "Waiting for the first key press to start",
-        [u8("Оружие")] = "Weapon",
-        [u8("Остановить игру")] = "Stop game",
-        [u8("Остановить музыку")] = "Stop music",
-        [u8("Открыть")] = "Open",
-        [u8("Открыть##cmp")] = "Open##cmp",
-        [u8("Отображать трейсеры")] = "Show tracers",
-        [u8("Оформление")] = "Appearance",
-        [u8("Оформление (Фон и Плитки)")] = "Appearance (Background and Tiles)",
-        [u8("Очередь изображений")] = "Image queue",
-        [u8("Очередь пуста — добавьте изображения (ПКМ)")] = "Queue is empty — add images (RMB)",
-        [u8("Очистить")] = "Clear",
-        [u8("Очистить все дыры")] = "Clear all holes",
-        [u8("Очистить все метки")] = "Clear all markers",
-        [u8("Очистить всё")] = "Clear all",
-        [u8("Очистить очередь")] = "Clear queue",
-        [u8("Очистить рекорды")] = "Clear records",
-        [u8("Ошибка воспроизведения.")] = "Playback error.",
-        [u8("Папка pt_tiles пуста. Поместите PNG/JPG в:")] = "The pt_tiles folder is empty. Place PNG/JPG files in:",
-        [u8("Параметр")] = "Parameter",
-        [u8("Параметры метки")] = "Marker settings",
-        [u8("Пауза")] = "Pause",
-        [u8("Пауза при перезарядке")] = "Pause on reload",
-        [u8("Переливание:")] = "Color cycling:",
-        [u8("Переместить")] = "Move",
-        [u8("Переместить прицел")] = "Move crosshair",
-        [u8("Позиция HUD")] = "HUD position",
-        [u8("Позиция текста")] = "Text position",
-        [u8("Показывать смерти")] = "Show deaths",
-        [u8("Показывать убийства")] = "Show kills",
-        [u8("Положите PNG/JPG/BMP в папку:")] = "Put PNG/JPG/BMP files in:",
-        [u8("Поп.")] = "Hits",
-        [u8("Попаданий")] = "Hits",
-        [u8("Попаданий до исчезновения")] = "Hits before disappearing",
-        [u8("Попадания всех игроков по мне")] = "All players’ hits on me",
-        [u8("Прим шрифт")] = "Apply font",
-        [u8("Применить")] = "Apply",
-        [u8("Прицел")] = "Crosshair",
-        [u8("Прозрачность")] = "Opacity",
-        [u8("Прозрачность изобр.")] = "Image opacity",
-        [u8("Прозрачность текста")] = "Text opacity",
-        [u8("Проигрыш")] = "Game over",
-        [u8("Промахи")] = "Misses",
-        [u8("Радио")] = "Radio",
-        [u8("Радио-режим")] = "Radio mode",
-        [u8("Размер")] = "Size",
-        [u8("Размер иконки")] = "Icon size",
-        [u8("Размер текста")] = "Text size",
-        [u8("Ред")] = "Edit",
-        [u8("Режим без границ")] = "Borderless mode",
-        [u8("Рекордов нет")] = "No records",
-        [u8("Рекорды")] = "Records",
-        [u8("Рекорды CBug:")] = "CBug records:",
-        [u8("Сброс")] = "Reset",
-        [u8("Сброс позиции")] = "Reset position",
-        [u8("Сброс##cmp")] = "Reset##cmp",
-        [u8("Сбросить ВСЁ")] = "Reset ALL",
-        [u8("Сбросить зоны")] = "Reset zones",
-        [u8("Сбросить к стандартным")] = "Reset to defaults",
-        [u8("Сбросить клавишу")] = "Reset hotkey",
-        [u8("Сбросить сессию")] = "Reset session",
-        [u8("Сбросить статистику")] = "Reset statistics",
-        [u8("Скопировать")] = "Copy",
-        [u8("Скорость анимации")] = "Animation speed",
-        [u8("Скорость движения плиток")] = "Tile movement speed",
-        [u8("Скорость роста")] = "Acceleration rate",
-        [u8("Скорость смены")] = "Change speed",
-        [u8("Скрипт активен")] = "Script active",
-        [u8("Скрипт выключен")] = "Script disabled",
-        [u8("Скрыть (метки и дыры)")] = "Hide (markers and holes)",
-        [u8("Слайдшоу")] = "Slideshow",
-        [u8("Следующее изображение")] = "Next image",
-        [u8("Случайная смена иконки")] = "Random icon switching",
-        [u8("Случайная смена цвета фона")] = "Random background color cycling",
-        [u8("Случайные изображения")] = "Random images",
-        [u8("Случайный цвет иконок")] = "Random icon color",
-        [u8("Случайный цвет плиток")] = "Random tile color",
-        [u8("Случайный цвет при попадании")] = "Random hit color",
-        [u8("Смещение: X=%d  Y=%d px")] = "Offset: X=%d  Y=%d px",
-        [u8("Сначала выберите песню или радиостанцию.")] = "Select a song or radio station first.",
-        [u8("Сортировка")] = "Sort",
-        [u8("Состояние")] = "Status",
-        [u8("Сохранить настройки")] = "Save settings",
-        [u8("Сохранить рекорды")] = "Save records",
-        [u8("Специально для тех, у кого не сохраняются настройки.")] = "For users whose settings are not being saved.",
-        [u8("Список обновляется автоматически.")] = "The list updates automatically.",
-        [u8("Сравнение:")] = "Comparison:",
-        [u8("Стиль")] = "Style",
-        [u8("Стиль HUD:")] = "HUD style:",
-        [u8("Стрик на HUD")] = "Show streak on HUD",
-        [u8("Счёт")] = "Score",
-        [u8("Текст внутри метки")] = "Text inside marker",
-        [u8("Текст:")] = "Text:",
-        [u8("Текстура для всех дыр:")] = "Texture for all bullet holes:",
-        [u8("Текстура для всех меток:")] = "Texture for all markers:",
-        [u8("Текстура для дыры #")] = "Texture for bullet hole #",
-        [u8("Текстура для метки #")] = "Texture for marker #",
-        [u8("Текстура дыр от пуль")] = "Bullet-hole textures",
-        [u8("Текстура меток (для всех)")] = "Marker texture (global)",
-        [u8("Текстуры")] = "Textures",
-        [u8("Текущая:")] = "Current:",
-        [u8("Текущее значение:")] = "Current value:",
-        [u8("Текущий:")] = "Current:",
-        [u8("Тип:")] = "Type:",
-        [u8("Толщ. обв.")] = "Outline width",
-        [u8("Толщина")] = "Thickness",
-        [u8("Точка")] = "Dot",
-        [u8("Трейсеры")] = "Tracers",
-        [u8("Трек")] = "Track",
-        [u8("Трекер активен")] = "Tracker active",
-        [u8("Трекер зон активен")] = "Zone tracker active",
-        [u8("Треки не выбраны — настройте в разделе Музыка")] = "No tracks selected — configure them in the Music tab",
-        [u8("Треки:")] = "Tracks:",
-        [u8("Убийца")] = "Killer",
-        [u8("Убитый")] = "Victim",
-        [u8("Уведомление в чат")] = "Chat notification",
-        [u8("Уведомление о рекорде")] = "Record notification",
-        [u8("Управление")] = "Controls",
-        [u8("Флаг")] = "Flag",
-        [u8("Флаг текста")] = "Text flag",
-        [u8("Фон сетки:")] = "Grid background:",
-        [u8("Фон статистики")] = "Statistics background",
-        [u8("Цвет")] = "Color",
-        [u8("Цвет HUD")] = "HUD color",
-        [u8("Цвет дыры:")] = "Hole color:",
-        [u8("Цвет иконки")] = "Icon color",
-        [u8("Цвет иконки:")] = "Icon color:",
-        [u8("Цвет индикатора:")] = "Indicator color:",
-        [u8("Цвет при попадании")] = "Hit color",
-        [u8("Цвет прицела")] = "Crosshair color",
-        [u8("Цвет слов")] = "Word color",
-        [u8("Цвет текста в метке")] = "Marker text color",
-        [u8("Цвет фона")] = "Background color",
-        [u8("Цвет цифр")] = "Number color",
-        [u8("Цвет:")] = "Color:",
-        [u8("Цвета")] = "Colors",
-        [u8("Цвета меток")] = "Marker colors",
-        [u8("Шанс появления длинных")] = "Long tile spawn chance",
-        [u8("Шрифт")] = "Font",
-        [u8("Шрифт:")] = "Font:",
-        [u8("Эл.:")] = "Items:",
-        [u8("[ON]  CBug АКТИВЕН")] = "[ON]  CBug ACTIVE",
-        [u8("[OFF] CBug ВЫКЛЮЧЕН")] = "[OFF] CBug DISABLED",
-        [u8("[ON] CBug АКТИВЕН")] = "[ON] CBug ACTIVE",
-        [u8("[OFF] CBug ВЫКЛЮЧЕН")] = "[OFF] CBug DISABLED",
-        [u8("Выстрелов: %s | Время: %d ms")] = "Shots: %s | Time: %d ms",
-        [u8("Анимация:")] = "Animation:",
-        [u8(" РАЗДЕЛЫ")] = " SECTIONS",
-        [u8("FA Иконка")] = "FA icon",
-        [u8("Изображение")] = "Image",
-        [u8("Текст")] = "Text",
-        [u8("Мин")] = "Min",
-        [u8("Базовый")] = "Basic",
-        [u8("Стандарт")] = "Standard",
-        [u8("Расшир")] = "Extended",
-        [u8("м")] = "m",
-        [u8("прозрачность")] = "Opacity",
-        [u8("сек")] = "sec",
+        [u8("РђРІС‚Рѕ-РїРµСЂРµРєР»СЋС‡РµРЅРёРµ")] = "Auto switching",
+        [u8("РђРІС‚Рѕ-СЂРµР¶РёРј РІС‹РєР»СЋС‡РµРЅ")] = "Auto mode disabled",
+        [u8("РђРІС‚Рѕ-СѓСЃРєРѕСЂРµРЅРёРµ")] = "Auto acceleration",
+        [u8("РђРєС‚РёРІР°С†РёСЏ")] = "Activation",
+        [u8("Р‘Р°Р·РѕРІС‹Р№ С†РІРµС‚ РїР»РёС‚РєРё")] = "Base tile color",
+        [u8("Р‘РµР· РјСѓР·С‹РєРё")] = "No music",
+        [u8("Р’РєР»СЋС‡РёС‚СЊ")] = "Enable",
+        [u8("Р’РєР»СЋС‡РёС‚СЊ Р°РІС‚Рѕ-СЃР»Р°Р№РґС€РѕСѓ")] = "Enable auto slideshow",
+        [u8("Р’РєР»СЋС‡РёС‚СЊ РґС‹СЂС‹ РѕС‚ РїСѓР»СЊ")] = "Enable bullet holes",
+        [u8("Р’РєР»СЋС‡РёС‚СЊ РїРµСЂРµР»РёРІР°РЅРёРµ")] = "Enable color cycling",
+        [u8("Р’РєР»СЋС‡РёС‚СЊ РїСЂРёС†РµР»")] = "Enable crosshair",
+        [u8("Р’РѕСЃРїСЂРѕРёР·РІРµСЃС‚Рё")] = "Play",
+        [u8("Р’СЂРµРјСЏ")] = "Time",
+        [u8("Р’СЂРµРјСЏ (СЃРµРє)")] = "Time (sec)",
+        [u8("Р’СЂРµРјСЏ: ")] = "Time: ",
+        [u8("Р’СЃС‚СЂРµС‡ РјРµР¶РґСѓ СЌС‚РёРјРё РёРіСЂРѕРєР°РјРё РЅРµ Р·Р°С„РёРєСЃРёСЂРѕРІР°РЅРѕ")] = "No encounters between these players have been recorded",
+        [u8("Р’СЃС‘")] = "All",
+        [u8("Р’С‹Р±РµСЂРёС‚Рµ СЃС‚Р°РЅС†РёСЋ")] = "Select a station",
+        [u8("Р’С‹СЃРѕС‚Р° РЅР°Рґ РіРѕР»РѕРІРѕР№")] = "Height above head",
+        [u8("Р’С‹СЃРѕС‚Р° РїРѕРґСЉС‘РјР°")] = "Rise height",
+        [u8("Р’С‹СЃС‚СЂРµР»РѕРІ: ")] = "Shots: ",
+        [u8("Р“РµР№РјРїР»РµР№")] = "Gameplay",
+        [u8("Р“РѕСЂСЏС‡Р°СЏ РєР»Р°РІРёС€Р°")] = "Hotkey",
+        [u8("Р“СЂРѕРјРєРѕСЃС‚СЊ")] = "Volume",
+        [u8("Р”Р°Р».:")] = "Dist.:",
+        [u8("Р”РІРёР¶РµРЅРёРµ РјРµС‚РѕРє")] = "Marker movement",
+        [u8("Р”РµР№СЃС‚РІРёРµ")] = "Action",
+        [u8("Р”Р»РёРЅРЅС‹Рµ РїР»РёС‚РєРё")] = "Long tiles",
+        [u8("Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РїР°СѓР·С‹")] = "Pause duration",
+        [u8("Р”РѕР±Р°РІРёС‚СЊ")] = "Add",
+        [u8("Р”РѕР±Р°РІРёС‚СЊ СЌС‚Р°Рї")] = "Add stage",
+        [u8("Р”С‹СЂ:")] = "Bullet holes:",
+        [u8("Р”С‹СЂР° #")] = "Hole #",
+        [u8("Р”С‹СЂР° #:")] = "Bullet hole #:",
+        [u8("Р”С‹СЂС‹")] = "Holes",
+        [u8("Р”С‹СЂС‹ РѕС‚ РїСѓР»СЊ")] = "Bullet holes",
+        [u8("Р•РіРѕ РїРѕ РјРЅРµ")] = "Their hits on me",
+        [u8("Р—Р°РґРµСЂР¶РєР° РїРѕРґСЉС‘РјР°")] = "Rise delay",
+        [u8("Р—Р°РґРµСЂР¶РєР° СЂР°СЃС‚РІРѕСЂРµРЅРёСЏ")] = "Fade delay",
+        [u8("Р—Р°Р·РѕСЂ")] = "Gap",
+        [u8("Р—Р°РєСЂС‹С‚СЊ")] = "Close",
+        [u8("Р—Р°РЅРѕРІРѕ")] = "Restart",
+        [u8("Р—Р°РїСѓСЃС‚РёС‚СЊ РёРіСЂСѓ")] = "Start game",
+        [u8("Р—РѕРЅР°")] = "Zone",
+        [u8("РРіСЂР°")] = "Game",
+        [u8("РРіСЂР° РѕСЃС‚Р°РЅРѕРІР»РµРЅР°.")] = "Game stopped.",
+        [u8("РР·РѕР±СЂР°Р¶РµРЅРёРµ РїР»РёС‚РєРё:")] = "Tile image:",
+        [u8("РР·РѕР±СЂР°Р¶РµРЅРёСЏ РїР»РёС‚РѕРє:")] = "Tile images:",
+        [u8("РРєРѕРЅРєР° РїР»РёС‚РѕРє:")] = "Tile icon:",
+        [u8("РРєРѕРЅРєР°:")] = "Icon:",
+        [u8("РРЅРґРёРІРёРґСѓР°Р»СЊРЅР°СЏ")] = "Individual",
+        [u8("РРЅРґРёРІРёРґСѓР°Р»СЊРЅР°СЏ:")] = "Individual:",
+        [u8("РРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Рµ С‚РµРєСЃС‚СѓСЂС‹ РґС‹СЂ")] = "Individual bullet-hole textures",
+        [u8("РРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Рµ С‚РµРєСЃС‚СѓСЂС‹ РјРµС‚РѕРє")] = "Individual marker textures",
+        [u8("РРЅС‚РµРЅСЃ. РїРѕРґСЉС‘РјР°")] = "Rise intensity",
+        [u8("РРЅС‚РµРЅСЃ. СЂР°СЃС‚РІ.")] = "Fade intensity",
+        [u8("РРЅС‚РµСЂРІР°Р» РёРєРѕРЅРѕРє")] = "Icon interval",
+        [u8("РРЅС‚РµСЂРІР°Р» РїР»РёС‚РѕРє")] = "Tile interval",
+        [u8("РРЅС‚РµСЂРІР°Р» РїРѕСЏРІР»РµРЅРёСЏ")] = "Spawn interval",
+        [u8("РРЅС‚РµСЂРІР°Р» СЃРјРµРЅС‹")] = "Change interval",
+        [u8("РРЅС‚РµСЂРІР°Р» СЃРјРµРЅС‹ РёРєРѕРЅРєРё")] = "Icon change interval",
+        [u8("РРЅС‚РµСЂРІР°Р» С„РѕРЅР°")] = "Background interval",
+        [u8("РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР°СЃС‚РѕРјРЅС‹Рµ С‚РµРєСЃС‚СѓСЂС‹ РґС‹СЂ")] = "Use custom hole textures",
+        [u8("РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР°СЃС‚РѕРјРЅС‹Рµ С‚РµРєСЃС‚СѓСЂС‹ РјРµС‚РѕРє")] = "Use custom marker textures",
+        [u8("РСЃРїРѕР»СЊР·СѓРµС‚ РіР»РѕР±Р°Р»СЊРЅСѓСЋ / СЃС‚Р°РЅРґР°СЂС‚РЅСѓСЋ")] = "Using global / default",
+        [u8("РСЃС‚РѕСЂРёСЏ")] = "History",
+        [u8("РС‚РѕРіРѕ:")] = "Total:",
+        [u8("РљРџР”: ")] = "Efficiency: ",
+        [u8("РљР°Р¶РґР°СЏ РЅРѕРІР°СЏ РїР»РёС‚РєР° РїРѕР»СѓС‡Р°РµС‚ СЃР»СѓС‡Р°Р№РЅРѕРµ\nРёР·РѕР±СЂР°Р¶РµРЅРёРµ РёР· РїР°РїРєРё moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles")] = "Each new tile gets a random image from the moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles folder",
+        [u8("РљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕР»РѕСЃ")] = "Number of lanes",
+        [u8("РљРѕРјР°РЅРґС‹:")] = "Commands:",
+        [u8("РљРѕРјР°РЅРґС‹: /hm  |  /hitmarker")] = "Commands: /hm  |  /hitmarker",
+        [u8("РљРѕРјР±Рѕ")] = "Combo",
+        [u8("Р›РљРњ вЂ” РІС‹Р±СЂР°С‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёРµ РґР»СЏ РјР°СЂРєРµСЂРѕРІ. РџРљРњ вЂ” РґРѕР±Р°РІРёС‚СЊ/СѓР±СЂР°С‚СЊ РёР· РѕС‡РµСЂРµРґРё. РџРѕСЂСЏРґРѕРє = РїРѕСЂСЏРґРѕРє РєР»РёРєРѕРІ.")] = "LMB selects a marker image. RMB adds/removes it from the queue. Queue order follows click order.",
+        [u8("Р›РёС‡РЅР°СЏ")] = "Personal",
+        [u8("Р›РёС‡РЅР°СЏ СЃС‚Р°С‚РёСЃС‚РёРєР°...")] = "Personal statistics...",
+        [u8("Р›РёС‡РЅСѓСЋ")] = "Personal",
+        [u8("РњР°РєСЃ. СЃРєРѕСЂРѕСЃС‚СЊ")] = "Max speed",
+        [u8("РњР°РєСЃРёРјСѓРј РїСЂРѕРјР°С…РѕРІ")] = "Maximum misses",
+        [u8("РњР°СЃС€С‚Р°Р±")] = "Scale",
+        [u8("РњР°СЃС€С‚Р°Р± РІРёР·СѓР°Р»Р°")] = "Visual scale",
+        [u8("РњР°СЃС€С‚Р°Р± С‚РµРєСЃС‚Р°")] = "Text scale",
+        [u8("РњРµРЅСЏС‚СЊ С†РІРµС‚ РїСЂРё РїРѕРїР°РґР°РЅРёРё")] = "Change color on hit",
+        [u8("РњРµС‚РєР° #")] = "Marker #",
+        [u8("РњРµС‚РєР° #:")] = "Marker #:",
+        [u8("РњРµС‚РєРё")] = "Markers",
+        [u8("РњРµС‚РєРё:")] = "Markers:",
+        [u8("РњРѕРё РїРѕ РЅРµРјСѓ")] = "My hits on them",
+        [u8("РњРѕРё РїРѕРїР°РґР°РЅРёСЏ РїРѕ РІСЃРµРј РёРіСЂРѕРєР°Рј")] = "My hits on all players",
+        [u8("РњСѓР·С‹РєР°")] = "Music",
+        [u8("РќР°Р¶РјРёС‚Рµ Р»СЋР±СѓСЋ РєР»Р°РІРёС€Сѓ...")] = "Press any key...",
+        [u8("РќР°Р·РІР°РЅРёРµ")] = "Name",
+        [u8("РќР°Р·РЅР°С‡РёС‚СЊ РєР»Р°РІРёС€Сѓ")] = "Assign key",
+        [u8("РќР°СЃС‚СЂРѕР№РєРё")] = "Settings",
+        [u8("РќР°СЃС‚СЂРѕР№РєРё С†РІРµС‚РѕРІ")] = "Color settings",
+        [u8("РќРµ СѓРґР°Р»РѕСЃСЊ РїРѕРґРєР»СЋС‡РёС‚СЊСЃСЏ Рє СЂР°РґРёРѕСЃС‚Р°РЅС†РёРё. РџРѕРІС‚РѕСЂРЅР°СЏ РїРѕРїС‹С‚РєР° Р±СѓРґРµС‚ РІС‹РїРѕР»РЅРµРЅР° Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё.")] = "Could not connect to the radio station. It will retry automatically.",
+        [u8("РќРµС‚ (С†РІРµС‚)")] = "None (color)",
+        [u8("РќРµС‚ Р°РєС‚РёРІРЅС‹С… РґС‹СЂ")] = "No active bullet holes",
+        [u8("РќРµС‚ Р°РєС‚РёРІРЅС‹С… РјРµС‚РѕРє")] = "No active markers",
+        [u8("РќРµС‚ Р·Р°РїРёСЃР°РЅРЅС‹С… СЃРµСЃСЃРёР№. РЎС‹РіСЂР°Р№С‚Рµ С…РѕС‚СЏ Р±С‹ РѕРґРЅСѓ РїР°СЂС‚РёСЋ.")] = "No recorded sessions. Play at least one game.",
+        [u8("РќРµС‚ РёР·РѕР±СЂР°Р¶РµРЅРёР№ вЂ” РїРѕРјРµСЃС‚РёС‚Рµ С„Р°Р№Р»С‹ РІ:")] = "No images вЂ” place files in:",
+        [u8("РќРµС‚ РїРµСЃРµРЅ вЂ” РїРѕРјРµСЃС‚РёС‚Рµ С„Р°Р№Р»С‹ РІ:")] = "No songs вЂ” place files in:",
+        [u8("РќРёРє")] = "Nickname",
+        [u8("РќРёРє[ID]")] = "Nickname [ID]",
+        [u8("РќРёРє[ID] Рё СЃС‚Р°С‚РёСЃС‚РёРєСѓ")] = "Nickname [ID] and stats",
+        [u8("РќРѕРІРѕРµ СЃСЂР°РІРЅРµРЅРёРµ")] = "New comparison",
+        [u8("РќСѓР¶РЅРѕ РІС‹СЃС‚СЂРµР»РѕРІ")] = "Required shots",
+        [u8("РћР±РІРѕРґРєР°")] = "Outline",
+        [u8("РћР±РЅ.")] = "Refresh",
+        [u8("РћР±РЅРѕРІРёС‚СЊ")] = "Refresh",
+        [u8("РћР±С‰Р°СЏ")] = "General",
+        [u8("РћР±С‰СѓСЋ")] = "Overall",
+        [u8("РћР±С‹С‡РЅР°СЏ РїР»РёС‚РєР°")] = "Regular tile",
+        [u8("РћР¶РёРґР°РЅРёРµ РїРµСЂРІРѕРіРѕ РЅР°Р¶Р°С‚РёСЏ РґР»СЏ РЅР°С‡Р°Р»Р° РёРіСЂС‹")] = "Waiting for the first key press to start",
+        [u8("РћСЂСѓР¶РёРµ")] = "Weapon",
+        [u8("РћСЃС‚Р°РЅРѕРІРёС‚СЊ РёРіСЂСѓ")] = "Stop game",
+        [u8("РћСЃС‚Р°РЅРѕРІРёС‚СЊ РјСѓР·С‹РєСѓ")] = "Stop music",
+        [u8("РћС‚РєСЂС‹С‚СЊ")] = "Open",
+        [u8("РћС‚РєСЂС‹С‚СЊ##cmp")] = "Open##cmp",
+        [u8("РћС‚РѕР±СЂР°Р¶Р°С‚СЊ С‚СЂРµР№СЃРµСЂС‹")] = "Show tracers",
+        [u8("РћС„РѕСЂРјР»РµРЅРёРµ")] = "Appearance",
+        [u8("РћС„РѕСЂРјР»РµРЅРёРµ (Р¤РѕРЅ Рё РџР»РёС‚РєРё)")] = "Appearance (Background and Tiles)",
+        [u8("РћС‡РµСЂРµРґСЊ РёР·РѕР±СЂР°Р¶РµРЅРёР№")] = "Image queue",
+        [u8("РћС‡РµСЂРµРґСЊ РїСѓСЃС‚Р° вЂ” РґРѕР±Р°РІСЊС‚Рµ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ (РџРљРњ)")] = "Queue is empty вЂ” add images (RMB)",
+        [u8("РћС‡РёСЃС‚РёС‚СЊ")] = "Clear",
+        [u8("РћС‡РёСЃС‚РёС‚СЊ РІСЃРµ РґС‹СЂС‹")] = "Clear all holes",
+        [u8("РћС‡РёСЃС‚РёС‚СЊ РІСЃРµ РјРµС‚РєРё")] = "Clear all markers",
+        [u8("РћС‡РёСЃС‚РёС‚СЊ РІСЃС‘")] = "Clear all",
+        [u8("РћС‡РёСЃС‚РёС‚СЊ РѕС‡РµСЂРµРґСЊ")] = "Clear queue",
+        [u8("РћС‡РёСЃС‚РёС‚СЊ СЂРµРєРѕСЂРґС‹")] = "Clear records",
+        [u8("РћС€РёР±РєР° РІРѕСЃРїСЂРѕРёР·РІРµРґРµРЅРёСЏ.")] = "Playback error.",
+        [u8("РџР°РїРєР° pt_tiles РїСѓСЃС‚Р°. РџРѕРјРµСЃС‚РёС‚Рµ PNG/JPG РІ:")] = "The pt_tiles folder is empty. Place PNG/JPG files in:",
+        [u8("РџР°СЂР°РјРµС‚СЂ")] = "Parameter",
+        [u8("РџР°СЂР°РјРµС‚СЂС‹ РјРµС‚РєРё")] = "Marker settings",
+        [u8("РџР°СѓР·Р°")] = "Pause",
+        [u8("РџР°СѓР·Р° РїСЂРё РїРµСЂРµР·Р°СЂСЏРґРєРµ")] = "Pause on reload",
+        [u8("РџРµСЂРµР»РёРІР°РЅРёРµ:")] = "Color cycling:",
+        [u8("РџРµСЂРµРјРµСЃС‚РёС‚СЊ")] = "Move",
+        [u8("РџРµСЂРµРјРµСЃС‚РёС‚СЊ РїСЂРёС†РµР»")] = "Move crosshair",
+        [u8("РџРѕР·РёС†РёСЏ HUD")] = "HUD position",
+        [u8("РџРѕР·РёС†РёСЏ С‚РµРєСЃС‚Р°")] = "Text position",
+        [u8("РџРѕРєР°Р·С‹РІР°С‚СЊ СЃРјРµСЂС‚Рё")] = "Show deaths",
+        [u8("РџРѕРєР°Р·С‹РІР°С‚СЊ СѓР±РёР№СЃС‚РІР°")] = "Show kills",
+        [u8("РџРѕР»РѕР¶РёС‚Рµ PNG/JPG/BMP РІ РїР°РїРєСѓ:")] = "Put PNG/JPG/BMP files in:",
+        [u8("РџРѕРї.")] = "Hits",
+        [u8("РџРѕРїР°РґР°РЅРёР№")] = "Hits",
+        [u8("РџРѕРїР°РґР°РЅРёР№ РґРѕ РёСЃС‡РµР·РЅРѕРІРµРЅРёСЏ")] = "Hits before disappearing",
+        [u8("РџРѕРїР°РґР°РЅРёСЏ РІСЃРµС… РёРіСЂРѕРєРѕРІ РїРѕ РјРЅРµ")] = "All playersвЂ™ hits on me",
+        [u8("РџСЂРёРј С€СЂРёС„С‚")] = "Apply font",
+        [u8("РџСЂРёРјРµРЅРёС‚СЊ")] = "Apply",
+        [u8("РџСЂРёС†РµР»")] = "Crosshair",
+        [u8("РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ")] = "Opacity",
+        [u8("РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ РёР·РѕР±СЂ.")] = "Image opacity",
+        [u8("РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ С‚РµРєСЃС‚Р°")] = "Text opacity",
+        [u8("РџСЂРѕРёРіСЂС‹С€")] = "Game over",
+        [u8("РџСЂРѕРјР°С…Рё")] = "Misses",
+        [u8("Р Р°РґРёРѕ")] = "Radio",
+        [u8("Р Р°РґРёРѕ-СЂРµР¶РёРј")] = "Radio mode",
+        [u8("Р Р°Р·РјРµСЂ")] = "Size",
+        [u8("Р Р°Р·РјРµСЂ РёРєРѕРЅРєРё")] = "Icon size",
+        [u8("Р Р°Р·РјРµСЂ С‚РµРєСЃС‚Р°")] = "Text size",
+        [u8("Р РµРґ")] = "Edit",
+        [u8("Р РµР¶РёРј Р±РµР· РіСЂР°РЅРёС†")] = "Borderless mode",
+        [u8("Р РµРєРѕСЂРґРѕРІ РЅРµС‚")] = "No records",
+        [u8("Р РµРєРѕСЂРґС‹")] = "Records",
+        [u8("Р РµРєРѕСЂРґС‹ CBug:")] = "CBug records:",
+        [u8("РЎР±СЂРѕСЃ")] = "Reset",
+        [u8("РЎР±СЂРѕСЃ РїРѕР·РёС†РёРё")] = "Reset position",
+        [u8("РЎР±СЂРѕСЃ##cmp")] = "Reset##cmp",
+        [u8("РЎР±СЂРѕСЃРёС‚СЊ Р’РЎРЃ")] = "Reset ALL",
+        [u8("РЎР±СЂРѕСЃРёС‚СЊ Р·РѕРЅС‹")] = "Reset zones",
+        [u8("РЎР±СЂРѕСЃРёС‚СЊ Рє СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рј")] = "Reset to defaults",
+        [u8("РЎР±СЂРѕСЃРёС‚СЊ РєР»Р°РІРёС€Сѓ")] = "Reset hotkey",
+        [u8("РЎР±СЂРѕСЃРёС‚СЊ СЃРµСЃСЃРёСЋ")] = "Reset session",
+        [u8("РЎР±СЂРѕСЃРёС‚СЊ СЃС‚Р°С‚РёСЃС‚РёРєСѓ")] = "Reset statistics",
+        [u8("РЎРєРѕРїРёСЂРѕРІР°С‚СЊ")] = "Copy",
+        [u8("РЎРєРѕСЂРѕСЃС‚СЊ Р°РЅРёРјР°С†РёРё")] = "Animation speed",
+        [u8("РЎРєРѕСЂРѕСЃС‚СЊ РґРІРёР¶РµРЅРёСЏ РїР»РёС‚РѕРє")] = "Tile movement speed",
+        [u8("РЎРєРѕСЂРѕСЃС‚СЊ СЂРѕСЃС‚Р°")] = "Acceleration rate",
+        [u8("РЎРєРѕСЂРѕСЃС‚СЊ СЃРјРµРЅС‹")] = "Change speed",
+        [u8("РЎРєСЂРёРїС‚ Р°РєС‚РёРІРµРЅ")] = "Script active",
+        [u8("РЎРєСЂРёРїС‚ РІС‹РєР»СЋС‡РµРЅ")] = "Script disabled",
+        [u8("РЎРєСЂС‹С‚СЊ (РјРµС‚РєРё Рё РґС‹СЂС‹)")] = "Hide (markers and holes)",
+        [u8("РЎР»Р°Р№РґС€РѕСѓ")] = "Slideshow",
+        [u8("РЎР»РµРґСѓСЋС‰РµРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ")] = "Next image",
+        [u8("РЎР»СѓС‡Р°Р№РЅР°СЏ СЃРјРµРЅР° РёРєРѕРЅРєРё")] = "Random icon switching",
+        [u8("РЎР»СѓС‡Р°Р№РЅР°СЏ СЃРјРµРЅР° С†РІРµС‚Р° С„РѕРЅР°")] = "Random background color cycling",
+        [u8("РЎР»СѓС‡Р°Р№РЅС‹Рµ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ")] = "Random images",
+        [u8("РЎР»СѓС‡Р°Р№РЅС‹Р№ С†РІРµС‚ РёРєРѕРЅРѕРє")] = "Random icon color",
+        [u8("РЎР»СѓС‡Р°Р№РЅС‹Р№ С†РІРµС‚ РїР»РёС‚РѕРє")] = "Random tile color",
+        [u8("РЎР»СѓС‡Р°Р№РЅС‹Р№ С†РІРµС‚ РїСЂРё РїРѕРїР°РґР°РЅРёРё")] = "Random hit color",
+        [u8("РЎРјРµС‰РµРЅРёРµ: X=%d  Y=%d px")] = "Offset: X=%d  Y=%d px",
+        [u8("РЎРЅР°С‡Р°Р»Р° РІС‹Р±РµСЂРёС‚Рµ РїРµСЃРЅСЋ РёР»Рё СЂР°РґРёРѕСЃС‚Р°РЅС†РёСЋ.")] = "Select a song or radio station first.",
+        [u8("РЎРѕСЂС‚РёСЂРѕРІРєР°")] = "Sort",
+        [u8("РЎРѕСЃС‚РѕСЏРЅРёРµ")] = "Status",
+        [u8("РЎРѕС…СЂР°РЅРёС‚СЊ РЅР°СЃС‚СЂРѕР№РєРё")] = "Save settings",
+        [u8("РЎРѕС…СЂР°РЅРёС‚СЊ СЂРµРєРѕСЂРґС‹")] = "Save records",
+        [u8("РЎРїРµС†РёР°Р»СЊРЅРѕ РґР»СЏ С‚РµС…, Сѓ РєРѕРіРѕ РЅРµ СЃРѕС…СЂР°РЅСЏСЋС‚СЃСЏ РЅР°СЃС‚СЂРѕР№РєРё.")] = "For users whose settings are not being saved.",
+        [u8("РЎРїРёСЃРѕРє РѕР±РЅРѕРІР»СЏРµС‚СЃСЏ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё.")] = "The list updates automatically.",
+        [u8("РЎСЂР°РІРЅРµРЅРёРµ:")] = "Comparison:",
+        [u8("РЎС‚РёР»СЊ")] = "Style",
+        [u8("РЎС‚РёР»СЊ HUD:")] = "HUD style:",
+        [u8("РЎС‚СЂРёРє РЅР° HUD")] = "Show streak on HUD",
+        [u8("РЎС‡С‘С‚")] = "Score",
+        [u8("РўРµРєСЃС‚ РІРЅСѓС‚СЂРё РјРµС‚РєРё")] = "Text inside marker",
+        [u8("РўРµРєСЃС‚:")] = "Text:",
+        [u8("РўРµРєСЃС‚СѓСЂР° РґР»СЏ РІСЃРµС… РґС‹СЂ:")] = "Texture for all bullet holes:",
+        [u8("РўРµРєСЃС‚СѓСЂР° РґР»СЏ РІСЃРµС… РјРµС‚РѕРє:")] = "Texture for all markers:",
+        [u8("РўРµРєСЃС‚СѓСЂР° РґР»СЏ РґС‹СЂС‹ #")] = "Texture for bullet hole #",
+        [u8("РўРµРєСЃС‚СѓСЂР° РґР»СЏ РјРµС‚РєРё #")] = "Texture for marker #",
+        [u8("РўРµРєСЃС‚СѓСЂР° РґС‹СЂ РѕС‚ РїСѓР»СЊ")] = "Bullet-hole textures",
+        [u8("РўРµРєСЃС‚СѓСЂР° РјРµС‚РѕРє (РґР»СЏ РІСЃРµС…)")] = "Marker texture (global)",
+        [u8("РўРµРєСЃС‚СѓСЂС‹")] = "Textures",
+        [u8("РўРµРєСѓС‰Р°СЏ:")] = "Current:",
+        [u8("РўРµРєСѓС‰РµРµ Р·РЅР°С‡РµРЅРёРµ:")] = "Current value:",
+        [u8("РўРµРєСѓС‰РёР№:")] = "Current:",
+        [u8("РўРёРї:")] = "Type:",
+        [u8("РўРѕР»С‰. РѕР±РІ.")] = "Outline width",
+        [u8("РўРѕР»С‰РёРЅР°")] = "Thickness",
+        [u8("РўРѕС‡РєР°")] = "Dot",
+        [u8("РўСЂРµР№СЃРµСЂС‹")] = "Tracers",
+        [u8("РўСЂРµРє")] = "Track",
+        [u8("РўСЂРµРєРµСЂ Р°РєС‚РёРІРµРЅ")] = "Tracker active",
+        [u8("РўСЂРµРєРµСЂ Р·РѕРЅ Р°РєС‚РёРІРµРЅ")] = "Zone tracker active",
+        [u8("РўСЂРµРєРё РЅРµ РІС‹Р±СЂР°РЅС‹ вЂ” РЅР°СЃС‚СЂРѕР№С‚Рµ РІ СЂР°Р·РґРµР»Рµ РњСѓР·С‹РєР°")] = "No tracks selected вЂ” configure them in the Music tab",
+        [u8("РўСЂРµРєРё:")] = "Tracks:",
+        [u8("РЈР±РёР№С†Р°")] = "Killer",
+        [u8("РЈР±РёС‚С‹Р№")] = "Victim",
+        [u8("РЈРІРµРґРѕРјР»РµРЅРёРµ РІ С‡Р°С‚")] = "Chat notification",
+        [u8("РЈРІРµРґРѕРјР»РµРЅРёРµ Рѕ СЂРµРєРѕСЂРґРµ")] = "Record notification",
+        [u8("РЈРїСЂР°РІР»РµРЅРёРµ")] = "Controls",
+        [u8("Р¤Р»Р°Рі")] = "Flag",
+        [u8("Р¤Р»Р°Рі С‚РµРєСЃС‚Р°")] = "Text flag",
+        [u8("Р¤РѕРЅ СЃРµС‚РєРё:")] = "Grid background:",
+        [u8("Р¤РѕРЅ СЃС‚Р°С‚РёСЃС‚РёРєРё")] = "Statistics background",
+        [u8("Р¦РІРµС‚")] = "Color",
+        [u8("Р¦РІРµС‚ HUD")] = "HUD color",
+        [u8("Р¦РІРµС‚ РґС‹СЂС‹:")] = "Hole color:",
+        [u8("Р¦РІРµС‚ РёРєРѕРЅРєРё")] = "Icon color",
+        [u8("Р¦РІРµС‚ РёРєРѕРЅРєРё:")] = "Icon color:",
+        [u8("Р¦РІРµС‚ РёРЅРґРёРєР°С‚РѕСЂР°:")] = "Indicator color:",
+        [u8("Р¦РІРµС‚ РїСЂРё РїРѕРїР°РґР°РЅРёРё")] = "Hit color",
+        [u8("Р¦РІРµС‚ РїСЂРёС†РµР»Р°")] = "Crosshair color",
+        [u8("Р¦РІРµС‚ СЃР»РѕРІ")] = "Word color",
+        [u8("Р¦РІРµС‚ С‚РµРєСЃС‚Р° РІ РјРµС‚РєРµ")] = "Marker text color",
+        [u8("Р¦РІРµС‚ С„РѕРЅР°")] = "Background color",
+        [u8("Р¦РІРµС‚ С†РёС„СЂ")] = "Number color",
+        [u8("Р¦РІРµС‚:")] = "Color:",
+        [u8("Р¦РІРµС‚Р°")] = "Colors",
+        [u8("Р¦РІРµС‚Р° РјРµС‚РѕРє")] = "Marker colors",
+        [u8("РЁР°РЅСЃ РїРѕСЏРІР»РµРЅРёСЏ РґР»РёРЅРЅС‹С…")] = "Long tile spawn chance",
+        [u8("РЁСЂРёС„С‚")] = "Font",
+        [u8("РЁСЂРёС„С‚:")] = "Font:",
+        [u8("Р­Р».:")] = "Items:",
+        [u8("[ON]  CBug РђРљРўРР’Р•Рќ")] = "[ON]  CBug ACTIVE",
+        [u8("[OFF] CBug Р’Р«РљР›Р®Р§Р•Рќ")] = "[OFF] CBug DISABLED",
+        [u8("[ON] CBug РђРљРўРР’Р•Рќ")] = "[ON] CBug ACTIVE",
+        [u8("[OFF] CBug Р’Р«РљР›Р®Р§Р•Рќ")] = "[OFF] CBug DISABLED",
+        [u8("Р’С‹СЃС‚СЂРµР»РѕРІ: %s | Р’СЂРµРјСЏ: %d ms")] = "Shots: %s | Time: %d ms",
+        [u8("РђРЅРёРјР°С†РёСЏ:")] = "Animation:",
+        [u8(" Р РђР—Р”Р•Р›Р«")] = " SECTIONS",
+        [u8("FA РРєРѕРЅРєР°")] = "FA icon",
+        [u8("РР·РѕР±СЂР°Р¶РµРЅРёРµ")] = "Image",
+        [u8("РўРµРєСЃС‚")] = "Text",
+        [u8("РњРёРЅ")] = "Min",
+        [u8("Р‘Р°Р·РѕРІС‹Р№")] = "Basic",
+        [u8("РЎС‚Р°РЅРґР°СЂС‚")] = "Standard",
+        [u8("Р Р°СЃС€РёСЂ")] = "Extended",
+        [u8("Рј")] = "m",
+        [u8("РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ")] = "Opacity",
+        [u8("СЃРµРє")] = "sec",
     }
     for k, v in pairs(extra_translations) do
         Data.UI_TRANSLATIONS[Fn.decodeSafe(k)] = v
@@ -3947,101 +3947,101 @@ end
 
 do
     local smart_crosshair_translations = {
-        [u8("Следующее через: ")] = "Next in: ",
-        [u8("Следующее")] = "Next",
-        [u8("Очистить очередь")] = "Clear queue",
-        [u8("Анимация прицела")] = "Crosshair animation",
-        [u8("Включить")] = "Enable",
-        [u8("Нет")] = "None",
-        [u8("Пульсация")] = "Pulse",
-        [u8("Вращение")] = "Rotation",
-        [u8("Сжатие")] = "Compression",
-        [u8("Дрожание")] = "Shake",
-        [u8("Мерцание")] = "Flicker",
-        [u8("Использовать картинку")] = "Use image",
-        [u8(" (Клон %d)")] = " (Clone %d)",
-        [u8("Слайдшоу")] = "Slideshow",
-        [u8("Интервал (ms)")] = "Interval (ms)",
-        [u8("Прозрачность %")] = "Opacity %",
-        [u8("Масштаб %")] = "Scale %",
-        [u8("Смещение X")] = "Offset X",
-        [u8("Смещение Y")] = "Offset Y",
-        [u8("Обновить список")] = "Refresh list",
-        [u8("Клоны")] = "Clones",
-        [u8("База ")] = "Base ",
-        [u8("Перетащить все")] = "Move all",
-        [u8("Сбросить позицию")] = "Reset position",
-        [u8("Добавить клон")] = "Add clone",
-        [u8("Клон 1")] = "Clone 1",
-        [u8("Клон")] = "Clone",
-        [u8("Клон ")] = "Clone ",
-        [u8("Перетащить")] = "Move",
-        [u8("Сброс")] = "Reset",
-        [u8("Дублировать")] = "Duplicate",
-        [u8("Удалить")] = "Delete",
-        [u8("Редактируется: Клон ")] = "Editing: Clone ",
-        [u8("Вид прицела")] = "Crosshair style",
-        [u8("Крест")] = "Cross",
-        [u8("Круг")] = "Circle",
-        [u8("Треугольник")] = "Triangle",
-        [u8("Стандартный")] = "Standard",
-        [u8("Отступ")] = "Gap",
-        [u8("T-образный")] = "T-shaped",
-        [u8("Обводка / Точка")] = "Outline / Dot",
-        [u8("Толщина обв.")] = "Outline thickness",
-        [u8("Отступ обв.")] = "Outline offset",
-        [u8("Размер точки")] = "Dot size",
-        [u8("Основной")] = "Primary",
-        [u8("Второй")] = "Secondary",
-        [u8("Переливание")] = "Color cycling",
-        [u8("Скор. переливания")] = "Cycle speed",
-        [u8("Пустота")] = "Hollow center",
-        [u8("Размер пустоты")] = "Hollow size",
-        [u8("Радиус обв.")] = "Outline radius",
-        [u8("Вращ. обв.")] = "Outline rotation",
-        [u8("Настройка размера GTA")] = "GTA size settings",
-        [u8("Раздельно X/Y")] = "Separate X/Y",
-        [u8("Размер X")] = "Size X",
-        [u8("Размер Y")] = "Size Y",
-        [u8("Откл. резайз")] = "Disable resizing",
-        [u8("Авто-вкл при старте")] = "Auto-enable at startup",
-        [u8("Всегда виден (при прицеливании)")] = "Always visible (while aiming)",
-        [u8("Глобальный масштаб")] = "Global scale",
-        [u8("Отдача")] = "Recoil",
-        [u8("Учет отдачи")] = "Recoil compensation",
-        [u8("Сила %")] = "Strength %",
-        [u8("Скорость возврата")] = "Return speed",
+        [u8("РЎР»РµРґСѓСЋС‰РµРµ С‡РµСЂРµР·: ")] = "Next in: ",
+        [u8("РЎР»РµРґСѓСЋС‰РµРµ")] = "Next",
+        [u8("РћС‡РёСЃС‚РёС‚СЊ РѕС‡РµСЂРµРґСЊ")] = "Clear queue",
+        [u8("РђРЅРёРјР°С†РёСЏ РїСЂРёС†РµР»Р°")] = "Crosshair animation",
+        [u8("Р’РєР»СЋС‡РёС‚СЊ")] = "Enable",
+        [u8("РќРµС‚")] = "None",
+        [u8("РџСѓР»СЊСЃР°С†РёСЏ")] = "Pulse",
+        [u8("Р’СЂР°С‰РµРЅРёРµ")] = "Rotation",
+        [u8("РЎР¶Р°С‚РёРµ")] = "Compression",
+        [u8("Р”СЂРѕР¶Р°РЅРёРµ")] = "Shake",
+        [u8("РњРµСЂС†Р°РЅРёРµ")] = "Flicker",
+        [u8("РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР°СЂС‚РёРЅРєСѓ")] = "Use image",
+        [u8(" (РљР»РѕРЅ %d)")] = " (Clone %d)",
+        [u8("РЎР»Р°Р№РґС€РѕСѓ")] = "Slideshow",
+        [u8("РРЅС‚РµСЂРІР°Р» (ms)")] = "Interval (ms)",
+        [u8("РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ %")] = "Opacity %",
+        [u8("РњР°СЃС€С‚Р°Р± %")] = "Scale %",
+        [u8("РЎРјРµС‰РµРЅРёРµ X")] = "Offset X",
+        [u8("РЎРјРµС‰РµРЅРёРµ Y")] = "Offset Y",
+        [u8("РћР±РЅРѕРІРёС‚СЊ СЃРїРёСЃРѕРє")] = "Refresh list",
+        [u8("РљР»РѕРЅС‹")] = "Clones",
+        [u8("Р‘Р°Р·Р° ")] = "Base ",
+        [u8("РџРµСЂРµС‚Р°С‰РёС‚СЊ РІСЃРµ")] = "Move all",
+        [u8("РЎР±СЂРѕСЃРёС‚СЊ РїРѕР·РёС†РёСЋ")] = "Reset position",
+        [u8("Р”РѕР±Р°РІРёС‚СЊ РєР»РѕРЅ")] = "Add clone",
+        [u8("РљР»РѕРЅ 1")] = "Clone 1",
+        [u8("РљР»РѕРЅ")] = "Clone",
+        [u8("РљР»РѕРЅ ")] = "Clone ",
+        [u8("РџРµСЂРµС‚Р°С‰РёС‚СЊ")] = "Move",
+        [u8("РЎР±СЂРѕСЃ")] = "Reset",
+        [u8("Р”СѓР±Р»РёСЂРѕРІР°С‚СЊ")] = "Duplicate",
+        [u8("РЈРґР°Р»РёС‚СЊ")] = "Delete",
+        [u8("Р РµРґР°РєС‚РёСЂСѓРµС‚СЃСЏ: РљР»РѕРЅ ")] = "Editing: Clone ",
+        [u8("Р’РёРґ РїСЂРёС†РµР»Р°")] = "Crosshair style",
+        [u8("РљСЂРµСЃС‚")] = "Cross",
+        [u8("РљСЂСѓРі")] = "Circle",
+        [u8("РўСЂРµСѓРіРѕР»СЊРЅРёРє")] = "Triangle",
+        [u8("РЎС‚Р°РЅРґР°СЂС‚РЅС‹Р№")] = "Standard",
+        [u8("РћС‚СЃС‚СѓРї")] = "Gap",
+        [u8("T-РѕР±СЂР°Р·РЅС‹Р№")] = "T-shaped",
+        [u8("РћР±РІРѕРґРєР° / РўРѕС‡РєР°")] = "Outline / Dot",
+        [u8("РўРѕР»С‰РёРЅР° РѕР±РІ.")] = "Outline thickness",
+        [u8("РћС‚СЃС‚СѓРї РѕР±РІ.")] = "Outline offset",
+        [u8("Р Р°Р·РјРµСЂ С‚РѕС‡РєРё")] = "Dot size",
+        [u8("РћСЃРЅРѕРІРЅРѕР№")] = "Primary",
+        [u8("Р’С‚РѕСЂРѕР№")] = "Secondary",
+        [u8("РџРµСЂРµР»РёРІР°РЅРёРµ")] = "Color cycling",
+        [u8("РЎРєРѕСЂ. РїРµСЂРµР»РёРІР°РЅРёСЏ")] = "Cycle speed",
+        [u8("РџСѓСЃС‚РѕС‚Р°")] = "Hollow center",
+        [u8("Р Р°Р·РјРµСЂ РїСѓСЃС‚РѕС‚С‹")] = "Hollow size",
+        [u8("Р Р°РґРёСѓСЃ РѕР±РІ.")] = "Outline radius",
+        [u8("Р’СЂР°С‰. РѕР±РІ.")] = "Outline rotation",
+        [u8("РќР°СЃС‚СЂРѕР№РєР° СЂР°Р·РјРµСЂР° GTA")] = "GTA size settings",
+        [u8("Р Р°Р·РґРµР»СЊРЅРѕ X/Y")] = "Separate X/Y",
+        [u8("Р Р°Р·РјРµСЂ X")] = "Size X",
+        [u8("Р Р°Р·РјРµСЂ Y")] = "Size Y",
+        [u8("РћС‚РєР». СЂРµР·Р°Р№Р·")] = "Disable resizing",
+        [u8("РђРІС‚Рѕ-РІРєР» РїСЂРё СЃС‚Р°СЂС‚Рµ")] = "Auto-enable at startup",
+        [u8("Р’СЃРµРіРґР° РІРёРґРµРЅ (РїСЂРё РїСЂРёС†РµР»РёРІР°РЅРёРё)")] = "Always visible (while aiming)",
+        [u8("Р“Р»РѕР±Р°Р»СЊРЅС‹Р№ РјР°СЃС€С‚Р°Р±")] = "Global scale",
+        [u8("РћС‚РґР°С‡Р°")] = "Recoil",
+        [u8("РЈС‡РµС‚ РѕС‚РґР°С‡Рё")] = "Recoil compensation",
+        [u8("РЎРёР»Р° %")] = "Strength %",
+        [u8("РЎРєРѕСЂРѕСЃС‚СЊ РІРѕР·РІСЂР°С‚Р°")] = "Return speed",
         [u8("AimColor")] = "AimColor",
-        [u8("Цвет цели")] = "Target color",
-        [u8("Применять цвет к маркеру")] = "Apply color to marker",
-        [u8("Плавная смена цвета")] = "Smooth color transition",
-        [u8("Дистанция")] = "Distance",
-        [u8("Показывать дистанцию")] = "Show distance",
-        [u8("Размер шрифта")] = "Font size",
-        [u8("Смещение")] = "Offset",
-        [u8("Патроны")] = "Ammo",
-        [u8("Цвет текста")] = "Text color",
-        [u8("Перетащить позицию")] = "Move position",
-        [u8("Урон по противнику")] = "Damage to enemy",
-        [u8("Число")] = "Number",
-        [u8("Статус")] = "Status",
-        [u8("Детальный")] = "Detailed",
-        [u8("Маркер")] = "Marker",
-        [u8("При попадании")] = "On hit",
-        [u8("Размер px")] = "Size px",
-        [u8("Длит. мс")] = "Duration ms",
-        [u8("Скор. ан.")] = "Anim. speed",
-        [u8("Смеш.")] = "Mix",
-        [u8("Плавное затухание")] = "Smooth fade",
-        [u8("Стиль хитмаркера")] = "Hitmarker style",
-        [u8("Пульсирующий")] = "Pulsing",
-        [u8("Вращающийся")] = "Rotating",
-        [u8("Сжимающийся")] = "Shrinking",
-        [u8("Дрожащий")] = "Shaking",
-        [u8("Мерцающий")] = "Flickering",
-        [u8("Настройки")] = "Settings",
-        [u8("Размер")] = "Size",
-        [u8("Цвет")] = "Color",
+        [u8("Р¦РІРµС‚ С†РµР»Рё")] = "Target color",
+        [u8("РџСЂРёРјРµРЅСЏС‚СЊ С†РІРµС‚ Рє РјР°СЂРєРµСЂСѓ")] = "Apply color to marker",
+        [u8("РџР»Р°РІРЅР°СЏ СЃРјРµРЅР° С†РІРµС‚Р°")] = "Smooth color transition",
+        [u8("Р”РёСЃС‚Р°РЅС†РёСЏ")] = "Distance",
+        [u8("РџРѕРєР°Р·С‹РІР°С‚СЊ РґРёСЃС‚Р°РЅС†РёСЋ")] = "Show distance",
+        [u8("Р Р°Р·РјРµСЂ С€СЂРёС„С‚Р°")] = "Font size",
+        [u8("РЎРјРµС‰РµРЅРёРµ")] = "Offset",
+        [u8("РџР°С‚СЂРѕРЅС‹")] = "Ammo",
+        [u8("Р¦РІРµС‚ С‚РµРєСЃС‚Р°")] = "Text color",
+        [u8("РџРµСЂРµС‚Р°С‰РёС‚СЊ РїРѕР·РёС†РёСЋ")] = "Move position",
+        [u8("РЈСЂРѕРЅ РїРѕ РїСЂРѕС‚РёРІРЅРёРєСѓ")] = "Damage to enemy",
+        [u8("Р§РёСЃР»Рѕ")] = "Number",
+        [u8("РЎС‚Р°С‚СѓСЃ")] = "Status",
+        [u8("Р”РµС‚Р°Р»СЊРЅС‹Р№")] = "Detailed",
+        [u8("РњР°СЂРєРµСЂ")] = "Marker",
+        [u8("РџСЂРё РїРѕРїР°РґР°РЅРёРё")] = "On hit",
+        [u8("Р Р°Р·РјРµСЂ px")] = "Size px",
+        [u8("Р”Р»РёС‚. РјСЃ")] = "Duration ms",
+        [u8("РЎРєРѕСЂ. Р°РЅ.")] = "Anim. speed",
+        [u8("РЎРјРµС€.")] = "Mix",
+        [u8("РџР»Р°РІРЅРѕРµ Р·Р°С‚СѓС…Р°РЅРёРµ")] = "Smooth fade",
+        [u8("РЎС‚РёР»СЊ С…РёС‚РјР°СЂРєРµСЂР°")] = "Hitmarker style",
+        [u8("РџСѓР»СЊСЃРёСЂСѓСЋС‰РёР№")] = "Pulsing",
+        [u8("Р’СЂР°С‰Р°СЋС‰РёР№СЃСЏ")] = "Rotating",
+        [u8("РЎР¶РёРјР°СЋС‰РёР№СЃСЏ")] = "Shrinking",
+        [u8("Р”СЂРѕР¶Р°С‰РёР№")] = "Shaking",
+        [u8("РњРµСЂС†Р°СЋС‰РёР№")] = "Flickering",
+        [u8("РќР°СЃС‚СЂРѕР№РєРё")] = "Settings",
+        [u8("Р Р°Р·РјРµСЂ")] = "Size",
+        [u8("Р¦РІРµС‚")] = "Color",
     }
     for k, v in pairs(smart_crosshair_translations) do
         Data.UI_TRANSLATIONS[Fn.decodeSafe(k)] = v
@@ -4062,121 +4062,121 @@ end
 
 do
     local audit_translations = {
-        [u8"КПД"] = "Efficiency",
-        [u8"Удалить выделенные"] = "Delete selected",
-        [u8"Цель-объект"] = "Target object",
-        [u8"Хитмаркер"] = "Hitmarker",
-        [u8"Шахматная доска"] = "Chess board",
-        [u8"Подпись \"by Pryanix\""] = "\"by Pryanix\" signature",
-        [u8"Этап "] = "Stage ",
-        [u8"Добавить клавишу в этап "] = "Add key to stage ",
-        [u8"Не назначена"] = "Unassigned",
-        [u8"Голова"] = "Head",
-        [u8"Грудь"] = "Chest",
-        [u8"Живот"] = "Belly",
-        [u8"Л.рука"] = "Left arm",
-        [u8"П.рука"] = "Right arm",
-        [u8"Л.нога"] = "Left leg",
-        [u8"П.нога"] = "Right leg",
-        [u8"Зона"] = "Zone",
-        [u8"Поп."] = "Hits",
-        [u8"Выбрать объект первым выстрелом##cbug_obj_target"] = "Select object with first shot##cbug_obj_target",
-        [u8"Первый выстрел по объекту закрепляет его как цель."] = "The first shot at an object locks it as the target.",
-        [u8"Выбран объект: "] = "Selected object: ",
-        [u8"  |  попаданий: "] = "  |  hits: ",
-        [u8"Цель ещё не выбрана."] = "No target selected yet.",
-        [u8"Сбросить цель##cbug_obj_target_reset"] = "Reset target##cbug_obj_target_reset",
-        [u8"Эл.: "] = "Items: ",
-        [u8"Включить скрипт##master"] = "Enable script##master",
-        [u8"Автовключение при входе в игру##auto"] = "Auto-enable on game join##auto",
-        [u8"Вкладки «Смерть», «Убийство» и «Броня» имеют свой ползунок."] = "The Death, Kill and Armor tabs each have their own slider.",
-        [u8"Трекер активен##cb"] = "Tracker enabled##cb",
-        [u8"Цвет HUD##cbclr"] = "HUD color##cbclr",
-        [u8"Нужно выстрелов##cb"] = "Shots required##cb",
-        [u8"Позиция HUD##cb"] = "HUD position##cb",
-        [u8"Стрик на HUD##cb"] = "Streak on HUD##cb",
-        [u8"Уведомление о рекорде##cb"] = "Record notification##cb",
-        [u8"Очистить рекорды##cb"] = "Clear records##cb",
-        [u8"Выбран "] = "Selected ",
-        [u8". Выбери второго игрока."] = ". Select a second player.",
-        [u8"(не выбран)"] = "(not selected)",
-        [u8"Сравнение: "] = "Comparison: ",
-        [u8"Ред##re"] = "Edit##re",
-        [u8"Добавить##ksadd"] = "Add##ksadd",
-        [u8"Уведомление в чат##ks"] = "Chat notification##ks",
-        [u8"Задержка растворения##tud"] = "Fade delay##tud",
-        [u8"Задержка подъёма##tuu"] = "Rise delay##tuu",
-        [u8"Интенс. раств.##disol"] = "Fade intensity##disol",
-        [u8"Интенс. подъёма##up"] = "Rise intensity##up",
-        [u8"Применить##pkf"] = "Apply##pkf",
-        [u8"Размер##pkfsz"] = "Size##pkfsz",
-        [u8"Флаг##pkff"] = "Flag##pkff",
-        [u8"Позиция +kill##ks"] = "+kill position##ks",
-        [u8"Личная статистика"] = "Personal statistics",
-        [u8"%макс"] = "%max",
-        [u8"%всех"] = "%all",
-        [u8"Итого: "] = "Total: ",
-        [u8"Трекинг зон активен"] = "Zone tracking enabled",
-        [u8"| Меток: %d  | Дыр: %d"] = "| Markers: %d  | Holes: %d",
-        [u8"Слайдшоу##hmqs"] = "Slideshow##hmqs",
-        [u8"Скрыть (метки и дыры)##hmhideAll"] = "Hide (markers and holes)##hmhideAll",
-        [u8"Текст##hmmt"] = "Text##hmmt",
-        [u8"Использовать кастомные текстуры меток##hmuseCustomM"] = "Use custom marker textures##hmuseCustomM",
-        [u8"(всего: %d)"] = "(total: %d)",
-        [u8"Индивидуальная: "] = "Individual: ",
-        [u8"Использовать кастомные текстуры дыр##hmuseCustomH"] = "Use custom hole textures##hmuseCustomH",
-        [u8"Положите PNG/JPG в папку: moonloader\\CBUGER PRO\\HitMarker\\"] = "Place PNG/JPG files in: moonloader\\CBUGER PRO\\HitMarker\\",
-        [u8"Включить дыры от пуль##hmbhEnabled"] = "Enable bullet holes##hmbhEnabled",
-        [u8"Очистить все дыры##hmclearHoles"] = "Clear all holes##hmclearHoles",
-        [u8"Случайный цвет при попадании##hmrndHit"] = "Random hit color##hmrndHit",
-        [u8"Отображать трейсеры##hmtracers"] = "Show tracers##hmtracers",
-        [u8"Нажмите любую клавишу...##hmcapture"] = "Press any key...##hmcapture",
-        [u8"Назначить клавишу##hmsetKey"] = "Set key##hmsetKey",
-        [u8"Сбросить клавишу##hmclearKey"] = "Reset key##hmclearKey",
-        [u8"Очистить все метки##hmclearM"] = "Clear all markers##hmclearM",
-        [u8"Очистить все дыры##hmclearH"] = "Clear all holes##hmclearH",
-        [u8"Очистить всё##hmclearAll"] = "Clear all##hmclearAll",
-        [u8"Конфигурация"] = "Configuration",
-        [u8"Сохранить настройки##hmsave"] = "Save settings##hmsave",
-        [u8"Очистить очередь##hmssclear"] = "Clear queue##hmssclear",
-        [u8"Включить авто-слайдшоу##hmacen"] = "Enable auto slideshow##hmacen",
-        [u8"Активно · %d изобр. · след. через %d сек"] = "Active · %d images · next in %d sec",
-        [u8"Следующее изображение##hmssnext"] = "Next image##hmssnext",
-        [u8" Метки "] = " Markers ",
-        [u8" Текстуры "] = " Textures ",
-        [u8" Дыры "] = " Holes ",
-        [u8" Цвета "] = " Colors ",
-        [u8" Управление "] = " Controls ",
-        [u8" Слайдшоу "] = " Slideshow ",
-        [u8"нет"] = "No",
-        [u8"Фон сетки"] = "Grid background",
-        [u8"%.1f сек"] = "%.1f sec",
-        [u8"Сбросить##fa_color_reset"] = "Reset##fa_color_reset",
-        [u8"Ошибка сохранения"] = "Save error",
-        [u8"Полосы"] = "Lanes",
-        [u8"Интервал"] = "Interval",
-        [u8"  Режим без границ##gt"] = "  Ghost mode##gt",
-        [u8"  Длинные плитки##ult"] = "  Long tiles##ult",
-        [u8"Шанс"] = "Chance",
-        [u8"  Авто-ускорение##asi"] = "  Auto acceleration##asi",
-        [u8"Рост"] = "Increase rate",
-        [u8"  Пауза при перезарядке##por"] = "  Pause during reload##por",
-        [u8"%.4f с"] = "%.4f s",
-        [u8"  Радио-режим##rm"] = "  Radio mode##rm",
-        [u8"  Случайные изображения##rti"] = "  Random images##rti",
-        [u8"--- FA-иконки ---"] = "--- FA icons ---",
-        [u8"  FA-иконки на плитках##fa_tiles_en"] = "  FA icons on tiles##fa_tiles_en",
-        [u8"  Случайная иконка##rfa_icon_en"] = "  Random icon##rfa_icon_en",
-        [u8"  Включить прицел##cr_en"] = "  Enable crosshair##cr_en",
-        [u8"  Обводка##cr_out"] = "  Outline##cr_out",
-        [u8"  Точка##cr_dot"] = "  Dot##cr_dot",
+        [u8"РљРџР”"] = "Efficiency",
+        [u8"РЈРґР°Р»РёС‚СЊ РІС‹РґРµР»РµРЅРЅС‹Рµ"] = "Delete selected",
+        [u8"Р¦РµР»СЊ-РѕР±СЉРµРєС‚"] = "Target object",
+        [u8"РҐРёС‚РјР°СЂРєРµСЂ"] = "Hitmarker",
+        [u8"РЁР°С…РјР°С‚РЅР°СЏ РґРѕСЃРєР°"] = "Chess board",
+        [u8"РџРѕРґРїРёСЃСЊ \"by Pryanix\""] = "\"by Pryanix\" signature",
+        [u8"Р­С‚Р°Рї "] = "Stage ",
+        [u8"Р”РѕР±Р°РІРёС‚СЊ РєР»Р°РІРёС€Сѓ РІ СЌС‚Р°Рї "] = "Add key to stage ",
+        [u8"РќРµ РЅР°Р·РЅР°С‡РµРЅР°"] = "Unassigned",
+        [u8"Р“РѕР»РѕРІР°"] = "Head",
+        [u8"Р“СЂСѓРґСЊ"] = "Chest",
+        [u8"Р–РёРІРѕС‚"] = "Belly",
+        [u8"Р›.СЂСѓРєР°"] = "Left arm",
+        [u8"Рџ.СЂСѓРєР°"] = "Right arm",
+        [u8"Р›.РЅРѕРіР°"] = "Left leg",
+        [u8"Рџ.РЅРѕРіР°"] = "Right leg",
+        [u8"Р—РѕРЅР°"] = "Zone",
+        [u8"РџРѕРї."] = "Hits",
+        [u8"Р’С‹Р±СЂР°С‚СЊ РѕР±СЉРµРєС‚ РїРµСЂРІС‹Рј РІС‹СЃС‚СЂРµР»РѕРј##cbug_obj_target"] = "Select object with first shot##cbug_obj_target",
+        [u8"РџРµСЂРІС‹Р№ РІС‹СЃС‚СЂРµР» РїРѕ РѕР±СЉРµРєС‚Сѓ Р·Р°РєСЂРµРїР»СЏРµС‚ РµРіРѕ РєР°Рє С†РµР»СЊ."] = "The first shot at an object locks it as the target.",
+        [u8"Р’С‹Р±СЂР°РЅ РѕР±СЉРµРєС‚: "] = "Selected object: ",
+        [u8"  |  РїРѕРїР°РґР°РЅРёР№: "] = "  |  hits: ",
+        [u8"Р¦РµР»СЊ РµС‰С‘ РЅРµ РІС‹Р±СЂР°РЅР°."] = "No target selected yet.",
+        [u8"РЎР±СЂРѕСЃРёС‚СЊ С†РµР»СЊ##cbug_obj_target_reset"] = "Reset target##cbug_obj_target_reset",
+        [u8"Р­Р».: "] = "Items: ",
+        [u8"Р’РєР»СЋС‡РёС‚СЊ СЃРєСЂРёРїС‚##master"] = "Enable script##master",
+        [u8"РђРІС‚РѕРІРєР»СЋС‡РµРЅРёРµ РїСЂРё РІС…РѕРґРµ РІ РёРіСЂСѓ##auto"] = "Auto-enable on game join##auto",
+        [u8"Р’РєР»Р°РґРєРё В«РЎРјРµСЂС‚СЊВ», В«РЈР±РёР№СЃС‚РІРѕВ» Рё В«Р‘СЂРѕРЅСЏВ» РёРјРµСЋС‚ СЃРІРѕР№ РїРѕР»Р·СѓРЅРѕРє."] = "The Death, Kill and Armor tabs each have their own slider.",
+        [u8"РўСЂРµРєРµСЂ Р°РєС‚РёРІРµРЅ##cb"] = "Tracker enabled##cb",
+        [u8"Р¦РІРµС‚ HUD##cbclr"] = "HUD color##cbclr",
+        [u8"РќСѓР¶РЅРѕ РІС‹СЃС‚СЂРµР»РѕРІ##cb"] = "Shots required##cb",
+        [u8"РџРѕР·РёС†РёСЏ HUD##cb"] = "HUD position##cb",
+        [u8"РЎС‚СЂРёРє РЅР° HUD##cb"] = "Streak on HUD##cb",
+        [u8"РЈРІРµРґРѕРјР»РµРЅРёРµ Рѕ СЂРµРєРѕСЂРґРµ##cb"] = "Record notification##cb",
+        [u8"РћС‡РёСЃС‚РёС‚СЊ СЂРµРєРѕСЂРґС‹##cb"] = "Clear records##cb",
+        [u8"Р’С‹Р±СЂР°РЅ "] = "Selected ",
+        [u8". Р’С‹Р±РµСЂРё РІС‚РѕСЂРѕРіРѕ РёРіСЂРѕРєР°."] = ". Select a second player.",
+        [u8"(РЅРµ РІС‹Р±СЂР°РЅ)"] = "(not selected)",
+        [u8"РЎСЂР°РІРЅРµРЅРёРµ: "] = "Comparison: ",
+        [u8"Р РµРґ##re"] = "Edit##re",
+        [u8"Р”РѕР±Р°РІРёС‚СЊ##ksadd"] = "Add##ksadd",
+        [u8"РЈРІРµРґРѕРјР»РµРЅРёРµ РІ С‡Р°С‚##ks"] = "Chat notification##ks",
+        [u8"Р—Р°РґРµСЂР¶РєР° СЂР°СЃС‚РІРѕСЂРµРЅРёСЏ##tud"] = "Fade delay##tud",
+        [u8"Р—Р°РґРµСЂР¶РєР° РїРѕРґСЉС‘РјР°##tuu"] = "Rise delay##tuu",
+        [u8"РРЅС‚РµРЅСЃ. СЂР°СЃС‚РІ.##disol"] = "Fade intensity##disol",
+        [u8"РРЅС‚РµРЅСЃ. РїРѕРґСЉС‘РјР°##up"] = "Rise intensity##up",
+        [u8"РџСЂРёРјРµРЅРёС‚СЊ##pkf"] = "Apply##pkf",
+        [u8"Р Р°Р·РјРµСЂ##pkfsz"] = "Size##pkfsz",
+        [u8"Р¤Р»Р°Рі##pkff"] = "Flag##pkff",
+        [u8"РџРѕР·РёС†РёСЏ +kill##ks"] = "+kill position##ks",
+        [u8"Р›РёС‡РЅР°СЏ СЃС‚Р°С‚РёСЃС‚РёРєР°"] = "Personal statistics",
+        [u8"%РјР°РєСЃ"] = "%max",
+        [u8"%РІСЃРµС…"] = "%all",
+        [u8"РС‚РѕРіРѕ: "] = "Total: ",
+        [u8"РўСЂРµРєРёРЅРі Р·РѕРЅ Р°РєС‚РёРІРµРЅ"] = "Zone tracking enabled",
+        [u8"| РњРµС‚РѕРє: %d  | Р”С‹СЂ: %d"] = "| Markers: %d  | Holes: %d",
+        [u8"РЎР»Р°Р№РґС€РѕСѓ##hmqs"] = "Slideshow##hmqs",
+        [u8"РЎРєСЂС‹С‚СЊ (РјРµС‚РєРё Рё РґС‹СЂС‹)##hmhideAll"] = "Hide (markers and holes)##hmhideAll",
+        [u8"РўРµРєСЃС‚##hmmt"] = "Text##hmmt",
+        [u8"РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР°СЃС‚РѕРјРЅС‹Рµ С‚РµРєСЃС‚СѓСЂС‹ РјРµС‚РѕРє##hmuseCustomM"] = "Use custom marker textures##hmuseCustomM",
+        [u8"(РІСЃРµРіРѕ: %d)"] = "(total: %d)",
+        [u8"РРЅРґРёРІРёРґСѓР°Р»СЊРЅР°СЏ: "] = "Individual: ",
+        [u8"РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР°СЃС‚РѕРјРЅС‹Рµ С‚РµРєСЃС‚СѓСЂС‹ РґС‹СЂ##hmuseCustomH"] = "Use custom hole textures##hmuseCustomH",
+        [u8"РџРѕР»РѕР¶РёС‚Рµ PNG/JPG РІ РїР°РїРєСѓ: moonloader\\CBUGER PRO\\HitMarker\\"] = "Place PNG/JPG files in: moonloader\\CBUGER PRO\\HitMarker\\",
+        [u8"Р’РєР»СЋС‡РёС‚СЊ РґС‹СЂС‹ РѕС‚ РїСѓР»СЊ##hmbhEnabled"] = "Enable bullet holes##hmbhEnabled",
+        [u8"РћС‡РёСЃС‚РёС‚СЊ РІСЃРµ РґС‹СЂС‹##hmclearHoles"] = "Clear all holes##hmclearHoles",
+        [u8"РЎР»СѓС‡Р°Р№РЅС‹Р№ С†РІРµС‚ РїСЂРё РїРѕРїР°РґР°РЅРёРё##hmrndHit"] = "Random hit color##hmrndHit",
+        [u8"РћС‚РѕР±СЂР°Р¶Р°С‚СЊ С‚СЂРµР№СЃРµСЂС‹##hmtracers"] = "Show tracers##hmtracers",
+        [u8"РќР°Р¶РјРёС‚Рµ Р»СЋР±СѓСЋ РєР»Р°РІРёС€Сѓ...##hmcapture"] = "Press any key...##hmcapture",
+        [u8"РќР°Р·РЅР°С‡РёС‚СЊ РєР»Р°РІРёС€Сѓ##hmsetKey"] = "Set key##hmsetKey",
+        [u8"РЎР±СЂРѕСЃРёС‚СЊ РєР»Р°РІРёС€Сѓ##hmclearKey"] = "Reset key##hmclearKey",
+        [u8"РћС‡РёСЃС‚РёС‚СЊ РІСЃРµ РјРµС‚РєРё##hmclearM"] = "Clear all markers##hmclearM",
+        [u8"РћС‡РёСЃС‚РёС‚СЊ РІСЃРµ РґС‹СЂС‹##hmclearH"] = "Clear all holes##hmclearH",
+        [u8"РћС‡РёСЃС‚РёС‚СЊ РІСЃС‘##hmclearAll"] = "Clear all##hmclearAll",
+        [u8"РљРѕРЅС„РёРіСѓСЂР°С†РёСЏ"] = "Configuration",
+        [u8"РЎРѕС…СЂР°РЅРёС‚СЊ РЅР°СЃС‚СЂРѕР№РєРё##hmsave"] = "Save settings##hmsave",
+        [u8"РћС‡РёСЃС‚РёС‚СЊ РѕС‡РµСЂРµРґСЊ##hmssclear"] = "Clear queue##hmssclear",
+        [u8"Р’РєР»СЋС‡РёС‚СЊ Р°РІС‚Рѕ-СЃР»Р°Р№РґС€РѕСѓ##hmacen"] = "Enable auto slideshow##hmacen",
+        [u8"РђРєС‚РёРІРЅРѕ В· %d РёР·РѕР±СЂ. В· СЃР»РµРґ. С‡РµСЂРµР· %d СЃРµРє"] = "Active В· %d images В· next in %d sec",
+        [u8"РЎР»РµРґСѓСЋС‰РµРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ##hmssnext"] = "Next image##hmssnext",
+        [u8" РњРµС‚РєРё "] = " Markers ",
+        [u8" РўРµРєСЃС‚СѓСЂС‹ "] = " Textures ",
+        [u8" Р”С‹СЂС‹ "] = " Holes ",
+        [u8" Р¦РІРµС‚Р° "] = " Colors ",
+        [u8" РЈРїСЂР°РІР»РµРЅРёРµ "] = " Controls ",
+        [u8" РЎР»Р°Р№РґС€РѕСѓ "] = " Slideshow ",
+        [u8"РЅРµС‚"] = "No",
+        [u8"Р¤РѕРЅ СЃРµС‚РєРё"] = "Grid background",
+        [u8"%.1f СЃРµРє"] = "%.1f sec",
+        [u8"РЎР±СЂРѕСЃРёС‚СЊ##fa_color_reset"] = "Reset##fa_color_reset",
+        [u8"РћС€РёР±РєР° СЃРѕС…СЂР°РЅРµРЅРёСЏ"] = "Save error",
+        [u8"РџРѕР»РѕСЃС‹"] = "Lanes",
+        [u8"РРЅС‚РµСЂРІР°Р»"] = "Interval",
+        [u8"  Р РµР¶РёРј Р±РµР· РіСЂР°РЅРёС†##gt"] = "  Ghost mode##gt",
+        [u8"  Р”Р»РёРЅРЅС‹Рµ РїР»РёС‚РєРё##ult"] = "  Long tiles##ult",
+        [u8"РЁР°РЅСЃ"] = "Chance",
+        [u8"  РђРІС‚Рѕ-СѓСЃРєРѕСЂРµРЅРёРµ##asi"] = "  Auto acceleration##asi",
+        [u8"Р РѕСЃС‚"] = "Increase rate",
+        [u8"  РџР°СѓР·Р° РїСЂРё РїРµСЂРµР·Р°СЂСЏРґРєРµ##por"] = "  Pause during reload##por",
+        [u8"%.4f СЃ"] = "%.4f s",
+        [u8"  Р Р°РґРёРѕ-СЂРµР¶РёРј##rm"] = "  Radio mode##rm",
+        [u8"  РЎР»СѓС‡Р°Р№РЅС‹Рµ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ##rti"] = "  Random images##rti",
+        [u8"--- FA-РёРєРѕРЅРєРё ---"] = "--- FA icons ---",
+        [u8"  FA-РёРєРѕРЅРєРё РЅР° РїР»РёС‚РєР°С…##fa_tiles_en"] = "  FA icons on tiles##fa_tiles_en",
+        [u8"  РЎР»СѓС‡Р°Р№РЅР°СЏ РёРєРѕРЅРєР°##rfa_icon_en"] = "  Random icon##rfa_icon_en",
+        [u8"  Р’РєР»СЋС‡РёС‚СЊ РїСЂРёС†РµР»##cr_en"] = "  Enable crosshair##cr_en",
+        [u8"  РћР±РІРѕРґРєР°##cr_out"] = "  Outline##cr_out",
+        [u8"  РўРѕС‡РєР°##cr_dot"] = "  Dot##cr_dot",
     }
     for k, v in pairs(audit_translations) do
         Data.UI_TRANSLATIONS[Fn.decodeSafe(k)] = v
     end
 end
 
-Data.UI_TRANSLATIONS[Fn.decodeSafe(u8"Положите PNG/JPG/BMP в папку:")] = "Place PNG/JPG/BMP files in the folder:"
+Data.UI_TRANSLATIONS[Fn.decodeSafe(u8"РџРѕР»РѕР¶РёС‚Рµ PNG/JPG/BMP РІ РїР°РїРєСѓ:")] = "Place PNG/JPG/BMP files in the folder:"
 
 local CBUGER_IMGUI_TRANSLATION_PATCH = { originals = {}, wrappers = {} }
 local function CBUGER_WRAP_IMGUI_TRANSLATION(name, arg_index)
@@ -4417,28 +4417,28 @@ ui.context_menu_target = -1
 local keyboards = {
     {
         { {"Q", 0x51}, {"W", 0x57}, {"E", 0x45} },
-        { {"A", 0x41}, {"S", 0x53}, {"D", 0x44}, {u8"А", 0x46}, {"C", 0x43} },
+        { {"A", 0x41}, {"S", 0x53}, {"D", 0x44}, {u8"Рђ", 0x46}, {"C", 0x43} },
         { {" ", 0x20, space = true} }
     }
 }
 Data.RU_LAYOUT_MAP = {
-    ['Q']=u8'Й', ['W']=u8'Ц', ['E']=u8'У', ['R']=u8'К', ['T']=u8'Е', ['Y']=u8'Н', ['U']=u8'Г', ['I']=u8'Ш', ['O']=u8'Щ', ['P']=u8'З',
-    ['A']=u8'Ф', ['S']=u8'Ы', ['D']=u8'В', ['F']=u8'А', ['G']=u8'П', ['H']=u8'Р', ['J']=u8'О', ['K']=u8'Л', ['L']=u8'Д',
-    ['Z']=u8'Я', ['X']=u8'Ч', ['C']=u8'С', ['V']=u8'М', ['B']=u8'И', ['N']=u8'Т', ['M']=u8'Ь',
-    ['[']=u8'Х', [']']=u8'Ъ', [';']=u8'Ж', ["'"]=u8'Э', [',']=u8'Б', ['.']=u8'Ю', ['/']='.', ['`']=u8'Ё',
+    ['Q']=u8'Р™', ['W']=u8'Р¦', ['E']=u8'РЈ', ['R']=u8'Рљ', ['T']=u8'Р•', ['Y']=u8'Рќ', ['U']=u8'Р“', ['I']=u8'РЁ', ['O']=u8'Р©', ['P']=u8'Р—',
+    ['A']=u8'Р¤', ['S']=u8'Р«', ['D']=u8'Р’', ['F']=u8'Рђ', ['G']=u8'Рџ', ['H']=u8'Р ', ['J']=u8'Рћ', ['K']=u8'Р›', ['L']=u8'Р”',
+    ['Z']=u8'РЇ', ['X']=u8'Р§', ['C']=u8'РЎ', ['V']=u8'Рњ', ['B']=u8'Р', ['N']=u8'Рў', ['M']=u8'Р¬',
+    ['[']=u8'РҐ', [']']=u8'РЄ', [';']=u8'Р–', ["'"]=u8'Р­', [',']=u8'Р‘', ['.']=u8'Р®', ['/']='.', ['`']=u8'РЃ',
 }
  Fn.getLocalizedName = function(name)
     local safe = Fn.decodeSafe(name)
-    if safe == Fn.decodeSafe(u8"ПРОБЕЛ") and Data.space_as_shift_enabled then
+    if safe == Fn.decodeSafe(u8"РџР РћР‘Р•Р›") and Data.space_as_shift_enabled then
         return "SHIFT"
     end
     if ui.language_mode[0] == 2 then
-        if safe == Fn.decodeSafe(u8"ЛКМ")    then return "LMB"   end
-        if safe == Fn.decodeSafe(u8"ПКМ")    then return "RMB"   end
-        if safe == Fn.decodeSafe(u8"СКМ")    then return "MMB"   end
-        if safe == Fn.decodeSafe(u8"НАЗАД")  then return "BACK"  end
-        if safe == Fn.decodeSafe(u8"ВПЕРЁД") then return "FWD"   end
-        if safe == Fn.decodeSafe(u8"ПРОБЕЛ") then return "SPACE"  end
+        if safe == Fn.decodeSafe(u8"Р›РљРњ")    then return "LMB"   end
+        if safe == Fn.decodeSafe(u8"РџРљРњ")    then return "RMB"   end
+        if safe == Fn.decodeSafe(u8"РЎРљРњ")    then return "MMB"   end
+        if safe == Fn.decodeSafe(u8"РќРђР—РђР”")  then return "BACK"  end
+        if safe == Fn.decodeSafe(u8"Р’РџР•Р РЃР”") then return "FWD"   end
+        if safe == Fn.decodeSafe(u8"РџР РћР‘Р•Р›") then return "SPACE"  end
         return safe
     end
     local ru_letter = Data.RU_LAYOUT_MAP[safe]
@@ -4450,9 +4450,9 @@ end
     if type(key) == 'string' then
         local safe = Fn.decodeSafe(key)
 
-        if safe == Fn.decodeSafe(u8"Й") then return "Q" end
-        if safe == Fn.decodeSafe(u8"У") then return "E" end
-        if safe == Fn.decodeSafe(u8"Ф") then return "A" end
+        if safe == Fn.decodeSafe(u8"Р™") then return "Q" end
+        if safe == Fn.decodeSafe(u8"РЈ") then return "E" end
+        if safe == Fn.decodeSafe(u8"Р¤") then return "A" end
 
         return key
     end
@@ -4490,14 +4490,14 @@ end
  Fn.isKeyDownByName = function(keyName)
     keyName = Fn.normalizeKeyName(keyName)
     local safe = Fn.decodeSafe(keyName)
-    if safe == Fn.decodeSafe(u8"ЛКМ")    then return Fn.isPhysicalKeyDown(0x01) end
-    if safe == Fn.decodeSafe(u8"ПКМ")    then return Fn.isPhysicalKeyDown(0x02) end
-    if safe == Fn.decodeSafe(u8"ПРОБЕЛ") then return Fn.isPhysicalKeyDown(Fn.getSpaceCode()) end
-    if keyName == "A" or safe == Fn.decodeSafe(u8"Ф") then return Fn.isPhysicalKeyDown(0x41) end
+    if safe == Fn.decodeSafe(u8"Р›РљРњ")    then return Fn.isPhysicalKeyDown(0x01) end
+    if safe == Fn.decodeSafe(u8"РџРљРњ")    then return Fn.isPhysicalKeyDown(0x02) end
+    if safe == Fn.decodeSafe(u8"РџР РћР‘Р•Р›") then return Fn.isPhysicalKeyDown(Fn.getSpaceCode()) end
+    if keyName == "A" or safe == Fn.decodeSafe(u8"Р¤") then return Fn.isPhysicalKeyDown(0x41) end
     if keyName == "W" then return Fn.isPhysicalKeyDown(0x57) end
     if keyName == "C" then return Fn.isPhysicalKeyDown(0x43) end
     if keyName == "D" then return Fn.isPhysicalKeyDown(0x44) end
-    if safe == Fn.decodeSafe(u8"А") then return Fn.isPhysicalKeyDown(0x46) end
+    if safe == Fn.decodeSafe(u8"Рђ") then return Fn.isPhysicalKeyDown(0x46) end
     if keyName == "Q" then return Fn.isPhysicalKeyDown(0x51) end
     if keyName == "E" then return Fn.isPhysicalKeyDown(0x45) end
     if keyName == "S" then return Fn.isPhysicalKeyDown(0x53) end
@@ -4515,8 +4515,8 @@ end
         if k.name == name then return k.code end
     end
     local safe = Fn.decodeSafe(name)
-    if safe == Fn.decodeSafe(u8"ПРОБЕЛ") then return Fn.getSpaceCode() end
-    if safe == Fn.decodeSafe(u8"Ф") then return 0x41 end
+    if safe == Fn.decodeSafe(u8"РџР РћР‘Р•Р›") then return Fn.getSpaceCode() end
+    if safe == Fn.decodeSafe(u8"Р¤") then return 0x41 end
     return nil
 end
  Fn.BuildComboDisplayLines = function(combo)
@@ -4776,8 +4776,8 @@ end
    Fn.prepareCurrentPart()
     if ui.show_chat_messages[0] then
         sampAddChatMessage(
-           Fn.L(Fn.cp(u8'[CBUGER]: Комбинация: "'), '[CBUGER]: Combo: "') .. Fn.cp(name) ..
-           Fn.L(Fn.cp(u8'". Нажмите первую клавишу для старта.'), '". Press the first key to start.'),
+           Fn.L(Fn.cp(u8'[CBUGER]: РљРѕРјР±РёРЅР°С†РёСЏ: "'), '[CBUGER]: Combo: "') .. Fn.cp(name) ..
+           Fn.L(Fn.cp(u8'". РќР°Р¶РјРёС‚Рµ РїРµСЂРІСѓСЋ РєР»Р°РІРёС€Сѓ РґР»СЏ СЃС‚Р°СЂС‚Р°.'), '". Press the first key to start.'),
             0x00FF00
         )
     end
@@ -4804,7 +4804,7 @@ end
         st.hold_triggered[code] = true
     end
     if ui.show_chat_messages[0] then
-        sampAddChatMessage(chatMsg and Fn.cp(chatMsg) or Fn.L(Fn.cp(u8"[CBUGER]: Ошибка"), "[CBUGER]: Error"), 0xFF0000)
+        sampAddChatMessage(chatMsg and Fn.cp(chatMsg) or Fn.L(Fn.cp(u8"[CBUGER]: РћС€РёР±РєР°"), "[CBUGER]: Error"), 0xFF0000)
     end
     st.error_recovery_at = os.clock() + 0.7
 end
@@ -4888,7 +4888,7 @@ end
                 local max_hold = tonumber(st.hold_max_times[i]) or 999
                 if hold_started and (now - hold_started) > max_hold and not st.error_state.is_error then
                     st.key_states[i] = 0xFF0000
-                    Fn.setError(hold_name, Fn.T(u8"[CBUGER]: Ошибка, вы зажали слишком долго: ") .. Fn.getLocalizedName(hold_name), i)
+                    Fn.setError(hold_name, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ Р·Р°Р¶Р°Р»Рё СЃР»РёС€РєРѕРј РґРѕР»РіРѕ: ") .. Fn.getLocalizedName(hold_name), i)
                     Fn.pushLog(hold_name, 'error')
                     return
                 end
@@ -4909,7 +4909,7 @@ end
                         st.hold_triggered[code] = true
                         st.blocked_held[code]   = true
                         st.held_keys[code]      = nil
-                       Fn.setError(kname, Fn.T(u8"[CBUGER]: Ошибка, вы зажали: ") .. Fn.getLocalizedName(kname), i)
+                       Fn.setError(kname, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ Р·Р°Р¶Р°Р»Рё: ") .. Fn.getLocalizedName(kname), i)
                         return
                     end
                 end
@@ -4958,7 +4958,7 @@ end
         else
             st.combo_streak = (st.combo_streak or 0) + 1
             if ui.show_chat_messages[0] then
-                local streak_msg = "{00FF00}[CBUGER]: " .. Fn.L(Fn.cp(u8"Комбинация выполнена правильно!"), "Combo performed correctly!")
+                local streak_msg = "{00FF00}[CBUGER]: " .. Fn.L(Fn.cp(u8"РљРѕРјР±РёРЅР°С†РёСЏ РІС‹РїРѕР»РЅРµРЅР° РїСЂР°РІРёР»СЊРЅРѕ!"), "Combo performed correctly!")
                 if st.combo_streak > 1 then
                     streak_msg = streak_msg .. " {FF8800}x" .. tostring(st.combo_streak)
                 end
@@ -5017,7 +5017,7 @@ end
                 else
                     if not st.error_state.is_error then
                         st.key_states[i] = 0xFF0000
-                       Fn.setError(name, Fn.T(u8"[CBUGER]: Ошибка, вы не зажимали: ") .. Fn.getLocalizedName(name), i)
+                       Fn.setError(name, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ РЅРµ Р·Р°Р¶РёРјР°Р»Рё: ") .. Fn.getLocalizedName(name), i)
                        Fn.pushLog(name, 'error')
                     end
                     return
@@ -5028,7 +5028,7 @@ end
                 local maxTime = st.hold_max_times[i] or 999
                 if elapsed > maxTime and not st.error_state.is_error then
                     st.key_states[i] = 0xFF0000
-                   Fn.setError(name, Fn.T(u8"[CBUGER]: Ошибка, вы зажали слишком долго: ") .. Fn.getLocalizedName(name), i)
+                   Fn.setError(name, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ Р·Р°Р¶Р°Р»Рё СЃР»РёС€РєРѕРј РґРѕР»РіРѕ: ") .. Fn.getLocalizedName(name), i)
                    Fn.pushLog(name, 'error')
                     return
                 end
@@ -5086,7 +5086,7 @@ end
     end
     if st.key_needs_release[Fn.decodeSafe(key_name)] then
         if not st.error_state.is_error then
-           Fn.setError(key_name, Fn.T(u8"[CBUGER]: Ошибка, вы зажали: ") .. Fn.getLocalizedName(key_name))
+           Fn.setError(key_name, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ Р·Р°Р¶Р°Р»Рё: ") .. Fn.getLocalizedName(key_name))
            Fn.pushLog(key_name, 'error')
         else
            Fn.pushLog(key_name, 'normal')
@@ -5126,7 +5126,7 @@ end
         else
             local kn = Fn.decodeSafe(key_name)
             if st.tap_keys_last_part[kn] and not st.tap_keys_released[kn] and not st.error_state.is_error then
-               Fn.setError(key_name, Fn.T(u8"[CBUGER]: Ошибка, лишнее нажатие: ") .. Fn.getLocalizedName(key_name))
+               Fn.setError(key_name, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, Р»РёС€РЅРµРµ РЅР°Р¶Р°С‚РёРµ: ") .. Fn.getLocalizedName(key_name))
                Fn.pushLog(key_name, 'error')
             else
                Fn.pushLog(key_name, 'normal')
@@ -5191,7 +5191,7 @@ end
                 end
                 if not is_held_correctly and not st.error_state.is_error then
                     st.key_states[#part] = 0xFF0000
-                   Fn.setError(key_name, Fn.T(u8"[CBUGER]: Ошибка, лишнее нажатие: ") .. Fn.getLocalizedName(key_name))
+                   Fn.setError(key_name, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, Р»РёС€РЅРµРµ РЅР°Р¶Р°С‚РёРµ: ") .. Fn.getLocalizedName(key_name))
                    Fn.pushLog(key_name, 'error')
                     return
                 end
@@ -5241,7 +5241,7 @@ end
                     end
                 end
                 if excess_slot then st.key_states[excess_slot] = 0xFF0000 end
-               Fn.setError(key_name, Fn.T(u8"[CBUGER]: Ошибка, лишнее нажатие: ") .. Fn.getLocalizedName(key_name), excess_slot)
+               Fn.setError(key_name, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, Р»РёС€РЅРµРµ РЅР°Р¶Р°С‚РёРµ: ") .. Fn.getLocalizedName(key_name), excess_slot)
                Fn.pushLog(key_name, 'error')
             end
             return
@@ -5267,7 +5267,7 @@ end
                 end
                 if not st.error_state.is_error then
                     if excess_slot then st.key_states[excess_slot] = 0xFF0000 end
-                   Fn.setError(key_name, Fn.T(u8"[CBUGER]: Ошибка, нажата не та клавиша: ") .. Fn.getLocalizedName(key_name), excess_slot)
+                   Fn.setError(key_name, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, РЅР°Р¶Р°С‚Р° РЅРµ С‚Р° РєР»Р°РІРёС€Р°: ") .. Fn.getLocalizedName(key_name), excess_slot)
                    Fn.pushLog(key_name, 'error')
                 end
                 return
@@ -5293,7 +5293,7 @@ end
                         st.key_states[i] = 0xFF0000
                        Fn.setError(
                            Fn.normalizeKeyName(part[i]),
-                            Fn.T(u8"[CBUGER]: Ошибка, вы не зажимали: ") .. Fn.getLocalizedName(Fn.normalizeKeyName(part[i])),
+                            Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ РЅРµ Р·Р°Р¶РёРјР°Р»Рё: ") .. Fn.getLocalizedName(Fn.normalizeKeyName(part[i])),
                             i
                         )
                        Fn.pushLog(key_name, 'error')
@@ -5303,8 +5303,8 @@ end
                 st.key_states[st.current_key_index] = 0xFF0000
                Fn.setError(
                     expectedName,
-                    Fn.T(u8"[CBUGER]: Ожидалась: ") .. Fn.getLocalizedName(expectedName) ..
-                    Fn.T(u8", но нажата: ") .. Fn.getLocalizedName(key_name),
+                    Fn.T(u8"[CBUGER]: РћР¶РёРґР°Р»Р°СЃСЊ: ") .. Fn.getLocalizedName(expectedName) ..
+                    Fn.T(u8", РЅРѕ РЅР°Р¶Р°С‚Р°: ") .. Fn.getLocalizedName(key_name),
                     st.current_key_index
                 )
                Fn.pushLog(key_name, 'error')
@@ -5345,7 +5345,7 @@ end
                         end
                     end
                     if err_slot then st.key_states[err_slot] = 0xFF0000 end
-                   Fn.setError(kname_safe, Fn.T(u8"[CBUGER]: Ошибка, вы зажали: ") .. Fn.getLocalizedName(kname_safe), err_slot)
+                   Fn.setError(kname_safe, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ Р·Р°Р¶Р°Р»Рё: ") .. Fn.getLocalizedName(kname_safe), err_slot)
                     return
                 end
             end
@@ -5392,7 +5392,7 @@ end
                         st.hold_triggered[code] = true
                         st.blocked_held[code]   = true
                         st.held_keys[code]      = nil
-                       Fn.setError(name, Fn.T(u8"[CBUGER]: Ошибка, вы зажали: ") .. Fn.getLocalizedName(name), nil)
+                       Fn.setError(name, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ Р·Р°Р¶Р°Р»Рё: ") .. Fn.getLocalizedName(name), nil)
                         return
                     end
                     if st.current_combo and st.current_part_index > 1 then
@@ -5405,7 +5405,7 @@ end
                                     st.hold_triggered[code] = true
                                     st.blocked_held[code]   = true
                                     st.held_keys[code]      = nil
-                                   Fn.setError(name, Fn.T(u8"[CBUGER]: Ошибка, вы зажали: ") .. Fn.getLocalizedName(name), i)
+                                   Fn.setError(name, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ Р·Р°Р¶Р°Р»Рё: ") .. Fn.getLocalizedName(name), i)
                                     return
                                 end
                             end
@@ -5490,14 +5490,14 @@ end
                                     st.hold_triggered[code] = true
                                     st.blocked_held[code]   = true
                                     st.held_keys[code]      = nil
-                                   Fn.setError(name, Fn.T(u8"[CBUGER]: Ошибка, вы зажали: ") .. Fn.getLocalizedName(name), idx)
+                                   Fn.setError(name, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ Р·Р°Р¶Р°Р»Рё: ") .. Fn.getLocalizedName(name), idx)
                                     return
                                 end
                                 st.key_states[idx]      = 0xFF0000
                                 st.hold_triggered[code] = true
                                 st.blocked_held[code]   = true
                                 st.held_keys[code]      = nil
-                               Fn.setError(name, Fn.T(u8"[CBUGER]: Ошибка, вы зажали: ") .. Fn.getLocalizedName(name), idx)
+                               Fn.setError(name, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ Р·Р°Р¶Р°Р»Рё: ") .. Fn.getLocalizedName(name), idx)
                                 return
                             end
                         end
@@ -5505,7 +5505,7 @@ end
                         st.hold_triggered[code] = true
                         st.blocked_held[code]   = true
                         st.held_keys[code]      = nil
-                       Fn.setError(name, Fn.T(u8"[CBUGER]: Ошибка, вы зажали: ") .. Fn.getLocalizedName(name), nil)
+                       Fn.setError(name, Fn.T(u8"[CBUGER]: РћС€РёР±РєР°, РІС‹ Р·Р°Р¶Р°Р»Рё: ") .. Fn.getLocalizedName(name), nil)
                         return
                     end
                 end
@@ -5631,7 +5631,7 @@ end
     if not combo then return end
     combo.guide_text = combo.guide_text or ''
     ui.current_guide_index = index
-    ui.current_guide_name = combo.name or u8('Инфо')
+    ui.current_guide_name = combo.name or u8('РРЅС„Рѕ')
     Lib.ffi.copy(ui.guide_text_buffer, combo.guide_text, 16383)
     ui.guide_open[0] = true
 end
@@ -5640,7 +5640,7 @@ end
     if is_new then
         ui.editor.selected_index = -1
         ui.editor.temp_combo     = {{}}
-        local nm = u8"Новая Комбинация"
+        local nm = u8"РќРѕРІР°СЏ РљРѕРјР±РёРЅР°С†РёСЏ"
        Lib.ffi.copy(ui.editor.name_buffer, nm, math.min(#nm + 1, 64))
     else
         ui.editor.selected_index = index
@@ -6411,19 +6411,19 @@ Fn.KS = (function()
         local dcol = cols[im.Col.TextDisabled] or { 0.6, 0.7, 0.9, 1 }
 
         im.SetWindowFontScale(0.9)
-        if im.Checkbox(Fn.T(u8"Показывать количество нажатий цифрами") .. "##ks_count_labels", KS.show_counts) then
+        if im.Checkbox(Fn.T(u8"РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ РЅР°Р¶Р°С‚РёР№ С†РёС„СЂР°РјРё") .. "##ks_count_labels", KS.show_counts) then
             KS.dirty = true
             KS.save()
         end
         im.Dummy(im.ImVec2(0, 4))
         if not KS.enabled[0] then
             im.TextColored(im.ImVec4(dcol[1], dcol[2], dcol[3], 0.8 * alpha),
-                Fn.T(u8"Включите, чтобы считать нажатия и комбинации"))
+                Fn.T(u8"Р’РєР»СЋС‡РёС‚Рµ, С‡С‚РѕР±С‹ СЃС‡РёС‚Р°С‚СЊ РЅР°Р¶Р°С‚РёСЏ Рё РєРѕРјР±РёРЅР°С†РёРё"))
             im.SetWindowFontScale(1.0)
             return
         end
         im.TextColored(im.ImVec4(dcol[1], dcol[2], dcol[3], 0.8 * alpha),
-            Fn.T(u8"Чем чаще нажимаете клавишу, тем краснее она"))
+            Fn.T(u8"Р§РµРј С‡Р°С‰Рµ РЅР°Р¶РёРјР°РµС‚Рµ РєР»Р°РІРёС€Сѓ, С‚РµРј РєСЂР°СЃРЅРµРµ РѕРЅР°"))
         im.SetWindowFontScale(1.0)
 
         local dl = im.GetWindowDrawList()
@@ -6441,7 +6441,7 @@ Fn.KS = (function()
         im.Dummy(im.ImVec2(0, 4))
 
         local armed = KS.reset_until ~= nil and os.clock() < KS.reset_until
-        local label = armed and Fn.T(u8"Нажмите ещё раз для сброса") or Fn.T(u8"Сбросить статистику")
+        local label = armed and Fn.T(u8"РќР°Р¶РјРёС‚Рµ РµС‰С‘ СЂР°Р· РґР»СЏ СЃР±СЂРѕСЃР°") or Fn.T(u8"РЎР±СЂРѕСЃРёС‚СЊ СЃС‚Р°С‚РёСЃС‚РёРєСѓ")
         local ba = cols[im.Col.Button] or { 0.2, 0.2, 0.2, 0.85 }
         local bh = cols[im.Col.ButtonHovered] or { 0.35, 0.35, 0.35, 1.0 }
         local bc = cols[im.Col.ButtonActive] or { 0.4, 0.4, 0.4, 1.0 }
@@ -6465,12 +6465,12 @@ Fn.KS = (function()
         end
 
         im.Dummy(im.ImVec2(0, 8))
-        im.TextColored(im.ImVec4(dcol[1], dcol[2], dcol[3], alpha), Fn.T(u8"Комбинации") .. ":")
+        im.TextColored(im.ImVec4(dcol[1], dcol[2], dcol[3], alpha), Fn.T(u8"РљРѕРјР±РёРЅР°С†РёРё") .. ":")
         local rows = KS.combo_rows()
         if #rows == 0 then
             im.SetWindowFontScale(0.9)
             im.TextColored(im.ImVec4(tcol[1], tcol[2], tcol[3], 0.5 * alpha),
-                Fn.T(u8"Пока нет правильно выполненных комбинаций"))
+                Fn.T(u8"РџРѕРєР° РЅРµС‚ РїСЂР°РІРёР»СЊРЅРѕ РІС‹РїРѕР»РЅРµРЅРЅС‹С… РєРѕРјР±РёРЅР°С†РёР№"))
             im.SetWindowFontScale(1.0)
         else
             local top = rows[1].n
@@ -6485,15 +6485,15 @@ Fn.KS = (function()
 
     do
         local tr = {
-            [u8"Статистика нажатий"]                         = "Key statistics",
-            [u8"Тепловая карта клавиш"]                      = "Key heatmap",
-            [u8"Включите, чтобы считать нажатия и комбинации"] = "Enable to count key presses and combos",
-            [u8"Чем чаще нажимаете клавишу, тем краснее она"]  = "The more you press a key, the redder it gets",
-            [u8"Показывать количество нажатий цифрами"] = "Show press counts as numbers",
-            [u8"Сбросить статистику"]                        = "Reset statistics",
-            [u8"Нажмите ещё раз для сброса"]                 = "Press again to reset",
-            [u8"Комбинации"]                                 = "Combos",
-            [u8"Пока нет правильно выполненных комбинаций"]  = "No correctly performed combos yet",
+            [u8"РЎС‚Р°С‚РёСЃС‚РёРєР° РЅР°Р¶Р°С‚РёР№"]                         = "Key statistics",
+            [u8"РўРµРїР»РѕРІР°СЏ РєР°СЂС‚Р° РєР»Р°РІРёС€"]                      = "Key heatmap",
+            [u8"Р’РєР»СЋС‡РёС‚Рµ, С‡С‚РѕР±С‹ СЃС‡РёС‚Р°С‚СЊ РЅР°Р¶Р°С‚РёСЏ Рё РєРѕРјР±РёРЅР°С†РёРё"] = "Enable to count key presses and combos",
+            [u8"Р§РµРј С‡Р°С‰Рµ РЅР°Р¶РёРјР°РµС‚Рµ РєР»Р°РІРёС€Сѓ, С‚РµРј РєСЂР°СЃРЅРµРµ РѕРЅР°"]  = "The more you press a key, the redder it gets",
+            [u8"РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ РЅР°Р¶Р°С‚РёР№ С†РёС„СЂР°РјРё"] = "Show press counts as numbers",
+            [u8"РЎР±СЂРѕСЃРёС‚СЊ СЃС‚Р°С‚РёСЃС‚РёРєСѓ"]                        = "Reset statistics",
+            [u8"РќР°Р¶РјРёС‚Рµ РµС‰С‘ СЂР°Р· РґР»СЏ СЃР±СЂРѕСЃР°"]                 = "Press again to reset",
+            [u8"РљРѕРјР±РёРЅР°С†РёРё"]                                 = "Combos",
+            [u8"РџРѕРєР° РЅРµС‚ РїСЂР°РІРёР»СЊРЅРѕ РІС‹РїРѕР»РЅРµРЅРЅС‹С… РєРѕРјР±РёРЅР°С†РёР№"]  = "No correctly performed combos yet",
         }
         for k, v in pairs(tr) do
             local dk = Fn.decodeSafe(k)
@@ -6569,7 +6569,7 @@ local function full_key_size(w_units, scale, h_units)
 end
 local function full_key_name(label)
     if label == 'SPACE' then
-        return Fn.T(u8'ПРОБЕЛ')
+        return Fn.T(u8'РџР РћР‘Р•Р›')
     end
     if label == 'NUM.' then return '.' end
     if label:sub(1, 3) == 'NUM' and #label > 3 then
@@ -6579,7 +6579,7 @@ local function full_key_name(label)
 end
 local function render_full_key(item, scale, st, comboVisualsActive, dl, rowY, rowX)
     local keyCode = (item.label == 'SPACE') and Fn.getSpaceCode() or (item.code or 0x20)
-    local keyNameForLogic = (item.label == 'SPACE') and Fn.decodeSafe(u8'ПРОБЕЛ') or item.label
+    local keyNameForLogic = (item.label == 'SPACE') and Fn.decodeSafe(u8'РџР РћР‘Р•Р›') or item.label
     local text = Fn.getLocalizedName(full_key_name(item.label))
     local numeric_text_color, is_numeric_text
     text, numeric_text_color, is_numeric_text = Fn.KS.display_text(keyCode, text, item.code2)
@@ -6746,8 +6746,8 @@ Data.kb_no_numpad = filter_rows(Data.full_keyboard.rows, function(item) return i
         for row_i, line in ipairs(keyboards[1]) do
             for col_i, v in ipairs(line) do
                 if v.space then goto continue_kb_key end
-                local keyName   = (v.space and u8"ПРОБЕЛ") or v[1]
-                local spaceLabel = v.space and (ui.space_as_shift[0] and "SHIFT" or u8"ПРОБЕЛ") or nil
+                local keyName   = (v.space and u8"РџР РћР‘Р•Р›") or v[1]
+                local spaceLabel = v.space and (ui.space_as_shift[0] and "SHIFT" or u8"РџР РћР‘Р•Р›") or nil
                 local text      = Fn.getLocalizedName(spaceLabel or keyName)
                 local keyCode   = v.space and Fn.getSpaceCode() or v[2]
                 local numeric_text_color, is_numeric_text
@@ -6918,7 +6918,7 @@ Fn.RenderSpaceKey = function()
         + Lib.imgui.WindowFlags.NoBackground
         + (ui.move[0] and 0 or Lib.imgui.WindowFlags.NoMove)
    Lib.imgui.Begin('##spacekey', nil, sp_flags)
-        local keyName   = u8"ПРОБЕЛ"
+        local keyName   = u8"РџР РћР‘Р•Р›"
         local keyCode   = Fn.getSpaceCode()
         local label     = ui.space_as_shift[0] and "SHIFT" or Fn.getLocalizedName(keyName)
         local numeric_text_color, is_numeric_text
@@ -7134,8 +7134,8 @@ end
            Data.wave_draw_list_ref = Lib.imgui.GetWindowDrawList()
         end
         local mouse_buttons = {
-            {text = u8'ЛКМ',    key = 0x01, width = S.cfg.mouse.lmb_width,  height = S.cfg.mouse.lmb_height},
-            {text = u8'ПКМ',    key = 0x02, width = S.cfg.mouse.rmb_width,  height = S.cfg.mouse.rmb_height, close_gap = true},
+            {text = u8'Р›РљРњ',    key = 0x01, width = S.cfg.mouse.lmb_width,  height = S.cfg.mouse.lmb_height},
+            {text = u8'РџРљРњ',    key = 0x02, width = S.cfg.mouse.rmb_width,  height = S.cfg.mouse.rmb_height, close_gap = true},
         }
         local comboVisualsActive = st.current_combo ~= nil
         for i, btn in ipairs(mouse_buttons) do
@@ -7274,7 +7274,7 @@ end
     local flags = Lib.imgui.WindowFlags.NoTitleBar
         + Lib.imgui.WindowFlags.NoCollapse
         + Lib.imgui.WindowFlags.NoScrollbar
-    local opened = Lib.imgui.Begin(Fn.T(u8"Логи нажатий##logwin"), ui.show_logs, flags)
+    local opened = Lib.imgui.Begin(Fn.T(u8"Р›РѕРіРё РЅР°Р¶Р°С‚РёР№##logwin"), ui.show_logs, flags)
     Lib.imgui.PopStyleVar(3)
     if Lib.imgui.Col.BorderShadow then Lib.imgui.PopStyleColor() end
     Lib.imgui.PopStyleColor(2)
@@ -7312,7 +7312,7 @@ end
         end
     end
     if drag_hovered0 or ui.logs_dragging then Data.nfn.set_hand_cursor() end
-    dl0:AddText(title_pos0, Data.nfn.pack_color(title_col[1], title_col[2], title_col[3], 1, false, ui.interface_alpha[0]), Fn.T(u8"Логи нажатий"))
+    dl0:AddText(title_pos0, Data.nfn.pack_color(title_col[1], title_col[2], title_col[3], 1, false, ui.interface_alpha[0]), Fn.T(u8"Р›РѕРіРё РЅР°Р¶Р°С‚РёР№"))
     local close_p0 = Lib.imgui.ImVec2(p0_max.x - 24, p0_min.y + 22)
     Lib.imgui.SetCursorScreenPos(Lib.imgui.ImVec2(close_p0.x - 14, close_p0.y - 14))
     if Lib.imgui.InvisibleButton('##log_close_rebuilt', Lib.imgui.ImVec2(28, 28)) then
@@ -7329,7 +7329,7 @@ end
        Lib.imgui.PushStyleColor(Lib.imgui.Col.Text, Lib.imgui.ImVec4(_ltxt[1],_ltxt[2],_ltxt[3],_ltxt[4] or 1.0)); local content_push = 1
         local function renderLogsToolbar()
         Data.nfn.PushButtonBorder()
-        if Lib.imgui.Button(Fn.T(u8"Очистить"), Lib.imgui.ImVec2(90, 22)) then
+        if Lib.imgui.Button(Fn.T(u8"РћС‡РёСЃС‚РёС‚СЊ"), Lib.imgui.ImVec2(90, 22)) then
             S.log_buffer = {}
         end
         Data.nfn.PopButtonBorder()
@@ -7340,7 +7340,7 @@ end
         local _lact = Lib.imgui.ImVec4(_lba_a[1],_lba_a[2],_lba_a[3],_lba_a[4] or 1.0)
         if ldm == 1 then Lib.imgui.PushStyleColor(Lib.imgui.Col.Button, _lact) end
         Data.nfn.PushButtonBorder()
-        if Lib.imgui.Button(Fn.T(u8"Текст##lwm"), Lib.imgui.ImVec2(55, 22)) then
+        if Lib.imgui.Button(Fn.T(u8"РўРµРєСЃС‚##lwm"), Lib.imgui.ImVec2(55, 22)) then
             ui.logs_display_mode[0] = 1; S.cfg.config.logs_display_mode = 1; Lib.inicfg.save(S.cfg, Data.iniFile)
         end
         Data.nfn.PopButtonBorder()
@@ -7349,7 +7349,7 @@ end
         local ldm2 = ui.logs_display_mode[0]
         if ldm2 == 2 then Lib.imgui.PushStyleColor(Lib.imgui.Col.Button, _lact) end
         Data.nfn.PushButtonBorder()
-        if Lib.imgui.Button(Fn.T(u8"Плашки##lwm"), Lib.imgui.ImVec2(55, 22)) then
+        if Lib.imgui.Button(Fn.T(u8"РџР»Р°С€РєРё##lwm"), Lib.imgui.ImVec2(55, 22)) then
             ui.logs_display_mode[0] = 2; S.cfg.config.logs_display_mode = 2; Lib.inicfg.save(S.cfg, Data.iniFile)
         end
         Data.nfn.PopButtonBorder()
@@ -7546,7 +7546,7 @@ end
            Lib.imgui.Spacing()
            Lib.imgui.SetCursorPosX(Lib.imgui.GetCursorPosX() + 4)
             do local _ltxt2 = Data.neon_active_colors[Lib.imgui.Col.Text] or {1.0,1.0,1.0,1.0}
-           Lib.imgui.TextColored(Lib.imgui.ImVec4(_ltxt2[1],_ltxt2[2],_ltxt2[3],(_ltxt2[4] or 1.0)*0.5), Fn.T(u8"Нет нажатий..."))
+           Lib.imgui.TextColored(Lib.imgui.ImVec4(_ltxt2[1],_ltxt2[2],_ltxt2[3],(_ltxt2[4] or 1.0)*0.5), Fn.T(u8"РќРµС‚ РЅР°Р¶Р°С‚РёР№..."))
             end
         elseif ui.logs_display_mode[0] == 1 then
             renderLogsTextMode()
@@ -7679,8 +7679,8 @@ Fn.RenderGuide = function()
     if not title_text and ui.context_menu_target and S.combos_list[ui.context_menu_target] then
         title_text = S.combos_list[ui.context_menu_target].name
     end
-    title_text = title_text or u8('Инфо')
-    title_text = Fn.T(u8('Гайд: ')) .. Fn.decodeSafe(title_text)
+    title_text = title_text or u8('РРЅС„Рѕ')
+    title_text = Fn.T(u8('Р“Р°Р№Рґ: ')) .. Fn.decodeSafe(title_text)
     local title_pos = Lib.imgui.ImVec2(p_min.x + 10, p_min.y + 5)
     Lib.imgui.SetCursorScreenPos(title_pos)
     Lib.imgui.InvisibleButton('##guide_drag', Lib.imgui.ImVec2(math.max(120, size.x - 82), 24))
@@ -7716,7 +7716,7 @@ Fn.RenderGuide = function()
     local content_x = p_min.x + 10
     local content_y = p_min.y + 31
     Lib.imgui.SetCursorScreenPos(Lib.imgui.ImVec2(content_x, content_y))
-    Lib.imgui.TextColored(Lib.imgui.ImVec4(section_col[1], section_col[2], section_col[3], section_col[4] or 1), Fn.T(u8('Описание:')))
+    Lib.imgui.TextColored(Lib.imgui.ImVec4(section_col[1], section_col[2], section_col[3], section_col[4] or 1), Fn.T(u8('РћРїРёСЃР°РЅРёРµ:')))
     Lib.imgui.SameLine(0, 8)
     Lib.imgui.PushStyleColor(Lib.imgui.Col.Button,
         Lib.imgui.ImVec4(ui.guide_color[0], ui.guide_color[1], ui.guide_color[2], 0.85))
@@ -7724,12 +7724,12 @@ Fn.RenderGuide = function()
         Lib.imgui.ImVec4(math.min(1, ui.guide_color[0] + 0.2), math.min(1, ui.guide_color[1] + 0.2), math.min(1, ui.guide_color[2] + 0.2), 1))
     Data.nfn.PushButtonBorder()
     Lib.imgui.PushStyleColor(Lib.imgui.Col.Text, Lib.imgui.ImVec4(1,1,1,0))
-    local gcol_clicked = Lib.imgui.Button(Fn.T(u8'Цвет##gcol'), Lib.imgui.ImVec2(52, 20))
+    local gcol_clicked = Lib.imgui.Button(Fn.T(u8'Р¦РІРµС‚##gcol'), Lib.imgui.ImVec2(52, 20))
     Lib.imgui.PopStyleColor()
     local gcol_min = Lib.imgui.GetItemRectMin()
     local gcol_max = Lib.imgui.GetItemRectMax()
     local gcol_dl = Lib.imgui.GetWindowDrawList()
-    local gcol_txt = Fn.T(u8('Цвет'))
+    local gcol_txt = Fn.T(u8('Р¦РІРµС‚'))
     local gcol_ts = Lib.imgui.CalcTextSize(gcol_txt)
     local gcol_cx = (gcol_min.x + gcol_max.x) * 0.5 - gcol_ts.x * 0.5
     local gcol_cy = (gcol_min.y + gcol_max.y) * 0.5 - gcol_ts.y * 0.5
@@ -7752,7 +7752,7 @@ Fn.RenderGuide = function()
     end
     Data.nfn.BeginColorPopupStyle()
     if Lib.imgui.BeginPopup('GuideColorPop') then
-            Lib.imgui.TextColored(Lib.imgui.ImVec4(text_col[1], text_col[2], text_col[3], text_col[4] or 1), Fn.T(u8('Цвет гайда')))
+            Lib.imgui.TextColored(Lib.imgui.ImVec4(text_col[1], text_col[2], text_col[3], text_col[4] or 1), Fn.T(u8('Р¦РІРµС‚ РіР°Р№РґР°')))
         Lib.imgui.Separator()
         local flags_cp = 0
         if Lib.imgui.ColorEditFlags then
@@ -7764,7 +7764,7 @@ Fn.RenderGuide = function()
         end
         Lib.imgui.Spacing()
         Data.nfn.PushButtonBorder()
-        if Lib.imgui.Button(Fn.T(u8'Белый##gcr'), Lib.imgui.ImVec2(-1, 0)) then
+        if Lib.imgui.Button(Fn.T(u8'Р‘РµР»С‹Р№##gcr'), Lib.imgui.ImVec2(-1, 0)) then
             ui.guide_picker[0], ui.guide_picker[1], ui.guide_picker[2] = 1, 1, 1
             ui.guide_color[0], ui.guide_color[1], ui.guide_color[2] = 1, 1, 1
             guide_save()
@@ -7776,7 +7776,7 @@ Fn.RenderGuide = function()
         Lib.imgui.PushStyleColor(Lib.imgui.Col.ButtonHovered, Lib.imgui.ImVec4(math.min(1, r + 0.15), math.min(1, g + 0.15), math.min(1, b + 0.15), 1))
         Lib.imgui.PushStyleColor(Lib.imgui.Col.Text, Lib.imgui.ImVec4(1 - r * 0.5, 1 - g * 0.5, 1 - b * 0.5, 1))
         Data.nfn.PushButtonBorder()
-        if Lib.imgui.Button(Fn.T(u8'Выбрать##gcapply'), Lib.imgui.ImVec2(-1, 0)) then
+        if Lib.imgui.Button(Fn.T(u8'Р’С‹Р±СЂР°С‚СЊ##gcapply'), Lib.imgui.ImVec2(-1, 0)) then
             for i = 0, 3 do ui.guide_color[i] = ui.guide_picker[i] end
             guide_save()
             Lib.imgui.CloseCurrentPopup()
@@ -7795,12 +7795,12 @@ Fn.RenderGuide = function()
         Lib.imgui.ImVec4(math.min(1, ui.guide_color[0] + 0.2), math.min(1, ui.guide_color[1] + 0.2), math.min(1, ui.guide_color[2] + 0.2), 1))
     Data.nfn.PushButtonBorder()
     Lib.imgui.PushStyleColor(Lib.imgui.Col.Text, Lib.imgui.ImVec4(1,1,1,0))
-    local gsize_clicked = Lib.imgui.Button(Fn.T(u8'Размер##gsize'), Lib.imgui.ImVec2(62, 20))
+    local gsize_clicked = Lib.imgui.Button(Fn.T(u8'Р Р°Р·РјРµСЂ##gsize'), Lib.imgui.ImVec2(62, 20))
     Lib.imgui.PopStyleColor()
     local gsize_min = Lib.imgui.GetItemRectMin()
     local gsize_max = Lib.imgui.GetItemRectMax()
     local gsize_dl = Lib.imgui.GetWindowDrawList()
-    local gsize_txt = Fn.T(u8('Размер'))
+    local gsize_txt = Fn.T(u8('Р Р°Р·РјРµСЂ'))
     local gsize_ts = Lib.imgui.CalcTextSize(gsize_txt)
     local gsize_cx = (gsize_min.x + gsize_max.x) * 0.5 - gsize_ts.x * 0.5
     local gsize_cy = (gsize_min.y + gsize_max.y) * 0.5 - gsize_ts.y * 0.5
@@ -8597,19 +8597,19 @@ local neon_render = Lib.imgui.OnFrame(
                                Data.nfn.pack_color(tc2[1]*0.3,tc2[2]*0.3,tc2[3]*0.3,0.55,false,neon.main_alpha), 10, 15, 1)
                         end
                         ndraw_p(1, function()
-                            section_header(fa.GEAR, Fn.T(u8"Скрипт"))
-                           Data.nfn.ios_toggle(Fn.T(u8"Общая активация"),  ui.script_enabled,     neon.main_alpha)
+                            section_header(fa.GEAR, Fn.T(u8"РЎРєСЂРёРїС‚"))
+                           Data.nfn.ios_toggle(Fn.T(u8"РћР±С‰Р°СЏ Р°РєС‚РёРІР°С†РёСЏ"),  ui.script_enabled,     neon.main_alpha)
                            Data.applyScriptMaster(false)
                            fixed_gap("g01", 5)
-                           Data.nfn.ios_toggle(Fn.T(u8"Клавиатура"),       ui.keyboard,           neon.main_alpha); fixed_gap("g02", 5)
-                           Data.nfn.ios_toggle(Fn.T(u8"Мышь"),             ui.mouse,              neon.main_alpha); fixed_gap("g03", 5)
-                           Data.nfn.ios_toggle(Fn.T(u8"Пробел = Shift"),   ui.space_as_shift,     neon.main_alpha); fixed_gap("g04", 5)
-                           Data.nfn.ios_toggle(Fn.T(u8"Перемещение клавиатуры"), ui.move,               neon.main_alpha); fixed_gap("g05", 5)
-                           Data.nfn.ios_toggle(Fn.T(u8"Сообщения в чате"), ui.show_chat_messages, neon.main_alpha)
+                           Data.nfn.ios_toggle(Fn.T(u8"РљР»Р°РІРёР°С‚СѓСЂР°"),       ui.keyboard,           neon.main_alpha); fixed_gap("g02", 5)
+                           Data.nfn.ios_toggle(Fn.T(u8"РњС‹С€СЊ"),             ui.mouse,              neon.main_alpha); fixed_gap("g03", 5)
+                           Data.nfn.ios_toggle(Fn.T(u8"РџСЂРѕР±РµР» = Shift"),   ui.space_as_shift,     neon.main_alpha); fixed_gap("g04", 5)
+                           Data.nfn.ios_toggle(Fn.T(u8"РџРµСЂРµРјРµС‰РµРЅРёРµ РєР»Р°РІРёР°С‚СѓСЂС‹"), ui.move,               neon.main_alpha); fixed_gap("g05", 5)
+                           Data.nfn.ios_toggle(Fn.T(u8"РЎРѕРѕР±С‰РµРЅРёСЏ РІ С‡Р°С‚Рµ"), ui.show_chat_messages, neon.main_alpha)
                            fixed_gap("g06", 12)
                             if type(CV) == 'table' and CV.obj_target_on and CV.dmg_on then
-                                section_header(safe_icon({"CROSSHAIRS", "BULLSEYE"}, fa.CROSSHAIRS or fa.GEAR), Fn.T(u8"Цель-объект"))
-                                if Lib.imgui.Checkbox(Fn.T(u8"Выбрать объект первым выстрелом##cbug_obj_target"), CV.obj_target_on) then
+                                section_header(safe_icon({"CROSSHAIRS", "BULLSEYE"}, fa.CROSSHAIRS or fa.GEAR), Fn.T(u8"Р¦РµР»СЊ-РѕР±СЉРµРєС‚"))
+                                if Lib.imgui.Checkbox(Fn.T(u8"Р’С‹Р±СЂР°С‚СЊ РѕР±СЉРµРєС‚ РїРµСЂРІС‹Рј РІС‹СЃС‚СЂРµР»РѕРј##cbug_obj_target"), CV.obj_target_on) then
                                     if CV.obj_target_on[0] then
                                         CV.dmg_on[0] = true
                                     else
@@ -8619,21 +8619,21 @@ local neon_render = Lib.imgui.OnFrame(
                                     if SYS and type(SYS.saveIni) == 'function' then pcall(SYS.saveIni) end
                                 end
                                 if CV.obj_target_on[0] then
-                                    Lib.imgui.TextDisabled(Fn.T(u8"Первый выстрел по объекту закрепляет его как цель."))
+                                    Lib.imgui.TextDisabled(Fn.T(u8"РџРµСЂРІС‹Р№ РІС‹СЃС‚СЂРµР» РїРѕ РѕР±СЉРµРєС‚Сѓ Р·Р°РєСЂРµРїР»СЏРµС‚ РµРіРѕ РєР°Рє С†РµР»СЊ."))
                                     if RT and RT.object_target then
-                                        Lib.imgui.TextDisabled(Fn.T(u8"Выбран объект: ") .. tostring(RT.object_target.label or RT.object_target.handle or 'MAP') ..
-                                            Fn.T(u8"  |  попаданий: ") .. tostring(RT.object_target.hits or 0))
+                                        Lib.imgui.TextDisabled(Fn.T(u8"Р’С‹Р±СЂР°РЅ РѕР±СЉРµРєС‚: ") .. tostring(RT.object_target.label or RT.object_target.handle or 'MAP') ..
+                                            Fn.T(u8"  |  РїРѕРїР°РґР°РЅРёР№: ") .. tostring(RT.object_target.hits or 0))
                                     else
-                                        Lib.imgui.TextDisabled(Fn.T(u8"Цель ещё не выбрана."))
+                                        Lib.imgui.TextDisabled(Fn.T(u8"Р¦РµР»СЊ РµС‰С‘ РЅРµ РІС‹Р±СЂР°РЅР°."))
                                     end
-                                    if Lib.imgui.Button(Fn.T(u8"Сбросить цель##cbug_obj_target_reset"), Lib.imgui.ImVec2(cw - 40, 28)) then
+                                    if Lib.imgui.Button(Fn.T(u8"РЎР±СЂРѕСЃРёС‚СЊ С†РµР»СЊ##cbug_obj_target_reset"), Lib.imgui.ImVec2(cw - 40, 28)) then
                                         if RT then RT.object_target = nil end
                                         if DMG then DMG.object_target_miss_reported = false end
                                     end
                                 end
                                 fixed_gap("g06_objtarget", 12)
                             end
-                            section_header(fa.GLOBE, Fn.T(u8"Язык клавиатуры"))
+                            section_header(fa.GLOBE, Fn.T(u8"РЇР·С‹Рє РєР»Р°РІРёР°С‚СѓСЂС‹"))
                             do
                                 fixed_row_begin("gr_lang")
                                 local lm = ui.language_mode[0]
@@ -8666,38 +8666,38 @@ local neon_render = Lib.imgui.OnFrame(
                                Lib.imgui.PopStyleVar()
                             end
                            fixed_gap("g07", 12)
-                            section_header(fa.CLOCK_ROTATE_LEFT, Fn.T(u8"Логи нажатий"))
-                           Data.nfn.ios_toggle(Fn.T(u8"Показывать логи"),      ui.show_logs,        neon.main_alpha); fixed_gap("g08", 5)
-                           Data.nfn.ios_toggle(Fn.T(u8"RGB (Логи / Комбо)"),   ui.logs_combo_rgb,   neon.main_alpha); fixed_gap("g09", 7)
-                           Data.nfn.ios_slider(Fn.T(u8"Кнопок в ряд"),         ui.logs_limit_row,    3, 20, neon.main_alpha); fixed_gap("g10", 7)
-                           Data.nfn.ios_slider(Fn.T(u8"Показывать последних"), ui.logs_max_display,  1, 50, neon.main_alpha)
-                            section_header(safe_icon({"COMPUTER_MOUSE", "MOUSE"}, fa.CIRCLE_HALF_STROKE), Fn.T(u8"Контроль +С"))
-                           Data.nfn.ios_toggle(Fn.T(u8"Включить контроль"), ui.recoil_enabled, neon.main_alpha)
+                            section_header(fa.CLOCK_ROTATE_LEFT, Fn.T(u8"Р›РѕРіРё РЅР°Р¶Р°С‚РёР№"))
+                           Data.nfn.ios_toggle(Fn.T(u8"РџРѕРєР°Р·С‹РІР°С‚СЊ Р»РѕРіРё"),      ui.show_logs,        neon.main_alpha); fixed_gap("g08", 5)
+                           Data.nfn.ios_toggle(Fn.T(u8"RGB (Р›РѕРіРё / РљРѕРјР±Рѕ)"),   ui.logs_combo_rgb,   neon.main_alpha); fixed_gap("g09", 7)
+                           Data.nfn.ios_slider(Fn.T(u8"РљРЅРѕРїРѕРє РІ СЂСЏРґ"),         ui.logs_limit_row,    3, 20, neon.main_alpha); fixed_gap("g10", 7)
+                           Data.nfn.ios_slider(Fn.T(u8"РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕСЃР»РµРґРЅРёС…"), ui.logs_max_display,  1, 50, neon.main_alpha)
+                            section_header(safe_icon({"COMPUTER_MOUSE", "MOUSE"}, fa.CIRCLE_HALF_STROKE), Fn.T(u8"РљРѕРЅС‚СЂРѕР»СЊ +РЎ"))
+                           Data.nfn.ios_toggle(Fn.T(u8"Р’РєР»СЋС‡РёС‚СЊ РєРѕРЅС‚СЂРѕР»СЊ"), ui.recoil_enabled, neon.main_alpha)
                            fixed_gap("g13", 7)
-                           Data.nfn.ios_toggle(Fn.T(u8"Показывать линию"), ui.recoil_show_line, neon.main_alpha)
+                           Data.nfn.ios_toggle(Fn.T(u8"РџРѕРєР°Р·С‹РІР°С‚СЊ Р»РёРЅРёСЋ"), ui.recoil_show_line, neon.main_alpha)
                            fixed_gap("g14", 7)
                            fixed_gap("g15", 6)
                             do
                                 local h   = Data.recoil_ring.height or 0
                                 local ang = math.deg(math.atan(h / Data.RING_RADIUS))
-                                local lbl = string.format("%+.2f", h) .. Fn.T(u8" м") ..
-                                            string.format("  (%+.1f", ang) .. u8"°)"
+                                local lbl = string.format("%+.2f", h) .. Fn.T(u8" Рј") ..
+                                            string.format("  (%+.1f", ang) .. u8"В°)"
                                 fixed_row_begin("gr_line_height")
-                               Lib.imgui.Text(Fn.T(u8"Высота черты: ") .. lbl)
+                               Lib.imgui.Text(Fn.T(u8"Р’С‹СЃРѕС‚Р° С‡РµСЂС‚С‹: ") .. lbl)
                                fixed_gap("g16", 4)
                                 fixed_row_begin("gr_ring")
                                 local nudge_w = (cw - 48) / 3
-                                if Lib.imgui.Button(safe_icon({"ARROW_UP","CARET_UP"}, "^") .. " " .. Fn.T(u8"Выше"), Lib.imgui.ImVec2(nudge_w, 26)) then
+                                if Lib.imgui.Button(safe_icon({"ARROW_UP","CARET_UP"}, "^") .. " " .. Fn.T(u8"Р’С‹С€Рµ"), Lib.imgui.ImVec2(nudge_w, 26)) then
                                    Fn.nudgeRecoilRing(Data.RING_STEP)
                                 end
                                 if Lib.imgui.IsItemHovered() then Data.nfn.set_hand_cursor() end
                                Lib.imgui.SameLine(0, 4)
-                                if Lib.imgui.Button(safe_icon({"ARROW_DOWN","CARET_DOWN"}, "v") .. " " .. Fn.T(u8"Ниже"), Lib.imgui.ImVec2(nudge_w, 26)) then
+                                if Lib.imgui.Button(safe_icon({"ARROW_DOWN","CARET_DOWN"}, "v") .. " " .. Fn.T(u8"РќРёР¶Рµ"), Lib.imgui.ImVec2(nudge_w, 26)) then
                                    Fn.nudgeRecoilRing(-Data.RING_STEP)
                                 end
                                 if Lib.imgui.IsItemHovered() then Data.nfn.set_hand_cursor() end
                                Lib.imgui.SameLine(0, 4)
-                                if Lib.imgui.Button(Fn.T(u8"По центру") .. "##ringzero", Lib.imgui.ImVec2(nudge_w, 26)) then
+                                if Lib.imgui.Button(Fn.T(u8"РџРѕ С†РµРЅС‚СЂСѓ") .. "##ringzero", Lib.imgui.ImVec2(nudge_w, 26)) then
                                    Data.recoil_ring.height = 0
                                     S.cfg.config.recoil_ring_height = 0
                                     pcall(function() Lib.inicfg.save(S.cfg, Data.iniFile) end)
@@ -8705,11 +8705,11 @@ local neon_render = Lib.imgui.OnFrame(
                                 if Lib.imgui.IsItemHovered() then Data.nfn.set_hand_cursor() end
                             end
                            fixed_gap("g17", 8)
-                           Data.nfn.ios_slider(Fn.T(u8"Толщина линии"),        ui.recoil_line_thickness, 0.5, 6.0, neon.main_alpha); fixed_gap("g18", 5)
-                           Data.nfn.ios_slider(Fn.T(u8"Длительность вспышки"), ui.recoil_flash_duration, 0.01, 0.5, neon.main_alpha); fixed_gap("g19", 5)
-                           Data.nfn.ios_slider(Fn.T(u8"Яркость вспышки"),      ui.recoil_flash_alpha,    0.0, 1.0, neon.main_alpha)
+                           Data.nfn.ios_slider(Fn.T(u8"РўРѕР»С‰РёРЅР° Р»РёРЅРёРё"),        ui.recoil_line_thickness, 0.5, 6.0, neon.main_alpha); fixed_gap("g18", 5)
+                           Data.nfn.ios_slider(Fn.T(u8"Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РІСЃРїС‹С€РєРё"), ui.recoil_flash_duration, 0.01, 0.5, neon.main_alpha); fixed_gap("g19", 5)
+                           Data.nfn.ios_slider(Fn.T(u8"РЇСЂРєРѕСЃС‚СЊ РІСЃРїС‹С€РєРё"),      ui.recoil_flash_alpha,    0.0, 1.0, neon.main_alpha)
                            fixed_gap("g20", 7)
-                            if Data.nfn.CustomColorPicker(Fn.T(u8"Цвет вспышки"), "recoil_flash_col", neon_fx.recoil_flash_color, true, neon.main_alpha) then
+                            if Data.nfn.CustomColorPicker(Fn.T(u8"Р¦РІРµС‚ РІСЃРїС‹С€РєРё"), "recoil_flash_col", neon_fx.recoil_flash_color, true, neon.main_alpha) then
                                 local rc = neon_fx.recoil_flash_color
                                 S.cfg.neon.recoil_flash_r = rc[1]; S.cfg.neon.recoil_flash_g = rc[2]
                                 S.cfg.neon.recoil_flash_b = rc[3]; S.cfg.neon.recoil_flash_a = rc[4]
@@ -8728,22 +8728,22 @@ local neon_render = Lib.imgui.OnFrame(
                                     _stats_base.x + fixed_row_x("gr_stats_correct") + 9.00, _stats_y))
                                 Lib.imgui.TextColored(
                                     Lib.imgui.ImVec4(0.3,0.9,0.3,1),
-                                    Fn.T(u8"Правильно: ") .. correct)
+                                    Fn.T(u8"РџСЂР°РІРёР»СЊРЅРѕ: ") .. correct)
                                 local _stats_x2 = Lib.imgui.GetItemRectMax().x + _stats_gap
                                     + fixed_row_x("gr_stats_incorrect") + 2.72
                                 Lib.imgui.SetCursorScreenPos(Lib.imgui.ImVec2(_stats_x2, _stats_y))
                                 Lib.imgui.TextColored(
                                     Lib.imgui.ImVec4(0.95,0.3,0.3,1),
-                                    Fn.T(u8"Неправильно: ") .. incorrect)
+                                    Fn.T(u8"РќРµРїСЂР°РІРёР»СЊРЅРѕ: ") .. incorrect)
                                 local _stats_x3 = Lib.imgui.GetItemRectMax().x + _stats_gap
                                     + fixed_row_x("gr_stats_kpd") + 2.72
                                 Lib.imgui.SetCursorScreenPos(Lib.imgui.ImVec2(_stats_x3, _stats_y))
                                 Lib.imgui.TextColored(
                                     Fn.statColorVec(kpd, true),
-                                    Fn.T(u8"КПД: ") .. string.format("%.1f%%", kpd))
+                                    Fn.T(u8"РљРџР”: ") .. string.format("%.1f%%", kpd))
                                 fixed_gap("g22", 8)
                                 fixed_row_begin("gr_stats_reset")
-                                if Lib.imgui.Button(fa.ROTATE_LEFT .. " " .. Fn.T(u8"Сбросить статистику"), Lib.imgui.ImVec2(cw - 40, 28)) then
+                                if Lib.imgui.Button(fa.ROTATE_LEFT .. " " .. Fn.T(u8"РЎР±СЂРѕСЃРёС‚СЊ СЃС‚Р°С‚РёСЃС‚РёРєСѓ"), Lib.imgui.ImVec2(cw - 40, 28)) then
                                     S.state.recoil_correct   = 0
                                     S.state.recoil_incorrect = 0
                                     S.cfg.config.recoil_correct   = 0
@@ -8753,14 +8753,14 @@ local neon_render = Lib.imgui.OnFrame(
                                 if Lib.imgui.IsItemHovered() then Data.nfn.set_hand_cursor() end
                             end
                            fixed_gap("g23", 16)
-                            section_header(safe_icon({"TABLE_CELLS_LARGE","TABLE_CELLS","IMAGE"}, fa.TABLE_LIST), Fn.T(u8"Карта выстрелов"))
-                           Data.nfn.ios_toggle(Fn.T(u8"Записывать карту"), ui.shotmap_enabled, neon.main_alpha)
+                            section_header(safe_icon({"TABLE_CELLS_LARGE","TABLE_CELLS","IMAGE"}, fa.TABLE_LIST), Fn.T(u8"РљР°СЂС‚Р° РІС‹СЃС‚СЂРµР»РѕРІ"))
+                           Data.nfn.ios_toggle(Fn.T(u8"Р—Р°РїРёСЃС‹РІР°С‚СЊ РєР°СЂС‚Сѓ"), ui.shotmap_enabled, neon.main_alpha)
                            fixed_gap("g24", 7)
-                           Data.nfn.ios_slider(Fn.T(u8"Выстрелов на карточку"), ui.shotmap_session_size, 1, 100, neon.main_alpha)
+                           Data.nfn.ios_slider(Fn.T(u8"Р’С‹СЃС‚СЂРµР»РѕРІ РЅР° РєР°СЂС‚РѕС‡РєСѓ"), ui.shotmap_session_size, 1, 100, neon.main_alpha)
                            fixed_gap("g25", 10)
                             do
                                 fixed_row_begin("gr_shot_modes")
-                                local sm_modes = {Fn.T(u8"По сессиям"), Fn.T(u8"Общий вид")}
+                                local sm_modes = {Fn.T(u8"РџРѕ СЃРµСЃСЃРёСЏРј"), Fn.T(u8"РћР±С‰РёР№ РІРёРґ")}
                                 local btn_w = (cw - 48) / 2
                                 for mi = 1, 2 do
                                     if mi > 1 then Lib.imgui.SameLine(0, 4) end
@@ -8794,8 +8794,8 @@ local neon_render = Lib.imgui.OnFrame(
                                     ui.shotmap_view_index[0] = math.max(1, sm_idx - 1)
                                 end
                                Lib.imgui.SameLine(0, 8)
-                                local sm_label = sm_is_current and Fn.T(u8"Сейчас")
-                                    or (Fn.T(u8"Карточка ") .. sm_idx .. "/" .. math.max(0, sm_total - 1))
+                                local sm_label = sm_is_current and Fn.T(u8"РЎРµР№С‡Р°СЃ")
+                                    or (Fn.T(u8"РљР°СЂС‚РѕС‡РєР° ") .. sm_idx .. "/" .. math.max(0, sm_total - 1))
                                 local sm_lts = Lib.imgui.CalcTextSize(sm_label)
                                 local gr_current_dx = sm_is_current and fixed_row_x("gr_shot_current") or 0
                                Lib.imgui.SetCursorPosX(math.max(0, math.max(Lib.imgui.GetCursorPosX(), (cw - sm_lts.x) / 2) + gr_nav_dx + gr_current_dx))
@@ -8833,7 +8833,7 @@ local neon_render = Lib.imgui.OnFrame(
                            fixed_gap("g28", 6)
                             if Data.shotmap_chart_open then
                                 fixed_row_begin("gr_shot_metric")
-                                local mnames = {Fn.T(u8"Разброс"), Fn.T(u8"КПД")}
+                                local mnames = {Fn.T(u8"Р Р°Р·Р±СЂРѕСЃ"), Fn.T(u8"РљРџР”")}
                                 local mw = (cw - 44) / 2
                                 for mi = 1, 2 do
                                     if mi > 1 then Lib.imgui.SameLine(0, 4) end
@@ -8859,7 +8859,7 @@ local neon_render = Lib.imgui.OnFrame(
                                fixed_gap("g29", 6)
                             end
                             fixed_row_begin("gr_shot_clear")
-                            if Lib.imgui.Button(fa.TRASH_CAN .. " " .. Fn.T(u8"Очистить карту"), Lib.imgui.ImVec2(cw - 40, 28)) then
+                            if Lib.imgui.Button(fa.TRASH_CAN .. " " .. Fn.T(u8"РћС‡РёСЃС‚РёС‚СЊ РєР°СЂС‚Сѓ"), Lib.imgui.ImVec2(cw - 40, 28)) then
                                Data.shotmap.sessions = {}
                                Data.shotmap.current  = {points = {}, ref = nil, ts = os.time()}
                                 ui.shotmap_view_index[0] = 1
@@ -8869,25 +8869,25 @@ local neon_render = Lib.imgui.OnFrame(
                             end
                             if Lib.imgui.IsItemHovered() then Data.nfn.set_hand_cursor() end
                            fixed_gap("g30", 16)
-                           section_header(fa.FIRE or fa.KEYBOARD, Fn.T(u8"Статистика нажатий"))
-                           Data.nfn.ios_toggle(Fn.T(u8"Тепловая карта клавиш"), Fn.KS.enabled, neon.main_alpha)
+                           section_header(fa.FIRE or fa.KEYBOARD, Fn.T(u8"РЎС‚Р°С‚РёСЃС‚РёРєР° РЅР°Р¶Р°С‚РёР№"))
+                           Data.nfn.ios_toggle(Fn.T(u8"РўРµРїР»РѕРІР°СЏ РєР°СЂС‚Р° РєР»Р°РІРёС€"), Fn.KS.enabled, neon.main_alpha)
                            fixed_gap("g11b", 6)
                            Fn.KS.draw_ui(neon.global_alpha, neon.main_alpha)
                            fixed_gap("g12", 16)
                         end)
                         ndraw_p(2, function()
                             local tc2 = neon_fx.title_color
-                            section_header(fa.KEYBOARD, Fn.T(u8"Клавиатура"))
+                            section_header(fa.KEYBOARD, Fn.T(u8"РљР»Р°РІРёР°С‚СѓСЂР°"))
                             do
                                 local kb_mode_names = {
-                                    Fn.T(u8"Тренировочная (W A S D Q E / C / ПРОБЕЛ)"),
-                                    Fn.T(u8"Вся клавиатура"),
-                                    Fn.T(u8"Клавиатура без NumPad"),
+                                    Fn.T(u8"РўСЂРµРЅРёСЂРѕРІРѕС‡РЅР°СЏ (W A S D Q E / C / РџР РћР‘Р•Р›)"),
+                                    Fn.T(u8"Р’СЃСЏ РєР»Р°РІРёР°С‚СѓСЂР°"),
+                                    Fn.T(u8"РљР»Р°РІРёР°С‚СѓСЂР° Р±РµР· NumPad"),
                                 }
                                 local kb_mode_items = Lib.new["const char*"][#kb_mode_names](kb_mode_names)
                                 Lib.imgui.PushStyleVarFloat(Lib.imgui.StyleVar.FrameRounding, 8)
                                                                 Lib.imgui.PushStyleVarVec2(Lib.imgui.StyleVar.WindowPadding, Lib.imgui.ImVec2(8, 0))
-                                if Lib.imgui.Combo(Fn.T(u8"Вариант клавиатуры"), ui.keyboard_type, kb_mode_items, #kb_mode_names) then
+                                if Lib.imgui.Combo(Fn.T(u8"Р’Р°СЂРёР°РЅС‚ РєР»Р°РІРёР°С‚СѓСЂС‹"), ui.keyboard_type, kb_mode_items, #kb_mode_names) then
                                     S.cfg.config.keyboard_type = ui.keyboard_type[0]
                                     if ui.keyboard_type[0] == 1 then
                                         ui.mouse[0] = true
@@ -8900,20 +8900,20 @@ local neon_render = Lib.imgui.OnFrame(
                             end
                             fixed_gap("s01", 7)
                            fixed_slider_begin("ls_keyboard_scale")
-                           Data.nfn.ios_slider(Fn.T(u8"Размер"),              ui.keyboard_scale,     0.5, 2.0, neon.main_alpha); fixed_gap("s02", 7)
+                           Data.nfn.ios_slider(Fn.T(u8"Р Р°Р·РјРµСЂ"),              ui.keyboard_scale,     0.5, 2.0, neon.main_alpha); fixed_gap("s02", 7)
                            fixed_slider_begin("ls_keyboard_alpha")
-                           Data.nfn.ios_slider(Fn.T(u8"Прозрачность клавиш"), ui.keyboard_key_alpha, 0.0, 1.0, neon.main_alpha); fixed_gap("s03", 7)
+                           Data.nfn.ios_slider(Fn.T(u8"РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ РєР»Р°РІРёС€"), ui.keyboard_key_alpha, 0.0, 1.0, neon.main_alpha); fixed_gap("s03", 7)
                            fixed_slider_begin("ls_text_alpha")
-                           Data.nfn.ios_slider(Fn.T(u8"Прозрачность текста"),  ui.text_alpha,         0.0, 1.0, neon.main_alpha, true); fixed_gap("s04", 7)
+                           Data.nfn.ios_slider(Fn.T(u8"РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ С‚РµРєСЃС‚Р°"),  ui.text_alpha,         0.0, 1.0, neon.main_alpha, true); fixed_gap("s04", 7)
                            fixed_slider_begin("ls_border_thickness")
-                           Data.nfn.ios_slider(Fn.T(u8"Толщина обводки"),      Data.border_thickness,      0.5, 3.0, neon.main_alpha); fixed_gap("s05", 7)
+                           Data.nfn.ios_slider(Fn.T(u8"РўРѕР»С‰РёРЅР° РѕР±РІРѕРґРєРё"),      Data.border_thickness,      0.5, 3.0, neon.main_alpha); fixed_gap("s05", 7)
                            fixed_slider_begin("ls_combo_scale")
-                           Data.nfn.ios_slider(Fn.T(u8"Масштаб комбо"),        ui.combo_window_scale, 0.5, 2.0, neon.main_alpha); fixed_gap("s06", 7)
+                           Data.nfn.ios_slider(Fn.T(u8"РњР°СЃС€С‚Р°Р± РєРѕРјР±Рѕ"),        ui.combo_window_scale, 0.5, 2.0, neon.main_alpha); fixed_gap("s06", 7)
                             do
                                 fixed_row_begin("gr_style_border")
-                                local bm_names = {Fn.T(u8"Выкл"), Fn.T(u8"Вкл"), Fn.T(u8"При нажатии")}
+                                local bm_names = {Fn.T(u8"Р’С‹РєР»"), Fn.T(u8"Р’РєР»"), Fn.T(u8"РџСЂРё РЅР°Р¶Р°С‚РёРё")}
                                 do local td_=Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
-Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(u8"Обводка:")) end
+Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(u8"РћР±РІРѕРґРєР°:")) end
                                Lib.imgui.PushStyleVarFloat(Lib.imgui.StyleVar.FrameRounding, 8)
                                 for bi = 1, 3 do
                                     if bi > 1 then Lib.imgui.SameLine(0, 4) end
@@ -8937,18 +8937,18 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                Lib.imgui.PopStyleVar()
                             end
                            fixed_gap("s07", 12)
-                            section_header(fa.WAVE_SQUARE, Fn.T(u8"Волна на клавишах"))
-                           Data.nfn.ios_toggle(Fn.T(u8"Включить волну"), ui.wave_enabled,      neon.main_alpha); fixed_gap("s08", 7)
+                            section_header(fa.WAVE_SQUARE, Fn.T(u8"Р’РѕР»РЅР° РЅР° РєР»Р°РІРёС€Р°С…"))
+                           Data.nfn.ios_toggle(Fn.T(u8"Р’РєР»СЋС‡РёС‚СЊ РІРѕР»РЅСѓ"), ui.wave_enabled,      neon.main_alpha); fixed_gap("s08", 7)
                            fixed_slider_begin("ls_wave_speed")
-                           Data.nfn.ios_slider(Fn.T(u8"Скорость"),        ui.wave_speed,        0.1, 4.0, neon.main_alpha); fixed_gap("s09", 7)
+                           Data.nfn.ios_slider(Fn.T(u8"РЎРєРѕСЂРѕСЃС‚СЊ"),        ui.wave_speed,        0.1, 4.0, neon.main_alpha); fixed_gap("s09", 7)
                            fixed_slider_begin("ls_wave_transparency")
-                           Data.nfn.ios_slider(Fn.T(u8"Прозрачность"),    ui.wave_transparency, 0.0, 1.0, neon.main_alpha); fixed_gap("s10", 7)
+                           Data.nfn.ios_slider(Fn.T(u8"РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ"),    ui.wave_transparency, 0.0, 1.0, neon.main_alpha); fixed_gap("s10", 7)
                             do
                                 fixed_row_begin("gr_wave_dir")
                                 local wm_names = {Fn.T(u8"<>"), Fn.T(u8"><"), Fn.T(u8"^v"), Fn.T(u8"v^")}
                                 local wm_btn_w = 44
                                 do local td_=Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
-Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(u8"Направление:")) end
+Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(u8"РќР°РїСЂР°РІР»РµРЅРёРµ:")) end
                                Lib.imgui.PushStyleVarFloat(Lib.imgui.StyleVar.FrameRounding, 8)
                                 for wi = 1, 4 do
                                     if wi > 1 then Lib.imgui.SameLine(0, 4) end
@@ -8973,9 +8973,9 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                            fixed_gap("s11", 7)
                             do
                                 fixed_row_begin("gr_wave_target")
-                                local wt_names = {Fn.T(u8"Клавиши"), Fn.T(u8"Обводка"), Fn.T(u8"Текст"), Fn.T(u8"Всё")}
+                                local wt_names = {Fn.T(u8"РљР»Р°РІРёС€Рё"), Fn.T(u8"РћР±РІРѕРґРєР°"), Fn.T(u8"РўРµРєСЃС‚"), Fn.T(u8"Р’СЃС‘")}
                                 do local td_=Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
-Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(u8"Режим волны:")) end
+Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(u8"Р РµР¶РёРј РІРѕР»РЅС‹:")) end
                                Lib.imgui.PushStyleVarFloat(Lib.imgui.StyleVar.FrameRounding, 8)
                                 for wi = 1, 4 do
                                     if wi > 1 then Lib.imgui.SameLine(0, 4) end
@@ -9000,11 +9000,11 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                Lib.imgui.PopStyleVar()
                             end
                            fixed_gap("s12", 7)
-                           Data.nfn.ios_toggle(Fn.T(u8"RGB волна"), ui.wave_color_rgb, neon.main_alpha)
+                           Data.nfn.ios_toggle(Fn.T(u8"RGB РІРѕР»РЅР°"), ui.wave_color_rgb, neon.main_alpha)
                            fixed_gap("s13", 7)
-                           Data.nfn.ios_toggle(Fn.T(u8"Рандомные цвета волны"), ui.wave_random_colors, neon.main_alpha)
+                           Data.nfn.ios_toggle(Fn.T(u8"Р Р°РЅРґРѕРјРЅС‹Рµ С†РІРµС‚Р° РІРѕР»РЅС‹"), ui.wave_random_colors, neon.main_alpha)
                            fixed_gap("s14", 7)
-                            if Data.nfn.CustomColorPicker(Fn.T(u8"Цвет волны"), "wave_col", Data.neon_wave_color_tbl, true, neon.main_alpha) then
+                            if Data.nfn.CustomColorPicker(Fn.T(u8"Р¦РІРµС‚ РІРѕР»РЅС‹"), "wave_col", Data.neon_wave_color_tbl, true, neon.main_alpha) then
                                 ui.wave_color_if4[0]=Data.neon_wave_color_tbl[1]; ui.wave_color_if4[1]=Data.neon_wave_color_tbl[2]
                                 ui.wave_color_if4[2]=Data.neon_wave_color_tbl[3]; ui.wave_color_if4[3]=Data.neon_wave_color_tbl[4]
                                 S.cfg.config.wave_r=Data.neon_wave_color_tbl[1]; S.cfg.config.wave_g=Data.neon_wave_color_tbl[2]
@@ -9045,54 +9045,54 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                 end
                                 Data.nfn.EndColorPopupStyle()
                             end
-                            section_header(fa.CIRCLE_HALF_STROKE, Fn.T(u8"Цвета комбо-клавиш"))
-                            neon_color_popup(Fn.T(u8"Удержание"), "held",    ui.held_color_if4,    ui.held_color,    "held");    fixed_gap("s16", 5)
-                            neon_color_popup(Fn.T(u8"Правильно"), "correct", ui.correct_color_if4, ui.correct_color, "correct"); fixed_gap("s17", 5)
-                            neon_color_popup(Fn.T(u8"Ошибка"),    "error",   ui.error_color_if4,   ui.error_color,   "error")
+                            section_header(fa.CIRCLE_HALF_STROKE, Fn.T(u8"Р¦РІРµС‚Р° РєРѕРјР±Рѕ-РєР»Р°РІРёС€"))
+                            neon_color_popup(Fn.T(u8"РЈРґРµСЂР¶Р°РЅРёРµ"), "held",    ui.held_color_if4,    ui.held_color,    "held");    fixed_gap("s16", 5)
+                            neon_color_popup(Fn.T(u8"РџСЂР°РІРёР»СЊРЅРѕ"), "correct", ui.correct_color_if4, ui.correct_color, "correct"); fixed_gap("s17", 5)
+                            neon_color_popup(Fn.T(u8"РћС€РёР±РєР°"),    "error",   ui.error_color_if4,   ui.error_color,   "error")
                            fixed_gap("s18", 12)
-                            section_header(fa.DROPLET, Fn.T(u8"Цвета клавиш"))
+                            section_header(fa.DROPLET, Fn.T(u8"Р¦РІРµС‚Р° РєР»Р°РІРёС€"))
                             do local td_=Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
-Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(u8"Обычные:")) end; fixed_gap("s19", 4)
+Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(u8"РћР±С‹С‡РЅС‹Рµ:")) end; fixed_gap("s19", 4)
                             fixed_row_begin("gr_key_fill")
-                            neon_color_popup(Fn.T(u8"Заливка"),  "key_fill",   ui.key_fill_if4,   ui.key_fill_color,   "key_fill")
+                            neon_color_popup(Fn.T(u8"Р—Р°Р»РёРІРєР°"),  "key_fill",   ui.key_fill_if4,   ui.key_fill_color,   "key_fill")
                            Lib.imgui.SameLine(0, 14)
                             if Lib.imgui.Checkbox("RGB##fill",   ui.key_fill_rgb)   then S.cfg.config.key_fill_rgb   = ui.key_fill_rgb[0];   Lib.inicfg.save(S.cfg, Data.iniFile) end
                            fixed_gap("s20", 4)
                             fixed_row_begin("gr_key_border")
-                            neon_color_popup(Fn.T(u8"Обводка"), "key_border", ui.key_border_if4, ui.key_border_color, "key_border")
+                            neon_color_popup(Fn.T(u8"РћР±РІРѕРґРєР°"), "key_border", ui.key_border_if4, ui.key_border_color, "key_border")
                            Lib.imgui.SameLine(0, 14)
                             if Lib.imgui.Checkbox("RGB##border", ui.key_border_rgb) then S.cfg.config.key_border_rgb = ui.key_border_rgb[0]; Lib.inicfg.save(S.cfg, Data.iniFile) end
                            fixed_gap("s21", 4)
                             fixed_row_begin("gr_key_text")
-                            neon_color_popup(Fn.T(u8"Текст"),   "key_text",   ui.key_text_if4,   ui.key_text_color,   "key_text")
+                            neon_color_popup(Fn.T(u8"РўРµРєСЃС‚"),   "key_text",   ui.key_text_if4,   ui.key_text_color,   "key_text")
                            Lib.imgui.SameLine(0, 14)
                             if Lib.imgui.Checkbox("RGB##text",   ui.key_text_rgb)   then S.cfg.config.key_text_rgb   = ui.key_text_rgb[0];   Lib.inicfg.save(S.cfg, Data.iniFile) end
                            fixed_gap("s22", 8)
                             do local td_=Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
-Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(u8"При нажатии:")) end; fixed_gap("s23", 4)
+Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(u8"РџСЂРё РЅР°Р¶Р°С‚РёРё:")) end; fixed_gap("s23", 4)
                             fixed_row_begin("gr_pressed_fill")
-                            neon_color_popup(Fn.T(u8"Заливка"),  "pressed_fill",   ui.pressed_fill_if4,   ui.pressed_fill_color,   "pressed_fill")
+                            neon_color_popup(Fn.T(u8"Р—Р°Р»РёРІРєР°"),  "pressed_fill",   ui.pressed_fill_if4,   ui.pressed_fill_color,   "pressed_fill")
                            Lib.imgui.SameLine(0, 14)
                             Data.nfn.PushButtonBorder()
-                            if Lib.imgui.Checkbox(Fn.T(u8"Вкл##pfill"),   ui.pressed_fill_enabled)   then S.cfg.config.pressed_fill_enabled   = ui.pressed_fill_enabled[0];   Lib.inicfg.save(S.cfg, Data.iniFile) end
+                            if Lib.imgui.Checkbox(Fn.T(u8"Р’РєР»##pfill"),   ui.pressed_fill_enabled)   then S.cfg.config.pressed_fill_enabled   = ui.pressed_fill_enabled[0];   Lib.inicfg.save(S.cfg, Data.iniFile) end
                             Data.nfn.PopButtonBorder()
                            fixed_gap("s24", 4)
                             fixed_row_begin("gr_pressed_border")
-                            neon_color_popup(Fn.T(u8"Обводка"), "pressed_border", ui.pressed_border_if4, ui.pressed_border_color, "pressed_border")
+                            neon_color_popup(Fn.T(u8"РћР±РІРѕРґРєР°"), "pressed_border", ui.pressed_border_if4, ui.pressed_border_color, "pressed_border")
                            Lib.imgui.SameLine(0, 14)
                             Data.nfn.PushButtonBorder()
-                            if Lib.imgui.Checkbox(Fn.T(u8"Вкл##pborder"), ui.pressed_border_enabled) then S.cfg.config.pressed_border_enabled = ui.pressed_border_enabled[0]; Lib.inicfg.save(S.cfg, Data.iniFile) end
+                            if Lib.imgui.Checkbox(Fn.T(u8"Р’РєР»##pborder"), ui.pressed_border_enabled) then S.cfg.config.pressed_border_enabled = ui.pressed_border_enabled[0]; Lib.inicfg.save(S.cfg, Data.iniFile) end
                             Data.nfn.PopButtonBorder()
                            fixed_gap("s25", 4)
                             fixed_row_begin("gr_pressed_text")
-                            neon_color_popup(Fn.T(u8"Текст"),   "pressed_text",   ui.pressed_text_if4,   ui.pressed_text_color,   "pressed_text")
+                            neon_color_popup(Fn.T(u8"РўРµРєСЃС‚"),   "pressed_text",   ui.pressed_text_if4,   ui.pressed_text_color,   "pressed_text")
                            Lib.imgui.SameLine(0, 14)
                             Data.nfn.PushButtonBorder()
-                            if Lib.imgui.Checkbox(Fn.T(u8"Вкл##ptext"),   ui.pressed_text_enabled)   then S.cfg.config.pressed_text_enabled   = ui.pressed_text_enabled[0];   Lib.inicfg.save(S.cfg, Data.iniFile) end
+                            if Lib.imgui.Checkbox(Fn.T(u8"Р’РєР»##ptext"),   ui.pressed_text_enabled)   then S.cfg.config.pressed_text_enabled   = ui.pressed_text_enabled[0];   Lib.inicfg.save(S.cfg, Data.iniFile) end
                             Data.nfn.PopButtonBorder()
                            fixed_gap("s26", 8)
                            fixed_slider_begin("ls_rgb_speed")
-                           Data.nfn.ios_slider(Fn.T(u8"Скорость RGB"), ui.rgb_speed, 0.1, 3.0, neon.main_alpha)
+                           Data.nfn.ios_slider(Fn.T(u8"РЎРєРѕСЂРѕСЃС‚СЊ RGB"), ui.rgb_speed, 0.1, 3.0, neon.main_alpha)
                            fixed_gap("s27", 6)
                         end)
                         ndraw_p(3, function()
@@ -9130,7 +9130,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                     do
                                         local _nb_dl    = Lib.imgui.GetWindowDrawList()
                                         local _nb_ico   = fa.CIRCLE_PLUS
-                                        local _nb_txt   = Fn.T(u8"Новая комбинация")
+                                        local _nb_txt   = Fn.T(u8"РќРѕРІР°СЏ РєРѕРјР±РёРЅР°С†РёСЏ")
                                         local _nb_gap   = 8
                                         local _nb_igs   = Lib.imgui.CalcTextSize(_nb_ico)
                                         local _nb_tgs   = Lib.imgui.CalcTextSize(_nb_txt)
@@ -9154,7 +9154,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                     Lib.imgui.PushStyleColor(Lib.imgui.Col.ButtonActive,  Lib.imgui.ImVec4(0.55, 0.03, 0.04, 1.00))
                                     Lib.imgui.PushStyleVarFloat(Lib.imgui.StyleVar.FrameRounding, 10)
                                     Data.nfn.PushButtonBorder()
-                                    local _rc_clicked = Lib.imgui.Button(fa.ROTATE_LEFT .. " " .. Fn.T(u8"Сбросить комбо"), Lib.imgui.ImVec2(_btn_w, 30))
+                                    local _rc_clicked = Lib.imgui.Button(fa.ROTATE_LEFT .. " " .. Fn.T(u8"РЎР±СЂРѕСЃРёС‚СЊ РєРѕРјР±Рѕ"), Lib.imgui.ImVec2(_btn_w, 30))
                                     Data.nfn.PopButtonBorder()
                                     Lib.imgui.PopStyleVar(); Lib.imgui.PopStyleColor(3)
                                     if _rc_clicked and S.state and S.state.current_combo then
@@ -9178,7 +9178,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                Lib.imgui.TextColored(Lib.imgui.ImVec4(sic[1], sic[2], sic[3], (sic[4] or 1) * neon.main_alpha), fa.LIST_OL)
                                Lib.imgui.SameLine(0, 6)
                                Lib.imgui.TextColored(Lib.imgui.ImVec4(ctd[1], ctd[2], ctd[3], (ctd[4] or 1) * neon.main_alpha),
-                                   Fn.T(u8"Комбинаций: ") .. count)
+                                   Fn.T(u8"РљРѕРјР±РёРЅР°С†РёР№: ") .. count)
                             end
                            Lib.imgui.Dummy(Lib.imgui.ImVec2(0, 6))
                             do
@@ -9195,7 +9195,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                     local _del_w     = math.floor(_del_base * 0.69)
                                    Lib.imgui.SetCursorPosX(Lib.imgui.GetCursorPosX() + math.floor((_del_avail - _del_w) / 2))
                                     Data.nfn.PushButtonBorder()
-                                    if Lib.imgui.Button(fa.TRASH_CAN .. " " .. Fn.T(u8"Удалить выделенные") .. " (" .. count_sel .. ")", Lib.imgui.ImVec2(_del_w, 28)) then
+                                    if Lib.imgui.Button(fa.TRASH_CAN .. " " .. Fn.T(u8"РЈРґР°Р»РёС‚СЊ РІС‹РґРµР»РµРЅРЅС‹Рµ") .. " (" .. count_sel .. ")", Lib.imgui.ImVec2(_del_w, 28)) then
                                         local new_list = {}
                                         for idx, v in ipairs(S.combos_list) do
                                             if not ui.selection.selected_indices[idx] then
@@ -9330,10 +9330,10 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                                Data.nfn.pack_color(1,1,1,0.92,false,neon.main_alpha), label)
                                             return clicked
                                         end
-                                        if ctx_icon_button("ctx_edit_"..i, fa.PEN, Fn.T(u8"Редактировать")) then
+                                        if ctx_icon_button("ctx_edit_"..i, fa.PEN, Fn.T(u8"Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ")) then
                                            Fn.InitEditor(false, i); Lib.imgui.CloseCurrentPopup()
                                         end
-                                        if ctx_icon_button("ctx_dup_"..i, fa.COPY, Fn.T(u8"Дублировать")) then
+                                        if ctx_icon_button("ctx_dup_"..i, fa.COPY, Fn.T(u8"Р”СѓР±Р»РёСЂРѕРІР°С‚СЊ")) then
                                             local src = S.combos_list[i]
                                             local copy = {
                                                 name       = src.name,
@@ -9343,13 +9343,13 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                             table.insert(S.combos_list, i + 1, copy)
                                            Fn.saveCombos(); Lib.imgui.CloseCurrentPopup()
                                         end
-                                        if ctx_icon_button("ctx_guide_"..i, fa.BOOK, Fn.T(u8"Гайд")) then
+                                        if ctx_icon_button("ctx_guide_"..i, fa.BOOK, Fn.T(u8"Р“Р°Р№Рґ")) then
                                            Fn.open_guide(i); Lib.imgui.CloseCurrentPopup()
                                         end
                                        Lib.imgui.Separator()
                                        Lib.imgui.PushStyleColor(Lib.imgui.Col.Button,        Lib.imgui.ImVec4(0.55,0.08,0.08,0.95))
                                        Lib.imgui.PushStyleColor(Lib.imgui.Col.ButtonHovered, Lib.imgui.ImVec4(0.75,0.1,0.1,1))
-                                        if ctx_icon_button("ctx_del_"..i, fa.TRASH_CAN, Fn.T(u8"Удалить")) then
+                                        if ctx_icon_button("ctx_del_"..i, fa.TRASH_CAN, Fn.T(u8"РЈРґР°Р»РёС‚СЊ")) then
                                             table.remove(S.combos_list, i); Fn.saveCombos(); Lib.imgui.CloseCurrentPopup()
                                         end
                                        Lib.imgui.PopStyleColor(2)
@@ -9446,8 +9446,8 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                     end
                                 end
                                 if count == 0 then
-                                   Lib.imgui.SetCursorPos(Lib.imgui.ImVec2((cw - Lib.imgui.CalcTextSize(Fn.T(u8"Нет комбинаций")).x)/2 - 10, 20))
-                                   Lib.imgui.TextDisabled(Fn.T(u8"Нет комбинаций"))
+                                   Lib.imgui.SetCursorPos(Lib.imgui.ImVec2((cw - Lib.imgui.CalcTextSize(Fn.T(u8"РќРµС‚ РєРѕРјР±РёРЅР°С†РёР№")).x)/2 - 10, 20))
+                                   Lib.imgui.TextDisabled(Fn.T(u8"РќРµС‚ РєРѕРјР±РёРЅР°С†РёР№"))
                                 end
                            Lib.imgui.EndChild()
                             style2.ScrollbarSize = old_sr; style2.ScrollbarRounding = old_srr
@@ -9616,7 +9616,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                Lib.imgui.SetCursorPos(Lib.imgui.ImVec2(15, 20))
                 local etc = neon_fx.tabs_color
                 do local _etd = Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
-               Lib.imgui.TextColored(Lib.imgui.ImVec4(_etd[1],_etd[2],_etd[3],_etd[4] or 1), Fn.T(u8"Редактор стиля")) end
+               Lib.imgui.TextColored(Lib.imgui.ImVec4(_etd[1],_etd[2],_etd[3],_etd[4] or 1), Fn.T(u8"Р РµРґР°РєС‚РѕСЂ СЃС‚РёР»СЏ")) end
                Lib.imgui.SetCursorPos(Lib.imgui.ImVec2(15, 50))
                 local etab_w      = (ed_s.x - 40) / 2
                 local _etba_n = Data.neon_active_colors[Lib.imgui.Col.Button]       or {0.2,0.2,0.2,0.85}
@@ -9628,7 +9628,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                Lib.imgui.PushStyleColor(Lib.imgui.Col.ButtonHovered, Lib.imgui.ImVec4(_et_h[1],_et_h[2],_et_h[3],_et_h[4] or 1.0))
                Lib.imgui.PushStyleColor(Lib.imgui.Col.ButtonActive,  active_tab_col)
                 Data.nfn.PushButtonBorder()
-                if Lib.imgui.Button(Fn.T(u8"Цвета"), Lib.imgui.ImVec2(etab_w, 35)) then neon.editor_tab = 1 end
+                if Lib.imgui.Button(Fn.T(u8"Р¦РІРµС‚Р°"), Lib.imgui.ImVec2(etab_w, 35)) then neon.editor_tab = 1 end
                 Data.nfn.PopButtonBorder()
                Lib.imgui.PopStyleColor(3)
                 if Lib.imgui.IsItemHovered() then Data.nfn.set_hand_cursor() end
@@ -9637,7 +9637,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                Lib.imgui.PushStyleColor(Lib.imgui.Col.ButtonHovered, Lib.imgui.ImVec4(_et_h[1],_et_h[2],_et_h[3],_et_h[4] or 1.0))
                Lib.imgui.PushStyleColor(Lib.imgui.Col.ButtonActive,  active_tab_col)
                 Data.nfn.PushButtonBorder()
-                if Lib.imgui.Button(Fn.T(u8"Эффекты"), Lib.imgui.ImVec2(etab_w, 35)) then neon.editor_tab = 2 end
+                if Lib.imgui.Button(Fn.T(u8"Р­С„С„РµРєС‚С‹"), Lib.imgui.ImVec2(etab_w, 35)) then neon.editor_tab = 2 end
                 Data.nfn.PopButtonBorder()
                Lib.imgui.PopStyleColor(3)
                 if Lib.imgui.IsItemHovered() then Data.nfn.set_hand_cursor() end
@@ -9649,25 +9649,25 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                    Lib.imgui.Indent(10)
                     if neon.editor_tab == 1 then
                         do local _td_on = Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
-                       Lib.imgui.TextColored(Lib.imgui.ImVec4(_td_on[1],_td_on[2],_td_on[3],_td_on[4] or 1), Fn.T(u8"Общие настройки")) end
+                       Lib.imgui.TextColored(Lib.imgui.ImVec4(_td_on[1],_td_on[2],_td_on[3],_td_on[4] or 1), Fn.T(u8"РћР±С‰РёРµ РЅР°СЃС‚СЂРѕР№РєРё")) end
                        Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5))
-                       Data.nfn.ios_toggle(Fn.T(u8"Плавное закрытие окна"), Data.neon_smooth_close, neon.editor_alpha)
+                       Data.nfn.ios_toggle(Fn.T(u8"РџР»Р°РІРЅРѕРµ Р·Р°РєСЂС‹С‚РёРµ РѕРєРЅР°"), Data.neon_smooth_close, neon.editor_alpha)
                        Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5))
-                        if Data.nfn.CustomColorPicker(Fn.T(u8"Базовый цвет интерфейса"), "neon_global_base", neon_fx.global_base_color, true, neon.editor_alpha) then
+                        if Data.nfn.CustomColorPicker(Fn.T(u8"Р‘Р°Р·РѕРІС‹Р№ С†РІРµС‚ РёРЅС‚РµСЂС„РµР№СЃР°"), "neon_global_base", neon_fx.global_base_color, true, neon.editor_alpha) then
                            Data.nfn.ApplyGlobalTheme(neon_fx.global_base_color[1], neon_fx.global_base_color[2], neon_fx.global_base_color[3])
                         end
                        Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5))
-                       Fn.neon_FontCombo(Fn.T(u8"Выбор шрифта"), neon.current_font_idx)
+                       Fn.neon_FontCombo(Fn.T(u8"Р’С‹Р±РѕСЂ С€СЂРёС„С‚Р°"), neon.current_font_idx)
                        Lib.imgui.Dummy(Lib.imgui.ImVec2(0,8))
                        fixed_editor_slider_begin("le_color_interface_alpha")
-                       Data.nfn.ios_slider(Fn.T(u8"Прозрачность интерфейса"), ui.interface_alpha, 0.1, 1.0, neon.editor_alpha)
+                       Data.nfn.ios_slider(Fn.T(u8"РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ РёРЅС‚РµСЂС„РµР№СЃР°"), ui.interface_alpha, 0.1, 1.0, neon.editor_alpha)
                        Lib.imgui.Dummy(Lib.imgui.ImVec2(0,10)); Lib.imgui.Separator(); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,10))
                         do local _td_rs = Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
-                       Lib.imgui.TextColored(Lib.imgui.ImVec4(_td_rs[1],_td_rs[2],_td_rs[3],_td_rs[4] or 1), Fn.T(u8"Расширенные настройки цветов")) end
+                       Lib.imgui.TextColored(Lib.imgui.ImVec4(_td_rs[1],_td_rs[2],_td_rs[3],_td_rs[4] or 1), Fn.T(u8"Р Р°СЃС€РёСЂРµРЅРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё С†РІРµС‚РѕРІ")) end
                        Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5))
                         local categories = {
-                            {id=1, name=Fn.T(u8"Фон и окна")},       {id=2, name=Fn.T(u8"Кнопки и элементы")},
-                            {id=4, name=Fn.T(u8"Скроллбар")},         {id=5, name=Fn.T(u8"Текст и рамки")},
+                            {id=1, name=Fn.T(u8"Р¤РѕРЅ Рё РѕРєРЅР°")},       {id=2, name=Fn.T(u8"РљРЅРѕРїРєРё Рё СЌР»РµРјРµРЅС‚С‹")},
+                            {id=4, name=Fn.T(u8"РЎРєСЂРѕР»Р»Р±Р°СЂ")},         {id=5, name=Fn.T(u8"РўРµРєСЃС‚ Рё СЂР°РјРєРё")},
                         }
                         for _, cat in ipairs(categories) do
                            Data.nfn.record_width(Lib.imgui.CalcTextSize(cat.name).x + 100)
@@ -9683,8 +9683,8 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                     end
                                 end
                                 if cat.id == 5 then
-                                   Data.nfn.CustomColorPicker(Fn.T(u8"Рамка окна"),      "neon_border_col",   neon_fx.neon_border_color,   true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
-                                    if Data.nfn.CustomColorPicker(Fn.T(u8"Обводки кнопок"), "nbutton_border_col", neon_fx.button_border_color, true, neon.editor_alpha) then
+                                   Data.nfn.CustomColorPicker(Fn.T(u8"Р Р°РјРєР° РѕРєРЅР°"),      "neon_border_col",   neon_fx.neon_border_color,   true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
+                                    if Data.nfn.CustomColorPicker(Fn.T(u8"РћР±РІРѕРґРєРё РєРЅРѕРїРѕРє"), "nbutton_border_col", neon_fx.button_border_color, true, neon.editor_alpha) then
                                         local bc_btn = neon_fx.button_border_color
                                         S.cfg.neon.button_border_r = bc_btn[1]; S.cfg.neon.button_border_g = bc_btn[2]
                                         S.cfg.neon.button_border_b = bc_btn[3]; S.cfg.neon.button_border_a = bc_btn[4] or 0.6
@@ -9697,48 +9697,48 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                            Lib.imgui.Dummy(Lib.imgui.ImVec2(0,2))
                         end
                        Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5))
-                       Data.nfn.record_width(Lib.imgui.CalcTextSize(Fn.T(u8"Иконки и элементы")).x + 100)
-                        if Lib.imgui.TreeNodeStr(Fn.T(u8"Иконки и элементы")) then
+                       Data.nfn.record_width(Lib.imgui.CalcTextSize(Fn.T(u8"РРєРѕРЅРєРё Рё СЌР»РµРјРµРЅС‚С‹")).x + 100)
+                        if Lib.imgui.TreeNodeStr(Fn.T(u8"РРєРѕРЅРєРё Рё СЌР»РµРјРµРЅС‚С‹")) then
                            Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
-                           Data.nfn.CustomColorPicker(Fn.T(u8"Цвет вкладок"),             "ntabs_col",         neon_fx.tabs_color,           true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
-                           Data.nfn.CustomColorPicker(Fn.T(u8"Цвет анимаций вкладок"),        "neon_waves_col",    neon_fx.waves_color,          true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
-                           Data.nfn.CustomColorPicker(Fn.T(u8"Крестик (закрытие)"),        "ncross_col",        neon_fx.icon_cross_color,     true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
-                           Data.nfn.CustomColorPicker(Fn.T(u8"Глаз (свернуть)"),           "neye_col",          neon_fx.icon_eye_color,       true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
-                           Data.nfn.CustomColorPicker(Fn.T(u8"Шестерёнка (настройки)"),    "ngear_col",         neon_fx.icon_gear_color,      true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
-                           Data.nfn.CustomColorPicker(Fn.T(u8"Иконки"),             "nsecicon_col",      neon_fx.section_icon_color,   true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
-                           Data.nfn.CustomColorPicker(Fn.T(u8"Иконки вкладок окна"),           "ntabicon_col",      neon_fx.tab_icon_color,        true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
-                           Data.nfn.CustomColorPicker(Fn.T(u8"Прямоугольное выделение"),       "nsel_col",          neon_fx.selection_color,       true, neon.editor_alpha)
+                           Data.nfn.CustomColorPicker(Fn.T(u8"Р¦РІРµС‚ РІРєР»Р°РґРѕРє"),             "ntabs_col",         neon_fx.tabs_color,           true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
+                           Data.nfn.CustomColorPicker(Fn.T(u8"Р¦РІРµС‚ Р°РЅРёРјР°С†РёР№ РІРєР»Р°РґРѕРє"),        "neon_waves_col",    neon_fx.waves_color,          true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
+                           Data.nfn.CustomColorPicker(Fn.T(u8"РљСЂРµСЃС‚РёРє (Р·Р°РєСЂС‹С‚РёРµ)"),        "ncross_col",        neon_fx.icon_cross_color,     true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
+                           Data.nfn.CustomColorPicker(Fn.T(u8"Р“Р»Р°Р· (СЃРІРµСЂРЅСѓС‚СЊ)"),           "neye_col",          neon_fx.icon_eye_color,       true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
+                           Data.nfn.CustomColorPicker(Fn.T(u8"РЁРµСЃС‚РµСЂС‘РЅРєР° (РЅР°СЃС‚СЂРѕР№РєРё)"),    "ngear_col",         neon_fx.icon_gear_color,      true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
+                           Data.nfn.CustomColorPicker(Fn.T(u8"РРєРѕРЅРєРё"),             "nsecicon_col",      neon_fx.section_icon_color,   true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
+                           Data.nfn.CustomColorPicker(Fn.T(u8"РРєРѕРЅРєРё РІРєР»Р°РґРѕРє РѕРєРЅР°"),           "ntabicon_col",      neon_fx.tab_icon_color,        true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
+                           Data.nfn.CustomColorPicker(Fn.T(u8"РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРѕРµ РІС‹РґРµР»РµРЅРёРµ"),       "nsel_col",          neon_fx.selection_color,       true, neon.editor_alpha)
                            Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
-                           Data.nfn.CustomColorPicker(Fn.T(u8"Переключатель вкладок"),                  "ntitle_main_col",   neon_fx.title_main_color,      true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
-                           Data.nfn.CustomColorPicker(Fn.T(u8"Подпись \"by Pryanix\""),           "npryanix_col",      neon_fx.pryanix_color,         true, neon.editor_alpha)
+                           Data.nfn.CustomColorPicker(Fn.T(u8"РџРµСЂРµРєР»СЋС‡Р°С‚РµР»СЊ РІРєР»Р°РґРѕРє"),                  "ntitle_main_col",   neon_fx.title_main_color,      true, neon.editor_alpha); Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3))
+                           Data.nfn.CustomColorPicker(Fn.T(u8"РџРѕРґРїРёСЃСЊ \"by Pryanix\""),           "npryanix_col",      neon_fx.pryanix_color,         true, neon.editor_alpha)
                            Lib.imgui.TreePop()
                         end
                        Lib.imgui.Dummy(Lib.imgui.ImVec2(0,10))
                     elseif neon.editor_tab == 2 then
                         do local _td_fx = Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
-                       Data.nfn.ios_toggle(Fn.T(u8"Курсор-частицы"), neon_fx.sparks_on, neon.editor_alpha, _td_fx) end
+                       Data.nfn.ios_toggle(Fn.T(u8"РљСѓСЂСЃРѕСЂ-С‡Р°СЃС‚РёС†С‹"), neon_fx.sparks_on, neon.editor_alpha, _td_fx) end
                         if neon_fx.sparks_on[0] then
-                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); fixed_editor_slider_begin("le_fx_sparks_speed"); Data.nfn.ios_slider(Fn.T(u8"Скорость частиц"), neon_fx.sparks_speed, 0.1, 3, neon.editor_alpha)
-                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); fixed_editor_slider_begin("le_fx_sparks_size"); Data.nfn.ios_slider(Fn.T(u8"Размер частиц"),   neon_fx.sparks_size,  0.5, 10, neon.editor_alpha)
-                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); Data.nfn.SafeCombo(Fn.T(u8"Режим курсора"),    neon_fx.cursor_fx_var, Fn.translateList(Data.neon_lists.cursor_fx))
-                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); Data.nfn.CustomColorPicker(Fn.T(u8"Цвет частиц"), "nsparks_col", neon_fx.sparks_color, true, neon.editor_alpha)
+                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); fixed_editor_slider_begin("le_fx_sparks_speed"); Data.nfn.ios_slider(Fn.T(u8"РЎРєРѕСЂРѕСЃС‚СЊ С‡Р°СЃС‚РёС†"), neon_fx.sparks_speed, 0.1, 3, neon.editor_alpha)
+                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); fixed_editor_slider_begin("le_fx_sparks_size"); Data.nfn.ios_slider(Fn.T(u8"Р Р°Р·РјРµСЂ С‡Р°СЃС‚РёС†"),   neon_fx.sparks_size,  0.5, 10, neon.editor_alpha)
+                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); Data.nfn.SafeCombo(Fn.T(u8"Р РµР¶РёРј РєСѓСЂСЃРѕСЂР°"),    neon_fx.cursor_fx_var, Fn.translateList(Data.neon_lists.cursor_fx))
+                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); Data.nfn.CustomColorPicker(Fn.T(u8"Р¦РІРµС‚ С‡Р°СЃС‚РёС†"), "nsparks_col", neon_fx.sparks_color, true, neon.editor_alpha)
                         end
                        Lib.imgui.Dummy(Lib.imgui.ImVec2(0,15))
                         do local _td_fx2 = Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
-                       Data.nfn.ios_toggle(Fn.T(u8"Анимация вкладок"), neon_fx.waves_on, neon.editor_alpha, _td_fx2) end
+                       Data.nfn.ios_toggle(Fn.T(u8"РђРЅРёРјР°С†РёСЏ РІРєР»Р°РґРѕРє"), neon_fx.waves_on, neon.editor_alpha, _td_fx2) end
                         if neon_fx.waves_on[0] then
-                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); fixed_editor_slider_begin("le_fx_waves_speed"); Data.nfn.ios_slider(Fn.T(u8"Скорость анимации"), neon_fx.waves_speed, 0.1, 3, neon.editor_alpha)
-                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); Data.nfn.SafeCombo(Fn.T(u8"Режим анимации"),     neon_fx.waves_var,   Fn.translateList(Data.neon_lists.waves_modes))
-                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); Data.nfn.CustomColorPicker(Fn.T(u8"Цвет анимаций вкладок"), "nwaves_col", neon_fx.waves_color, true, neon.editor_alpha)
+                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); fixed_editor_slider_begin("le_fx_waves_speed"); Data.nfn.ios_slider(Fn.T(u8"РЎРєРѕСЂРѕСЃС‚СЊ Р°РЅРёРјР°С†РёРё"), neon_fx.waves_speed, 0.1, 3, neon.editor_alpha)
+                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); Data.nfn.SafeCombo(Fn.T(u8"Р РµР¶РёРј Р°РЅРёРјР°С†РёРё"),     neon_fx.waves_var,   Fn.translateList(Data.neon_lists.waves_modes))
+                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); Data.nfn.CustomColorPicker(Fn.T(u8"Р¦РІРµС‚ Р°РЅРёРјР°С†РёР№ РІРєР»Р°РґРѕРє"), "nwaves_col", neon_fx.waves_color, true, neon.editor_alpha)
                         end
                        Lib.imgui.Dummy(Lib.imgui.ImVec2(0,15))
                         do local _td_fx3 = Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
-                       Data.nfn.ios_toggle(Fn.T(u8"Фоновое свечение"), neon_fx.ambient_on, neon.editor_alpha, _td_fx3) end
+                       Data.nfn.ios_toggle(Fn.T(u8"Р¤РѕРЅРѕРІРѕРµ СЃРІРµС‡РµРЅРёРµ"), neon_fx.ambient_on, neon.editor_alpha, _td_fx3) end
                         if neon_fx.ambient_on[0] then
-                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); fixed_editor_slider_begin("le_fx_ambient_speed"); Data.nfn.ios_slider(Fn.T(u8"Скорость свечения"), neon_fx.ambient_speed, 0.1, 3, neon.editor_alpha)
-                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); Data.nfn.SafeCombo(Fn.T(u8"Режим свечения"),   neon_fx.ambient_var,     Fn.translateList(Data.neon_lists.ambient_modes))
-                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); Data.nfn.CustomColorPicker(Fn.T(u8"Цвет свечения (1)"),  "nambient_1", neon_fx.ambient_color_1, true, neon.editor_alpha)
-                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3)); Data.nfn.CustomColorPicker(Fn.T(u8"Цвет свечения (2)"),  "nambient_2", neon_fx.ambient_color_2, true, neon.editor_alpha)
+                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); fixed_editor_slider_begin("le_fx_ambient_speed"); Data.nfn.ios_slider(Fn.T(u8"РЎРєРѕСЂРѕСЃС‚СЊ СЃРІРµС‡РµРЅРёСЏ"), neon_fx.ambient_speed, 0.1, 3, neon.editor_alpha)
+                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); Data.nfn.SafeCombo(Fn.T(u8"Р РµР¶РёРј СЃРІРµС‡РµРЅРёСЏ"),   neon_fx.ambient_var,     Fn.translateList(Data.neon_lists.ambient_modes))
+                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,5)); Data.nfn.CustomColorPicker(Fn.T(u8"Р¦РІРµС‚ СЃРІРµС‡РµРЅРёСЏ (1)"),  "nambient_1", neon_fx.ambient_color_1, true, neon.editor_alpha)
+                           Lib.imgui.Dummy(Lib.imgui.ImVec2(0,3)); Data.nfn.CustomColorPicker(Fn.T(u8"Р¦РІРµС‚ СЃРІРµС‡РµРЅРёСЏ (2)"),  "nambient_2", neon_fx.ambient_color_2, true, neon.editor_alpha)
                         end
                     end
                    Lib.imgui.Unindent(10)
@@ -9806,7 +9806,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                    Data.nfn.pack_color(Data.neon_win_bg[1],Data.neon_win_bg[2],Data.neon_win_bg[3],Data.neon_win_bg[4],true,neon.combo_editor_alpha), 20)
                Data.nfn.draw_police_ambient(cedl, ce_min, ce_max, neon.combo_editor_alpha)
                Data.nfn.draw_neon_border(cedl, ce_min, ce_max, neon.combo_editor_alpha)
-                local ce_title = ui.editor.is_new and Fn.T(u8"Новая комбинация") or Fn.T(u8"Редактор комбинации")
+                local ce_title = ui.editor.is_new and Fn.T(u8"РќРѕРІР°СЏ РєРѕРјР±РёРЅР°С†РёСЏ") or Fn.T(u8"Р РµРґР°РєС‚РѕСЂ РєРѕРјР±РёРЅР°С†РёРё")
                 local _cetd = Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {1,1,1,1}
                Lib.imgui.SetCursorPos(Lib.imgui.ImVec2(20, 18))
                Lib.imgui.TextColored(Lib.imgui.ImVec4(_cetd[1],_cetd[2],_cetd[3],_cetd[4] or 1), ce_title)
@@ -9828,14 +9828,14 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                Lib.imgui.SetCursorPos(Lib.imgui.ImVec2(15, 50))
                Lib.imgui.BeginGroup()
                     Data.nfn.PushButtonBorder()
-                    if Lib.imgui.Button(Fn.T(u8"< Назад"), Lib.imgui.ImVec2(90, 28)) then
+                    if Lib.imgui.Button(Fn.T(u8"< РќР°Р·Р°Рґ"), Lib.imgui.ImVec2(90, 28)) then
                         Fn.closeComboEditor()
                     end
                     if Lib.imgui.IsItemHovered() then Data.nfn.set_hand_cursor() end
                    Lib.imgui.SameLine(0, 8)
                     local _sba_a = Data.neon_active_colors[Lib.imgui.Col.ButtonActive] or {0.4,0.4,0.4,1.0}
                    Lib.imgui.PushStyleColor(Lib.imgui.Col.Button, Lib.imgui.ImVec4(_sba_a[1],_sba_a[2],_sba_a[3],_sba_a[4] or 0.9))
-                    if Lib.imgui.Button(Fn.T(u8"Сохранить"), Lib.imgui.ImVec2(110, 28)) then
+                    if Lib.imgui.Button(Fn.T(u8"РЎРѕС…СЂР°РЅРёС‚СЊ"), Lib.imgui.ImVec2(110, 28)) then
                         local name = Lib.ffi.string(ui.editor.name_buffer)
                         if #name == 0 then name = "Unnamed" end
 
@@ -9871,7 +9871,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                Lib.imgui.SetCursorPos(Lib.imgui.ImVec2(15, 113))
                 local ced_txt = Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {1,1,1,1}
                Lib.imgui.TextColored(Lib.imgui.ImVec4(ced_txt[1],ced_txt[2],ced_txt[3],0.7),
-                   Fn.T(u8"2xЛКМ - настройки зажатия. ПКМ - удалить. Перетаскивание - перемещение."))
+                   Fn.T(u8"2xР›РљРњ - РЅР°СЃС‚СЂРѕР№РєРё Р·Р°Р¶Р°С‚РёСЏ. РџРљРњ - СѓРґР°Р»РёС‚СЊ. РџРµСЂРµС‚Р°СЃРєРёРІР°РЅРёРµ - РїРµСЂРµРјРµС‰РµРЅРёРµ."))
                Lib.imgui.SetCursorPos(Lib.imgui.ImVec2(15, 133))
                 local workspace_h = ced_h - 230
                 local old_sr2 = Lib.imgui.GetStyle().ScrollbarSize; local old_srr2 = Lib.imgui.GetStyle().ScrollbarRounding
@@ -9888,7 +9888,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                         local _ptd = Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {1,1,1,1}
                        Lib.imgui.Dummy(Lib.imgui.ImVec2(0, 4))
                        Lib.imgui.TextColored(Lib.imgui.ImVec4(_ptd[1],_ptd[2],_ptd[3],(_ptd[4] or 1)*0.9),
-                           Fn.T(u8"Этап ") .. part_idx)
+                           Fn.T(u8"Р­С‚Р°Рї ") .. part_idx)
                        Lib.imgui.SameLine(0, 6)
                        Lib.imgui.PushStyleColor(Lib.imgui.Col.Button, Lib.imgui.ImVec4(0.55,0.08,0.08,0.9))
                        Lib.imgui.PushStyleColor(Lib.imgui.Col.ButtonHovered, Lib.imgui.ImVec4(0.75,0.1,0.1,1))
@@ -9904,7 +9904,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                             local hmp = smp
                             if ui.editor.add_row_dragging and ui.editor.add_row_drag_key then
                                 local dk_hmp   = ui.editor.add_row_drag_key
-                                local isSp_hmp = Fn.decodeSafe(dk_hmp)==Fn.decodeSafe(u8"ПРОБЕЛ") or dk_hmp=="SPACE"
+                                local isSp_hmp = Fn.decodeSafe(dk_hmp)==Fn.decodeSafe(u8"РџР РћР‘Р•Р›") or dk_hmp=="SPACE"
                                 local gw_hmp   = isSp_hmp and 70 or 50
                                 local off_hmp  = ui.editor.add_row_drag_offset or Lib.imgui.ImVec2(0, 0)
                                 hmp = Lib.imgui.ImVec2(smp.x - off_hmp.x + gw_hmp * 0.5,
@@ -9916,7 +9916,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                 local overEmpty2 = smp.x>=dmin2.x and smp.x<=dmax2.x and smp.y>=dmin2.y and smp.y<=dmax2.y
                                 local ghostHere = ui.editor.add_row_dragging and overEmpty2
                                 if not ghostHere then
-                                    local empty_txt = Fn.T(u8"(пустой — перетащите сюда)")
+                                    local empty_txt = Fn.T(u8"(РїСѓСЃС‚РѕР№ вЂ” РїРµСЂРµС‚Р°С‰РёС‚Рµ СЃСЋРґР°)")
                                     local _et = Data.neon_active_colors[Lib.imgui.Col.Text] or {1,1,1,1}
                                     local _alpha = (_et[4] or 1) * 0.55
                                     local _win_size = Lib.imgui.GetWindowSize()
@@ -9937,7 +9937,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                         local dpart_e = ui.editor.temp_combo[ui.editor.drag_part_index]
                                         local dkey_e  = dpart_e and dpart_e[ui.editor.drag_key_index]
                                         local dname_e = dkey_e and Fn.normalizeKeyName(dkey_e) or ""
-                                        local d_sp_e  = (Fn.decodeSafe(dname_e)==Fn.decodeSafe(u8"ПРОБЕЛ") or dname_e=="SPACE")
+                                        local d_sp_e  = (Fn.decodeSafe(dname_e)==Fn.decodeSafe(u8"РџР РћР‘Р•Р›") or dname_e=="SPACE")
                                         local dw_e    = d_sp_e and 70 or 50
                                         local ep_min  = Lib.imgui.ImVec2(dmin2.x+4, dmin2.y+(csz2.y-40)*0.5)
                                         local ep_max  = Lib.imgui.ImVec2(ep_min.x+dw_e, ep_min.y+40)
@@ -9966,7 +9966,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                 if ui.editor.add_row_dragging then
                                     local dk3 = ui.editor.add_row_drag_key
                                     if isHoveredEmpty then
-                                        local isSpace3 = (Fn.decodeSafe(dk3)==Fn.decodeSafe(u8"ПРОБЕЛ") or dk3=="SPACE")
+                                        local isSpace3 = (Fn.decodeSafe(dk3)==Fn.decodeSafe(u8"РџР РћР‘Р•Р›") or dk3=="SPACE")
                                         local prev_w3  = isSpace3 and 70 or 50
                                         local fdl4 = Lib.imgui.GetForegroundDrawList()
                                         local ep3_min = Lib.imgui.ImVec2(dmin2.x+4, dmin2.y+(csz2.y-40)*0.5)
@@ -9992,7 +9992,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                     and ui.editor.add_row_hover_part == part_idx
                                 local tk  = hover_this_part and ui.editor.add_row_hover_key or nil
                                 local dk_ag = ui.editor.add_row_drag_key
-                                local isSp_ag = dk_ag and (Fn.decodeSafe(dk_ag)==Fn.decodeSafe(u8"ПРОБЕЛ") or dk_ag=="SPACE")
+                                local isSp_ag = dk_ag and (Fn.decodeSafe(dk_ag)==Fn.decodeSafe(u8"РџР РћР‘Р•Р›") or dk_ag=="SPACE")
                                 local target_w = (isSp_ag and 70 or 50) + 6
                                 if tk then
                                     if ui.editor.anim_gap_part ~= part_idx or ui.editor.anim_gap_key ~= tk then
@@ -10019,7 +10019,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                 local is_dragging_this = (ui.editor.drag_part_index==part_idx and ui.editor.drag_key_index==key_idx)
                                 local kname   = Fn.normalizeKeyName(key)
                                 local isHold, holdTime = Fn.getKeyHoldSettings(key)
-                                local isSpace = (Fn.decodeSafe(kname)==Fn.decodeSafe(u8"ПРОБЕЛ") or kname=="SPACE")
+                                local isSpace = (Fn.decodeSafe(kname)==Fn.decodeSafe(u8"РџР РћР‘Р•Р›") or kname=="SPACE")
                                 local btn_w   = isSpace and 70 or 50
                                 local this_key_is_gap_target = ui.editor.add_row_dragging
                                     and ui.editor.anim_gap_part == part_idx
@@ -10033,7 +10033,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                    Lib.imgui.SameLine(0, item_sp + gap_w)
                                     local dk_prev = ui.editor.add_row_drag_key
                                     if dk_prev then
-                                        local isSp_prev = (Fn.decodeSafe(dk_prev)==Fn.decodeSafe(u8"ПРОБЕЛ") or dk_prev=="SPACE")
+                                        local isSp_prev = (Fn.decodeSafe(dk_prev)==Fn.decodeSafe(u8"РџР РћР‘Р•Р›") or dk_prev=="SPACE")
                                         local pw = isSp_prev and 70 or 50
                                         local ph = 40
                                         local gb_prev = neon_fx.global_base_color
@@ -10183,7 +10183,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                         local dpart_ez = ui.editor.temp_combo[ui.editor.drag_part_index]
                                         local dkey_ez  = dpart_ez and dpart_ez[ui.editor.drag_key_index]
                                         local dname_ez = dkey_ez and Fn.normalizeKeyName(dkey_ez) or ""
-                                        local dsp_ez   = (Fn.decodeSafe(dname_ez)==Fn.decodeSafe(u8"ПРОБЕЛ") or dname_ez=="SPACE")
+                                        local dsp_ez   = (Fn.decodeSafe(dname_ez)==Fn.decodeSafe(u8"РџР РћР‘Р•Р›") or dname_ez=="SPACE")
                                         local dw_ez    = dsp_ez and 70 or 50
                                         local fdl5=Lib.imgui.GetForegroundDrawList()
                                         fdl5:AddRectFilled(ghost_min, Lib.imgui.ImVec2(ghost_min.x+dw_ez, ghost_min.y+40), CBUGER_ApplyGlobalAlphaU32(0x4400FFFF), 4)
@@ -10206,7 +10206,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                 end
                                 if ui.editor.add_row_dragging and ui.editor.endzone_hovered_part==part_idx then
                                     local dk5=ui.editor.add_row_drag_key
-                                    local isSp5=(Fn.decodeSafe(dk5)==Fn.decodeSafe(u8"ПРОБЕЛ") or dk5=="SPACE")
+                                    local isSp5=(Fn.decodeSafe(dk5)==Fn.decodeSafe(u8"РџР РћР‘Р•Р›") or dk5=="SPACE")
                                     local dw5 = isSp5 and 70 or 50
                                     local fdl6=Lib.imgui.GetForegroundDrawList()
                                     fdl6:AddRectFilled(ghost_min, Lib.imgui.ImVec2(ghost_min.x+dw5, ghost_min.y+40), CBUGER_ApplyGlobalAlphaU32(0x4400FFFF), 4)
@@ -10229,7 +10229,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                             local dname=Fn.normalizeKeyName(dkey); local dlabel=Fn.getLocalizedName(dname)
                             local d_isHold,d_holdTime=Fn.getKeyHoldSettings(dkey)
                             if d_isHold then dlabel=dlabel..string.format("\n(%.1fs)", d_holdTime or 0.5) end
-                            local d_isSpace=(Fn.decodeSafe(dname)==Fn.decodeSafe(u8"ПРОБЕЛ") or dname=="SPACE")
+                            local d_isSpace=(Fn.decodeSafe(dname)==Fn.decodeSafe(u8"РџР РћР‘Р•Р›") or dname=="SPACE")
                             local psize=Lib.imgui.ImVec2(d_isSpace and 70 or 50, 40)
                             local d_pos=Lib.imgui.ImVec2(mouse_pos.x-ui.editor.drag_offset.x, mouse_pos.y-ui.editor.drag_offset.y)
                             local gb_drag = neon_fx.global_base_color
@@ -10256,9 +10256,9 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                     if Lib.imgui.BeginPopup("CEEditTimePopup") then
                         local tp=ui.editor.temp_combo[ui.editor.edit_time_target_part]
                         local tpk=tp and tp[ui.editor.edit_time_target_key]
-                       Lib.imgui.Text(Fn.T(u8"Настройки клавиши:")); Lib.imgui.Separator()
+                       Lib.imgui.Text(Fn.T(u8"РќР°СЃС‚СЂРѕР№РєРё РєР»Р°РІРёС€Рё:")); Lib.imgui.Separator()
                         local holdActive=ui.editor.edit_time_is_hold[0]
-                        local toggleLabel=holdActive and Fn.T(u8"Зажатие включено") or Fn.T(u8"Зажатие выключено")
+                        local toggleLabel=holdActive and Fn.T(u8"Р—Р°Р¶Р°С‚РёРµ РІРєР»СЋС‡РµРЅРѕ") or Fn.T(u8"Р—Р°Р¶Р°С‚РёРµ РІС‹РєР»СЋС‡РµРЅРѕ")
                         local didPush=holdActive
                         if didPush then Lib.imgui.PushStyleColor(Lib.imgui.Col.Button, Lib.imgui.ImVec4(0.2,0.6,0.2,1)) end
                         Data.nfn.PushButtonBorder()
@@ -10274,20 +10274,20 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                         end
                         Data.nfn.PopButtonBorder()
                         if didPush then Lib.imgui.PopStyleColor() end
-                       Lib.imgui.Spacing(); Lib.imgui.Text(Fn.T(u8"Время зажатия (сек):"))
+                       Lib.imgui.Spacing(); Lib.imgui.Text(Fn.T(u8"Р’СЂРµРјСЏ Р·Р°Р¶Р°С‚РёСЏ (СЃРµРє):"))
                         if Lib.imgui.InputFloat("##CEeditTime", ui.editor.edit_time_val, 0.1, 0.5, "%.2f") then
                             ui.editor.edit_time_val[0]=math.max(0.1, ui.editor.edit_time_val[0])
                             if tp and tpk and type(tpk)=='table' then tpk.time=ui.editor.edit_time_val[0] end
                         end
                        Lib.imgui.Spacing()
                         Data.nfn.PushButtonBorder()
-                        if Lib.imgui.Button(Fn.T(u8"Закрыть"), Lib.imgui.ImVec2(80,0)) then Lib.imgui.CloseCurrentPopup() end
+                        if Lib.imgui.Button(Fn.T(u8"Р—Р°РєСЂС‹С‚СЊ"), Lib.imgui.ImVec2(80,0)) then Lib.imgui.CloseCurrentPopup() end
                         Data.nfn.PopButtonBorder()
                        Lib.imgui.EndPopup()
                     end
                     Lib.imgui.PopStyleVar()
                     Data.nfn.PushButtonBorder()
-                    if Lib.imgui.Button(Fn.T(u8"+ Добавить этап"), Lib.imgui.ImVec2(-1, 25)) then
+                    if Lib.imgui.Button(Fn.T(u8"+ Р”РѕР±Р°РІРёС‚СЊ СЌС‚Р°Рї"), Lib.imgui.ImVec2(-1, 25)) then
                         table.insert(ui.editor.temp_combo, {}); ui.editor.add_target_part = nil
                     end
                     Data.nfn.PopButtonBorder()
@@ -10295,14 +10295,14 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                Lib.imgui.GetStyle().ScrollbarSize=old_sr2; Lib.imgui.GetStyle().ScrollbarRounding=old_srr2
                Lib.imgui.SetCursorPos(Lib.imgui.ImVec2(15, ced_h - 90))
                 do local _addtd = Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {1,1,1,1}
-               Lib.imgui.TextColored(Lib.imgui.ImVec4(_addtd[1],_addtd[2],_addtd[3],(_addtd[4] or 1)*0.9), ((ui.editor.add_target_part and ui.editor.add_target_part >= 1 and ui.editor.add_target_part <= #ui.editor.temp_combo and ui.editor.add_target_part ~= #ui.editor.temp_combo) and (Fn.T(u8"Добавить клавишу в этап ") .. ui.editor.add_target_part .. ":") or Fn.T(u8"Добавить клавишу в последний этап:")))
+               Lib.imgui.TextColored(Lib.imgui.ImVec4(_addtd[1],_addtd[2],_addtd[3],(_addtd[4] or 1)*0.9), ((ui.editor.add_target_part and ui.editor.add_target_part >= 1 and ui.editor.add_target_part <= #ui.editor.temp_combo and ui.editor.add_target_part ~= #ui.editor.temp_combo) and (Fn.T(u8"Р”РѕР±Р°РІРёС‚СЊ РєР»Р°РІРёС€Сѓ РІ СЌС‚Р°Рї ") .. ui.editor.add_target_part .. ":") or Fn.T(u8"Р”РѕР±Р°РІРёС‚СЊ РєР»Р°РІРёС€Сѓ РІ РїРѕСЃР»РµРґРЅРёР№ СЌС‚Р°Рї:")))
                 end
                Lib.imgui.SetCursorPos(Lib.imgui.ImVec2(15, ced_h - 68))
                 local keys_to_add = {
-                    {k=u8"ЛКМ", gap=0}, {k=u8"ПКМ", gap=12},
+                    {k=u8"Р›РљРњ", gap=0}, {k=u8"РџРљРњ", gap=12},
                     {k="W", gap=0}, {k="A", gap=0}, {k="S", gap=0}, {k="D", gap=12},
                     {k="C", gap=12},
-                    {k=u8"ПРОБЕЛ", gap=12},
+                    {k=u8"РџР РћР‘Р•Р›", gap=12},
                     {k="Q", gap=0}, {k="E", gap=0},
                 }
                 local first_key = true
@@ -10313,7 +10313,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                        Lib.imgui.SameLine(0, prev_gap > 0 and prev_gap or 4)
                     end
                     first_key = false
-                    local btn_w2 = (Fn.decodeSafe(k)==Fn.decodeSafe(u8"ПРОБЕЛ")) and 70 or 50
+                    local btn_w2 = (Fn.decodeSafe(k)==Fn.decodeSafe(u8"РџР РћР‘Р•Р›")) and 70 or 50
                     local isHoldPtr = Fn.getEditorAddIsHold(k); local holdTimePtr = Fn.getEditorAddHoldTime(k)
                     local tc4 = neon_fx.tabs_color
                     local _cba4 = Data.neon_active_colors[Lib.imgui.Col.Button] or {tc4[1]*0.2,tc4[2]*0.2,tc4[3]*0.2,0.9}
@@ -10341,15 +10341,15 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                    Lib.imgui.PopStyleColor()
                     Lib.imgui.PushStyleVarVec2(Lib.imgui.StyleVar.WindowPadding, Lib.imgui.ImVec2(18, 12))
                     if Lib.imgui.BeginPopup("CEAddKeyHold_"..i) then
-                       Lib.imgui.Text(Fn.T(u8"Настройки для: ")..Fn.getLocalizedName(k)); Lib.imgui.Separator()
+                       Lib.imgui.Text(Fn.T(u8"РќР°СЃС‚СЂРѕР№РєРё РґР»СЏ: ")..Fn.getLocalizedName(k)); Lib.imgui.Separator()
                         local hActive2=isHoldPtr[0]
-                        local hLabel2=hActive2 and Fn.T(u8"Зажатие включено") or Fn.T(u8"Зажатие выключено")
+                        local hLabel2=hActive2 and Fn.T(u8"Р—Р°Р¶Р°С‚РёРµ РІРєР»СЋС‡РµРЅРѕ") or Fn.T(u8"Р—Р°Р¶Р°С‚РёРµ РІС‹РєР»СЋС‡РµРЅРѕ")
                         if hActive2 then Lib.imgui.PushStyleColor(Lib.imgui.Col.Button, Lib.imgui.ImVec4(0.2,0.6,0.2,1)) end
                         Data.nfn.PushButtonBorder()
                         if Lib.imgui.Button(hLabel2, Lib.imgui.ImVec2(180,0)) then isHoldPtr[0]=not hActive2 end
                         Data.nfn.PopButtonBorder()
                         if hActive2 then Lib.imgui.PopStyleColor() end
-                       Lib.imgui.Spacing(); Lib.imgui.Text(Fn.T(u8"Время (сек):"))
+                       Lib.imgui.Spacing(); Lib.imgui.Text(Fn.T(u8"Р’СЂРµРјСЏ (СЃРµРє):"))
                         if Lib.imgui.InputFloat("##ceht_"..i, holdTimePtr, 0.1, 0.5, "%.2f") then
                             holdTimePtr[0]=math.max(0.1, holdTimePtr[0])
                         end
@@ -10450,7 +10450,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                             local text_sz = Lib.imgui.CalcTextSize(display)
                             local box_w = math.max(40, text_sz.x + 12) * scale2
                             local safe_kn = Fn.decodeSafe(kn)
-                            if safe_kn == Fn.decodeSafe(u8"ПРОБЕЛ") or safe_kn == "SPACE" then
+                            if safe_kn == Fn.decodeSafe(u8"РџР РћР‘Р•Р›") or safe_kn == "SPACE" then
                                 box_w = math.max(80, text_sz.x + 24) * scale2
                             end
                             row_w = row_w + box_w + 6 * scale2
@@ -10811,7 +10811,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                     combo_control_font_factor = 1.0
 
                     combo_width_font_factor = fit_factor(
-                        combo_fit_text_width(Fn.T(u8"Нажмите последовательно:")), content_area_fit)
+                        combo_fit_text_width(Fn.T(u8"РќР°Р¶РјРёС‚Рµ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ:")), content_area_fit)
                     local groups_for_width_fit = Fn.BuildComboDisplayGroups(st.current_combo or {})
                     local max_stage_row_width = 0
                     local mode_for_width_fit = (tonumber(ui.combo_window_display_mode[0]) == 2) and 2 or 1
@@ -10825,7 +10825,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                 local kn = Fn.normalizeKeyName(key)
                                 local safe_kn = Fn.decodeSafe(kn)
                                 local box_w = math.max(40, display_w + 12) * scale
-                                if safe_kn == Fn.decodeSafe(u8"ПРОБЕЛ") or safe_kn == "SPACE" then
+                                if safe_kn == Fn.decodeSafe(u8"РџР РћР‘Р•Р›") or safe_kn == "SPACE" then
                                     box_w = math.max(80, display_w + 24) * scale
                                 end
                                 row_w = row_w + box_w + 6 * scale
@@ -10849,7 +10849,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                     local mini_error_fit = st.combo_mini_error
                     if mini_error_fit and mini_error_fit.key and mini_error_fit.part_index == st.current_part_index then
                         combo_width_font_factor = math.min(combo_width_font_factor,
-                            fit_factor(combo_fit_text_width(Fn.T(u8"Ожидалась: ") .. Fn.getLocalizedName(mini_error_fit.key)), content_area_fit))
+                            fit_factor(combo_fit_text_width(Fn.T(u8"РћР¶РёРґР°Р»Р°СЃСЊ: ") .. Fn.getLocalizedName(mini_error_fit.key)), content_area_fit))
                     end
 
                     combo_title_font_factor = math.max(0.01, math.min(1.0, combo_title_font_factor))
@@ -10934,7 +10934,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                 local combo_mode_button_h = 20 * scale
                 if dm == 1 then Lib.imgui.PushStyleColor(Lib.imgui.Col.Button, _cact) end
                 Data.nfn.PushButtonBorder()
-                if Lib.imgui.Button(Fn.T(u8"Текст##cwm"), Lib.imgui.ImVec2(combo_mode_button_w, combo_mode_button_h)) then
+                if Lib.imgui.Button(Fn.T(u8"РўРµРєСЃС‚##cwm"), Lib.imgui.ImVec2(combo_mode_button_w, combo_mode_button_h)) then
                     ui.combo_window_display_mode[0] = 1
                     S.cfg.config.combo_window_display_mode = 1
                    Lib.inicfg.save(S.cfg, Data.iniFile)
@@ -10945,7 +10945,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                 local dm2 = ui.combo_window_display_mode[0]
                 if dm2 == 2 then Lib.imgui.PushStyleColor(Lib.imgui.Col.Button, _cact) end
                 Data.nfn.PushButtonBorder()
-                if Lib.imgui.Button(Fn.T(u8"Плашки##cwm"), Lib.imgui.ImVec2(combo_mode_button_w, combo_mode_button_h)) then
+                if Lib.imgui.Button(Fn.T(u8"РџР»Р°С€РєРё##cwm"), Lib.imgui.ImVec2(combo_mode_button_w, combo_mode_button_h)) then
                     ui.combo_window_display_mode[0] = 2
                     S.cfg.config.combo_window_display_mode = 2
                    Lib.inicfg.save(S.cfg, Data.iniFile)
@@ -11281,7 +11281,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                 local combo_error_footer_was_drawn = false
                 if ui.combo_window_display_mode[0] == 1 then
                     do local _td_seq = Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
-                   Lib.imgui.TextColored(Lib.imgui.ImVec4(_td_seq[1],_td_seq[2],_td_seq[3],_td_seq[4] or 1), Fn.T(u8"Нажмите последовательно:")) end
+                   Lib.imgui.TextColored(Lib.imgui.ImVec4(_td_seq[1],_td_seq[2],_td_seq[3],_td_seq[4] or 1), Fn.T(u8"РќР°Р¶РјРёС‚Рµ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ:")) end
                     local _ctxt = {1.0, 1.0, 1.0, 1.0}
                     local _ctxt4 = Lib.imgui.ImVec4(1.0, 1.0, 1.0, 1.0)
                     local _ctxt4_dim = Lib.imgui.ImVec4(0.7, 0.7, 0.7, 1.0)
@@ -11366,7 +11366,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                     end
                 else
                     do local _td_seq = Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
-                        Lib.imgui.TextColored(Lib.imgui.ImVec4(_td_seq[1],_td_seq[2],_td_seq[3],_td_seq[4] or 1), Fn.T(u8"Нажмите последовательно:")) end
+                        Lib.imgui.TextColored(Lib.imgui.ImVec4(_td_seq[1],_td_seq[2],_td_seq[3],_td_seq[4] or 1), Fn.T(u8"РќР°Р¶РјРёС‚Рµ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ:")) end
                     local combo    = st.current_combo
                     local box_h    = math.max(18, math.min(60, tonumber(plaque_layout_stage_h_px[0]) or 28.0)) * scale
                     local function render_boxed_part(part, part_index)
@@ -11427,7 +11427,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                             local horizontal_fit = combo_width_font_factor or 1.0
                             local boxW = math.max(40 * horizontal_fit, size.x + 12 * horizontal_fit) * ui.combo_window_scale[0]
                             local safe_kn = Fn.decodeSafe(kn)
-                            if safe_kn == Fn.decodeSafe(u8"ПРОБЕЛ") or safe_kn == "SPACE" then
+                            if safe_kn == Fn.decodeSafe(u8"РџР РћР‘Р•Р›") or safe_kn == "SPACE" then
                                 boxW = math.max(80 * horizontal_fit, size.x + 24 * horizontal_fit) * ui.combo_window_scale[0]
                             end
                             row_width = row_width + boxW + 6 * ui.combo_window_scale[0] * horizontal_fit
@@ -11514,7 +11514,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                             * plaque_height_for_hint / 28.0)
                         or 10
                     Lib.imgui.SetCursorPosY(math.max(0, Lib.imgui.GetCursorPosY() - hint_up))
-                    Lib.imgui.TextColored(Lib.imgui.ImVec4(1,0,0,1), Fn.T(u8"Ожидалась: ") .. Fn.getLocalizedName(mini_error.key))
+                    Lib.imgui.TextColored(Lib.imgui.ImVec4(1,0,0,1), Fn.T(u8"РћР¶РёРґР°Р»Р°СЃСЊ: ") .. Fn.getLocalizedName(mini_error.key))
                     combo_error_footer_was_drawn = true
                 end
                 local final_bottom_pad = (ui.combo_window_display_mode[0] == 2
@@ -11608,7 +11608,7 @@ local phantom_render = Lib.imgui.OnFrame(
         local kTime    = Fn.getEditorAddHoldTime(dk)[0]
         local dlabel   = Fn.getLocalizedName(dk)
         if kIsHold then dlabel = dlabel .. string.format("\n(%.1fs)", kTime) end
-        local d_isSpace = (Fn.decodeSafe(dk) == Fn.decodeSafe(u8"ПРОБЕЛ"))
+        local d_isSpace = (Fn.decodeSafe(dk) == Fn.decodeSafe(u8"РџР РћР‘Р•Р›"))
         local psz  = Lib.imgui.ImVec2(d_isSpace and 70 or 50, 40)
         local d_pos = Lib.imgui.ImVec2(
             mp.x - ui.editor.add_row_drag_offset.x,
@@ -11658,118 +11658,118 @@ recoil_render.HideCursor = true
 recoil_render.ShowCursor = false
 do
     local extra = {
-        ["КПД"] = "Efficiency",
-        ["Подпись \"by Pryanix\""] = "\"by Pryanix\" signature",
-        ["Удалить выделенные"] = "Delete selected",
-        ["Этап "] = "Stage ",
-        ["Добавить клавишу в этап "] = "Add key to stage ",
-        ["Описание:"] = "Description:",
-        ["Цвет"] = "Color",
-        ["Цвет гайда"] = "Guide color",
-        ["Размер"] = "Size",
-        ["Цель-объект"] = "Target object",
-        ["Выбрать объект первым выстрелом##cbug_obj_target"] = "Select object with first shot##cbug_obj_target",
-        ["Первый выстрел по объекту закрепляет его как цель."] = "The first shot at an object locks it as the target.",
-        ["Выбран объект: "] = "Object selected: ",
-        ["  |  попаданий: "] = "  |  hits: ",
-        ["Цель ещё не выбрана."] = "No target selected yet.",
-        ["Сбросить цель##cbug_obj_target_reset"] = "Reset target##cbug_obj_target_reset",
-        ["Применять цвет к изображению"] = "Apply color to image",
-        ["Эл.: "] = "Items: ",
-        ["Включить скрипт"] = "Enable script",
-        ["Автовключение при входе в игру"] = "Auto-enable on game join",
-        ["Вкладки «Смерть», «Убийство» и «Броня» имеют свой ползунок."] = "The Death, Kill, and Armor tabs each have their own slider.",
-        ["Выбран "] = "Selected ",
-        [". Выбери второго игрока."] = ". Select the second player.",
-        ["(не выбран)"] = "(not selected)",
-        ["Позиция +kill"] = "+kill position",
-        ["Личная статистика"] = "Personal statistics",
-        ["Текущий: "] = "Current: ",
-        ["Сравнение: "] = "Comparison: ",
-        ["%макс"] = "%max",
-        ["%всех"] = "%all",
-        ["Итого: "] = "Total: ",
-        ["Трекинг зон активен"] = "Zone tracking is active",
+        ["РљРџР”"] = "Efficiency",
+        ["РџРѕРґРїРёСЃСЊ \"by Pryanix\""] = "\"by Pryanix\" signature",
+        ["РЈРґР°Р»РёС‚СЊ РІС‹РґРµР»РµРЅРЅС‹Рµ"] = "Delete selected",
+        ["Р­С‚Р°Рї "] = "Stage ",
+        ["Р”РѕР±Р°РІРёС‚СЊ РєР»Р°РІРёС€Сѓ РІ СЌС‚Р°Рї "] = "Add key to stage ",
+        ["РћРїРёСЃР°РЅРёРµ:"] = "Description:",
+        ["Р¦РІРµС‚"] = "Color",
+        ["Р¦РІРµС‚ РіР°Р№РґР°"] = "Guide color",
+        ["Р Р°Р·РјРµСЂ"] = "Size",
+        ["Р¦РµР»СЊ-РѕР±СЉРµРєС‚"] = "Target object",
+        ["Р’С‹Р±СЂР°С‚СЊ РѕР±СЉРµРєС‚ РїРµСЂРІС‹Рј РІС‹СЃС‚СЂРµР»РѕРј##cbug_obj_target"] = "Select object with first shot##cbug_obj_target",
+        ["РџРµСЂРІС‹Р№ РІС‹СЃС‚СЂРµР» РїРѕ РѕР±СЉРµРєС‚Сѓ Р·Р°РєСЂРµРїР»СЏРµС‚ РµРіРѕ РєР°Рє С†РµР»СЊ."] = "The first shot at an object locks it as the target.",
+        ["Р’С‹Р±СЂР°РЅ РѕР±СЉРµРєС‚: "] = "Object selected: ",
+        ["  |  РїРѕРїР°РґР°РЅРёР№: "] = "  |  hits: ",
+        ["Р¦РµР»СЊ РµС‰С‘ РЅРµ РІС‹Р±СЂР°РЅР°."] = "No target selected yet.",
+        ["РЎР±СЂРѕСЃРёС‚СЊ С†РµР»СЊ##cbug_obj_target_reset"] = "Reset target##cbug_obj_target_reset",
+        ["РџСЂРёРјРµРЅСЏС‚СЊ С†РІРµС‚ Рє РёР·РѕР±СЂР°Р¶РµРЅРёСЋ"] = "Apply color to image",
+        ["Р­Р».: "] = "Items: ",
+        ["Р’РєР»СЋС‡РёС‚СЊ СЃРєСЂРёРїС‚"] = "Enable script",
+        ["РђРІС‚РѕРІРєР»СЋС‡РµРЅРёРµ РїСЂРё РІС…РѕРґРµ РІ РёРіСЂСѓ"] = "Auto-enable on game join",
+        ["Р’РєР»Р°РґРєРё В«РЎРјРµСЂС‚СЊВ», В«РЈР±РёР№СЃС‚РІРѕВ» Рё В«Р‘СЂРѕРЅСЏВ» РёРјРµСЋС‚ СЃРІРѕР№ РїРѕР»Р·СѓРЅРѕРє."] = "The Death, Kill, and Armor tabs each have their own slider.",
+        ["Р’С‹Р±СЂР°РЅ "] = "Selected ",
+        [". Р’С‹Р±РµСЂРё РІС‚РѕСЂРѕРіРѕ РёРіСЂРѕРєР°."] = ". Select the second player.",
+        ["(РЅРµ РІС‹Р±СЂР°РЅ)"] = "(not selected)",
+        ["РџРѕР·РёС†РёСЏ +kill"] = "+kill position",
+        ["Р›РёС‡РЅР°СЏ СЃС‚Р°С‚РёСЃС‚РёРєР°"] = "Personal statistics",
+        ["РўРµРєСѓС‰РёР№: "] = "Current: ",
+        ["РЎСЂР°РІРЅРµРЅРёРµ: "] = "Comparison: ",
+        ["%РјР°РєСЃ"] = "%max",
+        ["%РІСЃРµС…"] = "%all",
+        ["РС‚РѕРіРѕ: "] = "Total: ",
+        ["РўСЂРµРєРёРЅРі Р·РѕРЅ Р°РєС‚РёРІРµРЅ"] = "Zone tracking is active",
         ["[ON]"] = "[ON]",
         ["[OFF]"] = "[OFF]",
         ["(/hz)"] = "(/hz)",
-        ["Индивидуальная: "] = "Individual: ",
-        ["Конфигурация"] = "Configuration",
-        ["Активно · %d изобр. · след. через %d сек"] = "Active · %d images · next in %d sec",
-        [" Метки "] = " Markers ",
-        [" Текстуры "] = " Textures ",
-        [" Дыры "] = " Holes ",
-        [" Цвета "] = " Colors ",
-        [" Управление "] = " Controls ",
-        [" Слайдшоу "] = " Slideshow ",
-        ["Положите PNG/JPG в папку: moonloader\\CBUGER PRO\\HitMarker\\"] = "Place PNG/JPG files in: moonloader\\CBUGER PRO\\HitMarker\\",
-        ["| Меток: %d  | Дыр: %d"] = "| Markers: %d  | Holes: %d",
-        ["(всего: %d)"] = "(total: %d)",
-        ["Текстура для дыры #"] = "Texture for bullet hole #",
-        ["Текстура для метки #"] = "Texture for marker #",
-        ["Добавить"] = "Add",
-        [" Добавить"] = " Add",
-        [" Очистить"] = " Clear",
+        ["РРЅРґРёРІРёРґСѓР°Р»СЊРЅР°СЏ: "] = "Individual: ",
+        ["РљРѕРЅС„РёРіСѓСЂР°С†РёСЏ"] = "Configuration",
+        ["РђРєС‚РёРІРЅРѕ В· %d РёР·РѕР±СЂ. В· СЃР»РµРґ. С‡РµСЂРµР· %d СЃРµРє"] = "Active В· %d images В· next in %d sec",
+        [" РњРµС‚РєРё "] = " Markers ",
+        [" РўРµРєСЃС‚СѓСЂС‹ "] = " Textures ",
+        [" Р”С‹СЂС‹ "] = " Holes ",
+        [" Р¦РІРµС‚Р° "] = " Colors ",
+        [" РЈРїСЂР°РІР»РµРЅРёРµ "] = " Controls ",
+        [" РЎР»Р°Р№РґС€РѕСѓ "] = " Slideshow ",
+        ["РџРѕР»РѕР¶РёС‚Рµ PNG/JPG РІ РїР°РїРєСѓ: moonloader\\CBUGER PRO\\HitMarker\\"] = "Place PNG/JPG files in: moonloader\\CBUGER PRO\\HitMarker\\",
+        ["| РњРµС‚РѕРє: %d  | Р”С‹СЂ: %d"] = "| Markers: %d  | Holes: %d",
+        ["(РІСЃРµРіРѕ: %d)"] = "(total: %d)",
+        ["РўРµРєСЃС‚СѓСЂР° РґР»СЏ РґС‹СЂС‹ #"] = "Texture for bullet hole #",
+        ["РўРµРєСЃС‚СѓСЂР° РґР»СЏ РјРµС‚РєРё #"] = "Texture for marker #",
+        ["Р”РѕР±Р°РІРёС‚СЊ"] = "Add",
+        [" Р”РѕР±Р°РІРёС‚СЊ"] = " Add",
+        [" РћС‡РёСЃС‚РёС‚СЊ"] = " Clear",
     }
     for k, val in pairs(extra) do
         local dk = Fn.decodeSafe(u8(k))
         if not Data.UI_TRANSLATIONS[dk] then Data.UI_TRANSLATIONS[dk] = val end
     end
         local names_old = {
-            ["Обычный"] = "Normal",
-            ["Крестики"] = "Crosses",
-            ["Всплывающие кольца"] = "Rising rings",
-            ["Капли"] = "Drops",
-            ["Замедленный след"] = "Slow trail",
-            ["Огонь"] = "Fire",
-            ["Кольца"] = "Rings",
-            ["Линии"] = "Lines",
-            ["Туманность"] = "Nebula",
-            ["Горизонтальные штрихи"] = "Horizontal dashes",
-            ["Тёмная дыра"] = "Black hole",
-            ["Случайный"] = "Random",
-            ["Падающие штрихи"] = "Falling dashes",
-            ["Диагональ"] = "Diagonal",
-            ["Взрыв"] = "Explosion",
-            ["Спираль"] = "Spiral",
-            ["Крупные кольца"] = "Large rings",
-            ["Зигзаг"] = "Zigzag",
-            ["Конфетти"] = "Confetti",
-            ["Шестиугольники"] = "Hexagons",
-            ["Волны"] = "Waves",
-            ["Эквалайзер"] = "Equalizer",
-            ["Расходящиеся круги"] = "Expanding circles",
-            ["Цифровой шум"] = "Digital noise",
-            ["Кардиограмма"] = "Heartbeat",
-            ["Двойная спираль"] = "Double helix",
-            ["Радар"] = "Radar",
-            ["Соты"] = "Honeycomb",
-            ["Пузыри"] = "Bubbles",
-            ["Тройные волны"] = "Triple waves",
-            ["Маятник"] = "Pendulum",
-            ["Лабиринт"] = "Maze",
-            ["Звёздный поток"] = "Star stream",
-            ["Пульсирующие круги"] = "Pulsing circles",
-            ["Шестиугольники на волне"] = "Wave hexagons",
-            ["Спектр"] = "Spectrum",
-            ["Фигуры Лиссажу"] = "Lissajous figures",
-            ["Деформация поля"] = "Field distortion",
-            ["Полиция мигает"] = "Police flashing",
-            ["Мигающие вспышки"] = "Flashing bursts",
-            ["Вертикальный скан"] = "Vertical scan",
-            ["Пульс"] = "Pulse",
-            ["Стробоскоп"] = "Strobe",
-            ["Световые полосы"] = "Light stripes",
-            ["Расходящийся круг"] = "Expanding circle",
-            ["Прожектор"] = "Spotlight",
-            ["Острый импульс"] = "Sharp pulse",
-            ["Молния"] = "Lightning",
-            ["Световой мерцатель"] = "Light flicker",
-            ["Горизонтальный скан"] = "Horizontal scan",
-            ["Хроматик"] = "Chromatic",
-            ["Кольцо"] = "Ring",
-            ["Морзе"] = "Morse",
-            ["Градиент"] = "Gradient",
+            ["РћР±С‹С‡РЅС‹Р№"] = "Normal",
+            ["РљСЂРµСЃС‚РёРєРё"] = "Crosses",
+            ["Р’СЃРїР»С‹РІР°СЋС‰РёРµ РєРѕР»СЊС†Р°"] = "Rising rings",
+            ["РљР°РїР»Рё"] = "Drops",
+            ["Р—Р°РјРµРґР»РµРЅРЅС‹Р№ СЃР»РµРґ"] = "Slow trail",
+            ["РћРіРѕРЅСЊ"] = "Fire",
+            ["РљРѕР»СЊС†Р°"] = "Rings",
+            ["Р›РёРЅРёРё"] = "Lines",
+            ["РўСѓРјР°РЅРЅРѕСЃС‚СЊ"] = "Nebula",
+            ["Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Рµ С€С‚СЂРёС…Рё"] = "Horizontal dashes",
+            ["РўС‘РјРЅР°СЏ РґС‹СЂР°"] = "Black hole",
+            ["РЎР»СѓС‡Р°Р№РЅС‹Р№"] = "Random",
+            ["РџР°РґР°СЋС‰РёРµ С€С‚СЂРёС…Рё"] = "Falling dashes",
+            ["Р”РёР°РіРѕРЅР°Р»СЊ"] = "Diagonal",
+            ["Р’Р·СЂС‹РІ"] = "Explosion",
+            ["РЎРїРёСЂР°Р»СЊ"] = "Spiral",
+            ["РљСЂСѓРїРЅС‹Рµ РєРѕР»СЊС†Р°"] = "Large rings",
+            ["Р—РёРіР·Р°Рі"] = "Zigzag",
+            ["РљРѕРЅС„РµС‚С‚Рё"] = "Confetti",
+            ["РЁРµСЃС‚РёСѓРіРѕР»СЊРЅРёРєРё"] = "Hexagons",
+            ["Р’РѕР»РЅС‹"] = "Waves",
+            ["Р­РєРІР°Р»Р°Р№Р·РµСЂ"] = "Equalizer",
+            ["Р Р°СЃС…РѕРґСЏС‰РёРµСЃСЏ РєСЂСѓРіРё"] = "Expanding circles",
+            ["Р¦РёС„СЂРѕРІРѕР№ С€СѓРј"] = "Digital noise",
+            ["РљР°СЂРґРёРѕРіСЂР°РјРјР°"] = "Heartbeat",
+            ["Р”РІРѕР№РЅР°СЏ СЃРїРёСЂР°Р»СЊ"] = "Double helix",
+            ["Р Р°РґР°СЂ"] = "Radar",
+            ["РЎРѕС‚С‹"] = "Honeycomb",
+            ["РџСѓР·С‹СЂРё"] = "Bubbles",
+            ["РўСЂРѕР№РЅС‹Рµ РІРѕР»РЅС‹"] = "Triple waves",
+            ["РњР°СЏС‚РЅРёРє"] = "Pendulum",
+            ["Р›Р°Р±РёСЂРёРЅС‚"] = "Maze",
+            ["Р—РІС‘Р·РґРЅС‹Р№ РїРѕС‚РѕРє"] = "Star stream",
+            ["РџСѓР»СЊСЃРёСЂСѓСЋС‰РёРµ РєСЂСѓРіРё"] = "Pulsing circles",
+            ["РЁРµСЃС‚РёСѓРіРѕР»СЊРЅРёРєРё РЅР° РІРѕР»РЅРµ"] = "Wave hexagons",
+            ["РЎРїРµРєС‚СЂ"] = "Spectrum",
+            ["Р¤РёРіСѓСЂС‹ Р›РёСЃСЃР°Р¶Сѓ"] = "Lissajous figures",
+            ["Р”РµС„РѕСЂРјР°С†РёСЏ РїРѕР»СЏ"] = "Field distortion",
+            ["РџРѕР»РёС†РёСЏ РјРёРіР°РµС‚"] = "Police flashing",
+            ["РњРёРіР°СЋС‰РёРµ РІСЃРїС‹С€РєРё"] = "Flashing bursts",
+            ["Р’РµСЂС‚РёРєР°Р»СЊРЅС‹Р№ СЃРєР°РЅ"] = "Vertical scan",
+            ["РџСѓР»СЊСЃ"] = "Pulse",
+            ["РЎС‚СЂРѕР±РѕСЃРєРѕРї"] = "Strobe",
+            ["РЎРІРµС‚РѕРІС‹Рµ РїРѕР»РѕСЃС‹"] = "Light stripes",
+            ["Р Р°СЃС…РѕРґСЏС‰РёР№СЃСЏ РєСЂСѓРі"] = "Expanding circle",
+            ["РџСЂРѕР¶РµРєС‚РѕСЂ"] = "Spotlight",
+            ["РћСЃС‚СЂС‹Р№ РёРјРїСѓР»СЊСЃ"] = "Sharp pulse",
+            ["РњРѕР»РЅРёСЏ"] = "Lightning",
+            ["РЎРІРµС‚РѕРІРѕР№ РјРµСЂС†Р°С‚РµР»СЊ"] = "Light flicker",
+            ["Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Р№ СЃРєР°РЅ"] = "Horizontal scan",
+            ["РҐСЂРѕРјР°С‚РёРє"] = "Chromatic",
+            ["РљРѕР»СЊС†Рѕ"] = "Ring",
+            ["РњРѕСЂР·Рµ"] = "Morse",
+            ["Р“СЂР°РґРёРµРЅС‚"] = "Gradient",
         }
     for k, val in pairs(names_old) do
         Data.UI_TRANSLATIONS[Fn.decodeSafe(u8(k))] = val
@@ -11790,11 +11790,11 @@ function CB.run()
         value = tostring(value or '')
 
         local ru_case = {
-            {"А","а"},{"Б","б"},{"В","в"},{"Г","г"},{"Д","д"},{"Е","е"},{"Ё","ё"},
-            {"Ж","ж"},{"З","з"},{"И","и"},{"Й","й"},{"К","к"},{"Л","л"},{"М","м"},
-            {"Н","н"},{"О","о"},{"П","п"},{"Р","р"},{"С","с"},{"Т","т"},{"У","у"},
-            {"Ф","ф"},{"Х","х"},{"Ц","ц"},{"Ч","ч"},{"Ш","ш"},{"Щ","щ"},{"Ъ","ъ"},
-            {"Ы","ы"},{"Ь","ь"},{"Э","э"},{"Ю","ю"},{"Я","я"},
+            {"Рђ","Р°"},{"Р‘","Р±"},{"Р’","РІ"},{"Р“","Рі"},{"Р”","Рґ"},{"Р•","Рµ"},{"РЃ","С‘"},
+            {"Р–","Р¶"},{"Р—","Р·"},{"Р","Рё"},{"Р™","Р№"},{"Рљ","Рє"},{"Р›","Р»"},{"Рњ","Рј"},
+            {"Рќ","РЅ"},{"Рћ","Рѕ"},{"Рџ","Рї"},{"Р ","СЂ"},{"РЎ","СЃ"},{"Рў","С‚"},{"РЈ","Сѓ"},
+            {"Р¤","С„"},{"РҐ","С…"},{"Р¦","С†"},{"Р§","С‡"},{"РЁ","С€"},{"Р©","С‰"},{"РЄ","СЉ"},
+            {"Р«","С‹"},{"Р¬","СЊ"},{"Р­","СЌ"},{"Р®","СЋ"},{"РЇ","СЏ"},
         }
         for _, pair in ipairs(ru_case) do value = value:gsub(pair[1], pair[2]) end
         return value:lower():gsub('^%s+', ''):gsub('%s+$', '')
@@ -11806,7 +11806,7 @@ function CB.run()
     end
     local function CBUGER_IS_STANDALONE_RYVOK(name)
         local full = CBUGER_LOWER_COMBO_NAME(name)
-        return full == CBUGER_LOWER_COMBO_NAME(u8"Рывок")
+        return full == CBUGER_LOWER_COMBO_NAME(u8"Р С‹РІРѕРє")
             and not tostring(name or ''):find('|', 1, true)
     end
     local standard_combos_changed = false
@@ -11831,7 +11831,7 @@ function CB.run()
         for i, existing in ipairs(S.combos_list) do
             if type(existing) == 'table'
                 and CBUGER_COMBO_BASE_NAME(existing.name) == base
-                and not (base == CBUGER_LOWER_COMBO_NAME(u8"Рывок")
+                and not (base == CBUGER_LOWER_COMBO_NAME(u8"Р С‹РІРѕРє")
                     and CBUGER_IS_STANDALONE_RYVOK(existing.name)) then
                 found = i
                 break
@@ -11856,11 +11856,11 @@ function CB.run()
         preset_data_by_base[CBUGER_COMBO_BASE_NAME(standard.name)] = standard.data
     end
 
-    local otvod_slide_data = {{u8"ЛКМ", u8"ПКМ", u8"А", "C"}}
+    local otvod_slide_data = {{u8"Р›РљРњ", u8"РџРљРњ", u8"Рђ", "C"}}
     for _ = 1, 5 do
-        otvod_slide_data[#otvod_slide_data + 1] = {u8"ПКМ", u8"ЛКМ", u8"А", "C"}
+        otvod_slide_data[#otvod_slide_data + 1] = {u8"РџРљРњ", u8"Р›РљРњ", u8"Рђ", "C"}
     end
-    local otvod_slide_base = CBUGER_LOWER_COMBO_NAME(u8"Отвод + Слайд")
+    local otvod_slide_base = CBUGER_LOWER_COMBO_NAME(u8"РћС‚РІРѕРґ + РЎР»Р°Р№Рґ")
     local migrated_a_to_f = false
     for _, combo in ipairs(S.combos_list) do
         if type(combo) == 'table' then
@@ -11883,11 +11883,11 @@ function CB.run()
                     if type(part) == 'table' then
                         for key_index, key in ipairs(part) do
                             if type(key) == 'string' and key == 'A' then
-                                part[key_index] = u8"Ф"
+                                part[key_index] = u8"Р¤"
                                 migrated_a_to_f = true
                             elseif type(key) == 'table' then
-                                if key.name == 'A' then key.name = u8"Ф"; migrated_a_to_f = true end
-                                if key[1] == 'A' then key[1] = u8"Ф"; migrated_a_to_f = true end
+                                if key.name == 'A' then key.name = u8"Р¤"; migrated_a_to_f = true end
+                                if key[1] == 'A' then key[1] = u8"Р¤"; migrated_a_to_f = true end
                             end
                         end
                     end
@@ -11988,7 +11988,7 @@ function CB.run()
         S.state.runtime_frame = (S.state.runtime_frame or 0) + 1
        Data.space_as_shift_enabled = ui.space_as_shift[0] and ui.keyboard_type[0] == 0
         for _, k in ipairs(S.all_monitored_keys) do
-            if k.name == u8"ПРОБЕЛ" then
+            if k.name == u8"РџР РћР‘Р•Р›" then
                 k.code = Fn.getSpaceCode()
                 break
             end
@@ -12017,7 +12017,7 @@ function CB.run()
                             for _, v in ipairs(line) do
                                 local code = v[2]
                                 if not Fn.isPhysicalKeyDown(code) then
-                                    local nm = (v.space and u8"ПРОБЕЛ") or v[1]
+                                    local nm = (v.space and u8"РџР РћР‘Р•Р›") or v[1]
                                     S.state.key_needs_release[Fn.decodeSafe(nm)] = nil
                                     S.state.held_keys[code]       = nil
                                     S.state.hold_triggered[code]  = nil
@@ -12034,7 +12034,7 @@ function CB.run()
                                     if not S.state.held_keys[code] then
                                         S.state.held_keys[code] = os.clock()
                                         if S.state.current_combo and S.state.combo_started then
-                                            local nm      = (v.space and u8"ПРОБЕЛ") or v[1]
+                                            local nm      = (v.space and u8"РџР РћР‘Р•Р›") or v[1]
                                             local indices = Fn.findKeyIndicesInCurrentPart(nm)
                                             local idx     = Fn.chooseBestIndexForKey(indices)
                                             if idx then S.state.last_combo_activity = os.clock() end
@@ -12113,7 +12113,7 @@ function CB.run()
                             end
                            Fn.prepareCurrentPart()
                             if ui.show_chat_messages[0] then
-                                sampAddChatMessage(Fn.L(Fn.cp(u8"[CBUGER]: Комбинация сброшена из-за простоя."), "[CBUGER]: Combo reset due to inactivity."), 0xFFFF00)
+                                sampAddChatMessage(Fn.L(Fn.cp(u8"[CBUGER]: РљРѕРјР±РёРЅР°С†РёСЏ СЃР±СЂРѕС€РµРЅР° РёР·-Р·Р° РїСЂРѕСЃС‚РѕСЏ."), "[CBUGER]: Combo reset due to inactivity."), 0xFFFF00)
                             end
                             S.state.last_combo_activity = 0
                         end
@@ -12417,7 +12417,7 @@ local _glyph_ranges = ffi.new('unsigned short[9]',
     0x0000)
 local CHILD_BG_KEY = imgui.Col.ChildBg or 10
 local loaded_fonts = { nil }
-local loaded_font_names = { u8"Системный" }
+local loaded_font_names = { u8"РЎРёСЃС‚РµРјРЅС‹Р№" }
 CBUGER_RADIAL_LOADED_FONTS = loaded_fonts
 do
 local ui = CB.ui
@@ -12633,7 +12633,7 @@ local function refreshImages()
     if type(ui) == 'table' then collect(ui.death); collect(ui.kill); collect(ui.armor) end
     collect(rawget(_G, 'self_icon'))
     img_files    = {}
-    img_names_u8 = { u8"[ Нет ]" }
+    img_names_u8 = { u8"[ РќРµС‚ ]" }
     local ok_dir, mode = pcall(lfs.attributes, image_dir, 'mode')
     if ok_dir and mode == 'directory' then
         local iter, state, init = lfs.dir(image_dir)
@@ -12786,7 +12786,7 @@ local function updatePlacementTarget(target, sx, sy, ox, oy, cursor_y_fix)
     return false
 end
 local function sequenceItemLabel(item)
-    if not item then return u8("[пусто]") end
+    if not item then return u8("[РїСѓСЃС‚Рѕ]") end
     local c = tonumber(item.content) or 0
     local alpha = 1.0
     if c == 0 or c == 1 then
@@ -12800,14 +12800,14 @@ local function sequenceItemLabel(item)
         local key = icon_list[idx] and icon_list[idx].key or 'QUESTION'
         return u8(string.format("FA %d%% ", op_pct)) .. getIcon(key)
     elseif c == 1 then
-        local name = img_names_u8[(tonumber(item.img_idx) or 0) + 1] or u8("[ Нет ]")
+        local name = img_names_u8[(tonumber(item.img_idx) or 0) + 1] or u8("[ РќРµС‚ ]")
         return u8(string.format("IMG %d%% ", op_pct)) .. name
     elseif c == 2 then
         local txt = unescapeSeqText(item.text_buf or '')
         if txt == '' then txt = '?' end
         return u8(string.format("TXT %d%% ", op_pct)) .. txt:sub(1, 54)
     end
-    return u8("[пусто]")
+    return u8("[РїСѓСЃС‚Рѕ]")
 end
 local function serializeSequence(name, u)
     local seq = u.sequence or {}
@@ -12887,13 +12887,13 @@ local function getTexture(filename)
     return nil
 end
 local anim_list = {
-    { key = "NONE",    label = "Отключить" },
-    { key = "FLOAT",   label = "Подъём"    },
-    { key = "PULSE",   label = "Пульсация" },
-    { key = "SPIN",    label = "Вращение"  },
-    { key = "WAVE",    label = "Волна"     },
-    { key = "SHAKE",   label = "Тряска"    },
-    { key = "SPIRAL",  label = "Спираль"   },
+    { key = "NONE",    label = "РћС‚РєР»СЋС‡РёС‚СЊ" },
+    { key = "FLOAT",   label = "РџРѕРґСЉС‘Рј"    },
+    { key = "PULSE",   label = "РџСѓР»СЊСЃР°С†РёСЏ" },
+    { key = "SPIN",    label = "Р’СЂР°С‰РµРЅРёРµ"  },
+    { key = "WAVE",    label = "Р’РѕР»РЅР°"     },
+    { key = "SHAKE",   label = "РўСЂСЏСЃРєР°"    },
+    { key = "SPIRAL",  label = "РЎРїРёСЂР°Р»СЊ"   },
 }
 local function newBlock(fa_idx, r, g, b, sz, tm, ht, anim_idx)
     return {
@@ -14086,7 +14086,7 @@ local function renderPreviewBox(u)
                 DL:PopClipRect()
             else
                 local f2 = CBUGER_GET_GLOBAL_FONT_OR(imgui.GetFont())
-                local no = u8"нет"
+                local no = u8"РЅРµС‚"
                 local fsz, ts2 = fitText(f2, no, 11, 4.5)
                 DL:PushClipRect(clip_p1, clip_p2, true)
                 DL:AddTextFontPtr(f2, fsz, imgui.ImVec2(cxb - ts2.x / 2, cyb - ts2.y / 2),
@@ -14160,7 +14160,7 @@ local function renderPreviewBox(u)
             end
         else
             local font = CBUGER_GET_GLOBAL_FONT_OR(imgui.GetFont())
-            local txt = u8"[ пусто ]"
+            local txt = u8"[ РїСѓСЃС‚Рѕ ]"
             local ts = font:CalcTextSizeA(11, 1000, 0, txt)
             DL:AddTextFontPtr(font, 11,
                 imgui.ImVec2(p.x + (box_size - ts.x) * 0.5, p.y + (box_size - ts.y) * 0.5),
@@ -14214,7 +14214,7 @@ local function renderPreviewBox(u)
                 DL:PopClipRect()
             else
                 local f2 = CBUGER_GET_GLOBAL_FONT_OR(imgui.GetFont())
-                local no = u8"нет"
+                local no = u8"РЅРµС‚"
                 local ts2 = f2:CalcTextSizeA(13, 1000, 0, no)
                 DL:AddTextFontPtr(f2, 13,
                     imgui.ImVec2(cxb - ts2.x / 2, cyb - ts2.y / 2),
@@ -14286,7 +14286,7 @@ local function iconComboWithPreview(id, u)
             if sel then imgui.PopStyleColor(2); imgui.SetItemDefaultFocus() end
             shown = shown + 1
             if shown >= 200 then
-                imgui.TextDisabled(string.format(Fn.T(u8("... ещё %d — уточните поиск")), math.max(0, #list - 200)))
+                imgui.TextDisabled(string.format(Fn.T(u8("... РµС‰С‘ %d вЂ” СѓС‚РѕС‡РЅРёС‚Рµ РїРѕРёСЃРє")), math.max(0, #list - 200)))
                 break
             end
         end
@@ -14297,7 +14297,7 @@ end
 local function animCombo(id, u)
     local ac = getTabAccent()
     local changed = false
-    imgui.Text(Fn.T(u8"Анимация:"))
+    imgui.Text(Fn.T(u8"РђРЅРёРјР°С†РёСЏ:"))
     imgui.SetNextItemWidth(220)
     local current = animEntry(u.anim[0] or 0)
     if imgui.BeginCombo(u8("##anim_"..id), Fn.T(u8(current.label))) then
@@ -14318,7 +14318,7 @@ local function animCombo(id, u)
     return changed
 end
 local function contentTypeSwitcher(id, u)
-    local labels = { u8"FA Иконка", u8"Изображение", u8"Текст" }
+    local labels = { u8"FA РРєРѕРЅРєР°", u8"РР·РѕР±СЂР°Р¶РµРЅРёРµ", u8"РўРµРєСЃС‚" }
     local ac = getTabAccent()
     local changed = false
     for ti, lbl in ipairs(labels) do
@@ -14351,16 +14351,16 @@ local function renderContentPanel(id, u)
     imgui.SameLine(0, 12)
     imgui.BeginGroup()
     if u.content[0] == 0 then
-        imgui.Text(Fn.T(u8("Иконка:")))
+        imgui.Text(Fn.T(u8("РРєРѕРЅРєР°:")))
         if iconComboWithPreview(id, u) then changed = true end
         imgui.SetNextItemWidth(200)
-        if imgui.SliderFloat(Fn.T(u8("Размер иконки##sz_"..id)), u.size, 6, 100, "%.0f") then changed = true end
+        if imgui.SliderFloat(Fn.T(u8("Р Р°Р·РјРµСЂ РёРєРѕРЅРєРё##sz_"..id)), u.size, 6, 100, "%.0f") then changed = true end
         imgui.SetNextItemWidth(200)
-        if imgui.SliderFloat(Fn.T(u8("Прозрачность##opico_"..id)), u.opacity, 0.0, 1.0, "%.2f") then changed = true end
+        if imgui.SliderFloat(Fn.T(u8("РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ##opico_"..id)), u.opacity, 0.0, 1.0, "%.2f") then changed = true end
     elseif u.content[0] == 1 then
-        imgui.TextDisabled(Fn.T(u8("Положите PNG/JPG/BMP в папку:")))
+        imgui.TextDisabled(Fn.T(u8("РџРѕР»РѕР¶РёС‚Рµ PNG/JPG/BMP РІ РїР°РїРєСѓ:")))
         CBUGER_MarqueeLabel(u8("moonloader\\CBUGER PRO\\icons_image\\"), 230)
-        if CBUGER_MarqueeBeginCombo(u8("##img_"..id), img_names_u8[u.img_idx[0]+1] or u8("[ Нет ]"), 200) then
+        if CBUGER_MarqueeBeginCombo(u8("##img_"..id), img_names_u8[u.img_idx[0]+1] or u8("[ РќРµС‚ ]"), 200) then
             for ni, nm in ipairs(img_names_u8) do
                 local sel = (u.img_idx[0] == ni - 1)
                 if CBUGER_MarqueeSelectable(nm, "im_"..id..ni, sel) then u.img_idx[0] = ni-1; changed = true end
@@ -14369,21 +14369,21 @@ local function renderContentPanel(id, u)
             imgui.EndCombo()
         end
         imgui.SameLine(0, 4)
-        if imgui.SmallButton(Fn.T(u8("Обн.##ri_"..id))) then refreshImages(); changed = true end
+        if imgui.SmallButton(Fn.T(u8("РћР±РЅ.##ri_"..id))) then refreshImages(); changed = true end
         imgui.Spacing()
         imgui.SetNextItemWidth(200)
-        if imgui.SliderFloat(Fn.T(u8("Масштаб##is_"..id)), u.img_scale, 0.2, 3.0, "%.2f") then changed = true end
+        if imgui.SliderFloat(Fn.T(u8("РњР°СЃС€С‚Р°Р±##is_"..id)), u.img_scale, 0.2, 3.0, "%.2f") then changed = true end
         imgui.SetNextItemWidth(200)
-        if imgui.SliderFloat(Fn.T(u8("Прозрачность##ia_"..id)), u.img_alpha, 0.0, 1.0, "%.2f") then changed = true end
+        if imgui.SliderFloat(Fn.T(u8("РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ##ia_"..id)), u.img_alpha, 0.0, 1.0, "%.2f") then changed = true end
     elseif u.content[0] == 2 then
-        imgui.Text(Fn.T(u8("Текст:")))
+        imgui.Text(Fn.T(u8("РўРµРєСЃС‚:")))
         imgui.SetNextItemWidth(200)
         if imgui.InputText(Fn.T(u8("##tx_"..id)), u.text_buf, ffi.sizeof(u.text_buf), imgui.InputTextFlags.AutoSelectAll) then changed = true end
         imgui.Spacing()
         imgui.SetNextItemWidth(200)
-        if imgui.SliderFloat(Fn.T(u8("Масштаб##ts_"..id)), u.text_scale, 0.2, 3.0, "%.2f") then changed = true end
+        if imgui.SliderFloat(Fn.T(u8("РњР°СЃС€С‚Р°Р±##ts_"..id)), u.text_scale, 0.2, 3.0, "%.2f") then changed = true end
         imgui.SetNextItemWidth(200)
-        if imgui.SliderFloat(Fn.T(u8("прозрачность##optxt_"..id)), u.opacity, 0.0, 1.0, "%.2f") then changed = true end
+        if imgui.SliderFloat(Fn.T(u8("РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ##optxt_"..id)), u.opacity, 0.0, 1.0, "%.2f") then changed = true end
     end
     if renderSequenceControls(id, u) then changed = true end
     imgui.EndGroup()
@@ -14472,7 +14472,7 @@ renderSequenceControls = function(id, u)
                 if sel then imgui.PopStyleColor(2); imgui.SetItemDefaultFocus() end
                 shown = shown + 1
                 if shown >= 200 then
-                    imgui.TextDisabled(string.format(Fn.T(u8("... ещё %d — уточните поиск")), math.max(0, #list - 200)))
+                    imgui.TextDisabled(string.format(Fn.T(u8("... РµС‰С‘ %d вЂ” СѓС‚РѕС‡РЅРёС‚Рµ РїРѕРёСЃРє")), math.max(0, #list - 200)))
                     break
                 end
             end
@@ -14480,7 +14480,7 @@ renderSequenceControls = function(id, u)
         end
     end
     local function seqImageCombo(item, row_id)
-        if CBUGER_MarqueeBeginCombo(u8("##seqimg_"..id.."_"..row_id), img_names_u8[(tonumber(item.img_idx) or 0) + 1] or u8("[ Нет ]"), 180) then
+        if CBUGER_MarqueeBeginCombo(u8("##seqimg_"..id.."_"..row_id), img_names_u8[(tonumber(item.img_idx) or 0) + 1] or u8("[ РќРµС‚ ]"), 180) then
             for ni, nm in ipairs(img_names_u8) do
                 local sel = ((tonumber(item.img_idx) or 0) == ni - 1)
                 if CBUGER_MarqueeSelectable(nm, "seqimgsel_"..id.."_"..row_id.."_"..ni, sel) then
@@ -14492,52 +14492,52 @@ renderSequenceControls = function(id, u)
             imgui.EndCombo()
         end
         imgui.SameLine(0, 4)
-        if imgui.SmallButton(Fn.T(u8("Обн.##seqri_"..id.."_"..row_id))) then
+        if imgui.SmallButton(Fn.T(u8("РћР±РЅ.##seqri_"..id.."_"..row_id))) then
             refreshImages()
             changed = true
         end
     end
     local function seqEditPopup(item, row_id)
         if imgui.BeginPopup(Fn.T(u8("seqedit_"..id.."_"..row_id))) then
-            imgui.Text(Fn.T(u8("Тип:")))
+            imgui.Text(Fn.T(u8("РўРёРї:")))
             imgui.SameLine(0, 8)
             if seqContentButtons(item, row_id .. "_pop") then changed = true end
             imgui.Spacing()
             if (tonumber(item.content) or 0) == 0 then
-                imgui.Text(Fn.T(u8("Иконка:")))
+                imgui.Text(Fn.T(u8("РРєРѕРЅРєР°:")))
                 seqIconCombo(item, row_id .. "_pop")
                 imgui.SetNextItemWidth(200)
                 local is = new.float[1](seqFieldValue(item, 'img_scale', 1.0))
-                if imgui.SliderFloat(Fn.T(u8("Размер иконки##seqfais_"..id.."_"..row_id)), is, 0.2, 3.0, "%.2f") then
+                if imgui.SliderFloat(Fn.T(u8("Р Р°Р·РјРµСЂ РёРєРѕРЅРєРё##seqfais_"..id.."_"..row_id)), is, 0.2, 3.0, "%.2f") then
                     item.img_scale = is[0]; changed = true
                 end
                 imgui.SetNextItemWidth(200)
                 local ia = new.float[1](seqFieldValue(item, 'img_alpha', 1.0))
-                if imgui.SliderFloat(Fn.T(u8("Прозрачность##seqfaia_"..id.."_"..row_id)), ia, 0.0, 1.0, "%.2f") then
+                if imgui.SliderFloat(Fn.T(u8("РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ##seqfaia_"..id.."_"..row_id)), ia, 0.0, 1.0, "%.2f") then
                     item.img_alpha = ia[0]; changed = true
                 end
             elseif (tonumber(item.content) or 0) == 1 then
-                imgui.TextDisabled(Fn.T(u8("Положите PNG/JPG/BMP в папку:")))
+                imgui.TextDisabled(Fn.T(u8("РџРѕР»РѕР¶РёС‚Рµ PNG/JPG/BMP РІ РїР°РїРєСѓ:")))
         CBUGER_MarqueeLabel(u8("moonloader\\CBUGER PRO\\icons_image\\"), 230)
                 seqImageCombo(item, row_id .. "_pop")
                 imgui.SetNextItemWidth(200)
                 local is = new.float[1](seqFieldValue(item, 'img_scale', 1.0))
-                if imgui.SliderFloat(Fn.T(u8("Масштаб##seqis_"..id.."_"..row_id)), is, 0.2, 3.0, "%.2f") then
+                if imgui.SliderFloat(Fn.T(u8("РњР°СЃС€С‚Р°Р±##seqis_"..id.."_"..row_id)), is, 0.2, 3.0, "%.2f") then
                     item.img_scale = is[0]; changed = true
                 end
                 imgui.SetNextItemWidth(200)
                 local ia = new.float[1](seqFieldValue(item, 'img_alpha', 1.0))
-                if imgui.SliderFloat(Fn.T(u8("Прозрачность изобр.##seqia_"..id.."_"..row_id)), ia, 0.0, 1.0, "%.2f") then
+                if imgui.SliderFloat(Fn.T(u8("РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ РёР·РѕР±СЂ.##seqia_"..id.."_"..row_id)), ia, 0.0, 1.0, "%.2f") then
                     item.img_alpha = ia[0]; changed = true
                 end
                 imgui.Spacing()
                 if u.seq_apply_img_color ~= nil then
-                    if imgui.Checkbox(Fn.T(u8("Применять цвет к изображению##seqimgclrseq_"..id.."_"..row_id)), u.seq_apply_img_color) then
+                    if imgui.Checkbox(Fn.T(u8("РџСЂРёРјРµРЅСЏС‚СЊ С†РІРµС‚ Рє РёР·РѕР±СЂР°Р¶РµРЅРёСЋ##seqimgclrseq_"..id.."_"..row_id)), u.seq_apply_img_color) then
                         changed = true
                     end
                 end
             elseif (tonumber(item.content) or 0) == 2 then
-                imgui.Text(Fn.T(u8("Текст:")))
+                imgui.Text(Fn.T(u8("РўРµРєСЃС‚:")))
                 local buf = new.char[64](tostring(item.text_buf or ""))
                 imgui.SetNextItemWidth(220)
                 if imgui.InputText(Fn.T(u8("##seqtxt_"..id.."_"..row_id)), buf, ffi.sizeof(buf), imgui.InputTextFlags.AutoSelectAll) then
@@ -14545,17 +14545,17 @@ renderSequenceControls = function(id, u)
                 end
                 imgui.SetNextItemWidth(200)
                 local ts = new.float[1](seqFieldValue(item, 'text_scale', 1.0))
-                if imgui.SliderFloat(Fn.T(u8("Масштаб текста##seqts_"..id.."_"..row_id)), ts, 0.2, 3.0, "%.2f") then
+                if imgui.SliderFloat(Fn.T(u8("РњР°СЃС€С‚Р°Р± С‚РµРєСЃС‚Р°##seqts_"..id.."_"..row_id)), ts, 0.2, 3.0, "%.2f") then
                     item.text_scale = ts[0]; changed = true
                 end
                 imgui.SetNextItemWidth(200)
                 local op = new.float[1](seqFieldValue(item, 'opacity', 1.0))
-                if imgui.SliderFloat(Fn.T(u8("Прозрачность текста##seqtop_"..id.."_"..row_id)), op, 0.0, 1.0, "%.2f") then
+                if imgui.SliderFloat(Fn.T(u8("РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ С‚РµРєСЃС‚Р°##seqtop_"..id.."_"..row_id)), op, 0.0, 1.0, "%.2f") then
                     item.opacity = op[0]; changed = true
                 end
             end
             imgui.Spacing()
-            if imgui.Button(Fn.T(u8("Закрыть##seqeditclose_"..id.."_"..row_id)), imgui.ImVec2(130, 28)) then
+            if imgui.Button(Fn.T(u8("Р—Р°РєСЂС‹С‚СЊ##seqeditclose_"..id.."_"..row_id)), imgui.ImVec2(130, 28)) then
                 imgui.CloseCurrentPopup()
             end
             imgui.EndPopup()
@@ -14567,7 +14567,7 @@ renderSequenceControls = function(id, u)
         if seq_color_open[key] == nil then seq_color_open[key] = false end
         if seq_color_open[key] then
             imgui.BeginChild(u8("##seqcolpanel_"..id.."_"..row_id), imgui.ImVec2(0, 0), true)
-            imgui.Text(Fn.T(u8("Цвет иконки:")))
+            imgui.Text(Fn.T(u8("Р¦РІРµС‚ РёРєРѕРЅРєРё:")))
             imgui.Spacing()
             local col = new.float[4](
                 seqFieldValue(item, 'r', 1.0),
@@ -14585,11 +14585,11 @@ renderSequenceControls = function(id, u)
             imgui.Separator()
             imgui.SetNextItemWidth(200)
             local op = new.float[1](seqFieldValue(item, 'opacity', 1.0))
-            if imgui.SliderFloat(Fn.T(u8("Прозрачность##seqop_"..id.."_"..row_id)), op, 0.0, 1.0, "%.2f") then
+            if imgui.SliderFloat(Fn.T(u8("РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ##seqop_"..id.."_"..row_id)), op, 0.0, 1.0, "%.2f") then
                 item.opacity = op[0]; changed = true
             end
             imgui.Spacing()
-            if imgui.Button(Fn.T(u8("Закрыть##seqcolclose_"..id.."_"..row_id)), imgui.ImVec2(130, 28)) then
+            if imgui.Button(Fn.T(u8("Р—Р°РєСЂС‹С‚СЊ##seqcolclose_"..id.."_"..row_id)), imgui.ImVec2(130, 28)) then
                 seq_color_open[key] = false
             end
             imgui.EndChild()
@@ -14597,31 +14597,31 @@ renderSequenceControls = function(id, u)
     end
     imgui.Separator()
     imgui.Spacing()
-    imgui.Text(Fn.T(u8("Переливание:")))
-    if imgui.Checkbox(Fn.T(u8("Включить##seqen_"..id)), u.seq_enabled) then changed = true end
+    imgui.Text(Fn.T(u8("РџРµСЂРµР»РёРІР°РЅРёРµ:")))
+    if imgui.Checkbox(Fn.T(u8("Р’РєР»СЋС‡РёС‚СЊ##seqen_"..id)), u.seq_enabled) then changed = true end
     imgui.SameLine(0, 10)
-    local seq_popup_title = u8("Настройки##seqpopup_"..id)
-    if imgui.Button(Fn.T(u8("Настройки##seqopen_"..id)), imgui.ImVec2(120, 24)) then
+    local seq_popup_title = u8("РќР°СЃС‚СЂРѕР№РєРё##seqpopup_"..id)
+    if imgui.Button(Fn.T(u8("РќР°СЃС‚СЂРѕР№РєРё##seqopen_"..id)), imgui.ImVec2(120, 24)) then
         u.seq_open = true
         imgui.OpenPopup(seq_popup_title)
         changed = true
     end
     imgui.SameLine(0, 10)
-    imgui.TextDisabled(Fn.T(u8("Эл.: ")) .. tostring(#(u.sequence or {})))
+    imgui.TextDisabled(Fn.T(u8("Р­Р».: ")) .. tostring(#(u.sequence or {})))
     imgui.SetNextWindowSize(imgui.ImVec2(610, 470), imgui.Cond.Appearing)
     if u.seq_open then
         local p_open = new.bool(true)
         if imgui.BeginPopupModal(seq_popup_title, p_open, imgui.WindowFlags.NoResize) then
-            if imgui.Checkbox(Fn.T(u8("Включить переливание##seqen2_"..id)), u.seq_enabled) then changed = true end
+            if imgui.Checkbox(Fn.T(u8("Р’РєР»СЋС‡РёС‚СЊ РїРµСЂРµР»РёРІР°РЅРёРµ##seqen2_"..id)), u.seq_enabled) then changed = true end
             imgui.SetNextItemWidth(220)
-            if imgui.SliderFloat(Fn.T(u8("Скорость смены##seqsp_"..id)), u.seq_speed, 0.10, 10.0, "%.2f") then changed = true end
+            if imgui.SliderFloat(Fn.T(u8("РЎРєРѕСЂРѕСЃС‚СЊ СЃРјРµРЅС‹##seqsp_"..id)), u.seq_speed, 0.10, 10.0, "%.2f") then changed = true end
             imgui.Spacing()
-            if imgui.Button(iconOrFallback("PLUS", "+") .. Fn.T(u8(" Добавить##seqadd_"..id)), imgui.ImVec2(210, 26)) then
+            if imgui.Button(iconOrFallback("PLUS", "+") .. Fn.T(u8(" Р”РѕР±Р°РІРёС‚СЊ##seqadd_"..id)), imgui.ImVec2(210, 26)) then
                 table.insert(u.sequence, copyBlockSnapshot(u))
                 changed = true
             end
             imgui.SameLine(0, 8)
-            if imgui.Button(iconOrFallback("BROOM", "?") .. Fn.T(u8(" Очистить##seqclr_"..id)), imgui.ImVec2(120, 26)) then
+            if imgui.Button(iconOrFallback("BROOM", "?") .. Fn.T(u8(" РћС‡РёСЃС‚РёС‚СЊ##seqclr_"..id)), imgui.ImVec2(120, 26)) then
                 u.sequence = {}
                 changed = true
             end
@@ -14653,7 +14653,7 @@ renderSequenceControls = function(id, u)
                 imgui.SameLine(0, 4)
                 seqContentButtons(item, i)
                 imgui.SameLine(0, 4)
-                if iconButton(moveIcon("¦"), "seqmovebtn_"..id.."_"..i, imgui.ImVec2(28, 22), 0, 2, 0.95) then
+                if iconButton(moveIcon("В¦"), "seqmovebtn_"..id.."_"..i, imgui.ImVec2(28, 22), 0, 2, 0.95) then
                     pending_placement_target = item
                     changed = true
                 end
@@ -14673,7 +14673,7 @@ renderSequenceControls = function(id, u)
                 imgui.Spacing()
             end
             imgui.EndChild()
-            if imgui.Button(Fn.T(u8("Закрыть##seqclose_"..id)), imgui.ImVec2(130, 28)) then
+            if imgui.Button(Fn.T(u8("Р—Р°РєСЂС‹С‚СЊ##seqclose_"..id)), imgui.ImVec2(130, 28)) then
                 u.seq_open = false
                 imgui.CloseCurrentPopup()
             end
@@ -14689,7 +14689,7 @@ local function colorPopup(id, color_arr)
     local r = color_arr[0]; local g = color_arr[1]
     local b = color_arr[2]; local a = color_arr[3]
     local changed = false
-    imgui.Text(Fn.T(u8"Цвет:"))
+    imgui.Text(Fn.T(u8"Р¦РІРµС‚:"))
     imgui.SameLine(0, 8)
     local DL = imgui.GetWindowDrawList()
     local p = imgui.GetCursorScreenPos()
@@ -14705,14 +14705,14 @@ local function colorPopup(id, color_arr)
     end
     imgui.SetNextWindowSize(imgui.ImVec2(220, 310), imgui.Cond.Appearing)
     if imgui.BeginPopup(Fn.T(u8("##cpop_" .. id))) then
-        imgui.Text(Fn.T(u8("Цвет:")))
+        imgui.Text(Fn.T(u8("Р¦РІРµС‚:")))
         imgui.Spacing()
         changed = imgui.ColorPicker4(Fn.T(u8("##cpk_"..id)), color_arr,
             imgui.ColorEditFlags.AlphaBar +
             imgui.ColorEditFlags.NoSidePreview +
             imgui.ColorEditFlags.PickerHueBar) or changed
         imgui.Spacing()
-        if imgui.Button(Fn.T(u8("Закрыть##cclose_"..id)), imgui.ImVec2(130, 28)) then
+        if imgui.Button(Fn.T(u8("Р—Р°РєСЂС‹С‚СЊ##cclose_"..id)), imgui.ImVec2(130, 28)) then
             imgui.CloseCurrentPopup()
         end
         imgui.EndPopup()
@@ -14722,7 +14722,7 @@ end
 local function renderEventTab(id, u)
     local changed = false
     imgui.Spacing()
-    if imgui.Checkbox(Fn.T(u8("Включить##en_"..id)), u.enable) then changed = true end
+    if imgui.Checkbox(Fn.T(u8("Р’РєР»СЋС‡РёС‚СЊ##en_"..id)), u.enable) then changed = true end
     imgui.Separator(); imgui.Spacing()
     if renderContentPanel(id, u) then changed = true end
     imgui.Separator(); imgui.Spacing()
@@ -14731,13 +14731,13 @@ local function renderEventTab(id, u)
     if colorPopup(id, u.color) then changed = true end
     if u.offset_xy ~= nil or u.offset_y ~= nil then
         imgui.SameLine(0, 8)
-        if iconButton(moveIcon("¦"), "mv_"..id, imgui.ImVec2(28, 22), 0, 2, 0.95) then
+        if iconButton(moveIcon("В¦"), "mv_"..id, imgui.ImVec2(28, 22), 0, 2, 0.95) then
             pending_placement_target = resolvePlacementTarget(u)
             changed = true
         end
         if u.render_distance ~= nil then
             imgui.SameLine(0, 5)
-            imgui.TextDisabled(Fn.T(u8("Дал.:")))
+            imgui.TextDisabled(Fn.T(u8("Р”Р°Р».:")))
             imgui.SameLine(0, 4)
             imgui.SetNextItemWidth(112)
             if imgui.SliderFloat("##dist_"..id, u.render_distance, 10.0, 500.0, "%.0f") then
@@ -14745,18 +14745,18 @@ local function renderEventTab(id, u)
                 changed = true
             end
             imgui.SameLine(0, 4)
-            imgui.TextDisabled(Fn.T(u8("м")))
+            imgui.TextDisabled(Fn.T(u8("Рј")))
         end
         imgui.Spacing()
     end
     imgui.Separator(); imgui.Spacing()
     imgui.SetNextItemWidth(230)
-    if imgui.SliderFloat(Fn.T(u8("Время (сек)##tm_"..id)), u.time, 0.5, 10, "%.1f") then changed = true end
+    if imgui.SliderFloat(Fn.T(u8("Р’СЂРµРјСЏ (СЃРµРє)##tm_"..id)), u.time, 0.5, 10, "%.1f") then changed = true end
     imgui.SetNextItemWidth(230)
-    if imgui.SliderFloat(Fn.T(u8("Высота подъёма##ht_"..id)), u.height, 0.5, 8, "%.1f") then changed = true end
+    if imgui.SliderFloat(Fn.T(u8("Р’С‹СЃРѕС‚Р° РїРѕРґСЉС‘РјР°##ht_"..id)), u.height, 0.5, 8, "%.1f") then changed = true end
     if u.anim_speed ~= nil then
         imgui.SetNextItemWidth(230)
-        if imgui.SliderFloat(Fn.T(u8("Скорость анимации##sp_"..id)), u.anim_speed, 0.1, 4.0, "%.2f") then changed = true end
+        if imgui.SliderFloat(Fn.T(u8("РЎРєРѕСЂРѕСЃС‚СЊ Р°РЅРёРјР°С†РёРё##sp_"..id)), u.anim_speed, 0.1, 4.0, "%.2f") then changed = true end
     end
     imgui.Spacing()
     if changed then saveSettings() end
@@ -14764,7 +14764,7 @@ end
 local function renderIconTab(prefix, u, title)
     local changed = false
     imgui.Spacing()
-    if imgui.Checkbox(Fn.T(u8("Включить##"..prefix.."_en")), u.enable) then changed = true end
+    if imgui.Checkbox(Fn.T(u8("Р’РєР»СЋС‡РёС‚СЊ##"..prefix.."_en")), u.enable) then changed = true end
     imgui.Separator(); imgui.Spacing()
     if title then imgui.Text(Fn.T(u8(title))) end
     if renderContentPanel(prefix, u) then changed = true end
@@ -14774,7 +14774,7 @@ local function renderIconTab(prefix, u, title)
     if colorPopup(prefix, u.color) then changed = true end
     if u.offset_xy ~= nil or u.offset_y ~= nil then
         imgui.SameLine(0, 8)
-        if iconButton(moveIcon("¦"), prefix.."_place", imgui.ImVec2(28, 22), 0, 2, 0.95) then
+        if iconButton(moveIcon("В¦"), prefix.."_place", imgui.ImVec2(28, 22), 0, 2, 0.95) then
             pending_placement_target = resolvePlacementTarget(u)
             changed = true
         end
@@ -14783,15 +14783,15 @@ local function renderIconTab(prefix, u, title)
     imgui.Separator(); imgui.Spacing()
     if u.time ~= nil then
         imgui.SetNextItemWidth(230)
-        if imgui.SliderFloat(Fn.T(u8("Время (сек)##"..prefix.."_tm")), u.time, 0.5, 10, "%.1f") then changed = true end
+        if imgui.SliderFloat(Fn.T(u8("Р’СЂРµРјСЏ (СЃРµРє)##"..prefix.."_tm")), u.time, 0.5, 10, "%.1f") then changed = true end
     end
     if u.height ~= nil then
         imgui.SetNextItemWidth(230)
-        if imgui.SliderFloat(Fn.T(u8("Высота над головой##"..prefix.."_ht")), u.height, 0.3, 5.0, "%.1f") then changed = true end
+        if imgui.SliderFloat(Fn.T(u8("Р’С‹СЃРѕС‚Р° РЅР°Рґ РіРѕР»РѕРІРѕР№##"..prefix.."_ht")), u.height, 0.3, 5.0, "%.1f") then changed = true end
     end
     if u.anim_speed ~= nil then
         imgui.SetNextItemWidth(230)
-        if imgui.SliderFloat(Fn.T(u8("Скорость анимации##"..prefix.."_sp")), u.anim_speed, 0.1, 4.0, "%.2f") then changed = true end
+        if imgui.SliderFloat(Fn.T(u8("РЎРєРѕСЂРѕСЃС‚СЊ Р°РЅРёРјР°С†РёРё##"..prefix.."_sp")), u.anim_speed, 0.1, 4.0, "%.2f") then changed = true end
     end
     imgui.Spacing()
     if changed then saveSettings() end
@@ -14845,14 +14845,14 @@ function renderHeadIcons()
     imgui.TextDisabled(u8"/icons")
     imgui.Separator(); imgui.Spacing()
     imgui.BeginChild(u8"##sidebar", imgui.ImVec2(148, 0), true)
-    imgui.TextColored(accentVec4(ac, 1.0, 1.0), Fn.T(u8" РАЗДЕЛЫ"))
+    imgui.TextColored(accentVec4(ac, 1.0, 1.0), Fn.T(u8" Р РђР—Р”Р•Р›Р«"))
     imgui.Separator(); imgui.Spacing()
     local tab_defs = {
-        { idx=0, id="death",    label="Смерть",         icon_key="SKULL",         u=ui.death     },
-        { idx=1, id="kill",     label="Убийство",       icon_key="CROSSHAIRS",    u=ui.kill      },
-        { idx=2, id="armor",    label="Броня",          icon_key="SHIELD_HALVED", u=ui.armor     },
-        { idx=3, id="self",     label="Мои иконки",     icon_key="STAR",          u=self_icon    },
-        { idx=4, id="settings", label="Настройки",      icon_key="GEAR",          u=nil          },
+        { idx=0, id="death",    label="РЎРјРµСЂС‚СЊ",         icon_key="SKULL",         u=ui.death     },
+        { idx=1, id="kill",     label="РЈР±РёР№СЃС‚РІРѕ",       icon_key="CROSSHAIRS",    u=ui.kill      },
+        { idx=2, id="armor",    label="Р‘СЂРѕРЅСЏ",          icon_key="SHIELD_HALVED", u=ui.armor     },
+        { idx=3, id="self",     label="РњРѕРё РёРєРѕРЅРєРё",     icon_key="STAR",          u=self_icon    },
+        { idx=4, id="settings", label="РќР°СЃС‚СЂРѕР№РєРё",      icon_key="GEAR",          u=nil          },
     }
     for _, td in ipairs(tab_defs) do
         local is_active = active_tab[0] == td.idx
@@ -14890,11 +14890,11 @@ function renderHeadIcons()
     elseif active_tab[0] == 3 then renderSelfTab()
     elseif active_tab[0] == 4 then
         imgui.Spacing()
-        if imgui.Checkbox(Fn.T(u8("Включить скрипт##master")), script_enabled) then saveSettings() end
+        if imgui.Checkbox(Fn.T(u8("Р’РєР»СЋС‡РёС‚СЊ СЃРєСЂРёРїС‚##master")), script_enabled) then saveSettings() end
         imgui.Spacing()
-        if imgui.Checkbox(Fn.T(u8("Автовключение при входе в игру##auto")), auto_enable_on_join) then saveSettings() end
+        if imgui.Checkbox(Fn.T(u8("РђРІС‚РѕРІРєР»СЋС‡РµРЅРёРµ РїСЂРё РІС…РѕРґРµ РІ РёРіСЂСѓ##auto")), auto_enable_on_join) then saveSettings() end
         imgui.Spacing()
-        imgui.TextDisabled(Fn.T(u8("Вкладки «Смерть», «Убийство» и «Броня» имеют свой ползунок.")))
+        imgui.TextDisabled(Fn.T(u8("Р’РєР»Р°РґРєРё В«РЎРјРµСЂС‚СЊВ», В«РЈР±РёР№СЃС‚РІРѕВ» Рё В«Р‘СЂРѕРЅСЏВ» РёРјРµСЋС‚ СЃРІРѕР№ РїРѕР»Р·СѓРЅРѕРє.")))
         imgui.Spacing()
     end
     imgui.EndChild()
@@ -15131,21 +15131,21 @@ function renderCbugWindow()
     local statusColor = cbug_cfg.settings.active
         and imgui.ImVec4(0.2,0.9,0.2,1) or imgui.ImVec4(0.9,0.3,0.3,1)
     local statusText  = cbug_cfg.settings.active
-        and Fn.T(u8"[ON]  CBug АКТИВЕН") or Fn.T(u8"[OFF] CBug ВЫКЛЮЧЕН")
+        and Fn.T(u8"[ON]  CBug РђРљРўРР’Р•Рќ") or Fn.T(u8"[OFF] CBug Р’Р«РљР›Р®Р§Р•Рќ")
     imgui.TextColored(statusColor, statusText)
     imgui.SameLine()
     imgui.TextDisabled(u8"(/cbug  /cbug set)")
     imgui.Separator()
     local cbug_active_b = new.bool(cbug_cfg.settings.active)
-    if imgui.Checkbox(Fn.T(u8"Трекер активен##cb"), cbug_active_b) then
+    if imgui.Checkbox(Fn.T(u8"РўСЂРµРєРµСЂ Р°РєС‚РёРІРµРЅ##cb"), cbug_active_b) then
         cbug_cfg.settings.active = cbug_active_b[0]
         cbug_session.shots = 0; cbug_session.active = false
         inicfg.save(cbug_cfg, cbug_cfg_name)
     end
     imgui.SameLine()
-    if imgui.Button(Fn.T(u8"Цвет HUD##cbclr")) then imgui.OpenPopup("cbug_color_popup") end
+    if imgui.Button(Fn.T(u8"Р¦РІРµС‚ HUD##cbclr")) then imgui.OpenPopup("cbug_color_popup") end
     if imgui.BeginPopup("cbug_color_popup") then
-        imgui.Text(Fn.T(u8"Цвет индикатора:"))
+        imgui.Text(Fn.T(u8"Р¦РІРµС‚ РёРЅРґРёРєР°С‚РѕСЂР°:"))
         local flags = imgui.ColorEditFlags.NoSidePreview
             + imgui.ColorEditFlags.NoSmallPreview
             + imgui.ColorEditFlags.AlphaBar
@@ -15162,21 +15162,21 @@ function renderCbugWindow()
     imgui.Separator()
     imgui.PushItemWidth(160)
     local req = new.int(cbug_cfg.settings.required_shots)
-    if imgui.InputInt(Fn.T(u8"Нужно выстрелов##cb"), req) then
+    if imgui.InputInt(Fn.T(u8"РќСѓР¶РЅРѕ РІС‹СЃС‚СЂРµР»РѕРІ##cb"), req) then
         if req[0] >= 1 then
             cbug_cfg.settings.required_shots = req[0]
             inicfg.save(cbug_cfg, cbug_cfg_name)
         end
     end
     imgui.PopItemWidth()
-    if imgui.Button(Fn.T(u8"Позиция HUD##cb"), imgui.ImVec2(-1, 22)) then
+    if imgui.Button(Fn.T(u8"РџРѕР·РёС†РёСЏ HUD##cb"), imgui.ImVec2(-1, 22)) then
         mainWindow[0] = false
         lua_thread.create(crdHud)
     end
     imgui.PushItemWidth(imgui.GetContentRegionAvail().x * 0.55)
     do
         local sc = new.float(cbug_cfg.settings.indicator_scale)
-        SliderFloatOD(u8"Масштаб HUD", "scale_cb", sc, 0.3, 4.0)
+        SliderFloatOD(u8"РњР°СЃС€С‚Р°Р± HUD", "scale_cb", sc, 0.3, 4.0)
         if sc[0] ~= cbug_cfg.settings.indicator_scale then
             cbug_cfg.settings.indicator_scale = sc[0]
             inicfg.save(cbug_cfg, cbug_cfg_name)
@@ -15184,7 +15184,7 @@ function renderCbugWindow()
     end
     do
         local ft = new.float(cbug_cfg.settings.fail_timeout)
-        SliderFloatOD(u8"Таймаут сброса (сек)", "ft_cb", ft, 0.1, 3.0, "%.1f")
+        SliderFloatOD(u8"РўР°Р№РјР°СѓС‚ СЃР±СЂРѕСЃР° (СЃРµРє)", "ft_cb", ft, 0.1, 3.0, "%.1f")
         if ft[0] ~= cbug_cfg.settings.fail_timeout then
             cbug_cfg.settings.fail_timeout = ft[0]
             inicfg.save(cbug_cfg, cbug_cfg_name)
@@ -15192,10 +15192,10 @@ function renderCbugWindow()
     end
     imgui.PopItemWidth()
     imgui.Spacing()
-    imgui.Text(Fn.T(u8"Стиль HUD:"))
+    imgui.Text(Fn.T(u8"РЎС‚РёР»СЊ HUD:"))
     local modeSeq = {
-        {3, u8"Мин"}, {1, u8"Базовый"},
-        {4, u8"Стандарт"}, {2, u8"Расшир"},
+        {3, u8"РњРёРЅ"}, {1, u8"Р‘Р°Р·РѕРІС‹Р№"},
+        {4, u8"РЎС‚Р°РЅРґР°СЂС‚"}, {2, u8"Р Р°СЃС€РёСЂ"},
     }
     local bc  = active_colors[imgui.Col.Button]        or {0.3, 0.3, 0.3, 0.8}
     local bch = active_colors[imgui.Col.ButtonHovered] or {0.55,0.55,0.55,0.9}
@@ -15228,7 +15228,7 @@ function renderCbugWindow()
     imgui.Spacing()
     do
         local b2 = new.bool(cbug_cfg.settings.show_streak)
-        if imgui.Checkbox(Fn.T(u8"Стрик на HUD##cb"), b2) then
+        if imgui.Checkbox(Fn.T(u8"РЎС‚СЂРёРє РЅР° HUD##cb"), b2) then
             cbug_cfg.settings.show_streak = b2[0]
             inicfg.save(cbug_cfg, cbug_cfg_name)
         end
@@ -15236,23 +15236,23 @@ function renderCbugWindow()
     imgui.SameLine()
     do
         local b2 = new.bool(cbug_cfg.settings.notify_record)
-        if imgui.Checkbox(Fn.T(u8"Уведомление о рекорде##cb"), b2) then
+        if imgui.Checkbox(Fn.T(u8"РЈРІРµРґРѕРјР»РµРЅРёРµ Рѕ СЂРµРєРѕСЂРґРµ##cb"), b2) then
             cbug_cfg.settings.notify_record = b2[0]
             inicfg.save(cbug_cfg, cbug_cfg_name)
         end
     end
     imgui.Separator()
-    imgui.Text(Fn.T(u8"Рекорды CBug:"))
+    imgui.Text(Fn.T(u8"Р РµРєРѕСЂРґС‹ CBug:"))
     imgui.BeginChild("cb_records", imgui.ImVec2(-1, 56), true)
     local hasRec = false
     for k, v in pairs(cbug_cfg.records) do
         hasRec = true
         imgui.TextColored(imgui.ImVec4(0.2,0.9,0.2,1),
-            string.format(Fn.T(u8"Выстрелов: %s | Время: %d ms"), k, v))
+            string.format(Fn.T(u8"Р’С‹СЃС‚СЂРµР»РѕРІ: %s | Р’СЂРµРјСЏ: %d ms"), k, v))
     end
-    if not hasRec then imgui.TextDisabled(Fn.T(u8"Рекордов нет")) end
+    if not hasRec then imgui.TextDisabled(Fn.T(u8"Р РµРєРѕСЂРґРѕРІ РЅРµС‚")) end
     imgui.EndChild()
-    if imgui.Button(Fn.T(u8"Очистить рекорды##cb"), imgui.ImVec2(-1, 22)) then
+    if imgui.Button(Fn.T(u8"РћС‡РёСЃС‚РёС‚СЊ СЂРµРєРѕСЂРґС‹##cb"), imgui.ImVec2(-1, 22)) then
         cbug_cfg.records = {}; inicfg.save(cbug_cfg, cbug_cfg_name)
     end
     imgui.End()
@@ -15277,10 +15277,10 @@ function CBUGSPEED_onSendBulletSync(data)
                     inicfg.save(cbug_cfg, cbug_cfg_name)
                     if cbug_cfg.settings.notify_record then
                         local diff = old_rec
-                            and (" (лучше на " .. (old_rec-final_ms) .. " ms)")
-                            or  " (первый рекорд!)"
-                        sampAddChatMessage("{32CD32}[CBug Speed]{FFFFFF} Рекорд для "..key..
-                            " выстрелов: {32CD32}"..final_ms.." ms{FFFFFF}"..diff, -1)
+                            and (" (Р»СѓС‡С€Рµ РЅР° " .. (old_rec-final_ms) .. " ms)")
+                            or  " (РїРµСЂРІС‹Р№ СЂРµРєРѕСЂРґ!)"
+                        sampAddChatMessage("{32CD32}[CBug Speed]{FFFFFF} Р РµРєРѕСЂРґ РґР»СЏ "..key..
+                            " РІС‹СЃС‚СЂРµР»РѕРІ: {32CD32}"..final_ms.." ms{FFFFFF}"..diff, -1)
                     end
                 end
                 cbug_run.session_combos = cbug_run.session_combos + 1
@@ -15553,13 +15553,13 @@ end
 function initZonesDef()
     if ZONES_DEF then return end
     ZONES_DEF = {
-        {label=u8("Голова"),  hk="head",  cx=0,   cy=18,  rx=17, ry=19},
-        {label=u8("Грудь"),   hk="chest", cx=0,   cy=63,  rx=24, ry=27},
-        {label=u8("Живот"),   hk="belly", cx=0,   cy=102, rx=19, ry=17},
-        {label=u8("Л.рука"),  hk="larm",  cx=-36, cy=70,  rx=10, ry=31},
-        {label=u8("П.рука"),  hk="rarm",  cx=36,  cy=70,  rx=10, ry=31},
-        {label=u8("Л.нога"),  hk="lleg",  cx=-15, cy=150, rx=12, ry=34},
-        {label=u8("П.нога"),  hk="rleg",  cx=15,  cy=150, rx=12, ry=34},
+        {label=u8("Р“РѕР»РѕРІР°"),  hk="head",  cx=0,   cy=18,  rx=17, ry=19},
+        {label=u8("Р“СЂСѓРґСЊ"),   hk="chest", cx=0,   cy=63,  rx=24, ry=27},
+        {label=u8("Р–РёРІРѕС‚"),   hk="belly", cx=0,   cy=102, rx=19, ry=17},
+        {label=u8("Р›.СЂСѓРєР°"),  hk="larm",  cx=-36, cy=70,  rx=10, ry=31},
+        {label=u8("Рџ.СЂСѓРєР°"),  hk="rarm",  cx=36,  cy=70,  rx=10, ry=31},
+        {label=u8("Р›.РЅРѕРіР°"),  hk="lleg",  cx=-15, cy=150, rx=12, ry=34},
+        {label=u8("Рџ.РЅРѕРіР°"),  hk="rleg",  cx=15,  cy=150, rx=12, ry=34},
     }
 end
 ksfile = CBUGER_CONFIG .. "HitZones_streaks.json"
@@ -15964,8 +15964,8 @@ local ffi_str = ffi.string
 icons_tex_path = nil
 local icons_tex_ready = false
 imgui.OnInitialize(function()
-    if doesFileExist((CBUGER_CONFIG .. "icons.png")) then
-        icons_tex_path  = (CBUGER_CONFIG .. "icons.png")
+    if doesFileExist((CBUGER_CONFIG .. "icons_cbuger.png")) then
+        icons_tex_path  = (CBUGER_CONFIG .. "icons_cbuger.png")
         icons_tex_ready = false
     end
 end)
@@ -16278,39 +16278,39 @@ local function ensurePlayersSorted()
 end
 function drawKillStateTab()
     local hz_cfg_dirty = false
-    if imgui.Button(Fn.T(u8("Сбросить статистику"))) then
+    if imgui.Button(Fn.T(u8("РЎР±СЂРѕСЃРёС‚СЊ СЃС‚Р°С‚РёСЃС‚РёРєСѓ"))) then
         imgui.OpenPopup("statistic")
     end
     if imgui.BeginPopup("statistic", 0) then
-        if imgui.Button(Fn.T(u8("Личную"))) then
+        if imgui.Button(Fn.T(u8("Р›РёС‡РЅСѓСЋ"))) then
             dmgTotal=0; dmgLife=0; dmgLifeMax=0
             kills=0; killsLife=0; killsLifeMax=0
             deaths=0; shots_stat=0; hits_stat=0; ksLastTriggered=0
             sampAddChatMessage("{1E90FF}[HitZones]{ffffff} " ..
-                "Личная статистика сброшена.", -1)
+                "Р›РёС‡РЅР°СЏ СЃС‚Р°С‚РёСЃС‚РёРєР° СЃР±СЂРѕС€РµРЅР°.", -1)
             imgui.CloseCurrentPopup()
         end
-        if imgui.Button(Fn.T(u8("Общую"))) then
+        if imgui.Button(Fn.T(u8("РћР±С‰СѓСЋ"))) then
             players = {}
             sampAddChatMessage("{1E90FF}[HitZones]{ffffff} " ..
-                "Общая статистика сброшена.", -1)
+                "РћР±С‰Р°СЏ СЃС‚Р°С‚РёСЃС‚РёРєР° СЃР±СЂРѕС€РµРЅР°.", -1)
             imgui.CloseCurrentPopup()
         end
-        if imgui.Button(Fn.T(u8("Всё"))) then
+        if imgui.Button(Fn.T(u8("Р’СЃС‘"))) then
             players = {}
             dmgTotal=0; dmgLife=0; dmgLifeMax=0
             kills=0; killsLife=0; killsLifeMax=0
             deaths=0; shots_stat=0; hits_stat=0; ksLastTriggered=0
             sampAddChatMessage("{1E90FF}[HitZones]{ffffff} " ..
-                "Вся статистика сброшена.", -1)
+                "Р’СЃСЏ СЃС‚Р°С‚РёСЃС‚РёРєР° СЃР±СЂРѕС€РµРЅР°.", -1)
             imgui.CloseCurrentPopup()
         end
         imgui.EndPopup()
     end
     imgui.SameLine()
-    if imgui.Button(Fn.T(u8("Сортировка"))) then imgui.OpenPopup("sort") end
+    if imgui.Button(Fn.T(u8("РЎРѕСЂС‚РёСЂРѕРІРєР°"))) then imgui.OpenPopup("sort") end
     if imgui.BeginPopup("sort", 0) then
-        local sortItems = {u8("По алфавиту"), u8("По убийствам"), u8("По смертям"), u8("По K/D")}
+        local sortItems = {u8("РџРѕ Р°Р»С„Р°РІРёС‚Сѓ"), u8("РџРѕ СѓР±РёР№СЃС‚РІР°Рј"), u8("РџРѕ СЃРјРµСЂС‚СЏРј"), u8("РџРѕ K/D")}
         for i, lbl in ipairs(sortItems) do
             local sel = (hz_cfg.main.sr == i)
             if imgui.Selectable(lbl, sel) then
@@ -16343,13 +16343,13 @@ function drawKillStateTab()
         saveStreaks(killStreaks)
         hz_mainWindow[0] = false
         sampAddChatMessage("{1E90FF}[HitZones]{ffffff} " ..
-            "Настройки сохранены.", -1)
+            "РќР°СЃС‚СЂРѕР№РєРё СЃРѕС…СЂР°РЅРµРЅС‹.", -1)
         addOneOffSound(0, 0, 0, 1057)
     end
     if imgui.IsItemHovered() then
         imgui.BeginTooltip()
         imgui.PushTextWrapPos(450)
-        imgui.TextUnformatted(Fn.T(u8("Специально для тех, у кого не сохраняются настройки.")))
+        imgui.TextUnformatted(Fn.T(u8("РЎРїРµС†РёР°Р»СЊРЅРѕ РґР»СЏ С‚РµС…, Сѓ РєРѕРіРѕ РЅРµ СЃРѕС…СЂР°РЅСЏСЋС‚СЃСЏ РЅР°СЃС‚СЂРѕР№РєРё.")))
         imgui.PopTextWrapPos()
         imgui.EndTooltip()
     end
@@ -16387,7 +16387,7 @@ function drawKillStateTab()
                 local entry = {nick=pl.nick, kills=pl.kills, deaths=pl.deaths, kd=pl.kd, col=pl.col}
                 if compareSlots[1] == nil then
                     compareSlots[1] = entry
-                    compareMsg = Fn.T(u8("Выбран ")) .. pl.nick .. Fn.T(u8(". Выбери второго игрока."))
+                    compareMsg = Fn.T(u8("Р’С‹Р±СЂР°РЅ ")) .. pl.nick .. Fn.T(u8(". Р’С‹Р±РµСЂРё РІС‚РѕСЂРѕРіРѕ РёРіСЂРѕРєР°."))
                 elseif compareSlots[2] == nil then
                     if compareSlots[1].nick ~= pl.nick then
                         compareSlots[2] = entry
@@ -16409,28 +16409,28 @@ function drawKillStateTab()
         if imgui.BeginPopup("popup_" .. pl.nick, 0) then
             imgui.TextColored(imgui.ImVec4(1,1,1,1), pl.nick.."["..pl.id.."]")
             imgui.Separator()
-            imgui.Text(Fn.T(u8("Скопировать")))
+            imgui.Text(Fn.T(u8("РЎРєРѕРїРёСЂРѕРІР°С‚СЊ")))
             if imgui.Button("ID") then
                 if pl.id ~= "off" then imgui.SetClipboardText(tostring(pl.id))
                 else sampAddChatMessage("{1E90FF}[HitZones]{ffffff} " ..
-                    "Игрок вышел.", -1) end
+                    "РРіСЂРѕРє РІС‹С€РµР».", -1) end
                 imgui.CloseCurrentPopup()
             end
             imgui.SameLine()
-            if imgui.Button(Fn.T(u8("Ник"))) then
+            if imgui.Button(Fn.T(u8("РќРёРє"))) then
                 imgui.SetClipboardText(tostring(pl.nick)); imgui.CloseCurrentPopup()
             end
             imgui.SameLine()
-            if imgui.Button(Fn.T(u8("Ник[ID]"))) then
+            if imgui.Button(Fn.T(u8("РќРёРє[ID]"))) then
                 imgui.SetClipboardText(pl.nick.."["..pl.id.."]"); imgui.CloseCurrentPopup()
             end
-            if imgui.Button(Fn.T(u8("Ник[ID] и статистику"))) then
+            if imgui.Button(Fn.T(u8("РќРёРє[ID] Рё СЃС‚Р°С‚РёСЃС‚РёРєСѓ"))) then
                 imgui.SetClipboardText(pl.nick.."["..pl.id.."] | Kills:"..pl.kills..
                     " | Deaths:"..pl.deaths.." | KD:"..string.format("%.2f",pl.kd))
                 imgui.CloseCurrentPopup()
             end
             imgui.Separator()
-            if imgui.Button(Fn.T(u8("История")), imgui.ImVec2(127, 20)) then
+            if imgui.Button(Fn.T(u8("РСЃС‚РѕСЂРёСЏ")), imgui.ImVec2(127, 20)) then
                 historyState[pl.nick].ac[0] = not historyState[pl.nick].ac[0]
                 math.randomseed(os.time())
                 historyOffset.x = "-0." .. math.random(7,8) .. math.random(10)
@@ -16445,17 +16445,17 @@ function drawKillStateTab()
     end
     if compareSlots[1] ~= nil then
         imgui.Spacing()
-        local sl1name = compareSlots[1] and compareSlots[1].nick or "—"
-        local sl2name = compareSlots[2] and compareSlots[2].nick or Fn.T(u8("(не выбран)"))
-        imgui.TextDisabled(Fn.T(u8("Сравнение: ")) .. sl1name .. " vs " .. sl2name)
+        local sl1name = compareSlots[1] and compareSlots[1].nick or "вЂ”"
+        local sl2name = compareSlots[2] and compareSlots[2].nick or Fn.T(u8("(РЅРµ РІС‹Р±СЂР°РЅ)"))
+        imgui.TextDisabled(Fn.T(u8("РЎСЂР°РІРЅРµРЅРёРµ: ")) .. sl1name .. " vs " .. sl2name)
         imgui.SameLine()
-        if imgui.SmallButton(Fn.T(u8("Сброс##cmp"))) then
+        if imgui.SmallButton(Fn.T(u8("РЎР±СЂРѕСЃ##cmp"))) then
             compareSlots[1]=nil; compareSlots[2]=nil
             compareOpen[0]=false; compareMsg=""
         end
         if compareSlots[2] ~= nil then
             imgui.SameLine()
-            if imgui.SmallButton(Fn.T(u8("Открыть##cmp"))) then compareOpen[0]=true end
+            if imgui.SmallButton(Fn.T(u8("РћС‚РєСЂС‹С‚СЊ##cmp"))) then compareOpen[0]=true end
         end
     end
     historywindow()
@@ -16472,9 +16472,9 @@ function drawKillStreakTab()
     local hz_cfg_dirty = false
     ensureKsSorted()
     imgui.Text(Fn.T(u8("Kills"))); imgui.SameLine(50)
-    imgui.Text(Fn.T(u8("Название"))); imgui.SameLine(185)
-    imgui.Text(Fn.T(u8("Цвет"))); imgui.SameLine(245)
-    imgui.Text(Fn.T(u8("Действие")))
+    imgui.Text(Fn.T(u8("РќР°Р·РІР°РЅРёРµ"))); imgui.SameLine(185)
+    imgui.Text(Fn.T(u8("Р¦РІРµС‚"))); imgui.SameLine(245)
+    imgui.Text(Fn.T(u8("Р”РµР№СЃС‚РІРёРµ")))
     imgui.Separator()
     if _ksListHCount ~= #killStreaks then
         _ksListHCount = #killStreaks
@@ -16530,7 +16530,7 @@ function drawKillStreakTab()
             imgui.ColorButton("##cpke"..idx, imgui.ImVec4(ci1,ci2,ci3,ci4),
                 imgui.ColorEditFlags.NoTooltip, imgui.ImVec2(14,14))
             imgui.SameLine(245)
-            if imgui.Button(Fn.T(u8("Ред##re"))..idx, imgui.ImVec2(34,0)) then
+            if imgui.Button(Fn.T(u8("Р РµРґ##re"))..idx, imgui.ImVec2(34,0)) then
                 ksEditIdx      = idx
                 ksEditKills[0] = s.kills
                 pcall(function()
@@ -16574,7 +16574,7 @@ function drawKillStreakTab()
     imgui.ColorEdit4("##nc", ksNewColor, imgui.ColorEditFlags.NoInputs)
     imgui.PopItemWidth()
     imgui.SameLine()
-    if imgui.Button(Fn.T(u8("Добавить##ksadd"))) then
+    if imgui.Button(Fn.T(u8("Р”РѕР±Р°РІРёС‚СЊ##ksadd"))) then
         local nameOk, nameStr = pcall(ffi.string, ksNewName)
         local nm = (nameOk and nameStr and nameStr ~= "") and nameStr or ("Streak "..tostring(ksNewKills[0]))
         local newColor = 0xFF32CD32
@@ -16588,34 +16588,34 @@ function drawKillStreakTab()
         ksNewKills[0] = 1
     end
     imgui.Separator()
-    if imgui.Checkbox(Fn.T(u8("Уведомление в чат##ks")), ksChatNotify) then
+    if imgui.Checkbox(Fn.T(u8("РЈРІРµРґРѕРјР»РµРЅРёРµ РІ С‡Р°С‚##ks")), ksChatNotify) then
         hz_cfg.main.ks_chat_notify = ksChatNotify[0]
         hz_cfg_dirty = true
     end
     pluskillType[0] = 1
     imgui.Separator()
     imgui.PushItemWidth(180)
-    if imgui.SliderFloat(Fn.T(u8("Задержка растворения##tud")), pkillTUD, 0, 10, "%.2f") then
+    if imgui.SliderFloat(Fn.T(u8("Р—Р°РґРµСЂР¶РєР° СЂР°СЃС‚РІРѕСЂРµРЅРёСЏ##tud")), pkillTUD, 0, 10, "%.2f") then
         hz_cfg.main.pkilltud = pkillTUD[0]; hz_cfg_dirty = true
     end
-    if imgui.SliderFloat(Fn.T(u8("Задержка подъёма##tuu")), pkillTUU, 0, 10, "%.2f") then
+    if imgui.SliderFloat(Fn.T(u8("Р—Р°РґРµСЂР¶РєР° РїРѕРґСЉС‘РјР°##tuu")), pkillTUU, 0, 10, "%.2f") then
         hz_cfg.main.pkilltuu = pkillTUU[0]; hz_cfg_dirty = true
     end
-    if imgui.SliderFloat(Fn.T(u8("Интенс. раств.##disol")), pkillDisol, 0, 0.03, "%.4f") then
+    if imgui.SliderFloat(Fn.T(u8("РРЅС‚РµРЅСЃ. СЂР°СЃС‚РІ.##disol")), pkillDisol, 0, 0.03, "%.4f") then
         hz_cfg.main.pkilldisol = pkillDisol[0]; hz_cfg_dirty = true
     end
-    if imgui.SliderFloat(Fn.T(u8("Интенс. подъёма##up")), pkillUp, 0, 3, "%.2f") then
+    if imgui.SliderFloat(Fn.T(u8("РРЅС‚РµРЅСЃ. РїРѕРґСЉС‘РјР°##up")), pkillUp, 0, 3, "%.2f") then
         hz_cfg.main.pkillup = pkillUp[0]; hz_cfg_dirty = true
     end
     imgui.PopItemWidth()
     imgui.Separator()
-    imgui.Text(Fn.T(u8("Шрифт:")))
+    imgui.Text(Fn.T(u8("РЁСЂРёС„С‚:")))
     imgui.SameLine()
     imgui.PushItemWidth(150)
     imgui.InputText("##pkfont", pkillFontBuf, 256)
     imgui.PopItemWidth()
     imgui.SameLine()
-    if imgui.Button(Fn.T(u8("Применить##pkf"))) then
+    if imgui.Button(Fn.T(u8("РџСЂРёРјРµРЅРёС‚СЊ##pkf"))) then
         local fnOk, fn = pcall(ffi.string, pkillFontBuf)
         if fnOk and fn and fn ~= "" then
             hz_cfg.main.pkillfont = fn
@@ -16624,20 +16624,20 @@ function drawKillStreakTab()
         end
     end
     imgui.PushItemWidth(180)
-    if imgui.InputInt(Fn.T(u8("Размер##pkfsz")), pkillFontSize) then
+    if imgui.InputInt(Fn.T(u8("Р Р°Р·РјРµСЂ##pkfsz")), pkillFontSize) then
         pkillFontSize[0] = LimitInputInt(1, 300, pkillFontSize[0])
         hz_cfg.main.pkillfontsize = pkillFontSize[0]
         hz_cfg_dirty = true
         pcall(function() pkillFont = renderCreateFont(hz_cfg.main.pkillfont, pkillFontSize[0], hz_cfg.main.pkillfontflag) end)
     end
-    if imgui.InputInt(Fn.T(u8("Флаг##pkff")), pkillFontFlag) then
+    if imgui.InputInt(Fn.T(u8("Р¤Р»Р°Рі##pkff")), pkillFontFlag) then
         pkillFontFlag[0] = LimitInputInt(0, 300, pkillFontFlag[0])
         hz_cfg.main.pkillfontflag = pkillFontFlag[0]
         hz_cfg_dirty = true
         pcall(function() pkillFont = renderCreateFont(hz_cfg.main.pkillfont, hz_cfg.main.pkillfontsize, pkillFontFlag[0]) end)
     end
     imgui.PopItemWidth()
-    if imgui.Button(Fn.T(u8("Позиция +kill##ks"))) then
+    if imgui.Button(Fn.T(u8("РџРѕР·РёС†РёСЏ +kill##ks"))) then
         hz_mainWindow[0] = false
         lua_thread.create(crdpkill)
     end
@@ -16653,7 +16653,7 @@ function drawStatsWindow(module_alpha)
         imgui.Cond.FirstUseEver)
     imgui.PushStyleVarFloat(imgui.StyleVar.Alpha, CBUGER_GET_INTERFACE_ALPHA() * module_alpha)
     local stats_open_ptr = statsWindowOpen[0] and statsWindowOpen or nil
-    imgui.Begin(Fn.T(u8("Личная статистика")), stats_open_ptr, imgui.WindowFlags.NoCollapse + imgui.WindowFlags.NoResize)
+    imgui.Begin(Fn.T(u8("Р›РёС‡РЅР°СЏ СЃС‚Р°С‚РёСЃС‚РёРєР°")), stats_open_ptr, imgui.WindowFlags.NoCollapse + imgui.WindowFlags.NoResize)
     CBUGER_DRAW_INVISIBLE_RESIZER("hitzone_stats", stats_rst, 260, 320, CBUGER_GET_INTERFACE_ALPHA(), true)
     do
         local sdl = imgui.GetWindowDrawList()
@@ -16661,37 +16661,37 @@ function drawStatsWindow(module_alpha)
         local ss  = imgui.GetWindowSize()
         CBUGER_DRAW_GLOBAL_AMBIENT(sdl, sp, imgui.ImVec2(sp.x + ss.x, sp.y + ss.y), CBUGER_GET_INTERFACE_ALPHA())
     end
-    imgui.Text(Fn.T(u8("Активация")))
+    imgui.Text(Fn.T(u8("РђРєС‚РёРІР°С†РёСЏ")))
     imgui.SameLine()
     if imgui.Checkbox("##acown", acownstate) then hz_cfg.main.acownstate = acownstate[0]; hz_cfg_dirty = true end
     imgui.SameLine()
-    if imgui.Button(Fn.T(u8("Позиция текста")), imgui.ImVec2(116, 20)) then
+    if imgui.Button(Fn.T(u8("РџРѕР·РёС†РёСЏ С‚РµРєСЃС‚Р°")), imgui.ImVec2(116, 20)) then
         hz_mainWindow[0] = false; ksEditorOpen[0] = false; statsWindowOpen[0] = false
         lua_thread.create(crd)
     end
     imgui.PushItemWidth(165)
-    imgui.InputText(Fn.T(u8("Шрифт")), ownFontNameBuf, 256)
-    if imgui.Button(Fn.T(u8("Прим шрифт")), imgui.ImVec2(215, 20)) then
+    imgui.InputText(Fn.T(u8("РЁСЂРёС„С‚")), ownFontNameBuf, 256)
+    if imgui.Button(Fn.T(u8("РџСЂРёРј С€СЂРёС„С‚")), imgui.ImVec2(215, 20)) then
         hz_cfg.main.ownstatefont = ffi.string(ownFontNameBuf)
         hz_cfg_dirty = true
         ownFont = renderCreateFont(ffi.string(ownFontNameBuf), hz_cfg.main.ownstatefontsize, hz_cfg.main.ownstatefontflag)
     end
     imgui.PushItemWidth(123)
-    imgui.Text(Fn.T(u8("Текущий: ")) .. hz_cfg.main.ownstatefont)
-    if imgui.InputInt(Fn.T(u8("Размер текста")), ownFontSizeBuf) then
+    imgui.Text(Fn.T(u8("РўРµРєСѓС‰РёР№: ")) .. hz_cfg.main.ownstatefont)
+    if imgui.InputInt(Fn.T(u8("Р Р°Р·РјРµСЂ С‚РµРєСЃС‚Р°")), ownFontSizeBuf) then
         ownFontSizeBuf[0] = LimitInputInt(0, 300, ownFontSizeBuf[0])
         hz_cfg.main.ownstatefontsize = ownFontSizeBuf[0]
         hz_cfg_dirty = true
         ownFont = renderCreateFont(hz_cfg.main.ownstatefont, ownFontSizeBuf[0], hz_cfg.main.ownstatefontflag)
     end
-    if imgui.InputInt(Fn.T(u8("Флаг текста")), ownFontFlagBuf) then
+    if imgui.InputInt(Fn.T(u8("Р¤Р»Р°Рі С‚РµРєСЃС‚Р°")), ownFontFlagBuf) then
         ownFontFlagBuf[0] = LimitInputInt(0, 300, ownFontFlagBuf[0])
         hz_cfg.main.ownstatefontflag = ownFontFlagBuf[0]
         hz_cfg_dirty = true
         ownFont = renderCreateFont(hz_cfg.main.ownstatefont, hz_cfg.main.ownstatefontsize, ownFontFlagBuf[0])
     end
     imgui.PopItemWidth()
-    if imgui.Checkbox(Fn.T(u8("Фон статистики")), ownStateBg) then hz_cfg.main.ownstatebg = ownStateBg[0]
+    if imgui.Checkbox(Fn.T(u8("Р¤РѕРЅ СЃС‚Р°С‚РёСЃС‚РёРєРё")), ownStateBg) then hz_cfg.main.ownstatebg = ownStateBg[0]
         hz_cfg_dirty = true end
     imgui.Separator()
     if imgui.Checkbox("Kills", showKills) then hz_cfg.main.osk = showKills[0]
@@ -16722,19 +16722,19 @@ function drawStatsWindow(module_alpha)
     if imgui.Checkbox("Accuracy", showAccuracy) then hz_cfg.main.accuracy = showAccuracy[0]
         hz_cfg_dirty = true end
     imgui.Separator()
-    if imgui.Button(Fn.T(u8("Цвета")), imgui.ImVec2(105, 20)) then
+    if imgui.Button(Fn.T(u8("Р¦РІРµС‚Р°")), imgui.ImVec2(105, 20)) then
         imgui.OpenPopup("colors_ks")
     end
     if imgui.BeginPopup("colors_ks") then
         imgui.PushItemWidth(145)
-        imgui.Text(Fn.T(u8("Цвет слов")))
+        imgui.Text(Fn.T(u8("Р¦РІРµС‚ СЃР»РѕРІ")))
         if imgui.ColorEdit4("##oscolor", ownColorW) then
             local clr = colorVec4ToArgb(ownColorW)
             hz_cfg.main.ownstatewcolor = clr; ownColorWHex = bit.tohex(clr)
             hz_cfg_dirty = true
         end
         imgui.Separator()
-        imgui.Text(Fn.T(u8("Цвет цифр")))
+        imgui.Text(Fn.T(u8("Р¦РІРµС‚ С†РёС„СЂ")))
         if imgui.ColorEdit4("##oscolor1", ownColorN) then
             local clr = colorVec4ToArgb(ownColorN)
             hz_cfg.main.ownstatencolor = clr; ownColorNHex = bit.tohex(clr)
@@ -16847,10 +16847,10 @@ local function drawZoneTable(bh)
     imgui.SetColumnWidth(2, 65)
     imgui.SetColumnWidth(3, 65)
     imgui.PushStyleColor(imgui.Col.Text, accentVec4(1.0, 1.0))
-    imgui.Text(Fn.T(u8("Зона")));  imgui.NextColumn()
-    imgui.Text(Fn.T(u8("Поп.")));  imgui.NextColumn()
-    imgui.Text(Fn.T(u8("%макс"))); imgui.NextColumn()
-    imgui.Text(Fn.T(u8("%всех"))); imgui.NextColumn()
+    imgui.Text(Fn.T(u8("Р—РѕРЅР°")));  imgui.NextColumn()
+    imgui.Text(Fn.T(u8("РџРѕРї.")));  imgui.NextColumn()
+    imgui.Text(Fn.T(u8("%РјР°РєСЃ"))); imgui.NextColumn()
+    imgui.Text(Fn.T(u8("%РІСЃРµС…"))); imgui.NextColumn()
     imgui.PopStyleColor()
     imgui.Separator()
     for _, z in ipairs(ZONES_DEF) do
@@ -16870,13 +16870,13 @@ local function drawZoneTable(bh)
     end
     imgui.Columns(1)
     imgui.Separator()
-    imgui.TextColored(accentVec4(0.85, 1.0), Fn.T(u8("Итого: "))..tot)
+    imgui.TextColored(accentVec4(0.85, 1.0), Fn.T(u8("РС‚РѕРіРѕ: "))..tot)
 end
 function drawZonesTab()
     initZonesDef()
     imgui.Spacing()
     local zEnBool = imgui.new.bool(zones_enabled)
-    if imgui.Checkbox(Fn.T(u8("Трекинг зон активен")), zEnBool) then
+    if imgui.Checkbox(Fn.T(u8("РўСЂРµРєРёРЅРі Р·РѕРЅ Р°РєС‚РёРІРµРЅ")), zEnBool) then
         zones_enabled = zEnBool[0]
     end
     imgui.SameLine()
@@ -16892,7 +16892,7 @@ function drawZonesTab()
     imgui.BeginChild("zone_tabs", imgui.ImVec2(-1, 42), false, imgui.WindowFlags.HorizontalScrollbar)
     imgui.SetCursorPosY(4)
     local noPlayerAct = (zones_player == nil)
-    local myBtn_lbl = Fn.T(zones_my_mode == 1 and u8("Мои v") or u8("Чужие v"))
+    local myBtn_lbl = Fn.T(zones_my_mode == 1 and u8("РњРѕРё v") or u8("Р§СѓР¶РёРµ v"))
     imgui.PushStyleColor(imgui.Col.Button,
         noPlayerAct and accentVec4(nil, 0.55, 1.0) or accentVec4(nil, 0.16, 0.90))
     imgui.PushStyleColor(imgui.Col.ButtonHovered,
@@ -16931,7 +16931,7 @@ function drawZonesTab()
             m1 and accentVec4(nil, 0.55, 1.0) or accentVec4(nil, 0.16, 0.90))
         imgui.PushStyleColor(imgui.Col.ButtonHovered, accentVec4(nil, 0.80, 1.0))
         imgui.PushStyleColor(imgui.Col.ButtonActive,  accentVec4(nil, 1.00, 1.0))
-        if imgui.Button(Fn.T(u8("Мои по нему")), imgui.ImVec2(155,24)) then zones_view_mode=1 end
+        if imgui.Button(Fn.T(u8("РњРѕРё РїРѕ РЅРµРјСѓ")), imgui.ImVec2(155,24)) then zones_view_mode=1 end
         imgui.PopStyleColor(3)
         imgui.SameLine()
         local m2 = (zones_view_mode == 2)
@@ -16939,19 +16939,19 @@ function drawZonesTab()
             m2 and accentVec4(nil, 0.55, 1.0) or accentVec4(nil, 0.16, 0.90))
         imgui.PushStyleColor(imgui.Col.ButtonHovered, accentVec4(nil, 0.80, 1.0))
         imgui.PushStyleColor(imgui.Col.ButtonActive,  accentVec4(nil, 1.00, 1.0))
-        if imgui.Button(Fn.T(u8("Его по мне")), imgui.ImVec2(155,24)) then zones_view_mode=2 end
+        if imgui.Button(Fn.T(u8("Р•РіРѕ РїРѕ РјРЅРµ")), imgui.ImVec2(155,24)) then zones_view_mode=2 end
         imgui.PopStyleColor(3)
         imgui.SameLine()
         if zones_view_mode == 1 then
-            imgui.TextColored(accentVec4(nil, 0.75, 0.85), Fn.T(u8("  вы по нему")))
+            imgui.TextColored(accentVec4(nil, 0.75, 0.85), Fn.T(u8("  РІС‹ РїРѕ РЅРµРјСѓ")))
         else
-            imgui.TextColored(accentVec4(nil, 0.95, 0.85), Fn.T(u8("  он по вам")))
+            imgui.TextColored(accentVec4(nil, 0.95, 0.85), Fn.T(u8("  РѕРЅ РїРѕ РІР°Рј")))
         end
     else
         if zones_my_mode == 1 then
-            imgui.TextColored(accentVec4(nil, 0.85, 0.95), Fn.T(u8("Мои попадания по всем игрокам")))
+            imgui.TextColored(accentVec4(nil, 0.85, 0.95), Fn.T(u8("РњРѕРё РїРѕРїР°РґР°РЅРёСЏ РїРѕ РІСЃРµРј РёРіСЂРѕРєР°Рј")))
         else
-            imgui.TextColored(accentVec4(nil, 1.00, 0.95), Fn.T(u8("Попадания всех игроков по мне")))
+            imgui.TextColored(accentVec4(nil, 1.00, 0.95), Fn.T(u8("РџРѕРїР°РґР°РЅРёСЏ РІСЃРµС… РёРіСЂРѕРєРѕРІ РїРѕ РјРЅРµ")))
         end
     end
     imgui.Spacing()
@@ -16973,7 +16973,7 @@ function drawZonesTab()
         for _, z in ipairs(ZONES_DEF) do tot2 = tot2 + (bh[z.hk] or 0) end
         local pct = tot2 > 0 and math.floor(hov.hits/tot2*100) or 0
         imgui.SetTooltip(string.format("%s\n%s: %d  (%d%%)",
-            Fn.T(hov.z.label), Fn.T(u8("Попаданий")), hov.hits, pct))
+            Fn.T(hov.z.label), Fn.T(u8("РџРѕРїР°РґР°РЅРёР№")), hov.hits, pct))
     end
     imgui.Dummy(imgui.ImVec2(171, avail_h-4))
     imgui.EndChild()
@@ -16985,7 +16985,7 @@ function drawZonesTab()
     imgui.PushStyleColor(imgui.Col.Button,        accentVec4(nil, 0.40, 1.0))
     imgui.PushStyleColor(imgui.Col.ButtonHovered, accentVec4(nil, 0.65, 1.0))
     imgui.PushStyleColor(imgui.Col.ButtonActive,  accentVec4(nil, 0.90, 1.0))
-    if imgui.Button(Fn.T(u8("Сбросить зоны")), imgui.ImVec2(-1, 26)) then
+    if imgui.Button(Fn.T(u8("РЎР±СЂРѕСЃРёС‚СЊ Р·РѕРЅС‹")), imgui.ImVec2(-1, 26)) then
         if zones_player and zones_cfg.players[zones_player] then
             if zones_view_mode == 1 then
                 zones_cfg.players[zones_player].zones = newBodyHits()
@@ -17005,27 +17005,27 @@ function drawZonesTab()
 end
 function drawCbugTab()
     if imgui.BeginTabBar("##cbug_inner") then
-        if imgui.BeginTabItem(Fn.T(u8("Настройки"))) then
+        if imgui.BeginTabItem(Fn.T(u8("РќР°СЃС‚СЂРѕР№РєРё"))) then
             local statusColor = hz_cbug_cfg.settings.active
                 and accentVec4(nil, 1.0, 1.0) or imgui.ImVec4(0.9, 0.3, 0.3, 1)
             local statusText = hz_cbug_cfg.settings.active
-                and Fn.T(u8("[ON] CBug АКТИВЕН"))
-                or  Fn.T(u8("[OFF] CBug ВЫКЛЮЧЕН"))
+                and Fn.T(u8("[ON] CBug РђРљРўРР’Р•Рќ"))
+                or  Fn.T(u8("[OFF] CBug Р’Р«РљР›Р®Р§Р•Рќ"))
             imgui.TextColored(statusColor, statusText)
             imgui.SameLine(); imgui.TextDisabled(Fn.T(u8("(/hz)")))
             imgui.Separator()
             local cbug_active_b = imgui.new.bool(hz_cbug_cfg.settings.active)
-            if imgui.Checkbox(Fn.T(u8("Трекер активен##cb")), cbug_active_b) then
+            if imgui.Checkbox(Fn.T(u8("РўСЂРµРєРµСЂ Р°РєС‚РёРІРµРЅ##cb")), cbug_active_b) then
                 hz_cbug_cfg.settings.active = cbug_active_b[0]
                 hz_cbug_session.shots = 0; hz_cbug_session.active = false
                 inicfg.save(hz_cbug_cfg, hz_cbug_cfg_name)
             end
             imgui.SameLine()
-            if imgui.Button(Fn.T(u8("Цвет HUD##cbclr"))) then
+            if imgui.Button(Fn.T(u8("Р¦РІРµС‚ HUD##cbclr"))) then
                 imgui.OpenPopup("cbug_color_popup")
             end
             if imgui.BeginPopup("cbug_color_popup") then
-                imgui.Text(Fn.T(u8("Цвет индикатора:")))
+                imgui.Text(Fn.T(u8("Р¦РІРµС‚ РёРЅРґРёРєР°С‚РѕСЂР°:")))
                 local flags = imgui.ColorEditFlags.NoSidePreview
                     + imgui.ColorEditFlags.NoSmallPreview
                     + imgui.ColorEditFlags.AlphaBar
@@ -17042,21 +17042,21 @@ function drawCbugTab()
             imgui.Separator()
             imgui.PushItemWidth(200)
             local req = imgui.new.int(hz_cbug_cfg.settings.required_shots)
-            if imgui.InputInt(Fn.T(u8("Нужно выстрелов##cb")), req) then
+            if imgui.InputInt(Fn.T(u8("РќСѓР¶РЅРѕ РІС‹СЃС‚СЂРµР»РѕРІ##cb")), req) then
                 if req[0] >= 1 then
                     hz_cbug_cfg.settings.required_shots = req[0]
                     inicfg.save(hz_cbug_cfg, hz_cbug_cfg_name)
                 end
             end
             imgui.PopItemWidth()
-            if imgui.Button(Fn.T(u8("Позиция HUD##cb")), imgui.ImVec2(-1, 22)) then
+            if imgui.Button(Fn.T(u8("РџРѕР·РёС†РёСЏ HUD##cb")), imgui.ImVec2(-1, 22)) then
                 hz_mainWindow[0] = false
                 lua_thread.create(hz_crdHud)
             end
             imgui.PushItemWidth(200)
             do
                 local sc = imgui.new.float(hz_cbug_cfg.settings.indicator_scale)
-                SliderFloatOD(u8("Масштаб HUD"), "scale_cb", sc, 0.3, 4.0)
+                SliderFloatOD(u8("РњР°СЃС€С‚Р°Р± HUD"), "scale_cb", sc, 0.3, 4.0)
                 if sc[0] ~= hz_cbug_cfg.settings.indicator_scale then
                     hz_cbug_cfg.settings.indicator_scale = sc[0]
                     inicfg.save(hz_cbug_cfg, hz_cbug_cfg_name)
@@ -17064,7 +17064,7 @@ function drawCbugTab()
             end
             do
                 local ft = imgui.new.float(hz_cbug_cfg.settings.fail_timeout)
-                SliderFloatOD(u8("Таймаут сброса (сек)"), "ft_cb", ft, 0.1, 3.0, "%.1f")
+                SliderFloatOD(u8("РўР°Р№РјР°СѓС‚ СЃР±СЂРѕСЃР° (СЃРµРє)"), "ft_cb", ft, 0.1, 3.0, "%.1f")
                 if ft[0] ~= hz_cbug_cfg.settings.fail_timeout then
                     hz_cbug_cfg.settings.fail_timeout = ft[0]
                     inicfg.save(hz_cbug_cfg, hz_cbug_cfg_name)
@@ -17072,12 +17072,12 @@ function drawCbugTab()
             end
             imgui.PopItemWidth()
             imgui.Spacing()
-            imgui.Text(Fn.T(u8("Стиль HUD:")))
+            imgui.Text(Fn.T(u8("РЎС‚РёР»СЊ HUD:")))
             local modeSeq = {
-                {3, u8("Минимальный")},
-                {1, u8("Базовый")},
-                {4, u8("Стандартный")},
-                {2, u8("Расширенный")},
+                {3, u8("РњРёРЅРёРјР°Р»СЊРЅС‹Р№")},
+                {1, u8("Р‘Р°Р·РѕРІС‹Р№")},
+                {4, u8("РЎС‚Р°РЅРґР°СЂС‚РЅС‹Р№")},
+                {2, u8("Р Р°СЃС€РёСЂРµРЅРЅС‹Р№")},
             }
             local bW = (imgui.GetContentRegionAvail().x - 12) / 4
             for _, pair in ipairs(modeSeq) do
@@ -17100,7 +17100,7 @@ function drawCbugTab()
             imgui.Spacing()
             do
                 local b = imgui.new.bool(hz_cbug_cfg.settings.show_streak)
-                if imgui.Checkbox(Fn.T(u8("Стрик на HUD##cb")), b) then
+                if imgui.Checkbox(Fn.T(u8("РЎС‚СЂРёРє РЅР° HUD##cb")), b) then
                     hz_cbug_cfg.settings.show_streak = b[0]
                     inicfg.save(hz_cbug_cfg, hz_cbug_cfg_name)
                 end
@@ -17108,23 +17108,23 @@ function drawCbugTab()
             imgui.SameLine()
             do
                 local b = imgui.new.bool(hz_cbug_cfg.settings.notify_record)
-                if imgui.Checkbox(Fn.T(u8("Уведомление о рекорде##cb")), b) then
+                if imgui.Checkbox(Fn.T(u8("РЈРІРµРґРѕРјР»РµРЅРёРµ Рѕ СЂРµРєРѕСЂРґРµ##cb")), b) then
                     hz_cbug_cfg.settings.notify_record = b[0]
                     inicfg.save(hz_cbug_cfg, hz_cbug_cfg_name)
                 end
             end
             imgui.Separator()
-            imgui.Text(Fn.T(u8("Рекорды CBug:")))
+            imgui.Text(Fn.T(u8("Р РµРєРѕСЂРґС‹ CBug:")))
             imgui.BeginChild("cb_records", imgui.ImVec2(-1, 65), true)
             local hasRec = false
             for k, v in pairs(hz_cbug_cfg.records) do
                 hasRec = true
                 imgui.TextColored(accentVec4(nil, 0.85, 1.0),
-                    string.format(Fn.T(u8("Выстрелов: %s | Время: %d ms")), k, v))
+                    string.format(Fn.T(u8("Р’С‹СЃС‚СЂРµР»РѕРІ: %s | Р’СЂРµРјСЏ: %d ms")), k, v))
             end
-            if not hasRec then imgui.TextDisabled(Fn.T(u8("Рекордов нет"))) end
+            if not hasRec then imgui.TextDisabled(Fn.T(u8("Р РµРєРѕСЂРґРѕРІ РЅРµС‚"))) end
             imgui.EndChild()
-            if imgui.Button(Fn.T(u8("Очистить рекорды##cb")), imgui.ImVec2(-1, 22)) then
+            if imgui.Button(Fn.T(u8("РћС‡РёСЃС‚РёС‚СЊ СЂРµРєРѕСЂРґС‹##cb")), imgui.ImVec2(-1, 22)) then
                 hz_cbug_cfg.records = {}; inicfg.save(hz_cbug_cfg, hz_cbug_cfg_name)
             end
             imgui.EndTabItem()
@@ -17142,38 +17142,38 @@ function drawMyStatsTab()
     imgui.Columns(2, "mystats_cols", true)
     imgui.SetColumnWidth(0, 240)
     local startY = imgui.GetCursorPosY()
-    sectionHdr(u8("Всё время"))
-    statRow(u8("Убийств"),         allKills,                                      0.30,1.00,0.55)
-    statRow(u8("Смертей"),         allDeaths,                                     1.00,0.30,0.30)
+    sectionHdr(u8("Р’СЃС‘ РІСЂРµРјСЏ"))
+    statRow(u8("РЈР±РёР№СЃС‚РІ"),         allKills,                                      0.30,1.00,0.55)
+    statRow(u8("РЎРјРµСЂС‚РµР№"),         allDeaths,                                     1.00,0.30,0.30)
     statRow(u8("K/D"),             string.format("%.2f", allKD),                  1.00,0.85,0.20)
-    statRow(u8("Лучший стрик"),    hz_cbug_cfg.stats.best_streak or 0,               1.00,0.80,0.20)
-    statRow(u8("Урон всего"),      math.floor(hz_cbug_cfg.stats.dmg_total or 0),     1.00,0.60,0.20)
-    statRow(u8("Макс.урон/жизнь"), math.floor(hz_cbug_cfg.stats.dmg_max_life or 0), 1.00,0.40,0.10)
-    statRow(u8("Время"),           fmtTime(pt),                                   0.70,0.70,1.00)
+    statRow(u8("Р›СѓС‡С€РёР№ СЃС‚СЂРёРє"),    hz_cbug_cfg.stats.best_streak or 0,               1.00,0.80,0.20)
+    statRow(u8("РЈСЂРѕРЅ РІСЃРµРіРѕ"),      math.floor(hz_cbug_cfg.stats.dmg_total or 0),     1.00,0.60,0.20)
+    statRow(u8("РњР°РєСЃ.СѓСЂРѕРЅ/Р¶РёР·РЅСЊ"), math.floor(hz_cbug_cfg.stats.dmg_max_life or 0), 1.00,0.40,0.10)
+    statRow(u8("Р’СЂРµРјСЏ"),           fmtTime(pt),                                   0.70,0.70,1.00)
     imgui.NextColumn()
     imgui.SetCursorPosY(startY)
-    sectionHdr(u8("Текущая сессия"))
-    statRow(u8("Убийств"),         kills,                             0.30,1.00,0.55)
-    statRow(u8("Смертей"),         deaths,                            1.00,0.30,0.30)
+    sectionHdr(u8("РўРµРєСѓС‰Р°СЏ СЃРµСЃСЃРёСЏ"))
+    statRow(u8("РЈР±РёР№СЃС‚РІ"),         kills,                             0.30,1.00,0.55)
+    statRow(u8("РЎРјРµСЂС‚РµР№"),         deaths,                            1.00,0.30,0.30)
     statRow(u8("K/D"),             string.format("%.2f", kd),         1.00,0.85,0.20)
-    statRow(u8("Уб./жизнь"),       killsLife,                         0.40,1.00,0.60)
-    statRow(u8("Макс.уб./жизнь"),  killsLifeMax,                      0.40,1.00,0.60)
-    statRow(u8("Урон всего"),      math.floor(dmgTotal),              1.00,0.60,0.20)
-    statRow(u8("Урон/жизнь"),      math.floor(dmgLife),               1.00,0.55,0.15)
-    statRow(u8("Макс.урон/жизнь"), math.floor(dmgLifeMax),            1.00,0.40,0.10)
-    statRow(u8("Выстрелов"),       shots_stat,                        0.90,0.90,0.50)
-    statRow(u8("Попаданий"),       hits_stat,                         0.30,1.00,0.50)
-    statRow(u8("Промахов"),        shots_stat - hits_stat,            1.00,0.40,0.40)
-    statRow(u8("Точность"),        string.format("%.1f%%", acc),      0.50,1.00,0.80)
-    statRow(u8("Время сессии"),    fmtTime(hz_cbug_run.session_start > 0 and os.clock()-hz_cbug_run.session_start or 0), 0.70,0.70,0.80)
+    statRow(u8("РЈР±./Р¶РёР·РЅСЊ"),       killsLife,                         0.40,1.00,0.60)
+    statRow(u8("РњР°РєСЃ.СѓР±./Р¶РёР·РЅСЊ"),  killsLifeMax,                      0.40,1.00,0.60)
+    statRow(u8("РЈСЂРѕРЅ РІСЃРµРіРѕ"),      math.floor(dmgTotal),              1.00,0.60,0.20)
+    statRow(u8("РЈСЂРѕРЅ/Р¶РёР·РЅСЊ"),      math.floor(dmgLife),               1.00,0.55,0.15)
+    statRow(u8("РњР°РєСЃ.СѓСЂРѕРЅ/Р¶РёР·РЅСЊ"), math.floor(dmgLifeMax),            1.00,0.40,0.10)
+    statRow(u8("Р’С‹СЃС‚СЂРµР»РѕРІ"),       shots_stat,                        0.90,0.90,0.50)
+    statRow(u8("РџРѕРїР°РґР°РЅРёР№"),       hits_stat,                         0.30,1.00,0.50)
+    statRow(u8("РџСЂРѕРјР°С…РѕРІ"),        shots_stat - hits_stat,            1.00,0.40,0.40)
+    statRow(u8("РўРѕС‡РЅРѕСЃС‚СЊ"),        string.format("%.1f%%", acc),      0.50,1.00,0.80)
+    statRow(u8("Р’СЂРµРјСЏ СЃРµСЃСЃРёРё"),    fmtTime(hz_cbug_run.session_start > 0 and os.clock()-hz_cbug_run.session_start or 0), 0.70,0.70,0.80)
     imgui.Columns(1)
     imgui.Separator(); imgui.Spacing()
-    if imgui.Button(Fn.T(u8("Личная статистика...")), imgui.ImVec2(-1, 22)) then
+    if imgui.Button(Fn.T(u8("Р›РёС‡РЅР°СЏ СЃС‚Р°С‚РёСЃС‚РёРєР°...")), imgui.ImVec2(-1, 22)) then
         statsWindowOpen[0] = not statsWindowOpen[0]
     end
     imgui.Spacing()
     local hw = (imgui.GetContentRegionAvail().x - 8)/2
-    if imgui.Button(Fn.T(u8("Сбросить сессию")), imgui.ImVec2(hw, 26)) then
+    if imgui.Button(Fn.T(u8("РЎР±СЂРѕСЃРёС‚СЊ СЃРµСЃСЃРёСЋ")), imgui.ImVec2(hw, 26)) then
         kills=0; killsLife=0; killsLifeMax=0; deaths=0
         shots_stat=0; hits_stat=0
         dmgTotal=0; dmgLife=0; dmgLifeMax=0; ksLastTriggered=0
@@ -17183,7 +17183,7 @@ function drawMyStatsTab()
         hz_cbug_session.shots=0; hz_cbug_session.active=false
     end
     imgui.SameLine()
-    if imgui.Button(Fn.T(u8("Сбросить ВСЁ")), imgui.ImVec2(hw, 26)) then
+    if imgui.Button(Fn.T(u8("РЎР±СЂРѕСЃРёС‚СЊ Р’РЎРЃ")), imgui.ImVec2(hw, 26)) then
         hz_cbug_cfg.stats = {
             total_shots=0,total_hits=0,total_misses=0,total_combos=0,
             best_kpd=0,best_streak=0,total_playtime=0,deaths=0,kills=0,
@@ -17212,7 +17212,7 @@ function drawCompareWindow(module_alpha)
         imgui.ImVec2(imgui.GetIO().DisplaySize.x/2, imgui.GetIO().DisplaySize.y/2 + 180),
         imgui.Cond.FirstUseEver, imgui.ImVec2(0.5, 0.5))
     local compare_open_ptr = compareOpen[0] and compareOpen or nil
-    if not imgui.Begin(Fn.T(u8("Сравнение: ")) .. p1.nick .. " vs " .. p2.nick,
+    if not imgui.Begin(Fn.T(u8("РЎСЂР°РІРЅРµРЅРёРµ: ")) .. p1.nick .. " vs " .. p2.nick,
             compare_open_ptr, imgui.WindowFlags.NoCollapse + imgui.WindowFlags.NoResize) then
         imgui.End(); imgui.PopStyleVar(); return
     end
@@ -17293,7 +17293,7 @@ function drawCompareWindow(module_alpha)
     end
     local fmt2 = function(v) return string.format("%.2f", v) end
     if imgui.BeginTabBar("##cmp_tabs") then
-        if imgui.BeginTabItem(Fn.T(u8("Общая"))) then
+        if imgui.BeginTabItem(Fn.T(u8("РћР±С‰Р°СЏ"))) then
             drawAnimatedTabGlow(imgui.GetWindowDrawList(), imgui.GetItemRectMin(), imgui.GetItemRectMax(), os.clock())
             imgui.Spacing()
             do
@@ -17301,7 +17301,7 @@ function drawCompareWindow(module_alpha)
                 local pos  = imgui.GetCursorScreenPos()
                 local fs   = imgui.GetTextLineHeight()
                 local fnt  = CBUGER_GET_GLOBAL_FONT() or imgui.GetFont()
-                draw:AddTextFontPtr(fnt, fs, imgui.ImVec2(pos.x,pos.y),         HZ_U32(accentVec4(nil, 1.0, 1.0)), u8("Параметр"))
+                draw:AddTextFontPtr(fnt, fs, imgui.ImVec2(pos.x,pos.y),         HZ_U32(accentVec4(nil, 1.0, 1.0)), u8("РџР°СЂР°РјРµС‚СЂ"))
                 draw:AddTextFontPtr(fnt, fs, imgui.ImVec2(pos.x+cW0,pos.y),     CBUGER_ApplyGlobalAlphaU32(0xFFFFFFFF), p1.nick)
                 draw:AddTextFontPtr(fnt, fs, imgui.ImVec2(pos.x+cW0+cW1,pos.y), CBUGER_ApplyGlobalAlphaU32(0xFFFFFFFF), p2.nick)
                 imgui.Dummy(imgui.ImVec2(W-8, rowH))
@@ -17312,7 +17312,7 @@ function drawCompareWindow(module_alpha)
             cmpRow("K/D",    p1.kd,     p2.kd,     fmt2, true)
             imgui.EndTabItem()
         end
-        if imgui.BeginTabItem(Fn.T(u8("Личная"))) then
+        if imgui.BeginTabItem(Fn.T(u8("Р›РёС‡РЅР°СЏ"))) then
             drawAnimatedTabGlow(imgui.GetWindowDrawList(), imgui.GetItemRectMin(), imgui.GetItemRectMax(), os.clock())
             imgui.Spacing()
             local k12, k21 = calcPersonal(p1.nick, p2.nick)
@@ -17323,20 +17323,20 @@ function drawCompareWindow(module_alpha)
                 local pos  = imgui.GetCursorScreenPos()
                 local fs   = imgui.GetTextLineHeight()
                 local fnt  = CBUGER_GET_GLOBAL_FONT() or imgui.GetFont()
-                draw:AddTextFontPtr(fnt, fs, imgui.ImVec2(pos.x,pos.y),         HZ_U32(accentVec4(nil, 1.0, 1.0)), u8("Параметр"))
+                draw:AddTextFontPtr(fnt, fs, imgui.ImVec2(pos.x,pos.y),         HZ_U32(accentVec4(nil, 1.0, 1.0)), u8("РџР°СЂР°РјРµС‚СЂ"))
                 draw:AddTextFontPtr(fnt, fs, imgui.ImVec2(pos.x+cW0,pos.y),     CBUGER_ApplyGlobalAlphaU32(0xFFFFFFFF), p1.nick)
                 draw:AddTextFontPtr(fnt, fs, imgui.ImVec2(pos.x+cW0+cW1,pos.y), CBUGER_ApplyGlobalAlphaU32(0xFFFFFFFF), p2.nick)
                 imgui.Dummy(imgui.ImVec2(W-8, rowH))
             end
             imgui.Separator(); imgui.Spacing()
-            cmpRow(u8("Убийств"),        k12,  k21,  nil,  true)
-            cmpRow(u8("Смертей от него"), k21,  k12,  nil,  false)
-            cmpRow(u8("K/D (vs него)"),   kd12, kd21, fmt2, true)
+            cmpRow(u8("РЈР±РёР№СЃС‚РІ"),        k12,  k21,  nil,  true)
+            cmpRow(u8("РЎРјРµСЂС‚РµР№ РѕС‚ РЅРµРіРѕ"), k21,  k12,  nil,  false)
+            cmpRow(u8("K/D (vs РЅРµРіРѕ)"),   kd12, kd21, fmt2, true)
             imgui.Spacing(); imgui.Separator(); imgui.Spacing()
             local total = k12 + k21
             if total == 0 then
                 imgui.TextColored(imgui.ImVec4(1,1,1,1),
-                    Fn.T(u8("Встреч между этими игроками не зафиксировано")))
+                    Fn.T(u8("Р’СЃС‚СЂРµС‡ РјРµР¶РґСѓ СЌС‚РёРјРё РёРіСЂРѕРєР°РјРё РЅРµ Р·Р°С„РёРєСЃРёСЂРѕРІР°РЅРѕ")))
             else
                 local bW  = W - 8
                 local bH  = 18
@@ -17400,12 +17400,12 @@ function drawCompareWindow(module_alpha)
     end
     imgui.Spacing(); imgui.Separator(); imgui.Spacing()
     local bw = (imgui.GetContentRegionAvail().x - 8) / 2
-    if imgui.Button(Fn.T(u8("Новое сравнение")), imgui.ImVec2(bw, 24)) then
+    if imgui.Button(Fn.T(u8("РќРѕРІРѕРµ СЃСЂР°РІРЅРµРЅРёРµ")), imgui.ImVec2(bw, 24)) then
         compareSlots[1]=nil; compareSlots[2]=nil
         compareOpen[0]=false; compareMsg=""
     end
     imgui.SameLine()
-    if imgui.Button(Fn.T(u8("Закрыть")), imgui.ImVec2(bw, 24)) then
+    if imgui.Button(Fn.T(u8("Р—Р°РєСЂС‹С‚СЊ")), imgui.ImVec2(bw, 24)) then
         compareOpen[0] = false
     end
     imgui.PopStyleColor(3)
@@ -17433,20 +17433,20 @@ function historywindow()
                         CBUGER_DRAW_GLOBAL_AMBIENT(hdl, hp, imgui.ImVec2(hp.x + hs.x, hp.y + hs.y), CBUGER_GET_INTERFACE_ALPHA())
                     end
                     if imgui.BeginMenuBar() then
-                        if imgui.BeginMenu(Fn.T(u8("Сортировка"))) then
-                            imgui.Checkbox(Fn.T(u8("Показывать убийства")), state.showkills)
-                            imgui.Checkbox(Fn.T(u8("Показывать смерти")), state.showdeaths)
+                        if imgui.BeginMenu(Fn.T(u8("РЎРѕСЂС‚РёСЂРѕРІРєР°"))) then
+                            imgui.Checkbox(Fn.T(u8("РџРѕРєР°Р·С‹РІР°С‚СЊ СѓР±РёР№СЃС‚РІР°")), state.showkills)
+                            imgui.Checkbox(Fn.T(u8("РџРѕРєР°Р·С‹РІР°С‚СЊ СЃРјРµСЂС‚Рё")), state.showdeaths)
                             imgui.EndMenu()
                         end
                         imgui.EndMenuBar()
                     end
-                    imgui.Text(Fn.T(u8("Убийца")))
+                    imgui.Text(Fn.T(u8("РЈР±РёР№С†Р°")))
                     imgui.SameLine()
-                    imgui.SetCursorPosX((imgui.GetWindowWidth() - imgui.CalcTextSize(u8("Оружие")).x)/2)
-                    imgui.Text(Fn.T(u8("Оружие")))
+                    imgui.SetCursorPosX((imgui.GetWindowWidth() - imgui.CalcTextSize(u8("РћСЂСѓР¶РёРµ")).x)/2)
+                    imgui.Text(Fn.T(u8("РћСЂСѓР¶РёРµ")))
                     imgui.SameLine()
-                    imgui.SetCursorPosX(imgui.GetWindowWidth() - imgui.CalcTextSize(u8("Убитый")).x - 22)
-                    imgui.Text(Fn.T(u8("Убитый")))
+                    imgui.SetCursorPosX(imgui.GetWindowWidth() - imgui.CalcTextSize(u8("РЈР±РёС‚С‹Р№")).x - 22)
+                    imgui.Text(Fn.T(u8("РЈР±РёС‚С‹Р№")))
                     imgui.Separator()
                     for _, h in ipairs(pl.history) do
                         local show = (state.showkills[0] and pl.nick == h.killer.nick)
@@ -17616,7 +17616,7 @@ function sampev.onSendBulletSync(data)
         if not dmg_ok and not DMG.object_target_error_reported then
             DMG.object_target_error_reported = true
             pcall(function()
-                sampAddChatMessage('{FF5555}[CBUGER] Ошибка обработки цели-объекта: ' .. tostring(dmg_err), -1)
+                sampAddChatMessage('{FF5555}[CBUGER] РћС€РёР±РєР° РѕР±СЂР°Р±РѕС‚РєРё С†РµР»Рё-РѕР±СЉРµРєС‚Р°: ' .. tostring(dmg_err), -1)
             end)
         end
     end
@@ -17647,10 +17647,10 @@ function sampev.onSendBulletSync(data)
                     inicfg.save(hz_cbug_cfg, hz_cbug_cfg_name)
                     if hz_cbug_cfg.settings.notify_record then
                         local diff = old_rec
-                            and (" (лучше на ".. (old_rec - final_ms) .." ms)")
-                            or  " (первый рекорд!)"
-                        sampAddChatMessage("{32CD32}[CBug Pro]{FFFFFF} Рекорд для "..key..
-                            " выстрелов: {32CD32}"..final_ms.." ms{FFFFFF}"..diff, -1)
+                            and (" (Р»СѓС‡С€Рµ РЅР° ".. (old_rec - final_ms) .." ms)")
+                            or  " (РїРµСЂРІС‹Р№ СЂРµРєРѕСЂРґ!)"
+                        sampAddChatMessage("{32CD32}[CBug Pro]{FFFFFF} Р РµРєРѕСЂРґ РґР»СЏ "..key..
+                            " РІС‹СЃС‚СЂРµР»РѕРІ: {32CD32}"..final_ms.." ms{FFFFFF}"..diff, -1)
                     end
                 end
                 hz_cbug_run.session_combos = hz_cbug_run.session_combos + 1
@@ -17913,47 +17913,47 @@ local state = {
 CBUGER_FONT_STATE.radial_idx_ptr = state.current_font_idx
 local lists = {
     cursor_fx = {
-        u8"Обычный", u8"Крестики", u8"Всплывающие кольца", u8"Капли", u8"Замедленный след",
-        u8"Огонь", u8"Кольца", u8"Линии", u8"Туманность", u8"Горизонтальные штрихи",
-        u8"Тёмная дыра", u8"Случайный", u8"Падающие штрихи", u8"Диагональ", u8"Взрыв",
-        u8"Спираль", u8"Крупные кольца", u8"Зигзаг", u8"Конфетти", u8"Шестиугольники"
+        u8"РћР±С‹С‡РЅС‹Р№", u8"РљСЂРµСЃС‚РёРєРё", u8"Р’СЃРїР»С‹РІР°СЋС‰РёРµ РєРѕР»СЊС†Р°", u8"РљР°РїР»Рё", u8"Р—Р°РјРµРґР»РµРЅРЅС‹Р№ СЃР»РµРґ",
+        u8"РћРіРѕРЅСЊ", u8"РљРѕР»СЊС†Р°", u8"Р›РёРЅРёРё", u8"РўСѓРјР°РЅРЅРѕСЃС‚СЊ", u8"Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Рµ С€С‚СЂРёС…Рё",
+        u8"РўС‘РјРЅР°СЏ РґС‹СЂР°", u8"РЎР»СѓС‡Р°Р№РЅС‹Р№", u8"РџР°РґР°СЋС‰РёРµ С€С‚СЂРёС…Рё", u8"Р”РёР°РіРѕРЅР°Р»СЊ", u8"Р’Р·СЂС‹РІ",
+        u8"РЎРїРёСЂР°Р»СЊ", u8"РљСЂСѓРїРЅС‹Рµ РєРѕР»СЊС†Р°", u8"Р—РёРіР·Р°Рі", u8"РљРѕРЅС„РµС‚С‚Рё", u8"РЁРµСЃС‚РёСѓРіРѕР»СЊРЅРёРєРё"
     },
     waves_modes = {
-        u8"Волны", u8"Эквалайзер", u8"Расходящиеся круги", u8"Цифровой шум",
-        u8"Кардиограмма", u8"Двойная спираль", u8"Радар", u8"Соты", u8"Пузыри",
-        u8"Тройные волны", u8"Спираль", u8"Маятник", u8"Лабиринт", u8"Звёздный поток",
-        u8"Пульсирующие круги", u8"Шестиугольники на волне", u8"Спектр", u8"Фигуры Лиссажу", u8"Деформация поля"
+        u8"Р’РѕР»РЅС‹", u8"Р­РєРІР°Р»Р°Р№Р·РµСЂ", u8"Р Р°СЃС…РѕРґСЏС‰РёРµСЃСЏ РєСЂСѓРіРё", u8"Р¦РёС„СЂРѕРІРѕР№ С€СѓРј",
+        u8"РљР°СЂРґРёРѕРіСЂР°РјРјР°", u8"Р”РІРѕР№РЅР°СЏ СЃРїРёСЂР°Р»СЊ", u8"Р Р°РґР°СЂ", u8"РЎРѕС‚С‹", u8"РџСѓР·С‹СЂРё",
+        u8"РўСЂРѕР№РЅС‹Рµ РІРѕР»РЅС‹", u8"РЎРїРёСЂР°Р»СЊ", u8"РњР°СЏС‚РЅРёРє", u8"Р›Р°Р±РёСЂРёРЅС‚", u8"Р—РІС‘Р·РґРЅС‹Р№ РїРѕС‚РѕРє",
+        u8"РџСѓР»СЊСЃРёСЂСѓСЋС‰РёРµ РєСЂСѓРіРё", u8"РЁРµСЃС‚РёСѓРіРѕР»СЊРЅРёРєРё РЅР° РІРѕР»РЅРµ", u8"РЎРїРµРєС‚СЂ", u8"Р¤РёРіСѓСЂС‹ Р›РёСЃСЃР°Р¶Сѓ", u8"Р”РµС„РѕСЂРјР°С†РёСЏ РїРѕР»СЏ"
     },
     ambient_modes = {
-        u8"Полиция мигает", u8"Мигающие вспышки", u8"Вертикальный скан",
-        u8"Пульс", u8"Стробоскоп", u8"Световые полосы", u8"Расходящийся круг",
-        u8"Прожектор", u8"Острый импульс", u8"Молния", u8"Световой мерцатель",
-        u8"Горизонтальный скан", u8"Хроматик", u8"Кольцо", u8"Морзе", u8"Градиент"
+        u8"РџРѕР»РёС†РёСЏ РјРёРіР°РµС‚", u8"РњРёРіР°СЋС‰РёРµ РІСЃРїС‹С€РєРё", u8"Р’РµСЂС‚РёРєР°Р»СЊРЅС‹Р№ СЃРєР°РЅ",
+        u8"РџСѓР»СЊСЃ", u8"РЎС‚СЂРѕР±РѕСЃРєРѕРї", u8"РЎРІРµС‚РѕРІС‹Рµ РїРѕР»РѕСЃС‹", u8"Р Р°СЃС…РѕРґСЏС‰РёР№СЃСЏ РєСЂСѓРі",
+        u8"РџСЂРѕР¶РµРєС‚РѕСЂ", u8"РћСЃС‚СЂС‹Р№ РёРјРїСѓР»СЊСЃ", u8"РњРѕР»РЅРёСЏ", u8"РЎРІРµС‚РѕРІРѕР№ РјРµСЂС†Р°С‚РµР»СЊ",
+        u8"Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Р№ СЃРєР°РЅ", u8"РҐСЂРѕРјР°С‚РёРє", u8"РљРѕР»СЊС†Рѕ", u8"РњРѕСЂР·Рµ", u8"Р“СЂР°РґРёРµРЅС‚"
     },
-    tabs = { u8"Главная", u8"Настройки", u8"Профиль" },
+    tabs = { u8"Р“Р»Р°РІРЅР°СЏ", u8"РќР°СЃС‚СЂРѕР№РєРё", u8"РџСЂРѕС„РёР»СЊ" },
     imgui_colors = {
-        {id = imgui.Col.WindowBg,               name = "Фон основного окна (WindowBg)",          cat = 1},
-        {id = CHILD_BG_KEY,                      name = "Фон дочернего виджета (ChildBg)",         cat = 1},
-        {id = imgui.Col.FrameBg,                 name = "Фон слайдера/чекбокса (FrameBg)",        cat = 2},
-        {id = imgui.Col.FrameBgHovered,          name = "Наведение слайдера (FrameBgHovered)",     cat = 2},
-        {id = imgui.Col.FrameBgActive,           name = "Активный слайдер (FrameBgActive)",        cat = 2},
-        {id = imgui.Col.Button,                  name = "Кнопка (Button)",                         cat = 2},
-        {id = imgui.Col.ButtonHovered,           name = "Кнопка наведение (ButtonHovered)",        cat = 2},
-        {id = imgui.Col.ButtonActive,            name = "Кнопка нажатие (ButtonActive)",           cat = 2},
-        {id = imgui.Col.Header,                  name = "Заголовок (Header)",                      cat = 3},
-        {id = imgui.Col.HeaderHovered,           name = "Заголовок наведение (HeaderHovered)",     cat = 3},
-        {id = imgui.Col.HeaderActive,            name = "Заголовок нажатие (HeaderActive)",        cat = 3},
-        {id = imgui.Col.CheckMark,               name = "Галочка (CheckMark)",                     cat = 3},
-        {id = imgui.Col.ScrollbarBg,             name = "Фон скролла (ScrollbarBg)",               cat = 4},
-        {id = imgui.Col.ScrollbarGrab,           name = "Ползунок скролла (Grab)",                 cat = 4},
-        {id = imgui.Col.ScrollbarGrabHovered,    name = "Ползунок наведение (GrabHovered)",        cat = 4},
-        {id = imgui.Col.ScrollbarGrabActive,     name = "Ползунок нажатие (GrabActive)",           cat = 4},
-        {id = imgui.Col.Text,                    name = "Текст (Text)",                            cat = 5},
-        {id = imgui.Col.TextDisabled,            name = "Текст неактивный (TextDisabled)",         cat = 5},
-        {id = imgui.Col.Border,                  name = "Граница (Border)",                        cat = 5},
-        {id = imgui.Col.Separator,               name = "Разделитель (Separator)",                 cat = 5},
-        {id = imgui.Col.SeparatorHovered,        name = "Разделитель наведение",                   cat = 5},
-        {id = imgui.Col.SeparatorActive,         name = "Разделитель нажатие",                     cat = 5},
+        {id = imgui.Col.WindowBg,               name = "Р¤РѕРЅ РѕСЃРЅРѕРІРЅРѕРіРѕ РѕРєРЅР° (WindowBg)",          cat = 1},
+        {id = CHILD_BG_KEY,                      name = "Р¤РѕРЅ РґРѕС‡РµСЂРЅРµРіРѕ РІРёРґР¶РµС‚Р° (ChildBg)",         cat = 1},
+        {id = imgui.Col.FrameBg,                 name = "Р¤РѕРЅ СЃР»Р°Р№РґРµСЂР°/С‡РµРєР±РѕРєСЃР° (FrameBg)",        cat = 2},
+        {id = imgui.Col.FrameBgHovered,          name = "РќР°РІРµРґРµРЅРёРµ СЃР»Р°Р№РґРµСЂР° (FrameBgHovered)",     cat = 2},
+        {id = imgui.Col.FrameBgActive,           name = "РђРєС‚РёРІРЅС‹Р№ СЃР»Р°Р№РґРµСЂ (FrameBgActive)",        cat = 2},
+        {id = imgui.Col.Button,                  name = "РљРЅРѕРїРєР° (Button)",                         cat = 2},
+        {id = imgui.Col.ButtonHovered,           name = "РљРЅРѕРїРєР° РЅР°РІРµРґРµРЅРёРµ (ButtonHovered)",        cat = 2},
+        {id = imgui.Col.ButtonActive,            name = "РљРЅРѕРїРєР° РЅР°Р¶Р°С‚РёРµ (ButtonActive)",           cat = 2},
+        {id = imgui.Col.Header,                  name = "Р—Р°РіРѕР»РѕРІРѕРє (Header)",                      cat = 3},
+        {id = imgui.Col.HeaderHovered,           name = "Р—Р°РіРѕР»РѕРІРѕРє РЅР°РІРµРґРµРЅРёРµ (HeaderHovered)",     cat = 3},
+        {id = imgui.Col.HeaderActive,            name = "Р—Р°РіРѕР»РѕРІРѕРє РЅР°Р¶Р°С‚РёРµ (HeaderActive)",        cat = 3},
+        {id = imgui.Col.CheckMark,               name = "Р“Р°Р»РѕС‡РєР° (CheckMark)",                     cat = 3},
+        {id = imgui.Col.ScrollbarBg,             name = "Р¤РѕРЅ СЃРєСЂРѕР»Р»Р° (ScrollbarBg)",               cat = 4},
+        {id = imgui.Col.ScrollbarGrab,           name = "РџРѕР»Р·СѓРЅРѕРє СЃРєСЂРѕР»Р»Р° (Grab)",                 cat = 4},
+        {id = imgui.Col.ScrollbarGrabHovered,    name = "РџРѕР»Р·СѓРЅРѕРє РЅР°РІРµРґРµРЅРёРµ (GrabHovered)",        cat = 4},
+        {id = imgui.Col.ScrollbarGrabActive,     name = "РџРѕР»Р·СѓРЅРѕРє РЅР°Р¶Р°С‚РёРµ (GrabActive)",           cat = 4},
+        {id = imgui.Col.Text,                    name = "РўРµРєСЃС‚ (Text)",                            cat = 5},
+        {id = imgui.Col.TextDisabled,            name = "РўРµРєСЃС‚ РЅРµР°РєС‚РёРІРЅС‹Р№ (TextDisabled)",         cat = 5},
+        {id = imgui.Col.Border,                  name = "Р“СЂР°РЅРёС†Р° (Border)",                        cat = 5},
+        {id = imgui.Col.Separator,               name = "Р Р°Р·РґРµР»РёС‚РµР»СЊ (Separator)",                 cat = 5},
+        {id = imgui.Col.SeparatorHovered,        name = "Р Р°Р·РґРµР»РёС‚РµР»СЊ РЅР°РІРµРґРµРЅРёРµ",                   cat = 5},
+        {id = imgui.Col.SeparatorActive,         name = "Р Р°Р·РґРµР»РёС‚РµР»СЊ РЅР°Р¶Р°С‚РёРµ",                     cat = 5},
     }
 }
 local ui_anim = { last_time = os.clock(), dt = 0 }
@@ -21316,7 +21316,7 @@ function DMG.onBullet(data)
                 DMG.object_target_miss_reported = true
                 local why = tostring(reason or 'unknown')
                 if #why > 110 then why = why:sub(1, 110) end
-                DMG.chatObjectTarget('Объект не распознан по трассировке (' .. why .. ').')
+                DMG.chatObjectTarget('РћР±СЉРµРєС‚ РЅРµ СЂР°СЃРїРѕР·РЅР°РЅ РїРѕ С‚СЂР°СЃСЃРёСЂРѕРІРєРµ (' .. why .. ').')
             end
             return
         end
@@ -22293,26 +22293,26 @@ pt_cfg = {
         { name = "Radio Record",         url = "http://air.radiorecord.ru:805/rr_320" },
         { name = "DFM",                  url = "http://dfm.hostingradio.ru/dfm128.mp3" },
         { name = "ROCK FM",              url = "http://nashe1.hostingradio.ru/rock-128.mp3" },
-        { name = "Наше Радио",           url = "http://nashe.streamr.ru/nashe-128.mp3" },
-        { name = "Ретро FM",             url = "http://retroserver.streamr.ru:8043/retro128" },
-        { name = "Дорожное радио",       url = "http://dorognoe.hostingradio.ru:8000/radio" },
-        { name = "Вести FM",             url = "http://icecast.vgtrk.cdnvideo.ru/vestifm_mp3_64kbps" },
-        { name = "Радио России",         url = "http://icecast.vgtrk.cdnvideo.ru/rrzonam_mp3_128kbps" },
-        { name = "Радио Маяк",           url = "http://icecast.vgtrk.cdnvideo.ru/mayakfm_mp3_192kbps" },
-        { name = "Радио 7",              url = "http://radio7server.streamr.ru:8040/radio7256.mp3" },
-        { name = "Радио Книга",          url = "http://bookradio.hostingradio.ru:8069/fm" },
-        { name = "Радио Шансон",         url = "http://chanson.hostingradio.ru:8041/chanson128.mp3" },
+        { name = "РќР°С€Рµ Р Р°РґРёРѕ",           url = "http://nashe.streamr.ru/nashe-128.mp3" },
+        { name = "Р РµС‚СЂРѕ FM",             url = "http://retroserver.streamr.ru:8043/retro128" },
+        { name = "Р”РѕСЂРѕР¶РЅРѕРµ СЂР°РґРёРѕ",       url = "http://dorognoe.hostingradio.ru:8000/radio" },
+        { name = "Р’РµСЃС‚Рё FM",             url = "http://icecast.vgtrk.cdnvideo.ru/vestifm_mp3_64kbps" },
+        { name = "Р Р°РґРёРѕ Р РѕСЃСЃРёРё",         url = "http://icecast.vgtrk.cdnvideo.ru/rrzonam_mp3_128kbps" },
+        { name = "Р Р°РґРёРѕ РњР°СЏРє",           url = "http://icecast.vgtrk.cdnvideo.ru/mayakfm_mp3_192kbps" },
+        { name = "Р Р°РґРёРѕ 7",              url = "http://radio7server.streamr.ru:8040/radio7256.mp3" },
+        { name = "Р Р°РґРёРѕ РљРЅРёРіР°",          url = "http://bookradio.hostingradio.ru:8069/fm" },
+        { name = "Р Р°РґРёРѕ РЁР°РЅСЃРѕРЅ",         url = "http://chanson.hostingradio.ru:8041/chanson128.mp3" },
         { name = "Radio Ultra",          url = "http://nashe1.hostingradio.ru/ultra-192.mp3" },
-        { name = "Русские песни",        url = "http://listen.rusongs.ru/ru-mp3-128" },
-        { name = "Авторадио",            url = "https://cast.mediaonline.net.ua/avtoradio" },
-        { name = "Эхо FM",               url = "https://i1.echofm.online:8443/stream" },
+        { name = "Р СѓСЃСЃРєРёРµ РїРµСЃРЅРё",        url = "http://listen.rusongs.ru/ru-mp3-128" },
+        { name = "РђРІС‚РѕСЂР°РґРёРѕ",            url = "https://cast.mediaonline.net.ua/avtoradio" },
+        { name = "Р­С…Рѕ FM",               url = "https://i1.echofm.online:8443/stream" },
         { name = "Monte Carlo",          url = "https://montecarlo.hostingradio.ru/montecarlo128.mp3" },
         { name = "Mixadance FM",         url = "https://stream.mixadance.fm/mixadance" },
         { name = "1000 HITS RADIO",      url = "https://stream.1000hit.ru:8000/stream128" },
-        { name = "Радио Шоколад",        url = "https://choco.hostingradio.ru:10010/fm" },
+        { name = "Р Р°РґРёРѕ РЁРѕРєРѕР»Р°Рґ",        url = "https://choco.hostingradio.ru:10010/fm" },
         { name = "Deep In Space",        url = "https://stream.drugradio.ru:8020/stream128" },
-        { name = "Советская эстрада",    url = "https://evcast.mediacp.eu:2075/stream" },
-        { name = "Радио для взрослых",   url = "http://listen6.myradio24.com:9000/alex542888" },
+        { name = "РЎРѕРІРµС‚СЃРєР°СЏ СЌСЃС‚СЂР°РґР°",    url = "https://evcast.mediacp.eu:2075/stream" },
+        { name = "Р Р°РґРёРѕ РґР»СЏ РІР·СЂРѕСЃР»С‹С…",   url = "http://listen6.myradio24.com:9000/alex542888" },
         { name = "Anon.FM",              url = "https://icecast.anon.fm/radio" },
     },
     crosshair_enabled   = true,
@@ -22440,7 +22440,7 @@ pt_firstFailTile = nil
 pt_endOnFail = false
 pt_gameOver = false
 pt_buttonsShown = false
-pt_gameButtons = { left = { world = nil, screen = nil, w = 120, h = 48, label = S("Заново") }, right = { world = nil, screen = nil, w = 120, h = 48, label = S("Закрыть") } }
+pt_gameButtons = { left = { world = nil, screen = nil, w = 120, h = 48, label = S("Р—Р°РЅРѕРІРѕ") }, right = { world = nil, screen = nil, w = 120, h = 48, label = S("Р—Р°РєСЂС‹С‚СЊ") } }
 pt_storedButtonScreen = { left = { x = nil, y = nil }, right = { x = nil, y = nil } }
 pt_missTexts = {}
 local spawnDistance = 60.0
@@ -22604,7 +22604,7 @@ local function ensureFolders()
 end
 local function saveGameRecord(result)
     local sname = pt_currentSessionSong
-    if not sname or sname == "" then sname = S("Без музыки") end
+    if not sname or sname == "" then sname = S("Р‘РµР· РјСѓР·С‹РєРё") end
     local secs = math.floor(os.clock() - pt_sessionStartTime)
     local mm   = math.floor(secs / 60)
     local ss   = secs % 60
@@ -22614,7 +22614,7 @@ local function saveGameRecord(result)
         pt_score    = pt_score,
         maxCombo = pt_currentSessionMaxCombo,
         pt_misses   = pt_misses,
-        result   = result or S("Проигрыш"),
+        result   = result or S("РџСЂРѕРёРіСЂС‹С€"),
         duration = dur,
         session  = #pt_gameRecords + 1,
     })
@@ -23327,7 +23327,7 @@ local function processHit(bullet)
     spawnMissAtScreen(tx, ty)
     pt_combo = 0; pt_misses = pt_misses + 1
     if pt_misses >= pt_cfg.max_misses and not pt_gamePausedForFail and not pt_gameOver then
-        saveGameRecord(S("Проигрыш"))
+        saveGameRecord(S("РџСЂРѕРёРіСЂС‹С€"))
         pt_isScriptRunning = false; pt_gameOver = true; pt_buttonsShown = true
         if pt_cfg.auto_speed_increase and pt_autoSpeedInitial then
             pt_cfg.tile_speed = pt_autoSpeedInitial; saveSettings()
@@ -23570,7 +23570,7 @@ imgui.OnFrame(
     if not pt_gridInitialized then
         if pt_isScriptRunning then
             local f = CBUGER_GET_GLOBAL_FONT_OR(imgui.GetFont())
-            DL:AddTextFontPtr(f, 18.0 * pt_cfg.visual_scale, imgui.ImVec2(18,18), PT_OVERLAY_U32(imgui.ImVec4(1,1,1,1)), S("Ожидание первого нажатия для начала игры"))
+            DL:AddTextFontPtr(f, 18.0 * pt_cfg.visual_scale, imgui.ImVec2(18,18), PT_OVERLAY_U32(imgui.ImVec4(1,1,1,1)), S("РћР¶РёРґР°РЅРёРµ РїРµСЂРІРѕРіРѕ РЅР°Р¶Р°С‚РёСЏ РґР»СЏ РЅР°С‡Р°Р»Р° РёРіСЂС‹"))
             DL:AddTextFontPtr(f, 16.0 * pt_cfg.visual_scale, imgui.ImVec2(18, sy-36), PT_OVERLAY_U32(imgui.ImVec4(1,1,1,1)), string.format("Score: %d   Combo: %d   Misses: %d/%d", pt_score, pt_combo, pt_misses, pt_cfg.max_misses))
         end
         return
@@ -23732,7 +23732,7 @@ imgui.OnFrame(
         local elapsed = os.clock() - pt_pauseStartTime
         if elapsed >= fail_total then
             if pt_endOnFail then
-                saveGameRecord(S("Проигрыш"))
+                saveGameRecord(S("РџСЂРѕРёРіСЂС‹С€"))
                 pt_isScriptRunning = false; pt_gameOver = true; pt_buttonsShown = true
                 if pt_cfg.auto_speed_increase and pt_autoSpeedInitial then pt_cfg.tile_speed = pt_autoSpeedInitial; saveSettings() end
                 pt_autoSpeedInitial = nil
@@ -23747,7 +23747,7 @@ imgui.OnFrame(
                 end
                 lastSpawn = lastSpawn + delta; pt_misses = pt_misses + 1; pt_gamePausedForFail = false; pt_pauseStartTime = nil; pt_tilesStopped = false; pt_stoppedAtTile = nil; pt_firstFailTile = nil
                 if pt_misses >= pt_cfg.max_misses then
-                    saveGameRecord(S("Проигрыш"))
+                    saveGameRecord(S("РџСЂРѕРёРіСЂС‹С€"))
                     pt_isScriptRunning = false; pt_gameOver = true; pt_buttonsShown = true
                     if pt_cfg.auto_speed_increase and pt_autoSpeedInitial then pt_cfg.tile_speed = pt_autoSpeedInitial; saveSettings() end
                     pt_autoSpeedInitial = nil
@@ -23901,7 +23901,7 @@ local function iconComboWithPreview(id, cfg_tbl)
             if sel then imgui.PopStyleColor(2); imgui.SetItemDefaultFocus() end
             shown = shown + 1
             if shown >= 200 then
-                imgui.TextDisabled(string.format(S("... ещё %d — уточните поиск"), #list - 200))
+                imgui.TextDisabled(string.format(S("... РµС‰С‘ %d вЂ” СѓС‚РѕС‡РЅРёС‚Рµ РїРѕРёСЃРє"), #list - 200))
                 break
             end
         end
@@ -23962,7 +23962,7 @@ local function renderFaPreviewBox()
         DL:AddTextFontPtr(draw_font, fsz, imgui.ImVec2(cxb - ts.x*0.5, cyb - ts.y*0.5), col, glyph)
         DL:PopClipRect()
     else
-        local no  = S("нет")
+        local no  = S("РЅРµС‚")
         local f2  = CBUGER_GET_GLOBAL_FONT_OR(imgui.GetFont())
         local fs2 = 13
         local ts2 = f2:CalcTextSizeA(fs2, 1000, 0, no)
@@ -24007,13 +24007,13 @@ local function pushSliderColorForNorm(norm)
 end
 local function popSliderColor() pcall(function() imgui.PopStyleColor(2) end) end
 local function renderSection_Appearance()
-    if not imgui.CollapsingHeader(S("Оформление (Фон и Плитки)")) then return end
+    if not imgui.CollapsingHeader(S("РћС„РѕСЂРјР»РµРЅРёРµ (Р¤РѕРЅ Рё РџР»РёС‚РєРё)")) then return end
     local function bgImageCombo(label, currentPath, callback)
-        local currentName = S("Нет (цвет)")
+        local currentName = S("РќРµС‚ (С†РІРµС‚)")
         for _, rec in ipairs(pt_bgImages) do if rec.path == currentPath then currentName = S(rec.name); break end end
         imgui.SetNextItemWidth(200)
         if CBUGER_MarqueeBeginCombo(label, currentName) then
-            if imgui.Selectable(S("Нет (цвет)"), currentPath == "" or currentPath == nil) then callback(""); saveSettings() end
+            if imgui.Selectable(S("РќРµС‚ (С†РІРµС‚)"), currentPath == "" or currentPath == nil) then callback(""); saveSettings() end
             for _, rec in ipairs(pt_bgImages) do
                 if CBUGER_MarqueeSelectable(S(rec.name), "ptimg_" .. tostring(rec.path), currentPath == rec.path) then callback(rec.path); saveSettings() end
             end
@@ -24021,60 +24021,60 @@ local function renderSection_Appearance()
         end
     end
     local function tileImageCombo(label, currentPath, callback)
-        local currentName = S("Нет (цвет)")
+        local currentName = S("РќРµС‚ (С†РІРµС‚)")
         for _, rec in ipairs(pt_tileImages) do if rec.path == currentPath then currentName = S(rec.name); break end end
         imgui.SetNextItemWidth(200)
         if CBUGER_MarqueeBeginCombo(label, currentName) then
-            if imgui.Selectable(S("Нет (цвет)"), currentPath == "" or currentPath == nil) then callback(""); saveSettings() end
+            if imgui.Selectable(S("РќРµС‚ (С†РІРµС‚)"), currentPath == "" or currentPath == nil) then callback(""); saveSettings() end
             for _, rec in ipairs(pt_tileImages) do
                 if CBUGER_MarqueeSelectable(S(rec.name), "ptimg_" .. tostring(rec.path), currentPath == rec.path) then callback(rec.path); saveSettings() end
             end
             imgui.EndCombo()
         end
     end
-    imgui.Text(S("Фон сетки:")); CBUGER_MarqueeLabel(S("moonloader\\CBUGER PRO\\PianoTiles\\phone"), 240)
-    bgImageCombo(S("Фон сетки"), pt_cfg.bg_selected, function(p) pt_cfg.bg_selected = p end)
+    imgui.Text(S("Р¤РѕРЅ СЃРµС‚РєРё:")); CBUGER_MarqueeLabel(S("moonloader\\CBUGER PRO\\PianoTiles\\phone"), 240)
+    bgImageCombo(S("Р¤РѕРЅ СЃРµС‚РєРё"), pt_cfg.bg_selected, function(p) pt_cfg.bg_selected = p end)
     imgui.Spacing()
-    imgui.Text(S("Изображения плиток:")); CBUGER_MarqueeLabel(S("moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles"), 240)
+    imgui.Text(S("РР·РѕР±СЂР°Р¶РµРЅРёСЏ РїР»РёС‚РѕРє:")); CBUGER_MarqueeLabel(S("moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles"), 240)
     if #pt_tileImages == 0 then
-        imgui.TextDisabled(S("Нет изображений — поместите файлы в:")); CBUGER_MarqueeLabel(S("moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles"), 240)
+        imgui.TextDisabled(S("РќРµС‚ РёР·РѕР±СЂР°Р¶РµРЅРёР№ вЂ” РїРѕРјРµСЃС‚РёС‚Рµ С„Р°Р№Р»С‹ РІ:")); CBUGER_MarqueeLabel(S("moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles"), 240)
     else
-        tileImageCombo(S("Обычная плитка"), pt_cfg.normal_tile_img, function(p) pt_cfg.normal_tile_img = p end)
+        tileImageCombo(S("РћР±С‹С‡РЅР°СЏ РїР»РёС‚РєР°"), pt_cfg.normal_tile_img, function(p) pt_cfg.normal_tile_img = p end)
     end
     imgui.Spacing()
     local rti = new.bool(pt_cfg.random_tile_image)
-    if imgui.Checkbox(S("Случайные изображения##rti"), rti) then pt_cfg.random_tile_image = rti[0]; saveSettings() end
-    if imgui.IsItemHovered() then imgui.SetTooltip(S("Каждая новая плитка получает случайное\nизображение из папки moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles")) end
+    if imgui.Checkbox(S("РЎР»СѓС‡Р°Р№РЅС‹Рµ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ##rti"), rti) then pt_cfg.random_tile_image = rti[0]; saveSettings() end
+    if imgui.IsItemHovered() then imgui.SetTooltip(S("РљР°Р¶РґР°СЏ РЅРѕРІР°СЏ РїР»РёС‚РєР° РїРѕР»СѓС‡Р°РµС‚ СЃР»СѓС‡Р°Р№РЅРѕРµ\nРёР·РѕР±СЂР°Р¶РµРЅРёРµ РёР· РїР°РїРєРё moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles")) end
     if pt_cfg.random_tile_image and #pt_tileImages == 0 then
-        imgui.SameLine(0, 8); imgui.TextColored(PT_ac_text(1.0, 1.0), S("(нет файлов в pt_tiles)"))
+        imgui.SameLine(0, 8); imgui.TextColored(PT_ac_text(1.0, 1.0), S("(РЅРµС‚ С„Р°Р№Р»РѕРІ РІ pt_tiles)"))
     end
     imgui.Separator()
-    if imgui.Button(S("Настройки цветов")) then imgui.OpenPopup(S("ColorSettingsPopup")) end
+    if imgui.Button(S("РќР°СЃС‚СЂРѕР№РєРё С†РІРµС‚РѕРІ")) then imgui.OpenPopup(S("ColorSettingsPopup")) end
     if imgui.BeginPopup(S("ColorSettingsPopup")) then
-        imgui.Text(S("--- Цвет плиток ---")); imgui.Spacing()
+        imgui.Text(S("--- Р¦РІРµС‚ РїР»РёС‚РѕРє ---")); imgui.Spacing()
         local t_c = new.float[4](pt_cfg.tile_color[1], pt_cfg.tile_color[2], pt_cfg.tile_color[3], pt_cfg.tile_color[4])
-        if imgui.ColorEdit4(S("Базовый цвет плитки"), t_c, imgui.ColorEditFlags.AlphaBar) then
+        if imgui.ColorEdit4(S("Р‘Р°Р·РѕРІС‹Р№ С†РІРµС‚ РїР»РёС‚РєРё"), t_c, imgui.ColorEditFlags.AlphaBar) then
             pt_cfg.tile_color[1], pt_cfg.tile_color[2], pt_cfg.tile_color[3], pt_cfg.tile_color[4] = t_c[0], t_c[1], t_c[2], t_c[3]; saveSettings()
         end
         local r_c = new.bool(pt_cfg.random_tile_color)
-        if imgui.Checkbox(S("Случайный цвет плиток"), r_c) then pt_cfg.random_tile_color = r_c[0]; saveSettings() end
+        if imgui.Checkbox(S("РЎР»СѓС‡Р°Р№РЅС‹Р№ С†РІРµС‚ РїР»РёС‚РѕРє"), r_c) then pt_cfg.random_tile_color = r_c[0]; saveSettings() end
         if pt_cfg.random_tile_color then
             imgui.Spacing()
             local rci = new.float(pt_cfg.random_tile_color_interval)
             pushSliderColorForNorm((pt_cfg.random_tile_color_interval - 0.2) / (10.0 - 0.2))
-            if SpaceSavingSliderFloat(S("Интервал плиток"), rci, 0.2, 10.0, S("%.1f сек"), 200) then
+            if SpaceSavingSliderFloat(S("РРЅС‚РµСЂРІР°Р» РїР»РёС‚РѕРє"), rci, 0.2, 10.0, S("%.1f СЃРµРє"), 200) then
                 pt_cfg.random_tile_color_interval = clamp(rci[0], 0.2, 10.0); saveSettings()
             end
             popSliderColor()
         end
         imgui.Spacing()
         local coh = new.bool(pt_cfg.color_on_hit)
-        if imgui.Checkbox(S("Менять цвет при попадании##coh"), coh) then pt_cfg.color_on_hit = coh[0]; saveSettings() end
+        if imgui.Checkbox(S("РњРµРЅСЏС‚СЊ С†РІРµС‚ РїСЂРё РїРѕРїР°РґР°РЅРёРё##coh"), coh) then pt_cfg.color_on_hit = coh[0]; saveSettings() end
         if pt_cfg.color_on_hit then
             imgui.Spacing()
             local hc = pt_cfg.hit_tile_color
             local h_c = new.float[4](hc[1], hc[2], hc[3], hc[4] or 1.0)
-            if imgui.ColorEdit4(S("Цвет при попадании"), h_c, imgui.ColorEditFlags.AlphaBar) then
+            if imgui.ColorEdit4(S("Р¦РІРµС‚ РїСЂРё РїРѕРїР°РґР°РЅРёРё"), h_c, imgui.ColorEditFlags.AlphaBar) then
                 pt_cfg.hit_tile_color[1] = h_c[0]; pt_cfg.hit_tile_color[2] = h_c[1]
                 pt_cfg.hit_tile_color[3] = h_c[2]; pt_cfg.hit_tile_color[4] = h_c[3]; saveSettings()
             end
@@ -24083,7 +24083,7 @@ local function renderSection_Appearance()
         local bg_c = new.float[4](pt_cfg.grid_bg[1], pt_cfg.grid_bg[2], pt_cfg.grid_bg[3], pt_cfg.grid_bg[4])
         if imgui.ColorButton(S("##gridbg_btn"), imgui.ImVec4(pt_cfg.grid_bg[1], pt_cfg.grid_bg[2], pt_cfg.grid_bg[3], pt_cfg.grid_bg[4]),
             imgui.ColorEditFlags.AlphaPreview, imgui.ImVec2(18, 18)) then imgui.OpenPopup(S("BgColorPicker")) end
-        imgui.SameLine(0, 6); imgui.Text(S("Цвет фона"))
+        imgui.SameLine(0, 6); imgui.Text(S("Р¦РІРµС‚ С„РѕРЅР°"))
         if imgui.BeginPopup(S("BgColorPicker")) then
             if imgui.ColorPicker4(S("##gridbg_pick"), bg_c,
                 imgui.ColorEditFlags.AlphaBar + imgui.ColorEditFlags.NoSidePreview + imgui.ColorEditFlags.PickerHueBar) then
@@ -24092,24 +24092,24 @@ local function renderSection_Appearance()
             imgui.EndPopup()
         end
         local cycleEnabled = new.bool(pt_cfg.grid_color_cycle_enabled)
-        if imgui.Checkbox(S("Случайная смена цвета фона"), cycleEnabled) then pt_cfg.grid_color_cycle_enabled = cycleEnabled[0]; saveSettings() end
+        if imgui.Checkbox(S("РЎР»СѓС‡Р°Р№РЅР°СЏ СЃРјРµРЅР° С†РІРµС‚Р° С„РѕРЅР°"), cycleEnabled) then pt_cfg.grid_color_cycle_enabled = cycleEnabled[0]; saveSettings() end
         if pt_cfg.grid_color_cycle_enabled then
             imgui.Spacing()
             local gci = new.float(pt_cfg.grid_color_cycle_interval)
             pushSliderColorForNorm((pt_cfg.grid_color_cycle_interval - 1) / (60 - 1))
-            if SpaceSavingSliderFloat(S("Интервал фона"), gci, 1.0, 60.0, S("%.1f сек"), 200) then
+            if SpaceSavingSliderFloat(S("РРЅС‚РµСЂРІР°Р» С„РѕРЅР°"), gci, 1.0, 60.0, S("%.1f СЃРµРє"), 200) then
                 pt_cfg.grid_color_cycle_interval = clamp(gci[0], 1.0, 60.0); saveSettings()
             end
             popSliderColor()
         end
-        imgui.Separator(); imgui.Text(S("--- Цвет FA-иконок ---")); imgui.Spacing()
+        imgui.Separator(); imgui.Text(S("--- Р¦РІРµС‚ FA-РёРєРѕРЅРѕРє ---")); imgui.Spacing()
         local rfa_c = new.bool(pt_cfg.random_fa_color)
-        if imgui.Checkbox(S("Случайный цвет иконок##rfa_en"), rfa_c) then pt_cfg.random_fa_color = rfa_c[0]; saveSettings() end
+        if imgui.Checkbox(S("РЎР»СѓС‡Р°Р№РЅС‹Р№ С†РІРµС‚ РёРєРѕРЅРѕРє##rfa_en"), rfa_c) then pt_cfg.random_fa_color = rfa_c[0]; saveSettings() end
         if pt_cfg.random_fa_color then
             imgui.Spacing()
             local rfi = new.float(pt_cfg.random_fa_color_interval)
             pushSliderColorForNorm((pt_cfg.random_fa_color_interval - 0.2) / (10.0 - 0.2))
-            if SpaceSavingSliderFloat(S("Интервал иконок"), rfi, 0.2, 10.0, S("%.1f сек"), 200) then
+            if SpaceSavingSliderFloat(S("РРЅС‚РµСЂРІР°Р» РёРєРѕРЅРѕРє"), rfi, 0.2, 10.0, S("%.1f СЃРµРє"), 200) then
                 pt_cfg.random_fa_color_interval = clamp(rfi[0], 0.2, 10.0); saveSettings()
             end
             popSliderColor()
@@ -24119,29 +24119,29 @@ local function renderSection_Appearance()
     imgui.Separator()
     if fa then
         local fa_en = new.bool(pt_cfg.use_fa_icons)
-        if imgui.Checkbox(S("FA-иконки вместо плиток##fa_tiles_en"), fa_en) then pt_cfg.use_fa_icons = fa_en[0]; saveSettings() end
-        imgui.Spacing(); imgui.Text(S("Иконка плиток:")); imgui.Spacing()
+        if imgui.Checkbox(S("FA-РёРєРѕРЅРєРё РІРјРµСЃС‚Рѕ РїР»РёС‚РѕРє##fa_tiles_en"), fa_en) then pt_cfg.use_fa_icons = fa_en[0]; saveSettings() end
+        imgui.Spacing(); imgui.Text(S("РРєРѕРЅРєР° РїР»РёС‚РѕРє:")); imgui.Spacing()
         renderFaPreviewBox(); imgui.SameLine(0, 12); imgui.BeginGroup()
         if iconComboWithPreview("fa_tile", pt_cfg) then saveSettings() end
         imgui.Spacing()
-        if imgui.Button(S("Цвет иконки##fa_col_btn")) then imgui.OpenPopup(S("FAIconColorPopup")) end
+        if imgui.Button(S("Р¦РІРµС‚ РёРєРѕРЅРєРё##fa_col_btn")) then imgui.OpenPopup(S("FAIconColorPopup")) end
         if imgui.BeginPopup(S("FAIconColorPopup")) then
             local fa_c = new.float[4](pt_cfg.tile_fa_color[1], pt_cfg.tile_fa_color[2], pt_cfg.tile_fa_color[3], pt_cfg.tile_fa_color[4])
             if imgui.ColorPicker4(S("##fa_color_pick"), fa_c,
                 imgui.ColorEditFlags.AlphaBar + imgui.ColorEditFlags.NoSidePreview + imgui.ColorEditFlags.PickerHueBar) then
                 pt_cfg.tile_fa_color[1], pt_cfg.tile_fa_color[2], pt_cfg.tile_fa_color[3], pt_cfg.tile_fa_color[4] = fa_c[0], fa_c[1], fa_c[2], fa_c[3]; saveSettings()
             end
-            if imgui.Button(S("Сбросить##fa_color_reset")) then pt_cfg.tile_fa_color = {1.0, 1.0, 1.0, 1.0}; saveSettings() end
+            if imgui.Button(S("РЎР±СЂРѕСЃРёС‚СЊ##fa_color_reset")) then pt_cfg.tile_fa_color = {1.0, 1.0, 1.0, 1.0}; saveSettings() end
             imgui.EndPopup()
         end
         imgui.Spacing()
         local rfi_icon = new.bool(pt_cfg.random_fa_icon)
-        if imgui.Checkbox(S("Случайная смена иконки##rfa_icon_en"), rfi_icon) then pt_cfg.random_fa_icon = rfi_icon[0]; saveSettings() end
+        if imgui.Checkbox(S("РЎР»СѓС‡Р°Р№РЅР°СЏ СЃРјРµРЅР° РёРєРѕРЅРєРё##rfa_icon_en"), rfi_icon) then pt_cfg.random_fa_icon = rfi_icon[0]; saveSettings() end
         if pt_cfg.random_fa_icon then
             imgui.Spacing()
             local rfii = new.float(pt_cfg.random_fa_icon_interval)
             pushSliderColorForNorm((pt_cfg.random_fa_icon_interval - 0.2) / (10.0 - 0.2))
-            if SpaceSavingSliderFloat(S("Интервал смены иконки"), rfii, 0.2, 10.0, S("%.1f сек"), 200) then
+            if SpaceSavingSliderFloat(S("РРЅС‚РµСЂРІР°Р» СЃРјРµРЅС‹ РёРєРѕРЅРєРё"), rfii, 0.2, 10.0, S("%.1f СЃРµРє"), 200) then
                 pt_cfg.random_fa_icon_interval = clamp(rfii[0], 0.2, 10.0); saveSettings()
             end
             popSliderColor()
@@ -24149,52 +24149,52 @@ local function renderSection_Appearance()
         imgui.EndGroup()
     else
         local lib_name = fa_module_name or 'fAwesome6_solid / fAwesome6'
-        imgui.TextDisabled(S('FA-иконки недоступны — не найдена библиотека ' .. lib_name))
+        imgui.TextDisabled(S('FA-РёРєРѕРЅРєРё РЅРµРґРѕСЃС‚СѓРїРЅС‹ вЂ” РЅРµ РЅР°Р№РґРµРЅР° Р±РёР±Р»РёРѕС‚РµРєР° ' .. lib_name))
     end
 end
 local function renderSection_Crosshair()
-    if not imgui.CollapsingHeader(S("Прицел")) then return end
+    if not imgui.CollapsingHeader(S("РџСЂРёС†РµР»")) then return end
     local cr_en = new.bool(pt_cfg.crosshair_enabled)
-    if imgui.Checkbox(S("Включить прицел##cr_en"), cr_en) then pt_cfg.crosshair_enabled = cr_en[0]; saveSettings() end
+    if imgui.Checkbox(S("Р’РєР»СЋС‡РёС‚СЊ РїСЂРёС†РµР»##cr_en"), cr_en) then pt_cfg.crosshair_enabled = cr_en[0]; saveSettings() end
     imgui.Spacing()
     renderCrossPreviewBox(); imgui.SameLine(0, 12); imgui.BeginGroup()
     local cr_sz = new.int(pt_cfg.crosshair_size)
     pushSliderColorForNorm((pt_cfg.crosshair_size - 2) / (30 - 2))
-    if SpaceSavingSliderInt(S("Размер"), cr_sz, 2, 30, S("%d px"), 200) then pt_cfg.crosshair_size = clamp(cr_sz[0], 2, 30); saveSettings() end
+    if SpaceSavingSliderInt(S("Р Р°Р·РјРµСЂ"), cr_sz, 2, 30, S("%d px"), 200) then pt_cfg.crosshair_size = clamp(cr_sz[0], 2, 30); saveSettings() end
     popSliderColor()
     local cr_gap = new.int(pt_cfg.crosshair_gap)
     pushSliderColorForNorm(pt_cfg.crosshair_gap / 15)
-    if SpaceSavingSliderInt(S("Зазор"), cr_gap, 0, 15, S("%d px"), 200) then pt_cfg.crosshair_gap = clamp(cr_gap[0], 0, 15); saveSettings() end
+    if SpaceSavingSliderInt(S("Р—Р°Р·РѕСЂ"), cr_gap, 0, 15, S("%d px"), 200) then pt_cfg.crosshair_gap = clamp(cr_gap[0], 0, 15); saveSettings() end
     popSliderColor()
     local cr_th = new.int(pt_cfg.crosshair_thick)
     pushSliderColorForNorm((pt_cfg.crosshair_thick - 1) / (8 - 1))
-    if SpaceSavingSliderInt(S("Толщина"), cr_th, 1, 8, S("%d px"), 200) then pt_cfg.crosshair_thick = clamp(cr_th[0], 1, 8); saveSettings() end
+    if SpaceSavingSliderInt(S("РўРѕР»С‰РёРЅР°"), cr_th, 1, 8, S("%d px"), 200) then pt_cfg.crosshair_thick = clamp(cr_th[0], 1, 8); saveSettings() end
     popSliderColor()
     imgui.Spacing()
     local cr_out = new.bool(pt_cfg.crosshair_outline)
-    if imgui.Checkbox(S("Обводка##cr_out"), cr_out) then pt_cfg.crosshair_outline = cr_out[0]; saveSettings() end
+    if imgui.Checkbox(S("РћР±РІРѕРґРєР°##cr_out"), cr_out) then pt_cfg.crosshair_outline = cr_out[0]; saveSettings() end
     if pt_cfg.crosshair_outline then
         imgui.SameLine(0, 8)
         local cr_opx = new.int(pt_cfg.crosshair_outline_px)
         pushSliderColorForNorm((pt_cfg.crosshair_outline_px - 1) / (6 - 1))
-        if SpaceSavingSliderInt(S("Толщ. обв."), cr_opx, 1, 6, S("%d px"), 100) then pt_cfg.crosshair_outline_px = clamp(cr_opx[0], 1, 6); saveSettings() end
+        if SpaceSavingSliderInt(S("РўРѕР»С‰. РѕР±РІ."), cr_opx, 1, 6, S("%d px"), 100) then pt_cfg.crosshair_outline_px = clamp(cr_opx[0], 1, 6); saveSettings() end
         popSliderColor()
     end
     imgui.SameLine(0, 14)
     local cr_dot = new.bool(pt_cfg.crosshair_dot)
-    if imgui.Checkbox(S("Точка##cr_dot"), cr_dot) then pt_cfg.crosshair_dot = cr_dot[0]; saveSettings() end
+    if imgui.Checkbox(S("РўРѕС‡РєР°##cr_dot"), cr_dot) then pt_cfg.crosshair_dot = cr_dot[0]; saveSettings() end
     imgui.Spacing()
     local curOX = pt_cfg.crosshair_offset_x or 0
     local curOY = pt_cfg.crosshair_offset_y or 0
-    imgui.TextDisabled(string.format(S("Смещение: X=%d  Y=%d px"), curOX, curOY))
+    imgui.TextDisabled(string.format(S("РЎРјРµС‰РµРЅРёРµ: X=%d  Y=%d px"), curOX, curOY))
     imgui.Spacing()
-    if imgui.Button(S("Переместить прицел##drag_cr")) then
+    if imgui.Button(S("РџРµСЂРµРјРµСЃС‚РёС‚СЊ РїСЂРёС†РµР»##drag_cr")) then
         pt_crosshairDragMode = true; pt_windowSettings[0] = false; pcall(sampSetCursorMode, 4)
     end
     imgui.SameLine(0, 10)
-    if imgui.Button(S("Сброс позиции##cr_reset_pos")) then pt_cfg.crosshair_offset_x=0; pt_cfg.crosshair_offset_y=0; _locked_x=nil; _locked_y=nil; saveSettings() end
+    if imgui.Button(S("РЎР±СЂРѕСЃ РїРѕР·РёС†РёРё##cr_reset_pos")) then pt_cfg.crosshair_offset_x=0; pt_cfg.crosshair_offset_y=0; _locked_x=nil; _locked_y=nil; saveSettings() end
     imgui.Spacing()
-    if imgui.Button(S("Цвет прицела##cr_col_btn")) then imgui.OpenPopup(S("CRColorPopup")) end
+    if imgui.Button(S("Р¦РІРµС‚ РїСЂРёС†РµР»Р°##cr_col_btn")) then imgui.OpenPopup(S("CRColorPopup")) end
     if imgui.BeginPopup(S("CRColorPopup")) then
         local cr_c = new.float[4](pt_cfg.crosshair_color[1], pt_cfg.crosshair_color[2], pt_cfg.crosshair_color[3], pt_cfg.crosshair_color[4])
         if imgui.ColorPicker4(S("##cr_color_pick"), cr_c,
@@ -24207,18 +24207,18 @@ local function renderSection_Crosshair()
     imgui.EndGroup()
 end
 local function renderSection_Records()
-    if not imgui.CollapsingHeader(S("Рекорды")) then return end
+    if not imgui.CollapsingHeader(S("Р РµРєРѕСЂРґС‹")) then return end
     if #pt_gameRecords == 0 and not pt_isScriptRunning then
-        imgui.Spacing(); imgui.TextDisabled(S("Нет записанных сессий. Сыграйте хотя бы одну партию.")); imgui.Spacing()
+        imgui.Spacing(); imgui.TextDisabled(S("РќРµС‚ Р·Р°РїРёСЃР°РЅРЅС‹С… СЃРµСЃСЃРёР№. РЎС‹РіСЂР°Р№С‚Рµ С…РѕС‚СЏ Р±С‹ РѕРґРЅСѓ РїР°СЂС‚РёСЋ.")); imgui.Spacing()
     else
         imgui.Spacing()
         if pt_isScriptRunning then
             imgui.PushStyleColor(imgui.Col.Text, PT_ac_text(1.000, 1.000))
-            imgui.Text(S("? Текущая сессия")); imgui.PopStyleColor()
-            local sname = pt_currentSessionSong ~= "" and pt_currentSessionSong or S("Без музыки")
+            imgui.Text(S("? РўРµРєСѓС‰Р°СЏ СЃРµСЃСЃРёСЏ")); imgui.PopStyleColor()
+            local sname = pt_currentSessionSong ~= "" and pt_currentSessionSong or S("Р‘РµР· РјСѓР·С‹РєРё")
             local elapsed = math.floor(os.clock() - pt_sessionStartTime)
             local em, es = math.floor(elapsed/60), elapsed % 60
-            imgui.TextDisabled(string.format(S("%s  |  %d:%02d  |  Счёт: %d  Комбо: %d  Промахи: %d/%d"),
+            imgui.TextDisabled(string.format(S("%s  |  %d:%02d  |  РЎС‡С‘С‚: %d  РљРѕРјР±Рѕ: %d  РџСЂРѕРјР°С…Рё: %d/%d"),
                 sname, em, es, pt_score, pt_currentSessionMaxCombo, pt_misses, pt_cfg.max_misses))
             imgui.Separator(); imgui.Spacing()
         end
@@ -24231,9 +24231,9 @@ local function renderSection_Records()
                 imgui.SameLine(0, 0); imgui.Dummy(imgui.ImVec2(w - imgui.CalcTextSize(txt).x, 0)); imgui.SameLine(0, 0)
             end
             local hdr = PT_ac_text(1.0, 1.0)
-            cell(S("#"), COL[1], hdr); cell(S("Трек"), COL[2], hdr)
-            cell(S("Счёт"), COL[3], hdr); cell(S("Комбо"), COL[4], hdr)
-            cell(S("Промахи"), COL[5], hdr); cell(S("Время"), COL[6], hdr)
+            cell(S("#"), COL[1], hdr); cell(S("РўСЂРµРє"), COL[2], hdr)
+            cell(S("РЎС‡С‘С‚"), COL[3], hdr); cell(S("РљРѕРјР±Рѕ"), COL[4], hdr)
+            cell(S("РџСЂРѕРјР°С…Рё"), COL[5], hdr); cell(S("Р’СЂРµРјСЏ"), COL[6], hdr)
             imgui.NewLine(); imgui.Separator()
             imgui.BeginChild(S("RecordsList"), imgui.ImVec2(0, 160), false)
             for i = 1, #pt_gameRecords do
@@ -24256,7 +24256,7 @@ local function renderSection_Records()
                 imgui.PushStyleColor(imgui.Col.ButtonHovered, imgui.ImVec4(0.24, 0.72, 0.30, 1.0))
                 imgui.PushStyleColor(imgui.Col.ButtonActive, imgui.ImVec4(0.12, 0.44, 0.18, 1.0))
             end
-            if imgui.Button(S("Сохранить рекорды##saverec"), imgui.ImVec2(180, 0)) then
+            if imgui.Button(S("РЎРѕС…СЂР°РЅРёС‚СЊ СЂРµРєРѕСЂРґС‹##saverec"), imgui.ImVec2(180, 0)) then
                 if saveGameRecords() then
                     recordsSaveFlashUntil = os.clock() + 0.8
                     recordsSaveErrorUntil = 0
@@ -24269,12 +24269,12 @@ local function renderSection_Records()
             end
             if saveError then
                 imgui.SameLine()
-                imgui.TextColored(imgui.ImVec4(1.0, 0.25, 0.25, 1.0), S("Ошибка сохранения"))
+                imgui.TextColored(imgui.ImVec4(1.0, 0.25, 0.25, 1.0), S("РћС€РёР±РєР° СЃРѕС…СЂР°РЅРµРЅРёСЏ"))
             end
             imgui.SameLine()
             imgui.Dummy(imgui.ImVec2(18, 0))
             imgui.SameLine()
-            if imgui.Button(S("Очистить рекорды##clrec"), imgui.ImVec2(180, 0)) then
+            if imgui.Button(S("РћС‡РёСЃС‚РёС‚СЊ СЂРµРєРѕСЂРґС‹##clrec"), imgui.ImVec2(180, 0)) then
                 local previousRecords = pt_gameRecords
                 pt_gameRecords = {}
                 if saveGameRecords() then
@@ -24294,11 +24294,11 @@ local CONTENT_W   = 460
 local WINDOW_H    = 490
 local TOTAL_W     = SIDEBAR_W + CONTENT_W
 local TAB_DEFS = {
-    { label = S("Игра"),        icon = "GAMEPAD"        },
-    { label = S("Геймплей"),    icon = "SLIDERS"        },
-    { label = S("Музыка"),      icon = "MUSIC"          },
-    { label = S("Оформление"),  icon = "PALETTE"        },
-    { label = S("Прицел"),      icon = "CROSSHAIRS"     },
+    { label = S("РРіСЂР°"),        icon = "GAMEPAD"        },
+    { label = S("Р“РµР№РјРїР»РµР№"),    icon = "SLIDERS"        },
+    { label = S("РњСѓР·С‹РєР°"),      icon = "MUSIC"          },
+    { label = S("РћС„РѕСЂРјР»РµРЅРёРµ"),  icon = "PALETTE"        },
+    { label = S("РџСЂРёС†РµР»"),      icon = "CROSSHAIRS"     },
 }
 local function sectionHeader(icon_key, text)
     imgui.Spacing()
@@ -24329,7 +24329,7 @@ local function doStartGame()
     if pt_selectedIsRadio then
         local stations = pt_cfg.radio_stations or {}
         local ri = stations[pt_selectedRadioIndex]
-        pt_currentSessionSong = ri and (ri.name or ri.url or S("Радио")) or S("Радио")
+        pt_currentSessionSong = ri and (ri.name or ri.url or S("Р Р°РґРёРѕ")) or S("Р Р°РґРёРѕ")
     elseif pt_selectedSongPath then
         pt_currentSessionSong = pt_selectedSongPath:match("([^\\/]+)$") or pt_selectedSongPath
     else pt_currentSessionSong = "" end
@@ -24358,19 +24358,19 @@ local function doStopGame()
     pt_autoSpeedInitial = nil
     pt_reloadPaused = false; pt_reloadPauseStartTime = nil; pt_prevAmmoClip = -1
     stopMusic(); setGtaCrosshairVisible(true)
-    sendChat(S("Игра остановлена."), -1)
+    sendChat(S("РРіСЂР° РѕСЃС‚Р°РЅРѕРІР»РµРЅР°."), -1)
 end
 local function renderTab_Game()
     imgui.Spacing()
-    sectionHeader("CHART_LINE", "ТЕКУЩАЯ СЕССИЯ")
+    sectionHeader("CHART_LINE", "РўР•РљРЈР©РђРЇ РЎР•РЎРЎРРЇ")
     local avail = imgui.GetContentRegionAvail().x
     local statW = math.floor((avail - 3*4) / 4)
     local statH = 48.0
     local statDefs = {
-        { label=S("Счёт"),    value=tostring(pt_score) },
-        { label=S("Комбо"),   value=tostring(pt_combo) },
-        { label=S("Промахи"), value=string.format("%d/%d", pt_misses, pt_cfg.max_misses) },
-        { label=S("Время"),   value=(function()
+        { label=S("РЎС‡С‘С‚"),    value=tostring(pt_score) },
+        { label=S("РљРѕРјР±Рѕ"),   value=tostring(pt_combo) },
+        { label=S("РџСЂРѕРјР°С…Рё"), value=string.format("%d/%d", pt_misses, pt_cfg.max_misses) },
+        { label=S("Р’СЂРµРјСЏ"),   value=(function()
             if pt_isScriptRunning then
                 local e = math.floor(os.clock()-(pt_sessionStartTime or os.clock()))
                 return string.format("%d:%02d", math.floor(e/60), e%60)
@@ -24396,7 +24396,7 @@ local function renderTab_Game()
     imgui.Spacing()
     icoText(pt_selectedSongPath and pt_selectedSongPath ~= "" and "MUSIC" or "CIRCLE_INFO")
     if not pt_selectedSongPath or pt_selectedSongPath == "" then
-        imgui.TextDisabled(S("Треки не выбраны — настройте в разделе Музыка"))
+        imgui.TextDisabled(S("РўСЂРµРєРё РЅРµ РІС‹Р±СЂР°РЅС‹ вЂ” РЅР°СЃС‚СЂРѕР№С‚Рµ РІ СЂР°Р·РґРµР»Рµ РњСѓР·С‹РєР°"))
     else
         local sname = pt_selectedSongPath:match("([^\\/]+)$") or pt_selectedSongPath
         if #sname > 34 then sname = sname:sub(1,32)..".."; end
@@ -24408,7 +24408,7 @@ local function renderTab_Game()
     imgui.PushStyleColor(imgui.Col.ButtonHovered,  isRunning and PT_ac(0.78, 1.0) or PT_ac(0.64, 1.0))
     imgui.PushStyleColor(imgui.Col.ButtonActive,   isRunning and PT_ac(0.42, 1.0) or PT_ac(0.30, 1.0))
     local icoStr = fa_font_small2 and (getIcon(isRunning and "STOP" or "PLAY").." ") or ""
-    local btnTxt = icoStr..(isRunning and S("Остановить игру") or S("Запустить игру"))
+    local btnTxt = icoStr..(isRunning and S("РћСЃС‚Р°РЅРѕРІРёС‚СЊ РёРіСЂСѓ") or S("Р—Р°РїСѓСЃС‚РёС‚СЊ РёРіСЂСѓ"))
     if fa_font_small2 then imgui.PushFont(fa_font_small2) end
     if imgui.Button(btnTxt, imgui.ImVec2(-1, 34)) then
         if isRunning then doStopGame() else doStartGame() end
@@ -24547,90 +24547,90 @@ imgui.OnFrame(
     local tab = activeTab[0]
     local function renderTab_Display()
         imgui.Spacing()
-        sectionHeader("DISPLAY", "ВИЗУАЛ И ПОЛОСЫ")
+        sectionHeader("DISPLAY", "Р’РР—РЈРђР› Р РџРћР›РћРЎР«")
         local vs = new.float(pt_cfg.visual_scale)
         pushSliderColorForNorm((pt_cfg.visual_scale-0.0001)/(2.5-0.0001))
-        icoText("EXPAND"); imgui.Text(S("Масштаб визуала")); imgui.SameLine(0,6)
-        if SpaceSavingSliderFloat(S("Масштаб"), vs, 0.0001, 2.5, S("%.4f"), imgui.GetContentRegionAvail().x) then pt_cfg.visual_scale=clamp(vs[0],0.0001,2.5); saveSettings() end
+        icoText("EXPAND"); imgui.Text(S("РњР°СЃС€С‚Р°Р± РІРёР·СѓР°Р»Р°")); imgui.SameLine(0,6)
+        if SpaceSavingSliderFloat(S("РњР°СЃС€С‚Р°Р±"), vs, 0.0001, 2.5, S("%.4f"), imgui.GetContentRegionAvail().x) then pt_cfg.visual_scale=clamp(vs[0],0.0001,2.5); saveSettings() end
         popSliderColor(); imgui.Spacing()
         local lanes = new.int(pt_cfg.lanes)
         pushSliderColorForNorm((pt_cfg.lanes-1)/9)
-        icoText("TABLE_COLUMNS"); imgui.Text(S("Количество полос")); imgui.SameLine(0,6)
-        if SpaceSavingSliderInt(S("Полосы"), lanes, 1, 10, S("%d"), imgui.GetContentRegionAvail().x) then pt_cfg.lanes=clamp(lanes[0],1,10); saveSettings() end
+        icoText("TABLE_COLUMNS"); imgui.Text(S("РљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕР»РѕСЃ")); imgui.SameLine(0,6)
+        if SpaceSavingSliderInt(S("РџРѕР»РѕСЃС‹"), lanes, 1, 10, S("%d"), imgui.GetContentRegionAvail().x) then pt_cfg.lanes=clamp(lanes[0],1,10); saveSettings() end
         popSliderColor(); imgui.Spacing()
         local si2 = new.float(pt_cfg.spawn_interval)
         pushSliderColorForNorm(1-((pt_cfg.spawn_interval-0.0001)/(5.0-0.0001)))
-        icoText("STOPWATCH"); imgui.Text(S("Интервал появления")); imgui.SameLine(0,6)
-        if SpaceSavingSliderFloat(S("Интервал"), si2, 0.0001, 5.0, S("%.4f"), imgui.GetContentRegionAvail().x) then pt_cfg.spawn_interval=clamp(si2[0],0.0001,5.0); saveSettings() end
+        icoText("STOPWATCH"); imgui.Text(S("РРЅС‚РµСЂРІР°Р» РїРѕСЏРІР»РµРЅРёСЏ")); imgui.SameLine(0,6)
+        if SpaceSavingSliderFloat(S("РРЅС‚РµСЂРІР°Р»"), si2, 0.0001, 5.0, S("%.4f"), imgui.GetContentRegionAvail().x) then pt_cfg.spawn_interval=clamp(si2[0],0.0001,5.0); saveSettings() end
         popSliderColor(); imgui.Spacing()
         local ts2 = new.float(pt_cfg.tile_speed)
         pushSliderColorForNorm((pt_cfg.tile_speed-0.0001)/(4.0-0.0001))
-        icoText("GAUGE_HIGH"); imgui.Text(S("Скорость движения плиток")); imgui.SameLine(0,6)
-        if SpaceSavingSliderFloat(S("Скорость"), ts2, 0.0001, 4.0, S("%.4f"), imgui.GetContentRegionAvail().x) then pt_cfg.tile_speed=clamp(ts2[0],0.0001,4.0); saveSettings() end
+        icoText("GAUGE_HIGH"); imgui.Text(S("РЎРєРѕСЂРѕСЃС‚СЊ РґРІРёР¶РµРЅРёСЏ РїР»РёС‚РѕРє")); imgui.SameLine(0,6)
+        if SpaceSavingSliderFloat(S("РЎРєРѕСЂРѕСЃС‚СЊ"), ts2, 0.0001, 4.0, S("%.4f"), imgui.GetContentRegionAvail().x) then pt_cfg.tile_speed=clamp(ts2[0],0.0001,4.0); saveSettings() end
         popSliderColor(); imgui.Spacing()
         local mm2 = new.int(pt_cfg.max_misses)
         pushSliderColorForNorm((pt_cfg.max_misses-1)/29)
-        icoText("TRIANGLE_EXCLAMATION"); imgui.Text(S("Максимум промахов")); imgui.SameLine(0,6)
-        if SpaceSavingSliderInt(S("Промахи"), mm2, 1, 999, S("%d"), imgui.GetContentRegionAvail().x) then pt_cfg.max_misses=clamp(mm2[0],1,999); saveSettings() end
+        icoText("TRIANGLE_EXCLAMATION"); imgui.Text(S("РњР°РєСЃРёРјСѓРј РїСЂРѕРјР°С…РѕРІ")); imgui.SameLine(0,6)
+        if SpaceSavingSliderInt(S("РџСЂРѕРјР°С…Рё"), mm2, 1, 999, S("%d"), imgui.GetContentRegionAvail().x) then pt_cfg.max_misses=clamp(mm2[0],1,999); saveSettings() end
         popSliderColor(); imgui.Spacing()
-        sectionHeader("GEARS", "ОСОБЫЕ РЕЖИМЫ")
+        sectionHeader("GEARS", "РћРЎРћР‘Р«Р• Р Р•Р–РРњР«")
         local gt_cb = new.bool(pt_cfg.ghost_tiles)
-        if imgui.Checkbox(S("  Режим без границ##gt"), gt_cb) then pt_cfg.ghost_tiles=gt_cb[0]; saveSettings() end
+        if imgui.Checkbox(S("  Р РµР¶РёРј Р±РµР· РіСЂР°РЅРёС†##gt"), gt_cb) then pt_cfg.ghost_tiles=gt_cb[0]; saveSettings() end
         imgui.Spacing()
         local ult = new.bool(pt_cfg.use_long_tiles)
-        if imgui.Checkbox(S("  Длинные плитки##ult"), ult) then pt_cfg.use_long_tiles=ult[0]; saveSettings() end
+        if imgui.Checkbox(S("  Р”Р»РёРЅРЅС‹Рµ РїР»РёС‚РєРё##ult"), ult) then pt_cfg.use_long_tiles=ult[0]; saveSettings() end
         if pt_cfg.use_long_tiles then
             imgui.Spacing()
             local ltc = new.int(pt_cfg.long_tile_chance)
             pushSliderColorForNorm(pt_cfg.long_tile_chance/50)
-            icoText("PERCENT"); imgui.Text(S("Шанс появления длинных")); imgui.SameLine(0,6)
-            if SpaceSavingSliderInt(S("Шанс"), ltc, 1, 100, S("%d%%"), imgui.GetContentRegionAvail().x) then pt_cfg.long_tile_chance=clamp(ltc[0],1,100); saveSettings() end
+            icoText("PERCENT"); imgui.Text(S("РЁР°РЅСЃ РїРѕСЏРІР»РµРЅРёСЏ РґР»РёРЅРЅС‹С…")); imgui.SameLine(0,6)
+            if SpaceSavingSliderInt(S("РЁР°РЅСЃ"), ltc, 1, 100, S("%d%%"), imgui.GetContentRegionAvail().x) then pt_cfg.long_tile_chance=clamp(ltc[0],1,100); saveSettings() end
             popSliderColor()
             imgui.Spacing()
             local lh = new.int(pt_cfg.long_tile_hits)
             pushSliderColorForNorm((pt_cfg.long_tile_hits-1)/(10-1))
-            icoText("HAND_POINTER"); imgui.Text(S("Попаданий до исчезновения")); imgui.SameLine(0,6)
-            if SpaceSavingSliderInt(S("Попаданий"), lh, 1, 10, S("%d"), imgui.GetContentRegionAvail().x) then pt_cfg.long_tile_hits=clamp(lh[0],1,10); saveSettings() end
+            icoText("HAND_POINTER"); imgui.Text(S("РџРѕРїР°РґР°РЅРёР№ РґРѕ РёСЃС‡РµР·РЅРѕРІРµРЅРёСЏ")); imgui.SameLine(0,6)
+            if SpaceSavingSliderInt(S("РџРѕРїР°РґР°РЅРёР№"), lh, 1, 10, S("%d"), imgui.GetContentRegionAvail().x) then pt_cfg.long_tile_hits=clamp(lh[0],1,10); saveSettings() end
             popSliderColor()
         end
         imgui.Spacing()
         local asi = new.bool(pt_cfg.auto_speed_increase)
-        if imgui.Checkbox(S("  Авто-ускорение##asi"), asi) then pt_cfg.auto_speed_increase=asi[0]; saveSettings() end
+        if imgui.Checkbox(S("  РђРІС‚Рѕ-СѓСЃРєРѕСЂРµРЅРёРµ##asi"), asi) then pt_cfg.auto_speed_increase=asi[0]; saveSettings() end
         if pt_cfg.auto_speed_increase then
             imgui.Spacing()
             local sir = new.float(pt_cfg.speed_increase_rate)
             pushSliderColorForNorm((pt_cfg.speed_increase_rate-0.001)/(0.1-0.001))
-            icoText("ARROW_TREND_UP"); imgui.Text(S("Скорость роста")); imgui.SameLine(0,6)
-            if SpaceSavingSliderFloat(S("Рост"), sir, 0.001, 0.1, S("%.3f"), imgui.GetContentRegionAvail().x) then pt_cfg.speed_increase_rate=clamp(sir[0],0.001,0.1); saveSettings() end
+            icoText("ARROW_TREND_UP"); imgui.Text(S("РЎРєРѕСЂРѕСЃС‚СЊ СЂРѕСЃС‚Р°")); imgui.SameLine(0,6)
+            if SpaceSavingSliderFloat(S("Р РѕСЃС‚"), sir, 0.001, 0.1, S("%.3f"), imgui.GetContentRegionAvail().x) then pt_cfg.speed_increase_rate=clamp(sir[0],0.001,0.1); saveSettings() end
             popSliderColor(); imgui.Spacing()
             local sim = new.float(pt_cfg.speed_increase_max)
             pushSliderColorForNorm((pt_cfg.speed_increase_max-0.0001)/(8.0-0.0001))
-            icoText("FORWARD"); imgui.Text(S("Макс. скорость")); imgui.SameLine(0,6)
-            if SpaceSavingSliderFloat(S("Макс. скорость"), sim, 0.0001, 8.0, S("%.4f"), imgui.GetContentRegionAvail().x) then pt_cfg.speed_increase_max=clamp(sim[0],0.0001,8.0); saveSettings() end
+            icoText("FORWARD"); imgui.Text(S("РњР°РєСЃ. СЃРєРѕСЂРѕСЃС‚СЊ")); imgui.SameLine(0,6)
+            if SpaceSavingSliderFloat(S("РњР°РєСЃ. СЃРєРѕСЂРѕСЃС‚СЊ"), sim, 0.0001, 8.0, S("%.4f"), imgui.GetContentRegionAvail().x) then pt_cfg.speed_increase_max=clamp(sim[0],0.0001,8.0); saveSettings() end
             popSliderColor(); imgui.Spacing()
         end
         local por = new.bool(pt_cfg.pause_on_reload)
-        if imgui.Checkbox(S("  Пауза при перезарядке##por"), por) then pt_cfg.pause_on_reload=por[0]; saveSettings() end
+        if imgui.Checkbox(S("  РџР°СѓР·Р° РїСЂРё РїРµСЂРµР·Р°СЂСЏРґРєРµ##por"), por) then pt_cfg.pause_on_reload=por[0]; saveSettings() end
         if pt_cfg.pause_on_reload then
             imgui.Spacing()
             local rpd = new.float(pt_cfg.reload_pause_duration)
             pushSliderColorForNorm((pt_cfg.reload_pause_duration-0.0001)/(10.0-0.0001))
-            icoText("HOURGLASS_HALF"); imgui.Text(S("Длительность паузы")); imgui.SameLine(0,6)
-            if SpaceSavingSliderFloat(S("Пауза"), rpd, 0.0001, 10.0, S("%.4f с"), imgui.GetContentRegionAvail().x) then pt_cfg.reload_pause_duration=clamp(rpd[0],0.0001,10.0); saveSettings() end
+            icoText("HOURGLASS_HALF"); imgui.Text(S("Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РїР°СѓР·С‹")); imgui.SameLine(0,6)
+            if SpaceSavingSliderFloat(S("РџР°СѓР·Р°"), rpd, 0.0001, 10.0, S("%.4f СЃ"), imgui.GetContentRegionAvail().x) then pt_cfg.reload_pause_duration=clamp(rpd[0],0.0001,10.0); saveSettings() end
             popSliderColor()
         end
     end
     local function renderTab_Sound()
         imgui.Spacing()
-        sectionHeader("MUSIC", "ИСТОЧНИК ЗВУКА")
+        sectionHeader("MUSIC", "РРЎРўРћР§РќРРљ Р—Р’РЈРљРђ")
         local rm = new.bool(pt_cfg.radio_mode)
-        if imgui.Checkbox(S("  Радио-режим##rm"), rm) then pt_cfg.radio_mode=rm[0]; saveSettings() end
+        if imgui.Checkbox(S("  Р Р°РґРёРѕ-СЂРµР¶РёРј##rm"), rm) then pt_cfg.radio_mode=rm[0]; saveSettings() end
         imgui.Spacing()
         if pt_cfg.radio_mode then
             local names = {}
             for i,st in ipairs(pt_cfg.radio_stations) do names[i]=st.name end
             imgui.SetNextItemWidth(-1)
-            local curName = names[pt_selectedRadioIndex] or S("Выберите станцию")
+            local curName = names[pt_selectedRadioIndex] or S("Р’С‹Р±РµСЂРёС‚Рµ СЃС‚Р°РЅС†РёСЋ")
             if imgui.BeginCombo(S("##radiocombo"), S(curName)) then
                 for i,name in ipairs(names) do
                     local sel = (i==pt_selectedRadioIndex)
@@ -24644,7 +24644,7 @@ imgui.OnFrame(
                             radioPlaybackWanted = true
                             local ok = restartSelectedPianoTilesMusic()
                             if not ok then
-                                sendChat(S("Не удалось подключиться к радиостанции. Повторная попытка будет выполнена автоматически."), -1)
+                                sendChat(S("РќРµ СѓРґР°Р»РѕСЃСЊ РїРѕРґРєР»СЋС‡РёС‚СЊСЃСЏ Рє СЂР°РґРёРѕСЃС‚Р°РЅС†РёРё. РџРѕРІС‚РѕСЂРЅР°СЏ РїРѕРїС‹С‚РєР° Р±СѓРґРµС‚ РІС‹РїРѕР»РЅРµРЅР° Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё."), -1)
                             end
                         end
                     end
@@ -24656,10 +24656,10 @@ imgui.OnFrame(
             if #pt_songsList == 0 then
                 imgui.Spacing()
                 icoText("CIRCLE_EXCLAMATION")
-                imgui.TextDisabled(S("Нет песен — поместите файлы в:")); CBUGER_MarqueeLabel(S("moonloader\\CBUGER PRO\\PianoTiles\\song"), 240)
+                imgui.TextDisabled(S("РќРµС‚ РїРµСЃРµРЅ вЂ” РїРѕРјРµСЃС‚РёС‚Рµ С„Р°Р№Р»С‹ РІ:")); CBUGER_MarqueeLabel(S("moonloader\\CBUGER PRO\\PianoTiles\\song"), 240)
             else
                 icoText("FOLDER_OPEN")
-                imgui.Text(S("Треки:")); CBUGER_MarqueeLabel(S("moonloader\\CBUGER PRO\\PianoTiles\\song"), 240)
+                imgui.Text(S("РўСЂРµРєРё:")); CBUGER_MarqueeLabel(S("moonloader\\CBUGER PRO\\PianoTiles\\song"), 240)
                 imgui.Spacing()
                 if imgui.BeginChild(S("##songlistbox"), imgui.ImVec2(-1, 150), true) then
                     for i, rec in ipairs(pt_songsList) do
@@ -24678,12 +24678,12 @@ imgui.OnFrame(
                 end
             end
         end
-        sectionHeader("VOLUME_HIGH", "ГРОМКОСТЬ")
+        sectionHeader("VOLUME_HIGH", "Р“Р РћРњРљРћРЎРўР¬")
         local vol_norm = pt_cfg.volume_percent/100
         pushSliderColorForNorm(vol_norm)
         local vol = new.int(pt_cfg.volume_percent)
-        icoText("VOLUME_HIGH"); imgui.Text(S("Громкость")); imgui.SameLine(0,6)
-        if SpaceSavingSliderInt(S("Громкость"), vol, 0, 100, S("%d%%"), imgui.GetContentRegionAvail().x) then setMusicVolumePercent(vol[0]) end
+        icoText("VOLUME_HIGH"); imgui.Text(S("Р“СЂРѕРјРєРѕСЃС‚СЊ")); imgui.SameLine(0,6)
+        if SpaceSavingSliderInt(S("Р“СЂРѕРјРєРѕСЃС‚СЊ"), vol, 0, 100, S("%d%%"), imgui.GetContentRegionAvail().x) then setMusicVolumePercent(vol[0]) end
         popSliderColor()
         imgui.Spacing()
         local isPlaying = pt_musicPlaying
@@ -24691,15 +24691,15 @@ imgui.OnFrame(
         imgui.PushStyleColor(imgui.Col.ButtonHovered,  isPlaying and PT_ac(0.48, 1.0) or PT_ac(0.78, 1.0))
         imgui.PushStyleColor(imgui.Col.ButtonActive,   isPlaying and PT_ac(0.42, 1.0) or PT_ac(0.42, 1.0))
         local playIco = (fa and fa_font_small2) and (getIcon(isPlaying and "STOP" or "PLAY").." ") or ""
-        local playTxt = playIco..(isPlaying and S("Остановить музыку") or S("Воспроизвести"))
+        local playTxt = playIco..(isPlaying and S("РћСЃС‚Р°РЅРѕРІРёС‚СЊ РјСѓР·С‹РєСѓ") or S("Р’РѕСЃРїСЂРѕРёР·РІРµСЃС‚Рё"))
         if fa and fa_font_small2 then imgui.PushFont(fa_font_small2) end
         if imgui.Button(playTxt, imgui.ImVec2(-1, 30)) then
             if isPlaying then stopMusic()
             else
                 if pt_selectedSongPath and pt_selectedSongPath ~= "" then
                     local ok = openAndPlayMusic(pt_selectedSongPath, true)
-                    if not ok then sendChat(S("Ошибка воспроизведения."), -1) end
-                else sendChat(S("Сначала выберите песню или радиостанцию."), -1) end
+                    if not ok then sendChat(S("РћС€РёР±РєР° РІРѕСЃРїСЂРѕРёР·РІРµРґРµРЅРёСЏ."), -1) end
+                else sendChat(S("РЎРЅР°С‡Р°Р»Р° РІС‹Р±РµСЂРёС‚Рµ РїРµСЃРЅСЋ РёР»Рё СЂР°РґРёРѕСЃС‚Р°РЅС†РёСЋ."), -1) end
             end
         end
         if fa and fa_font_small2 then imgui.PopFont() end
@@ -24707,13 +24707,13 @@ imgui.OnFrame(
     end
     local function renderTab_Textures()
         imgui.Spacing()
-        sectionHeader("IMAGE", "ФОНЫ И ТЕКСТУРЫ")
+        sectionHeader("IMAGE", "Р¤РћРќР« Р РўР•РљРЎРўРЈР Р«")
         local function bgImageCombo2(label, currentPath, callback)
-            local currentName = S("Нет (цвет)")
+            local currentName = S("РќРµС‚ (С†РІРµС‚)")
             for _, rec in ipairs(pt_bgImages) do if rec.path==currentPath then currentName=S(rec.name); break end end
             imgui.SetNextItemWidth(-1)
             if CBUGER_MarqueeBeginCombo(label, currentName) then
-                if imgui.Selectable(S("Нет (цвет)"), currentPath=="" or currentPath==nil) then callback(""); saveSettings() end
+                if imgui.Selectable(S("РќРµС‚ (С†РІРµС‚)"), currentPath=="" or currentPath==nil) then callback(""); saveSettings() end
                 for _, rec in ipairs(pt_bgImages) do
                     if CBUGER_MarqueeSelectable(S(rec.name), "ptimg2_" .. tostring(rec.path), currentPath==rec.path) then callback(rec.path); saveSettings() end
                 end
@@ -24721,69 +24721,69 @@ imgui.OnFrame(
             end
         end
         local function tileImageCombo2(label, currentPath, callback)
-            local currentName = S("Нет (цвет)")
+            local currentName = S("РќРµС‚ (С†РІРµС‚)")
             for _, rec in ipairs(pt_tileImages) do if rec.path==currentPath then currentName=S(rec.name); break end end
             imgui.SetNextItemWidth(-1)
             if CBUGER_MarqueeBeginCombo(label, currentName) then
-                if imgui.Selectable(S("Нет (цвет)"), currentPath=="" or currentPath==nil) then callback(""); saveSettings() end
+                if imgui.Selectable(S("РќРµС‚ (С†РІРµС‚)"), currentPath=="" or currentPath==nil) then callback(""); saveSettings() end
                 for _, rec in ipairs(pt_tileImages) do
                     if CBUGER_MarqueeSelectable(S(rec.name), "ptimg2_" .. tostring(rec.path), currentPath==rec.path) then callback(rec.path); saveSettings() end
                 end
                 imgui.EndCombo()
             end
         end
-        icoText("IMAGE"); imgui.Text(S("Фон сетки:")); imgui.Spacing()
+        icoText("IMAGE"); imgui.Text(S("Р¤РѕРЅ СЃРµС‚РєРё:")); imgui.Spacing()
         bgImageCombo2(S("##bgimg"), pt_cfg.bg_selected, function(p) pt_cfg.bg_selected=p end)
         imgui.Spacing()
-        sectionHeader("PUZZLE_PIECE", "ИЗОБРАЖЕНИЯ ПЛИТОК")
-        icoText("PUZZLE_PIECE"); imgui.Text(S("Изображение плитки:")); imgui.Spacing()
+        sectionHeader("PUZZLE_PIECE", "РР—РћР‘Р РђР–Р•РќРРЇ РџР›РРўРћРљ")
+        icoText("PUZZLE_PIECE"); imgui.Text(S("РР·РѕР±СЂР°Р¶РµРЅРёРµ РїР»РёС‚РєРё:")); imgui.Spacing()
         tileImageCombo2(S("##tileimg_n"), pt_cfg.normal_tile_img, function(p) pt_cfg.normal_tile_img=p end)
         imgui.Spacing()
         if #pt_tileImages == 0 then
             imgui.PushStyleColor(imgui.Col.Text, PT_ac_text(1.000, 1.000))
             icoText("FOLDER_OPEN")
-            imgui.TextWrapped(S("Папка pt_tiles пуста. Поместите PNG/JPG в:"))
+            imgui.TextWrapped(S("РџР°РїРєР° pt_tiles РїСѓСЃС‚Р°. РџРѕРјРµСЃС‚РёС‚Рµ PNG/JPG РІ:"))
             CBUGER_MarqueeLabel(S("moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles"), 240)
             imgui.PopStyleColor()
         end
-        imgui.TextDisabled(S("Список обновляется автоматически."))
+        imgui.TextDisabled(S("РЎРїРёСЃРѕРє РѕР±РЅРѕРІР»СЏРµС‚СЃСЏ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё."))
         imgui.Spacing()
         local rti = new.bool(pt_cfg.random_tile_image)
-        if imgui.Checkbox(S("  Случайные изображения##rti"), rti) then pt_cfg.random_tile_image=rti[0]; saveSettings() end
-        if imgui.IsItemHovered() then imgui.SetTooltip(S("Каждая новая плитка получает случайное\nизображение из папки moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles")) end
+        if imgui.Checkbox(S("  РЎР»СѓС‡Р°Р№РЅС‹Рµ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ##rti"), rti) then pt_cfg.random_tile_image=rti[0]; saveSettings() end
+        if imgui.IsItemHovered() then imgui.SetTooltip(S("РљР°Р¶РґР°СЏ РЅРѕРІР°СЏ РїР»РёС‚РєР° РїРѕР»СѓС‡Р°РµС‚ СЃР»СѓС‡Р°Р№РЅРѕРµ\nРёР·РѕР±СЂР°Р¶РµРЅРёРµ РёР· РїР°РїРєРё moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles")) end
         if pt_cfg.random_tile_image and #pt_tileImages == 0 then
-            imgui.SameLine(0, 8); imgui.TextColored(PT_ac_text(1.0, 1.0), S("(нет файлов в pt_tiles)"))
+            imgui.SameLine(0, 8); imgui.TextColored(PT_ac_text(1.0, 1.0), S("(РЅРµС‚ С„Р°Р№Р»РѕРІ РІ pt_tiles)"))
         end
-        sectionHeader("DROPLET", "ЦВЕТ И ИКОНКИ")
+        sectionHeader("DROPLET", "Р¦Р’Р•Рў Р РРљРћРќРљР")
         local clrBtnIco = (fa and fa_font_small2) and (getIcon("DROPLET").." ") or ""
         if fa and fa_font_small2 then imgui.PushFont(fa_font_small2) end
-        if imgui.Button(clrBtnIco..S("Настройки цветов##clrbtn"), imgui.ImVec2(-1, 28)) then imgui.OpenPopup(S("ColorSettingsPopup")) end
+        if imgui.Button(clrBtnIco..S("РќР°СЃС‚СЂРѕР№РєРё С†РІРµС‚РѕРІ##clrbtn"), imgui.ImVec2(-1, 28)) then imgui.OpenPopup(S("ColorSettingsPopup")) end
         if fa and fa_font_small2 then imgui.PopFont() end
         if imgui.BeginPopup(S("ColorSettingsPopup")) then
-            imgui.Text(S("--- Цвет плиток ---")); imgui.Spacing()
+            imgui.Text(S("--- Р¦РІРµС‚ РїР»РёС‚РѕРє ---")); imgui.Spacing()
             local t_c = new.float[4](pt_cfg.tile_color[1],pt_cfg.tile_color[2],pt_cfg.tile_color[3],pt_cfg.tile_color[4])
-            if imgui.ColorEdit4(S("Базовый цвет плитки"), t_c, imgui.ColorEditFlags.AlphaBar) then
+            if imgui.ColorEdit4(S("Р‘Р°Р·РѕРІС‹Р№ С†РІРµС‚ РїР»РёС‚РєРё"), t_c, imgui.ColorEditFlags.AlphaBar) then
                 pt_cfg.tile_color[1],pt_cfg.tile_color[2],pt_cfg.tile_color[3],pt_cfg.tile_color[4]=t_c[0],t_c[1],t_c[2],t_c[3]; saveSettings()
             end
             local r_c = new.bool(pt_cfg.random_tile_color)
-            if imgui.Checkbox(S("Случайный цвет плиток"), r_c) then pt_cfg.random_tile_color=r_c[0]; saveSettings() end
+            if imgui.Checkbox(S("РЎР»СѓС‡Р°Р№РЅС‹Р№ С†РІРµС‚ РїР»РёС‚РѕРє"), r_c) then pt_cfg.random_tile_color=r_c[0]; saveSettings() end
             if pt_cfg.random_tile_color then
                 imgui.Spacing()
                 local rci = new.float(pt_cfg.random_tile_color_interval)
                 pushSliderColorForNorm((pt_cfg.random_tile_color_interval-0.2)/(10.0-0.2))
-                if SpaceSavingSliderFloat(S("Интервал плиток"), rci, 0.2, 10.0, S("%.1f сек"), 200) then
+                if SpaceSavingSliderFloat(S("РРЅС‚РµСЂРІР°Р» РїР»РёС‚РѕРє"), rci, 0.2, 10.0, S("%.1f СЃРµРє"), 200) then
                     pt_cfg.random_tile_color_interval=clamp(rci[0],0.2,10.0); saveSettings()
                 end
                 popSliderColor()
             end
             imgui.Spacing()
             local coh = new.bool(pt_cfg.color_on_hit)
-            if imgui.Checkbox(S("Менять цвет при попадании##coh"), coh) then pt_cfg.color_on_hit=coh[0]; saveSettings() end
+            if imgui.Checkbox(S("РњРµРЅСЏС‚СЊ С†РІРµС‚ РїСЂРё РїРѕРїР°РґР°РЅРёРё##coh"), coh) then pt_cfg.color_on_hit=coh[0]; saveSettings() end
             if pt_cfg.color_on_hit then
                 imgui.Spacing()
                 local hc = pt_cfg.hit_tile_color
                 local h_c = new.float[4](hc[1],hc[2],hc[3],hc[4] or 1.0)
-                if imgui.ColorEdit4(S("Цвет при попадании"), h_c, imgui.ColorEditFlags.AlphaBar) then
+                if imgui.ColorEdit4(S("Р¦РІРµС‚ РїСЂРё РїРѕРїР°РґР°РЅРёРё"), h_c, imgui.ColorEditFlags.AlphaBar) then
                     pt_cfg.hit_tile_color[1]=h_c[0]; pt_cfg.hit_tile_color[2]=h_c[1]
                     pt_cfg.hit_tile_color[3]=h_c[2]; pt_cfg.hit_tile_color[4]=h_c[3]; saveSettings()
                 end
@@ -24792,7 +24792,7 @@ imgui.OnFrame(
             local bg_c = new.float[4](pt_cfg.grid_bg[1],pt_cfg.grid_bg[2],pt_cfg.grid_bg[3],pt_cfg.grid_bg[4])
             if imgui.ColorButton(S("##gridbg_btn"), imgui.ImVec4(pt_cfg.grid_bg[1],pt_cfg.grid_bg[2],pt_cfg.grid_bg[3],pt_cfg.grid_bg[4]),
                 imgui.ColorEditFlags.AlphaPreview, imgui.ImVec2(18,18)) then imgui.OpenPopup(S("BgColorPicker")) end
-            imgui.SameLine(0,6); imgui.Text(S("Цвет фона"))
+            imgui.SameLine(0,6); imgui.Text(S("Р¦РІРµС‚ С„РѕРЅР°"))
             if imgui.BeginPopup(S("BgColorPicker")) then
                 if imgui.ColorPicker4(S("##gridbg_pick"), bg_c,
                     imgui.ColorEditFlags.AlphaBar+imgui.ColorEditFlags.NoSidePreview+imgui.ColorEditFlags.PickerHueBar) then
@@ -24801,24 +24801,24 @@ imgui.OnFrame(
                 imgui.EndPopup()
             end
             local cycleEnabled = new.bool(pt_cfg.grid_color_cycle_enabled)
-            if imgui.Checkbox(S("Случайная смена цвета фона"), cycleEnabled) then pt_cfg.grid_color_cycle_enabled=cycleEnabled[0]; saveSettings() end
+            if imgui.Checkbox(S("РЎР»СѓС‡Р°Р№РЅР°СЏ СЃРјРµРЅР° С†РІРµС‚Р° С„РѕРЅР°"), cycleEnabled) then pt_cfg.grid_color_cycle_enabled=cycleEnabled[0]; saveSettings() end
             if pt_cfg.grid_color_cycle_enabled then
                 imgui.Spacing()
                 local gci = new.float(pt_cfg.grid_color_cycle_interval)
                 pushSliderColorForNorm((pt_cfg.grid_color_cycle_interval-1)/(60-1))
-                if SpaceSavingSliderFloat(S("Интервал фона"), gci, 1.0, 60.0, S("%.1f сек"), 200) then
+                if SpaceSavingSliderFloat(S("РРЅС‚РµСЂРІР°Р» С„РѕРЅР°"), gci, 1.0, 60.0, S("%.1f СЃРµРє"), 200) then
                     pt_cfg.grid_color_cycle_interval=clamp(gci[0],1.0,60.0); saveSettings()
                 end
                 popSliderColor()
             end
-            imgui.Separator(); imgui.Text(S("--- FA-иконки ---")); imgui.Spacing()
+            imgui.Separator(); imgui.Text(S("--- FA-РёРєРѕРЅРєРё ---")); imgui.Spacing()
             local rfa_c = new.bool(pt_cfg.random_fa_color)
-            if imgui.Checkbox(S("Случайный цвет иконок##rfa_en"), rfa_c) then pt_cfg.random_fa_color=rfa_c[0]; saveSettings() end
+            if imgui.Checkbox(S("РЎР»СѓС‡Р°Р№РЅС‹Р№ С†РІРµС‚ РёРєРѕРЅРѕРє##rfa_en"), rfa_c) then pt_cfg.random_fa_color=rfa_c[0]; saveSettings() end
             if pt_cfg.random_fa_color then
                 imgui.Spacing()
                 local rfi = new.float(pt_cfg.random_fa_color_interval)
                 pushSliderColorForNorm((pt_cfg.random_fa_color_interval-0.2)/(10.0-0.2))
-                if SpaceSavingSliderFloat(S("Интервал иконок"), rfi, 0.2, 10.0, S("%.1f сек"), 200) then
+                if SpaceSavingSliderFloat(S("РРЅС‚РµСЂРІР°Р» РёРєРѕРЅРѕРє"), rfi, 0.2, 10.0, S("%.1f СЃРµРє"), 200) then
                     pt_cfg.random_fa_color_interval=clamp(rfi[0],0.2,10.0); saveSettings()
                 end
                 popSliderColor()
@@ -24828,13 +24828,13 @@ imgui.OnFrame(
         imgui.Spacing()
         if fa then
             local fa_en = new.bool(pt_cfg.use_fa_icons)
-            if imgui.Checkbox(S("  FA-иконки на плитках##fa_tiles_en"), fa_en) then pt_cfg.use_fa_icons=fa_en[0]; saveSettings() end
+            if imgui.Checkbox(S("  FA-РёРєРѕРЅРєРё РЅР° РїР»РёС‚РєР°С…##fa_tiles_en"), fa_en) then pt_cfg.use_fa_icons=fa_en[0]; saveSettings() end
             imgui.Spacing()
             renderFaPreviewBox(); imgui.SameLine(0,12); imgui.BeginGroup()
             if iconComboWithPreview("fa_tile", pt_cfg) then saveSettings() end
             imgui.Spacing()
             if fa_font_small2 then imgui.PushFont(fa_font_small2) end
-            if imgui.Button(getIcon("DROPLET").." "..S("Цвет иконки##fa_col_btn"), imgui.ImVec2(-1,26)) then imgui.OpenPopup(S("FAIconColorPopup")) end
+            if imgui.Button(getIcon("DROPLET").." "..S("Р¦РІРµС‚ РёРєРѕРЅРєРё##fa_col_btn"), imgui.ImVec2(-1,26)) then imgui.OpenPopup(S("FAIconColorPopup")) end
             if fa_font_small2 then imgui.PopFont() end
             if imgui.BeginPopup(S("FAIconColorPopup")) then
                 local fa_c = new.float[4](pt_cfg.tile_fa_color[1],pt_cfg.tile_fa_color[2],pt_cfg.tile_fa_color[3],pt_cfg.tile_fa_color[4])
@@ -24842,61 +24842,61 @@ imgui.OnFrame(
                     imgui.ColorEditFlags.AlphaBar+imgui.ColorEditFlags.NoSidePreview+imgui.ColorEditFlags.PickerHueBar) then
                     pt_cfg.tile_fa_color[1],pt_cfg.tile_fa_color[2],pt_cfg.tile_fa_color[3],pt_cfg.tile_fa_color[4]=fa_c[0],fa_c[1],fa_c[2],fa_c[3]; saveSettings()
                 end
-                if imgui.Button(S("Сбросить##fa_color_reset")) then pt_cfg.tile_fa_color={1.0,1.0,1.0,1.0}; saveSettings() end
+                if imgui.Button(S("РЎР±СЂРѕСЃРёС‚СЊ##fa_color_reset")) then pt_cfg.tile_fa_color={1.0,1.0,1.0,1.0}; saveSettings() end
                 imgui.EndPopup()
             end
             imgui.Spacing()
             local rfi_icon = new.bool(pt_cfg.random_fa_icon)
-            if imgui.Checkbox(S("  Случайная иконка##rfa_icon_en"), rfi_icon) then pt_cfg.random_fa_icon=rfi_icon[0]; saveSettings() end
+            if imgui.Checkbox(S("  РЎР»СѓС‡Р°Р№РЅР°СЏ РёРєРѕРЅРєР°##rfa_icon_en"), rfi_icon) then pt_cfg.random_fa_icon=rfi_icon[0]; saveSettings() end
             if pt_cfg.random_fa_icon then
                 imgui.Spacing()
                 local rfii = new.float(pt_cfg.random_fa_icon_interval)
                 pushSliderColorForNorm((pt_cfg.random_fa_icon_interval-0.2)/(10.0-0.2))
-                icoText("CLOCK_ROTATE_LEFT"); imgui.Text(S("Интервал смены")); imgui.SameLine(0,6)
-                if SpaceSavingSliderFloat(S("Интервал смены иконки"), rfii, 0.2, 10.0, S("%.1f сек"), imgui.GetContentRegionAvail().x) then
+                icoText("CLOCK_ROTATE_LEFT"); imgui.Text(S("РРЅС‚РµСЂРІР°Р» СЃРјРµРЅС‹")); imgui.SameLine(0,6)
+                if SpaceSavingSliderFloat(S("РРЅС‚РµСЂРІР°Р» СЃРјРµРЅС‹ РёРєРѕРЅРєРё"), rfii, 0.2, 10.0, S("%.1f СЃРµРє"), imgui.GetContentRegionAvail().x) then
                     pt_cfg.random_fa_icon_interval=clamp(rfii[0],0.2,10.0); saveSettings()
                 end
                 popSliderColor()
             end
             imgui.EndGroup()
         else
-            imgui.TextDisabled(S("FA-иконки недоступны — не найдена библиотека"))
+            imgui.TextDisabled(S("FA-РёРєРѕРЅРєРё РЅРµРґРѕСЃС‚СѓРїРЅС‹ вЂ” РЅРµ РЅР°Р№РґРµРЅР° Р±РёР±Р»РёРѕС‚РµРєР°"))
         end
     end
     local function renderTab_Crosshair()
         imgui.Spacing()
-        sectionHeader("CROSSHAIRS", "НАСТРОЙКИ ПРИЦЕЛА")
+        sectionHeader("CROSSHAIRS", "РќРђРЎРўР РћР™РљР РџР РР¦Р•Р›Рђ")
         local cr_en = new.bool(pt_cfg.crosshair_enabled)
-        if imgui.Checkbox(S("  Включить прицел##cr_en"), cr_en) then pt_cfg.crosshair_enabled=cr_en[0]; saveSettings() end
+        if imgui.Checkbox(S("  Р’РєР»СЋС‡РёС‚СЊ РїСЂРёС†РµР»##cr_en"), cr_en) then pt_cfg.crosshair_enabled=cr_en[0]; saveSettings() end
         imgui.Spacing()
         renderCrossPreviewBox(); imgui.SameLine(0,12); imgui.BeginGroup()
         local cr_sz = new.int(pt_cfg.crosshair_size)
         pushSliderColorForNorm((pt_cfg.crosshair_size-2)/(30-2))
-        icoText("UP_RIGHT_AND_DOWN_LEFT_FROM_CENTER"); imgui.Text(S("Размер")); imgui.SameLine(0,6)
-        if SpaceSavingSliderInt(S("Размер"), cr_sz, 2, 30, S("%d px"), imgui.GetContentRegionAvail().x) then pt_cfg.crosshair_size=clamp(cr_sz[0],2,30); saveSettings() end
+        icoText("UP_RIGHT_AND_DOWN_LEFT_FROM_CENTER"); imgui.Text(S("Р Р°Р·РјРµСЂ")); imgui.SameLine(0,6)
+        if SpaceSavingSliderInt(S("Р Р°Р·РјРµСЂ"), cr_sz, 2, 30, S("%d px"), imgui.GetContentRegionAvail().x) then pt_cfg.crosshair_size=clamp(cr_sz[0],2,30); saveSettings() end
         popSliderColor(); imgui.Spacing()
         local cr_gap = new.int(pt_cfg.crosshair_gap)
         pushSliderColorForNorm(pt_cfg.crosshair_gap/15)
-        icoText("LEFT_RIGHT"); imgui.Text(S("Зазор")); imgui.SameLine(0,6)
-        if SpaceSavingSliderInt(S("Зазор"), cr_gap, 0, 15, S("%d px"), imgui.GetContentRegionAvail().x) then pt_cfg.crosshair_gap=clamp(cr_gap[0],0,15); saveSettings() end
+        icoText("LEFT_RIGHT"); imgui.Text(S("Р—Р°Р·РѕСЂ")); imgui.SameLine(0,6)
+        if SpaceSavingSliderInt(S("Р—Р°Р·РѕСЂ"), cr_gap, 0, 15, S("%d px"), imgui.GetContentRegionAvail().x) then pt_cfg.crosshair_gap=clamp(cr_gap[0],0,15); saveSettings() end
         popSliderColor(); imgui.Spacing()
         local cr_th = new.int(pt_cfg.crosshair_thick)
         pushSliderColorForNorm((pt_cfg.crosshair_thick-1)/(8-1))
-        icoText("MINUS"); imgui.Text(S("Толщина")); imgui.SameLine(0,6)
-        if SpaceSavingSliderInt(S("Толщина"), cr_th, 1, 8, S("%d px"), imgui.GetContentRegionAvail().x) then pt_cfg.crosshair_thick=clamp(cr_th[0],1,8); saveSettings() end
+        icoText("MINUS"); imgui.Text(S("РўРѕР»С‰РёРЅР°")); imgui.SameLine(0,6)
+        if SpaceSavingSliderInt(S("РўРѕР»С‰РёРЅР°"), cr_th, 1, 8, S("%d px"), imgui.GetContentRegionAvail().x) then pt_cfg.crosshair_thick=clamp(cr_th[0],1,8); saveSettings() end
         popSliderColor(); imgui.Spacing()
         local cr_out = new.bool(pt_cfg.crosshair_outline)
-        if imgui.Checkbox(S("  Обводка##cr_out"), cr_out) then pt_cfg.crosshair_outline=cr_out[0]; saveSettings() end
+        if imgui.Checkbox(S("  РћР±РІРѕРґРєР°##cr_out"), cr_out) then pt_cfg.crosshair_outline=cr_out[0]; saveSettings() end
         if pt_cfg.crosshair_outline then
             imgui.SameLine(0,8)
             local cr_opx = new.int(pt_cfg.crosshair_outline_px)
             pushSliderColorForNorm((pt_cfg.crosshair_outline_px-1)/(6-1))
-            if SpaceSavingSliderInt(S("Обводка"), cr_opx, 1, 6, S("%d px"), 80) then pt_cfg.crosshair_outline_px=clamp(cr_opx[0],1,6); saveSettings() end
+            if SpaceSavingSliderInt(S("РћР±РІРѕРґРєР°"), cr_opx, 1, 6, S("%d px"), 80) then pt_cfg.crosshair_outline_px=clamp(cr_opx[0],1,6); saveSettings() end
             popSliderColor()
         end
         imgui.SameLine(0,14)
         local cr_dot = new.bool(pt_cfg.crosshair_dot)
-        if imgui.Checkbox(S("  Точка##cr_dot"), cr_dot) then pt_cfg.crosshair_dot=cr_dot[0]; saveSettings() end
+        if imgui.Checkbox(S("  РўРѕС‡РєР°##cr_dot"), cr_dot) then pt_cfg.crosshair_dot=cr_dot[0]; saveSettings() end
         imgui.Spacing()
         local curOX = pt_cfg.crosshair_offset_x or 0
         local curOY = pt_cfg.crosshair_offset_y or 0
@@ -24904,17 +24904,17 @@ imgui.OnFrame(
         imgui.TextDisabled(S(string.format("X=%d  Y=%d px", curOX, curOY)))
         imgui.Spacing()
         if fa and fa_font_small2 then imgui.PushFont(fa_font_small2) end
-        if imgui.Button(getIcon("ARROWS_UP_DOWN_LEFT_RIGHT").." "..S("Переместить##drag_cr"), imgui.ImVec2(-1,26)) then
+        if imgui.Button(getIcon("ARROWS_UP_DOWN_LEFT_RIGHT").." "..S("РџРµСЂРµРјРµСЃС‚РёС‚СЊ##drag_cr"), imgui.ImVec2(-1,26)) then
             pt_crosshairDragMode=true; pt_windowSettings[0]=false; pcall(sampSetCursorMode, 4)
         end
         imgui.Spacing()
-        if imgui.Button(getIcon("ROTATE_LEFT").." "..S("Сброс позиции##cr_reset_pos"), imgui.ImVec2(-1,26)) then
+        if imgui.Button(getIcon("ROTATE_LEFT").." "..S("РЎР±СЂРѕСЃ РїРѕР·РёС†РёРё##cr_reset_pos"), imgui.ImVec2(-1,26)) then
             pt_cfg.crosshair_offset_x=0; pt_cfg.crosshair_offset_y=0
             _locked_x=nil; _locked_y=nil
             saveSettings()
         end
         imgui.Spacing()
-        if imgui.Button(getIcon("DROPLET").." "..S("Цвет прицела##cr_col_btn"), imgui.ImVec2(-1,26)) then imgui.OpenPopup(S("CRColorPopup")) end
+        if imgui.Button(getIcon("DROPLET").." "..S("Р¦РІРµС‚ РїСЂРёС†РµР»Р°##cr_col_btn"), imgui.ImVec2(-1,26)) then imgui.OpenPopup(S("CRColorPopup")) end
         if fa and fa_font_small2 then imgui.PopFont() end
         if imgui.BeginPopup(S("CRColorPopup")) then
             local cr_c = new.float[4](pt_cfg.crosshair_color[1],pt_cfg.crosshair_color[2],pt_cfg.crosshair_color[3],pt_cfg.crosshair_color[4])
@@ -26395,7 +26395,7 @@ local function drawCenter(dl,cx,cy,scale,dt)
         at(ccx-sz1.x*0.5+1,ccy-sz1.y-1,col(0,0,0,150),l1)
         at(ccx-sz1.x*0.5,ccy-sz1.y-1,col(255,100,100,255),l1)
         local showConflict = S.bind_conflict and (os.clock() - bind_conflict_msg_time) < 1.6
-        local l2 = showConflict and u8"< клавиша уже занята >" or u8"< нажмите клавишу >"
+        local l2 = showConflict and u8"< РєР»Р°РІРёС€Р° СѓР¶Рµ Р·Р°РЅСЏС‚Р° >" or u8"< РЅР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ >"
         local sz2=imgui.CalcTextSize(l2)
         at(ccx-sz2.x*0.5+1,ccy+3,col(0,0,0,130),l2)
         if showConflict then
@@ -26782,20 +26782,20 @@ local newFrame = imgui.OnFrame(
                         imgui.PopStyleVar()
                     end
                     draw_p(1, function()
-                        fn.DrawAutoText(u8"Основные настройки", false, true)
+                        fn.DrawAutoText(u8"РћСЃРЅРѕРІРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё", false, true)
                         imgui.Dummy(imgui.ImVec2(0,10))
-                        fn.DrawAutoText(u8"Описание", false, true)
-                        fn.DrawAutoText(u8"Настройте цвета, эффекты и другие параметры в визуальном редакторе.", true, false)
+                        fn.DrawAutoText(u8"РћРїРёСЃР°РЅРёРµ", false, true)
+                        fn.DrawAutoText(u8"РќР°СЃС‚СЂРѕР№С‚Рµ С†РІРµС‚Р°, СЌС„С„РµРєС‚С‹ Рё РґСЂСѓРіРёРµ РїР°СЂР°РјРµС‚СЂС‹ РІ РІРёР·СѓР°Р»СЊРЅРѕРј СЂРµРґР°РєС‚РѕСЂРµ.", true, false)
                         imgui.Dummy(imgui.ImVec2(0,10))
-                        for i = 1, 25 do fn.DrawAutoText(u8"Пример строки # "..i, false, false) end
+                        for i = 1, 25 do fn.DrawAutoText(u8"РџСЂРёРјРµСЂ СЃС‚СЂРѕРєРё # "..i, false, false) end
                     end)
                     draw_p(2, function()
-                        fn.ios_toggle(u8"Привязка по HWID", settings.hwid, main_draw_alpha); imgui.Dummy(imgui.ImVec2(0,15))
-                        fn.ios_slider(u8"Громкость", settings.volume, 0, 1, main_draw_alpha); imgui.Dummy(imgui.ImVec2(0,20))
-                        fn.ios_slider(u8"Яркость", settings.brightness, 0, 1, main_draw_alpha)
+                        fn.ios_toggle(u8"РџСЂРёРІСЏР·РєР° РїРѕ HWID", settings.hwid, main_draw_alpha); imgui.Dummy(imgui.ImVec2(0,15))
+                        fn.ios_slider(u8"Р“СЂРѕРјРєРѕСЃС‚СЊ", settings.volume, 0, 1, main_draw_alpha); imgui.Dummy(imgui.ImVec2(0,20))
+                        fn.ios_slider(u8"РЇСЂРєРѕСЃС‚СЊ", settings.brightness, 0, 1, main_draw_alpha)
                     end)
                     draw_p(3, function()
-                        fn.DrawAutoText(u8"Пусто здесь. Будет заполнено разработчиком.", true, false)
+                        fn.DrawAutoText(u8"РџСѓСЃС‚Рѕ Р·РґРµСЃСЊ. Р‘СѓРґРµС‚ Р·Р°РїРѕР»РЅРµРЅРѕ СЂР°Р·СЂР°Р±РѕС‚С‡РёРєРѕРј.", true, false)
                     end)
                 imgui.EndChild()
                 local scroll_x      = p_min.x+state.window_size.w-12
@@ -26926,18 +26926,18 @@ local newFrame = imgui.OnFrame(
                     end
                 end
                 imgui.SetCursorPos(imgui.ImVec2(15, 20))
-                imgui.TextColored(accentVec4(getTabAccent(), 1.0, 1.0), Fn.T(u8"Редактор стиля"))
+                imgui.TextColored(accentVec4(getTabAccent(), 1.0, 1.0), Fn.T(u8"Р РµРґР°РєС‚РѕСЂ СЃС‚РёР»СЏ"))
                 imgui.SetCursorPos(imgui.ImVec2(15, 50))
                 local tab_w = (ed_s.x-40)/2
                 local active_tab_col   = imgui.ImVec4(fx_cfg.tabs_color[1] or 1, fx_cfg.tabs_color[2] or 1, fx_cfg.tabs_color[3] or 1, 0.6)
                 local inactive_tab_col = accentVec4(getTabAccent(), 0.08, 0.55)
                 imgui.PushStyleColor(imgui.Col.Button, state.editor_tab==1 and active_tab_col or inactive_tab_col)
-                if imgui.Button(Fn.T(u8"Цвета"), imgui.ImVec2(tab_w, 35)) then state.editor_tab=1 end
+                if imgui.Button(Fn.T(u8"Р¦РІРµС‚Р°"), imgui.ImVec2(tab_w, 35)) then state.editor_tab=1 end
                 imgui.PopStyleColor(1)
                 if imgui.IsItemHovered() then fn.set_hand_cursor() end
                 imgui.SameLine(15+tab_w+10)
                 imgui.PushStyleColor(imgui.Col.Button, state.editor_tab==2 and active_tab_col or inactive_tab_col)
-                if imgui.Button(Fn.T(u8"Эффекты"), imgui.ImVec2(tab_w, 35)) then state.editor_tab=2 end
+                if imgui.Button(Fn.T(u8"Р­С„С„РµРєС‚С‹"), imgui.ImVec2(tab_w, 35)) then state.editor_tab=2 end
                 imgui.PopStyleColor(1)
                 if imgui.IsItemHovered() then fn.set_hand_cursor() end
                 imgui.SetCursorPos(imgui.ImVec2(15, 95))
@@ -26947,21 +26947,21 @@ local newFrame = imgui.OnFrame(
                 imgui.BeginChild("##style_scroll", imgui.ImVec2(ed_s.x-30, ed_s.y-110), false)
                     imgui.Indent(10)
                     if state.editor_tab == 1 then
-                        imgui.TextColored(accentVec4(getTabAccent(), 1.0, 1.0), Fn.T(u8"Общие настройки"))
+                        imgui.TextColored(accentVec4(getTabAccent(), 1.0, 1.0), Fn.T(u8"РћР±С‰РёРµ РЅР°СЃС‚СЂРѕР№РєРё"))
                         imgui.Dummy(imgui.ImVec2(0,5))
-                        fn.ios_toggle(u8"Плавное закрытие окна", settings.smooth_close, editor_draw_alpha)
+                        fn.ios_toggle(u8"РџР»Р°РІРЅРѕРµ Р·Р°РєСЂС‹С‚РёРµ РѕРєРЅР°", settings.smooth_close, editor_draw_alpha)
                         imgui.Dummy(imgui.ImVec2(0,5))
-                        if fn.CustomColorPicker(u8"Базовый цвет интерфейса", "global_base", fx_cfg.global_base_color, true, editor_draw_alpha) then
+                        if fn.CustomColorPicker(u8"Р‘Р°Р·РѕРІС‹Р№ С†РІРµС‚ РёРЅС‚РµСЂС„РµР№СЃР°", "global_base", fx_cfg.global_base_color, true, editor_draw_alpha) then
                             fn.ApplyGlobalTheme(fx_cfg.global_base_color[1], fx_cfg.global_base_color[2], fx_cfg.global_base_color[3])
                         end
                         imgui.Dummy(imgui.ImVec2(0,5))
-                        FontCombo(u8"Выбор шрифта", state.current_font_idx)
+                        FontCombo(u8"Р’С‹Р±РѕСЂ С€СЂРёС„С‚Р°", state.current_font_idx)
                         imgui.Dummy(imgui.ImVec2(0,10)); imgui.Separator(); imgui.Dummy(imgui.ImVec2(0,10))
-                        imgui.TextColored(accentVec4(getTabAccent(), 1.0, 1.0), Fn.T(u8"Расширенные настройки цветов"))
+                        imgui.TextColored(accentVec4(getTabAccent(), 1.0, 1.0), Fn.T(u8"Р Р°СЃС€РёСЂРµРЅРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё С†РІРµС‚РѕРІ"))
                         imgui.Dummy(imgui.ImVec2(0,5))
                         local categories = {
-                            {id=1, name="Фон и окна"},  {id=2, name="Кнопки и элементы"},
-                            {id=3, name="Флажки и шапки"}, {id=4, name="Скроллбар"}, {id=5, name="Текст и рамки"},
+                            {id=1, name="Р¤РѕРЅ Рё РѕРєРЅР°"},  {id=2, name="РљРЅРѕРїРєРё Рё СЌР»РµРјРµРЅС‚С‹"},
+                            {id=3, name="Р¤Р»Р°Р¶РєРё Рё С€Р°РїРєРё"}, {id=4, name="РЎРєСЂРѕР»Р»Р±Р°СЂ"}, {id=5, name="РўРµРєСЃС‚ Рё СЂР°РјРєРё"},
                         }
                         for _, cat in ipairs(categories) do
                             fn.record_width(imgui.CalcTextSize(u8(cat.name)).x+100)
@@ -26975,7 +26975,7 @@ local newFrame = imgui.OnFrame(
                                         imgui.PopID()
                                         imgui.Dummy(imgui.ImVec2(0,3))
                                         if col.id == imgui.Col.Text then
-                                            fn.CustomColorPicker(u8"Текст на кнопках (вкладки)", "tab_btn_text_col", fx_cfg.tab_buttons_text_color, true, editor_draw_alpha)
+                                            fn.CustomColorPicker(u8"РўРµРєСЃС‚ РЅР° РєРЅРѕРїРєР°С… (РІРєР»Р°РґРєРё)", "tab_btn_text_col", fx_cfg.tab_buttons_text_color, true, editor_draw_alpha)
                                             imgui.Dummy(imgui.ImVec2(0,3))
                                         end
                                     end
@@ -26985,39 +26985,39 @@ local newFrame = imgui.OnFrame(
                             imgui.Dummy(imgui.ImVec2(0,2))
                         end
                         imgui.Dummy(imgui.ImVec2(0,5))
-                        fn.record_width(imgui.CalcTextSize(u8"Иконки и элементы").x+100)
-                        if imgui.TreeNodeStr(Fn.T(u8"Иконки и элементы")) then
+                        fn.record_width(imgui.CalcTextSize(u8"РРєРѕРЅРєРё Рё СЌР»РµРјРµРЅС‚С‹").x+100)
+                        if imgui.TreeNodeStr(Fn.T(u8"РРєРѕРЅРєРё Рё СЌР»РµРјРµРЅС‚С‹")) then
                             imgui.Dummy(imgui.ImVec2(0,3))
-                            fn.CustomColorPicker(u8"Неоновая рамка окна",    "neon_border_col",   fx_cfg.neon_border_color,   true, editor_draw_alpha); imgui.Dummy(imgui.ImVec2(0,3))
-                            fn.CustomColorPicker(u8"Цвет вкладок (ползунок волн)", "tabs_col",    fx_cfg.tabs_color,          true, editor_draw_alpha); imgui.Dummy(imgui.ImVec2(0,3))
-                            fn.CustomColorPicker(u8"Цвет заголовка редактора","title_col",        fx_cfg.title_color,         true, editor_draw_alpha); imgui.Dummy(imgui.ImVec2(0,3))
-                            fn.CustomColorPicker(u8"Цвет кнопки Exclusive Design","title_button_col", fx_cfg.title_button_color, true, editor_draw_alpha); imgui.Dummy(imgui.ImVec2(0,3))
-                            fn.CustomColorPicker(u8"Крестик (закрытие)",     "cross_col",         fx_cfg.icon_cross_color,    true, editor_draw_alpha); imgui.Dummy(imgui.ImVec2(0,3))
-                            fn.CustomColorPicker(u8"Глаз (свернуть)",        "eye_col",           fx_cfg.icon_eye_color,      true, editor_draw_alpha); imgui.Dummy(imgui.ImVec2(0,3))
-                            fn.CustomColorPicker(u8"Шестерёнка (настройки)", "gear_col",          fx_cfg.icon_gear_color,     true, editor_draw_alpha)
+                            fn.CustomColorPicker(u8"РќРµРѕРЅРѕРІР°СЏ СЂР°РјРєР° РѕРєРЅР°",    "neon_border_col",   fx_cfg.neon_border_color,   true, editor_draw_alpha); imgui.Dummy(imgui.ImVec2(0,3))
+                            fn.CustomColorPicker(u8"Р¦РІРµС‚ РІРєР»Р°РґРѕРє (РїРѕР»Р·СѓРЅРѕРє РІРѕР»РЅ)", "tabs_col",    fx_cfg.tabs_color,          true, editor_draw_alpha); imgui.Dummy(imgui.ImVec2(0,3))
+                            fn.CustomColorPicker(u8"Р¦РІРµС‚ Р·Р°РіРѕР»РѕРІРєР° СЂРµРґР°РєС‚РѕСЂР°","title_col",        fx_cfg.title_color,         true, editor_draw_alpha); imgui.Dummy(imgui.ImVec2(0,3))
+                            fn.CustomColorPicker(u8"Р¦РІРµС‚ РєРЅРѕРїРєРё Exclusive Design","title_button_col", fx_cfg.title_button_color, true, editor_draw_alpha); imgui.Dummy(imgui.ImVec2(0,3))
+                            fn.CustomColorPicker(u8"РљСЂРµСЃС‚РёРє (Р·Р°РєСЂС‹С‚РёРµ)",     "cross_col",         fx_cfg.icon_cross_color,    true, editor_draw_alpha); imgui.Dummy(imgui.ImVec2(0,3))
+                            fn.CustomColorPicker(u8"Р“Р»Р°Р· (СЃРІРµСЂРЅСѓС‚СЊ)",        "eye_col",           fx_cfg.icon_eye_color,      true, editor_draw_alpha); imgui.Dummy(imgui.ImVec2(0,3))
+                            fn.CustomColorPicker(u8"РЁРµСЃС‚РµСЂС‘РЅРєР° (РЅР°СЃС‚СЂРѕР№РєРё)", "gear_col",          fx_cfg.icon_gear_color,     true, editor_draw_alpha)
                             imgui.TreePop()
                         end
                         imgui.Dummy(imgui.ImVec2(0,10))
                     elseif state.editor_tab == 2 then
-                        fn.ios_toggle(u8"Курсор-частицы", fx_cfg.sparks_on, editor_draw_alpha)
+                        fn.ios_toggle(u8"РљСѓСЂСЃРѕСЂ-С‡Р°СЃС‚РёС†С‹", fx_cfg.sparks_on, editor_draw_alpha)
                         if fx_cfg.sparks_on[0] then
-                            imgui.Dummy(imgui.ImVec2(0,5)); fn.ios_slider(u8"Скорость частиц", fx_cfg.sparks_speed, 0.1, 3, editor_draw_alpha)
-                            imgui.Dummy(imgui.ImVec2(0,5)); fn.ios_slider(u8"Размер частиц",   fx_cfg.sparks_size,  0.5, 3, editor_draw_alpha)
-                            imgui.Dummy(imgui.ImVec2(0,5)); fn.SafeCombo(u8"Режим курсора", fx_cfg.cursor_fx_var, lists.cursor_fx)
-                            imgui.Dummy(imgui.ImVec2(0,5)); fn.CustomColorPicker(u8"Цвет частиц", "sparks_col", fx_cfg.sparks_color, true, editor_draw_alpha)
+                            imgui.Dummy(imgui.ImVec2(0,5)); fn.ios_slider(u8"РЎРєРѕСЂРѕСЃС‚СЊ С‡Р°СЃС‚РёС†", fx_cfg.sparks_speed, 0.1, 3, editor_draw_alpha)
+                            imgui.Dummy(imgui.ImVec2(0,5)); fn.ios_slider(u8"Р Р°Р·РјРµСЂ С‡Р°СЃС‚РёС†",   fx_cfg.sparks_size,  0.5, 3, editor_draw_alpha)
+                            imgui.Dummy(imgui.ImVec2(0,5)); fn.SafeCombo(u8"Р РµР¶РёРј РєСѓСЂСЃРѕСЂР°", fx_cfg.cursor_fx_var, lists.cursor_fx)
+                            imgui.Dummy(imgui.ImVec2(0,5)); fn.CustomColorPicker(u8"Р¦РІРµС‚ С‡Р°СЃС‚РёС†", "sparks_col", fx_cfg.sparks_color, true, editor_draw_alpha)
                         end
-                        imgui.Dummy(imgui.ImVec2(0,15)); fn.ios_toggle(u8"Анимация вкладок", fx_cfg.waves_on, editor_draw_alpha)
+                        imgui.Dummy(imgui.ImVec2(0,15)); fn.ios_toggle(u8"РђРЅРёРјР°С†РёСЏ РІРєР»Р°РґРѕРє", fx_cfg.waves_on, editor_draw_alpha)
                         if fx_cfg.waves_on[0] then
-                            imgui.Dummy(imgui.ImVec2(0,5)); fn.ios_slider(u8"Скорость анимации", fx_cfg.waves_speed, 0.1, 3, editor_draw_alpha)
-                            imgui.Dummy(imgui.ImVec2(0,5)); fn.SafeCombo(u8"Режим анимации", fx_cfg.waves_var, lists.waves_modes)
-                            imgui.Dummy(imgui.ImVec2(0,5)); fn.CustomColorPicker(u8"Цвет анимации", "waves_col", fx_cfg.waves_color, true, editor_draw_alpha)
+                            imgui.Dummy(imgui.ImVec2(0,5)); fn.ios_slider(u8"РЎРєРѕСЂРѕСЃС‚СЊ Р°РЅРёРјР°С†РёРё", fx_cfg.waves_speed, 0.1, 3, editor_draw_alpha)
+                            imgui.Dummy(imgui.ImVec2(0,5)); fn.SafeCombo(u8"Р РµР¶РёРј Р°РЅРёРјР°С†РёРё", fx_cfg.waves_var, lists.waves_modes)
+                            imgui.Dummy(imgui.ImVec2(0,5)); fn.CustomColorPicker(u8"Р¦РІРµС‚ Р°РЅРёРјР°С†РёРё", "waves_col", fx_cfg.waves_color, true, editor_draw_alpha)
                         end
-                        imgui.Dummy(imgui.ImVec2(0,15)); fn.ios_toggle(u8"Фоновое свечение (Ambient)", fx_cfg.ambient_on, editor_draw_alpha)
+                        imgui.Dummy(imgui.ImVec2(0,15)); fn.ios_toggle(u8"Р¤РѕРЅРѕРІРѕРµ СЃРІРµС‡РµРЅРёРµ (Ambient)", fx_cfg.ambient_on, editor_draw_alpha)
                         if fx_cfg.ambient_on[0] then
-                            imgui.Dummy(imgui.ImVec2(0,5)); fn.ios_slider(u8"Скорость", fx_cfg.ambient_speed, 0.1, 3, editor_draw_alpha)
-                            imgui.Dummy(imgui.ImVec2(0,5)); fn.SafeCombo(u8"Режим свечения", fx_cfg.ambient_var, lists.ambient_modes)
-                            imgui.Dummy(imgui.ImVec2(0,5)); fn.CustomColorPicker(u8"Основной цвет (1)", "ambient_col_1", fx_cfg.ambient_color_1, true, editor_draw_alpha)
-                            imgui.Dummy(imgui.ImVec2(0,3)); fn.CustomColorPicker(u8"Дополнительный цвет (2)", "ambient_col_2", fx_cfg.ambient_color_2, true, editor_draw_alpha)
+                            imgui.Dummy(imgui.ImVec2(0,5)); fn.ios_slider(u8"РЎРєРѕСЂРѕСЃС‚СЊ", fx_cfg.ambient_speed, 0.1, 3, editor_draw_alpha)
+                            imgui.Dummy(imgui.ImVec2(0,5)); fn.SafeCombo(u8"Р РµР¶РёРј СЃРІРµС‡РµРЅРёСЏ", fx_cfg.ambient_var, lists.ambient_modes)
+                            imgui.Dummy(imgui.ImVec2(0,5)); fn.CustomColorPicker(u8"РћСЃРЅРѕРІРЅРѕР№ С†РІРµС‚ (1)", "ambient_col_1", fx_cfg.ambient_color_1, true, editor_draw_alpha)
+                            imgui.Dummy(imgui.ImVec2(0,3)); fn.CustomColorPicker(u8"Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Р№ С†РІРµС‚ (2)", "ambient_col_2", fx_cfg.ambient_color_2, true, editor_draw_alpha)
                         end
                     end
                     imgui.Unindent(10)
@@ -27100,8 +27100,8 @@ function main()
         else
             cbug_cfg.settings.active = not cbug_cfg.settings.active
             cbug_session.shots = 0; cbug_session.active = false
-            sampAddChatMessage("{32CD32}[CBug Speed]{FFFFFF} Трекер: " ..
-                (cbug_cfg.settings.active and "{00FF00}Включён" or "{FF0000}Выключен"), -1)
+            sampAddChatMessage("{32CD32}[CBug Speed]{FFFFFF} РўСЂРµРєРµСЂ: " ..
+                (cbug_cfg.settings.active and "{00FF00}Р’РєР»СЋС‡С‘РЅ" or "{FF0000}Р’С‹РєР»СЋС‡РµРЅ"), -1)
             inicfg.save(cbug_cfg, cbug_cfg_name)
         end
     end)
@@ -27110,16 +27110,16 @@ function main()
     hz_cbug_run.session_start = os.clock()
     lua_thread.create(pkill)
     wait(75)
-    if not doesFileExist((CBUGER_CONFIG .. "icons.png")) then
-        downloadUrlToFile("https://raw.githubusercontent.com/rr1me/cu/main/icons.png",
-            CBUGER_CONFIG .. "icons.png",
+    if not doesFileExist((CBUGER_CONFIG .. "icons_cbuger.png")) then
+        downloadUrlToFile("https://raw.githubusercontent.com/pryanixscript/CBUGER/main/icons.png",
+            CBUGER_CONFIG .. "icons_cbuger.png",
             function(_, status)
                 if status == dl_status.STATUS_ENDDOWNLOADDATA then
-                    icons_tex_path = (CBUGER_CONFIG .. "icons.png")
+                    icons_tex_path = (CBUGER_CONFIG .. "icons_cbuger.png")
                 end
             end)
     else
-        icons_tex_path = (CBUGER_CONFIG .. "icons.png")
+        icons_tex_path = (CBUGER_CONFIG .. "icons_cbuger.png")
     end
     sampRegisterChatCommand("hz", function()
         hz_mainWindow[0] = not hz_mainWindow[0]
@@ -27208,8 +27208,8 @@ end
                             S.bind_conflict = true
                             bind_conflict_msg_time = os.clock()
                             pcall(sampAddChatMessage,
-                                u8('{FF4444}[Cbuger] ') .. u8('Эта клавиша уже занята пунктом «') ..
-                                (items[usedBy] and items[usedBy].label or ('#'..usedBy)) .. u8('»'), -1)
+                                u8('{FF4444}[Cbuger] ') .. u8('Р­С‚Р° РєР»Р°РІРёС€Р° СѓР¶Рµ Р·Р°РЅСЏС‚Р° РїСѓРЅРєС‚РѕРј В«') ..
+                                (items[usedBy] and items[usedBy].label or ('#'..usedBy)) .. u8('В»'), -1)
                         end
                         break
                     end
@@ -27313,7 +27313,7 @@ do
         [0x65]="Num5",[0x66]="Num6",[0x67]="Num7",[0x68]="Num8",[0x69]="Num9",
     }
     local function hm_getKeyName(vk)
-        if vk==0 then return u8("Не назначена") end
+        if vk==0 then return u8("РќРµ РЅР°Р·РЅР°С‡РµРЅР°") end
         return HM_VK_NAMES[vk] or string.format("VK_%d",vk)
     end
     local function hm_ensureFolder()
@@ -27603,7 +27603,7 @@ do
         end
     end
     local function hm_texCombo(labelId,curFile,tint,popId,psz)
-        local dn=(curFile and curFile~="") and curFile or u8("-- Отключить --")
+        local dn=(curFile and curFile~="") and curFile or u8("-- РћС‚РєР»СЋС‡РёС‚СЊ --")
         local chosen=nil
         imgui.SetNextWindowSizeConstraints(imgui.ImVec2(280,0), imgui.ImVec2(320,300))
         if CBUGER_MarqueeBeginCombo(labelId, dn) then
@@ -27611,7 +27611,7 @@ do
             imgui.BeginChild("##hmtexlist",imgui.ImVec2(300,math.min(#list*26+8,260)),false)
             for _,fn2 in ipairs(list) do
                 local isSel=(curFile==fn2)
-                local showName=(fn2=="") and u8("-- Отключить --") or fn2
+                local showName=(fn2=="") and u8("-- РћС‚РєР»СЋС‡РёС‚СЊ --") or fn2
                 local tex2=(fn2~="") and hm_loadTex(fn2) or nil
                 if tex2 then
                     local sz=psz or 20
@@ -27887,22 +27887,22 @@ do
         style.WindowTitleAlign = prev_align
         imgui.PopStyleVar(6)
         local sc=hm_isRunning and imgui.ImVec4(0.3,1.0,0.4,1.0) or imgui.ImVec4(1.0,0.35,0.35,1.0)
-        imgui.TextColored(sc,Fn.T(u8(hm_isRunning and "АКТИВЕН" or "ВЫКЛЮЧЕН")))
+        imgui.TextColored(sc,Fn.T(u8(hm_isRunning and "РђРљРўРР’Р•Рќ" or "Р’Р«РљР›Р®Р§Р•Рќ")))
         imgui.SameLine()
-        imgui.TextDisabled(string.format(Fn.T(u8("| Меток: %d  | Дыр: %d")), #hm_bullets, #hm_bulletHoles))
+        imgui.TextDisabled(string.format(Fn.T(u8("| РњРµС‚РѕРє: %d  | Р”С‹СЂ: %d")), #hm_bullets, #hm_bulletHoles))
         if hm_hotkey[0]~=0 then
             imgui.SameLine()
             imgui.TextColored(accentVec4(ac,0.85,1.0),string.format("[%s]",hm_getKeyName(hm_hotkey[0])))
         end
         imgui.SameLine(); imgui.TextDisabled("|"); imgui.SameLine()
-        if imgui.Checkbox(Fn.T(u8("Слайдшоу##hmqs")),hm_ac_enabled) then
+        if imgui.Checkbox(Fn.T(u8("РЎР»Р°Р№РґС€РѕСѓ##hmqs")),hm_ac_enabled) then
             hm_autoCycle.enabled=hm_ac_enabled[0]; hm_autoCycle.last_ms=ffi_hm.C.GetTickCount(); hm_saveNow()
         end
         if imgui.IsItemHovered() then
             imgui.BeginTooltip()
             imgui.TextUnformatted(Fn.T(u8(#HM_IMG_QUEUE>0
-                and string.format("Авто-слайдшоу: %d изобр., %d мс",#HM_IMG_QUEUE,hm_autoCycle.speed_ms)
-                or "Авто-слайдшоу (очередь пуста)")))
+                and string.format("РђРІС‚Рѕ-СЃР»Р°Р№РґС€РѕСѓ: %d РёР·РѕР±СЂ., %d РјСЃ",#HM_IMG_QUEUE,hm_autoCycle.speed_ms)
+                or "РђРІС‚Рѕ-СЃР»Р°Р№РґС€РѕСѓ (РѕС‡РµСЂРµРґСЊ РїСѓСЃС‚Р°)")))
             imgui.EndTooltip()
         end
         imgui.Spacing()
@@ -27910,34 +27910,34 @@ do
                 drawAnimatedTabGlow(imgui.GetWindowDrawList(), imgui.GetItemRectMin(), imgui.GetItemRectMax(), os.clock())
                 imgui.Spacing()
                 local iw=200
-                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Параметры метки")))
+                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("РџР°СЂР°РјРµС‚СЂС‹ РјРµС‚РєРё")))
                 imgui.Separator(); imgui.Spacing()
-                hm_eDragFloat(u8("Радиус метки##hmradius"),hm_ci.my_bullets.circle_radius,0.2,0.5,200,"%.1f",iw)
-                hm_eDragInt(u8("Макс. кол-во меток (0=?)##hmmaxm"),hm_ci.my_bullets.max_markers,1,0,200,"%d",iw)
-                hm_eDragFloat(u8("Прозрачность (1=непрозр.)##hmtransp"),hm_ci.my_bullets.marker_transparency,0.01,0.0,1.0,"%.2f",iw)
-                hm_eDragInt(u8("Попаданий до удаления (0=?)##hmmaxhits"),hm_ci.my_bullets.max_hits,1,0,200,"%d",iw)
-                hm_eDragInt(u8("Углы (0=квадрат)##hmpoly"),hm_ci.my_bullets.degree_polygon,1,0,40,"%d",iw)
+                hm_eDragFloat(u8("Р Р°РґРёСѓСЃ РјРµС‚РєРё##hmradius"),hm_ci.my_bullets.circle_radius,0.2,0.5,200,"%.1f",iw)
+                hm_eDragInt(u8("РњР°РєСЃ. РєРѕР»-РІРѕ РјРµС‚РѕРє (0=?)##hmmaxm"),hm_ci.my_bullets.max_markers,1,0,200,"%d",iw)
+                hm_eDragFloat(u8("РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ (1=РЅРµРїСЂРѕР·СЂ.)##hmtransp"),hm_ci.my_bullets.marker_transparency,0.01,0.0,1.0,"%.2f",iw)
+                hm_eDragInt(u8("РџРѕРїР°РґР°РЅРёР№ РґРѕ СѓРґР°Р»РµРЅРёСЏ (0=?)##hmmaxhits"),hm_ci.my_bullets.max_hits,1,0,200,"%d",iw)
+                hm_eDragInt(u8("РЈРіР»С‹ (0=РєРІР°РґСЂР°С‚)##hmpoly"),hm_ci.my_bullets.degree_polygon,1,0,40,"%d",iw)
                 imgui.Spacing()
-                imgui.Checkbox(Fn.T(u8("Скрыть (метки и дыры)##hmhideAll")),hm_ci.my_bullets.hide_all)
+                imgui.Checkbox(Fn.T(u8("РЎРєСЂС‹С‚СЊ (РјРµС‚РєРё Рё РґС‹СЂС‹)##hmhideAll")),hm_ci.my_bullets.hide_all)
                 imgui.Spacing()
-                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Текст внутри метки")))
+                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("РўРµРєСЃС‚ РІРЅСѓС‚СЂРё РјРµС‚РєРё")))
                 imgui.Separator(); imgui.Spacing()
                 imgui.SetNextItemWidth(iw+60)
-                imgui.InputText(Fn.T(u8("Текст##hmmt")),hm_ci.my_bullets.additional.marker_text_buffer,256)
-                hm_eDragFloat(u8("Размер текста##hmtextsz"),hm_ci.my_bullets.additional.marker_text_size,0.5,5.0,100.0,"%.1f",iw)
+                imgui.InputText(Fn.T(u8("РўРµРєСЃС‚##hmmt")),hm_ci.my_bullets.additional.marker_text_buffer,256)
+                hm_eDragFloat(u8("Р Р°Р·РјРµСЂ С‚РµРєСЃС‚Р°##hmtextsz"),hm_ci.my_bullets.additional.marker_text_size,0.5,5.0,100.0,"%.1f",iw)
                 imgui.EndTabItem()
         end
         local function hm_tabTextures()
                 drawAnimatedTabGlow(imgui.GetWindowDrawList(), imgui.GetItemRectMin(), imgui.GetItemRectMax(), os.clock())
                 imgui.Spacing(); local iw=200
-                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Текстура меток (для всех)")))
+                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("РўРµРєСЃС‚СѓСЂР° РјРµС‚РѕРє (РґР»СЏ РІСЃРµС…)")))
                 imgui.Separator(); imgui.Spacing()
-                imgui.Checkbox(Fn.T(u8("Использовать кастомные текстуры меток##hmuseCustomM")),hm_ci.my_bullets.use_custom_markers)
+                imgui.Checkbox(Fn.T(u8("РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР°СЃС‚РѕРјРЅС‹Рµ С‚РµРєСЃС‚СѓСЂС‹ РјРµС‚РѕРє##hmuseCustomM")),hm_ci.my_bullets.use_custom_markers)
                 imgui.Spacing()
                 local mbUseCustom=hm_ci.my_bullets.use_custom_markers[0]
                 local ca=hm_ci.my_bullets.color_all
                 if mbUseCustom then
-                    imgui.Text(Fn.T(u8("Текстура для всех меток:")))
+                    imgui.Text(Fn.T(u8("РўРµРєСЃС‚СѓСЂР° РґР»СЏ РІСЃРµС… РјРµС‚РѕРє:")))
                     imgui.SetNextItemWidth(iw+80)
                     local chosen=hm_texCombo(u8("##hmgmc"),hm_selectedGlobalMarker,ca,"hmgmc",20)
                     if chosen~=nil then
@@ -27950,17 +27950,17 @@ do
                         imgui.Image(hm_globalMarkerTexture,imgui.ImVec2(sz,sz),imgui.ImVec2(0,0),imgui.ImVec2(1,1),imgui.ImVec4(ca[1],ca[2],ca[3],ca[4]))
                     end
                     imgui.Spacing()
-                    imgui.TextColored(accentVec4(ac,0.8,1.0),Fn.T(u8("Индивидуальные текстуры меток")))
+                    imgui.TextColored(accentVec4(ac,0.8,1.0),Fn.T(u8("РРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Рµ С‚РµРєСЃС‚СѓСЂС‹ РјРµС‚РѕРє")))
                     imgui.Separator(); imgui.Spacing()
-                    if #hm_bullets==0 then imgui.TextDisabled(Fn.T(u8("Нет активных меток")))
+                    if #hm_bullets==0 then imgui.TextDisabled(Fn.T(u8("РќРµС‚ Р°РєС‚РёРІРЅС‹С… РјРµС‚РѕРє")))
                     else
-                        imgui.Text(Fn.T(u8("Метка #:"))); imgui.SameLine(); imgui.SetNextItemWidth(60)
+                        imgui.Text(Fn.T(u8("РњРµС‚РєР° #:"))); imgui.SameLine(); imgui.SetNextItemWidth(60)
                         imgui.DragInt(Fn.T(u8("##hmbi")),hm_selBulletIdx,1,1,#hm_bullets,"%d")
                         local bi=math.max(1,math.min(hm_selBulletIdx[0],#hm_bullets)); hm_selBulletIdx[0]=bi
                         local b=hm_bullets[bi]
                         if b then
-                            imgui.SameLine(); imgui.Text(string.format(Fn.T(u8("(всего: %d)")), #hm_bullets))
-                            imgui.Text(Fn.T(u8("Текстура для метки #")) .. tostring(bi) .. ":"); imgui.SetNextItemWidth(iw+80)
+                            imgui.SameLine(); imgui.Text(string.format(Fn.T(u8("(РІСЃРµРіРѕ: %d)")), #hm_bullets))
+                            imgui.Text(Fn.T(u8("РўРµРєСЃС‚СѓСЂР° РґР»СЏ РјРµС‚РєРё #")) .. tostring(bi) .. ":"); imgui.SetNextItemWidth(iw+80)
                             local chB=hm_texCombo(u8("##hmimc"..bi),b.selectedTex,ca,"hmimc"..bi,20)
                             if chB~=nil then b.selectedTex=(chB=="") and nil or chB end
                             local iTex=b.selectedTex and hm_loadTex(b.selectedTex) or nil
@@ -27969,23 +27969,23 @@ do
                                 imgui.Image(iTex,imgui.ImVec2(sz,sz),imgui.ImVec2(0,0),imgui.ImVec2(1,1),imgui.ImVec4(ca[1],ca[2],ca[3],ca[4]))
                             end
                             if b.selectedTex and b.selectedTex~="" then
-                                imgui.TextColored(imgui.ImVec4(0.4,0.8,0.4,1.0),Fn.T(u8("Индивидуальная: ")) .. b.selectedTex)
-                            else imgui.TextDisabled(Fn.T(u8("Использует глобальную / стандартную"))) end
+                                imgui.TextColored(imgui.ImVec4(0.4,0.8,0.4,1.0),Fn.T(u8("РРЅРґРёРІРёРґСѓР°Р»СЊРЅР°СЏ: ")) .. b.selectedTex)
+                            else imgui.TextDisabled(Fn.T(u8("РСЃРїРѕР»СЊР·СѓРµС‚ РіР»РѕР±Р°Р»СЊРЅСѓСЋ / СЃС‚Р°РЅРґР°СЂС‚РЅСѓСЋ"))) end
                         end
                     end
                 end
                 imgui.Spacing(); imgui.Spacing()
-                imgui.TextColored(accentVec4(ac,0.8,1.0),Fn.T(u8("Текстура дыр от пуль")))
+                imgui.TextColored(accentVec4(ac,0.8,1.0),Fn.T(u8("РўРµРєСЃС‚СѓСЂР° РґС‹СЂ РѕС‚ РїСѓР»СЊ")))
                 imgui.Separator(); imgui.Spacing()
                 if hm_ci.bullet_holes.use_marker_style[0] then
-                    imgui.TextDisabled(Fn.T(u8("Используется текстура из вкладки «Метки». Для отдельных текстур дыр отключите наследование стиля.")))
+                    imgui.TextDisabled(Fn.T(u8("РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ С‚РµРєСЃС‚СѓСЂР° РёР· РІРєР»Р°РґРєРё В«РњРµС‚РєРёВ». Р”Р»СЏ РѕС‚РґРµР»СЊРЅС‹С… С‚РµРєСЃС‚СѓСЂ РґС‹СЂ РѕС‚РєР»СЋС‡РёС‚Рµ РЅР°СЃР»РµРґРѕРІР°РЅРёРµ СЃС‚РёР»СЏ.")))
                 else
-                imgui.Checkbox(Fn.T(u8("Использовать кастомные текстуры дыр##hmuseCustomH")),hm_ci.bullet_holes.use_custom_texture)
+                imgui.Checkbox(Fn.T(u8("РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР°СЃС‚РѕРјРЅС‹Рµ С‚РµРєСЃС‚СѓСЂС‹ РґС‹СЂ##hmuseCustomH")),hm_ci.bullet_holes.use_custom_texture)
                 imgui.Spacing()
                 local bhUseCustom=hm_ci.bullet_holes.use_custom_texture[0]
                 local hc=hm_ci.bullet_holes.color
                 if bhUseCustom then
-                    imgui.Text(Fn.T(u8("Текстура для всех дыр:"))); imgui.SetNextItemWidth(iw+80)
+                    imgui.Text(Fn.T(u8("РўРµРєСЃС‚СѓСЂР° РґР»СЏ РІСЃРµС… РґС‹СЂ:"))); imgui.SetNextItemWidth(iw+80)
                     local chosenH=hm_texCombo(u8("##hmghc"),hm_selectedGlobalHole,hc,"hmghc",20)
                     if chosenH~=nil then
                         hm_selectedGlobalHole=(chosenH=="") and nil or chosenH
@@ -27996,17 +27996,17 @@ do
                         imgui.Image(hm_globalHoleTexture,imgui.ImVec2(sz,sz),imgui.ImVec2(0,0),imgui.ImVec2(1,1),imgui.ImVec4(hc[1],hc[2],hc[3],hc[4]))
                     end
                     imgui.Spacing()
-                    imgui.TextColored(accentVec4(ac,0.8,1.0),Fn.T(u8("Индивидуальные текстуры дыр")))
+                    imgui.TextColored(accentVec4(ac,0.8,1.0),Fn.T(u8("РРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Рµ С‚РµРєСЃС‚СѓСЂС‹ РґС‹СЂ")))
                     imgui.Separator(); imgui.Spacing()
-                    if #hm_bulletHoles==0 then imgui.TextDisabled(Fn.T(u8("Нет активных дыр")))
+                    if #hm_bulletHoles==0 then imgui.TextDisabled(Fn.T(u8("РќРµС‚ Р°РєС‚РёРІРЅС‹С… РґС‹СЂ")))
                     else
-                        imgui.Text(Fn.T(u8("Дыра #:"))); imgui.SameLine(); imgui.SetNextItemWidth(60)
+                        imgui.Text(Fn.T(u8("Р”С‹СЂР° #:"))); imgui.SameLine(); imgui.SetNextItemWidth(60)
                         imgui.DragInt(Fn.T(u8("##hmhi")),hm_selHoleIdx,1,1,#hm_bulletHoles,"%d")
                         local hi=math.max(1,math.min(hm_selHoleIdx[0],#hm_bulletHoles)); hm_selHoleIdx[0]=hi
                         local h2=hm_bulletHoles[hi]
                         if h2 then
-                            imgui.SameLine(); imgui.Text(string.format(Fn.T(u8("(всего: %d)")), #hm_bulletHoles))
-                            imgui.Text(Fn.T(u8("Текстура для дыры #")) .. tostring(hi) .. ":"); imgui.SetNextItemWidth(iw+80)
+                            imgui.SameLine(); imgui.Text(string.format(Fn.T(u8("(РІСЃРµРіРѕ: %d)")), #hm_bulletHoles))
+                            imgui.Text(Fn.T(u8("РўРµРєСЃС‚СѓСЂР° РґР»СЏ РґС‹СЂС‹ #")) .. tostring(hi) .. ":"); imgui.SetNextItemWidth(iw+80)
                             local chH=hm_texCombo(u8("##hmihc"..hi),h2.selectedTex,hc,"hmihc"..hi,20)
                             if chH~=nil then h2.selectedTex=(chH=="") and nil or chH end
                             local iHTex=h2.selectedTex and hm_loadTex(h2.selectedTex) or nil
@@ -28015,69 +28015,69 @@ do
                                 imgui.Image(iHTex,imgui.ImVec2(sz,sz),imgui.ImVec2(0,0),imgui.ImVec2(1,1),imgui.ImVec4(hc[1],hc[2],hc[3],hc[4]))
                             end
                             if h2.selectedTex and h2.selectedTex~="" then
-                                imgui.TextColored(imgui.ImVec4(0.4,0.8,0.4,1.0),Fn.T(u8("Индивидуальная: ")) .. h2.selectedTex)
-                            else imgui.TextDisabled(Fn.T(u8("Использует глобальную / стандартную"))) end
+                                imgui.TextColored(imgui.ImVec4(0.4,0.8,0.4,1.0),Fn.T(u8("РРЅРґРёРІРёРґСѓР°Р»СЊРЅР°СЏ: ")) .. h2.selectedTex)
+                            else imgui.TextDisabled(Fn.T(u8("РСЃРїРѕР»СЊР·СѓРµС‚ РіР»РѕР±Р°Р»СЊРЅСѓСЋ / СЃС‚Р°РЅРґР°СЂС‚РЅСѓСЋ"))) end
                         end
                     end
                 end
                 imgui.Spacing()
-                imgui.TextColored(accentVec4(ac,0.5,1.0),Fn.T(u8("Положите PNG/JPG в папку: moonloader\\CBUGER PRO\\HitMarker\\")))
+                imgui.TextColored(accentVec4(ac,0.5,1.0),Fn.T(u8("РџРѕР»РѕР¶РёС‚Рµ PNG/JPG РІ РїР°РїРєСѓ: moonloader\\CBUGER PRO\\HitMarker\\")))
                 end
                 imgui.EndTabItem()
         end
         local function hm_tabHoles()
                 drawAnimatedTabGlow(imgui.GetWindowDrawList(), imgui.GetItemRectMin(), imgui.GetItemRectMax(), os.clock())
                 imgui.Spacing(); local iw=200
-                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Дыры от пуль")))
+                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Р”С‹СЂС‹ РѕС‚ РїСѓР»СЊ")))
                 imgui.Separator(); imgui.Spacing()
-                imgui.Checkbox(Fn.T(u8("Включить дыры от пуль##hmbhEnabled")),hm_ci.bullet_holes.enabled)
+                imgui.Checkbox(Fn.T(u8("Р’РєР»СЋС‡РёС‚СЊ РґС‹СЂС‹ РѕС‚ РїСѓР»СЊ##hmbhEnabled")),hm_ci.bullet_holes.enabled)
                 imgui.Spacing()
                 local bhOn=hm_ci.bullet_holes.enabled[0]
                 hm_ci.bullet_holes.use_marker_style[0] = true
-                imgui.TextWrapped(Fn.T(u8("Внешний вид дыр автоматически повторяет настройки HitMarker. Лимит и время исчезновения настраиваются отдельно.")))
-                hm_eDragInt(u8("Макс. кол-во дыр (0=?)##hmbhMax"),hm_ci.bullet_holes.max_holes,1,0,500,"%d",iw)
-                hm_eDragFloat(u8("Время исчезания сек (0=вечно)##hmbhFade"),hm_ci.bullet_holes.fade_time,0.5,0.0,120.0,"%.1f",iw)
+                imgui.TextWrapped(Fn.T(u8("Р’РЅРµС€РЅРёР№ РІРёРґ РґС‹СЂ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РїРѕРІС‚РѕСЂСЏРµС‚ РЅР°СЃС‚СЂРѕР№РєРё HitMarker. Р›РёРјРёС‚ Рё РІСЂРµРјСЏ РёСЃС‡РµР·РЅРѕРІРµРЅРёСЏ РЅР°СЃС‚СЂР°РёРІР°СЋС‚СЃСЏ РѕС‚РґРµР»СЊРЅРѕ.")))
+                hm_eDragInt(u8("РњР°РєСЃ. РєРѕР»-РІРѕ РґС‹СЂ (0=?)##hmbhMax"),hm_ci.bullet_holes.max_holes,1,0,500,"%d",iw)
+                hm_eDragFloat(u8("Р’СЂРµРјСЏ РёСЃС‡РµР·Р°РЅРёСЏ СЃРµРє (0=РІРµС‡РЅРѕ)##hmbhFade"),hm_ci.bullet_holes.fade_time,0.5,0.0,120.0,"%.1f",iw)
                 imgui.Spacing()
-                if imgui.Button(Fn.T(u8("Очистить все дыры##hmclearHoles")),imgui.ImVec2(-1,0)) then hm_bulletHoles={} end
+                if imgui.Button(Fn.T(u8("РћС‡РёСЃС‚РёС‚СЊ РІСЃРµ РґС‹СЂС‹##hmclearHoles")),imgui.ImVec2(-1,0)) then hm_bulletHoles={} end
                 imgui.EndTabItem()
         end
         local function hm_tabColors()
                 drawAnimatedTabGlow(imgui.GetWindowDrawList(), imgui.GetItemRectMin(), imgui.GetItemRectMax(), os.clock())
                 imgui.Spacing(); local iw=200
-                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Цвета меток")))
+                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Р¦РІРµС‚Р° РјРµС‚РѕРє")))
                 imgui.Separator(); imgui.Spacing()
-                hm_colorEdit4(u8("Базовый цвет метки##hmca"),hm_ci.my_bullets.color_all)
-                hm_colorEdit4(u8("Цвет попадания##hmch"),hm_ci.my_bullets.color_hit)
-                imgui.Checkbox(Fn.T(u8("Случайный цвет при попадании##hmrndHit")),hm_ci.my_bullets.additional.random_hit_colors)
-                imgui.Spacing(); hm_colorEdit4(u8("Цвет текста в метке##hmct"),hm_ci.my_bullets.color_text)
+                hm_colorEdit4(u8("Р‘Р°Р·РѕРІС‹Р№ С†РІРµС‚ РјРµС‚РєРё##hmca"),hm_ci.my_bullets.color_all)
+                hm_colorEdit4(u8("Р¦РІРµС‚ РїРѕРїР°РґР°РЅРёСЏ##hmch"),hm_ci.my_bullets.color_hit)
+                imgui.Checkbox(Fn.T(u8("РЎР»СѓС‡Р°Р№РЅС‹Р№ С†РІРµС‚ РїСЂРё РїРѕРїР°РґР°РЅРёРё##hmrndHit")),hm_ci.my_bullets.additional.random_hit_colors)
+                imgui.Spacing(); hm_colorEdit4(u8("Р¦РІРµС‚ С‚РµРєСЃС‚Р° РІ РјРµС‚РєРµ##hmct"),hm_ci.my_bullets.color_text)
                 imgui.Spacing()
-                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Трейсеры")))
+                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("РўСЂРµР№СЃРµСЂС‹")))
                 imgui.Separator(); imgui.Spacing()
-                hm_eDragFloat(u8("Толщина трейсера##hmthick"),hm_ci.my_bullets.thickness,0.05,0.1,20,"%.2f",iw)
-                imgui.Checkbox(Fn.T(u8("Отображать трейсеры##hmtracers")),hm_ci.my_bullets.additional.enable_tracers)
+                hm_eDragFloat(u8("РўРѕР»С‰РёРЅР° С‚СЂРµР№СЃРµСЂР°##hmthick"),hm_ci.my_bullets.thickness,0.05,0.1,20,"%.2f",iw)
+                imgui.Checkbox(Fn.T(u8("РћС‚РѕР±СЂР°Р¶Р°С‚СЊ С‚СЂРµР№СЃРµСЂС‹##hmtracers")),hm_ci.my_bullets.additional.enable_tracers)
                 imgui.Spacing()
-                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Движение меток")))
+                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Р”РІРёР¶РµРЅРёРµ РјРµС‚РѕРє")))
                 imgui.Separator(); imgui.Spacing()
-                hm_eDragInt(u8("Тип (0=нет, 1=X, 2=Y, 3=XY)##hmmovt"),hm_ci.my_bullets.additional.movement_type,0.1,0,3,"%d",iw)
-                hm_eDragFloat(u8("Дистанция движения##hmmovd"),hm_ci.my_bullets.additional.movement_distance,1,0,200,"%.0f",iw)
-                hm_eDragFloat(u8("Скорость движения##hmmovs"),hm_ci.my_bullets.additional.speed,0.1,0.1,10,"%.1f",iw)
+                hm_eDragInt(u8("РўРёРї (0=РЅРµС‚, 1=X, 2=Y, 3=XY)##hmmovt"),hm_ci.my_bullets.additional.movement_type,0.1,0,3,"%d",iw)
+                hm_eDragFloat(u8("Р”РёСЃС‚Р°РЅС†РёСЏ РґРІРёР¶РµРЅРёСЏ##hmmovd"),hm_ci.my_bullets.additional.movement_distance,1,0,200,"%.0f",iw)
+                hm_eDragFloat(u8("РЎРєРѕСЂРѕСЃС‚СЊ РґРІРёР¶РµРЅРёСЏ##hmmovs"),hm_ci.my_bullets.additional.speed,0.1,0.1,10,"%.1f",iw)
                 imgui.EndTabItem()
         end
         local function hm_tabControl()
                 drawAnimatedTabGlow(imgui.GetWindowDrawList(), imgui.GetItemRectMin(), imgui.GetItemRectMax(), os.clock())
                 imgui.Spacing()
-                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Состояние")))
+                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("РЎРѕСЃС‚РѕСЏРЅРёРµ")))
                 imgui.Separator(); imgui.Spacing()
                 local stc=hm_isRunning and imgui.ImVec4(0.3,1.0,0.4,1.0) or imgui.ImVec4(1.0,0.35,0.35,1.0)
-                imgui.TextColored(stc,Fn.T(u8(hm_isRunning and "Скрипт активен" or "Скрипт выключен")))
-                imgui.TextDisabled(Fn.T(u8(string.format("Меток: %d/%d   Дыр: %d",
+                imgui.TextColored(stc,Fn.T(u8(hm_isRunning and "РЎРєСЂРёРїС‚ Р°РєС‚РёРІРµРЅ" or "РЎРєСЂРёРїС‚ РІС‹РєР»СЋС‡РµРЅ")))
+                imgui.TextDisabled(Fn.T(u8(string.format("РњРµС‚РѕРє: %d/%d   Р”С‹СЂ: %d",
                     #hm_bullets,hm_ci.my_bullets.max_markers[0],#hm_bulletHoles))))
                 imgui.Spacing()
                 imgui.PushStyleColor(imgui.Col.Button,
                     hm_isRunning and accentVec4(nil,0.60,1.0) or accentVec4(nil,0.16,0.90))
                 imgui.PushStyleColor(imgui.Col.ButtonHovered,
                     hm_isRunning and accentVec4(nil,0.82,1.0) or accentVec4(nil,0.30,0.95))
-                local tl=u8(hm_isRunning and "Выключить скрипт##hmtog" or "Включить скрипт##hmtog")
+                local tl=u8(hm_isRunning and "Р’С‹РєР»СЋС‡РёС‚СЊ СЃРєСЂРёРїС‚##hmtog" or "Р’РєР»СЋС‡РёС‚СЊ СЃРєСЂРёРїС‚##hmtog")
                 if imgui.Button(tl,imgui.ImVec2(-1,32)) then
                     hm_isRunning=not hm_isRunning
                     hm_lastMarkerPlace=-1
@@ -28085,13 +28085,13 @@ do
                     hm_window_open[0]=false
                 end
                 imgui.PopStyleColor(2); imgui.Spacing()
-                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Горячая клавиша")))
+                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Р“РѕСЂСЏС‡Р°СЏ РєР»Р°РІРёС€Р°")))
                 imgui.Separator(); imgui.Spacing()
-                imgui.Text(Fn.T(u8("Текущая:"))); imgui.SameLine()
+                imgui.Text(Fn.T(u8("РўРµРєСѓС‰Р°СЏ:"))); imgui.SameLine()
                 imgui.TextColored(accentVec4(ac,0.85,1.0),hm_getKeyName(hm_hotkey[0]))
                 if hm_isCapturingKey then
                     imgui.PushStyleColor(imgui.Col.Button,accentVec4(nil, 0.45, 1.0))
-                    imgui.Button(Fn.T(u8("Нажмите любую клавишу...##hmcapture")),imgui.ImVec2(-1,0))
+                    imgui.Button(Fn.T(u8("РќР°Р¶РјРёС‚Рµ Р»СЋР±СѓСЋ РєР»Р°РІРёС€Сѓ...##hmcapture")),imgui.ImVec2(-1,0))
                     imgui.PopStyleColor(1)
                     for vk=1,254 do
                         if isKeyJustPressed(vk) then
@@ -28100,29 +28100,29 @@ do
                         end
                     end
                 else
-                    if imgui.Button(Fn.T(u8("Назначить клавишу##hmsetKey")),imgui.ImVec2(-1,0)) then hm_isCapturingKey=true end
+                    if imgui.Button(Fn.T(u8("РќР°Р·РЅР°С‡РёС‚СЊ РєР»Р°РІРёС€Сѓ##hmsetKey")),imgui.ImVec2(-1,0)) then hm_isCapturingKey=true end
                 end
                 if hm_hotkey[0]~=0 then
-                    if imgui.Button(Fn.T(u8("Сбросить клавишу##hmclearKey")),imgui.ImVec2(-1,0)) then hm_hotkey[0]=0; hm_saveNow() end
+                    if imgui.Button(Fn.T(u8("РЎР±СЂРѕСЃРёС‚СЊ РєР»Р°РІРёС€Сѓ##hmclearKey")),imgui.ImVec2(-1,0)) then hm_hotkey[0]=0; hm_saveNow() end
                 end
                 imgui.Spacing()
-                if imgui.Button(Fn.T(u8("Очистить все метки##hmclearM")),imgui.ImVec2(-1,0)) then hm_bullets={}; hm_initialMarkers={}; hm_lastMarkerPlace=-1 end
-                if imgui.Button(Fn.T(u8("Очистить все дыры##hmclearH")),imgui.ImVec2(-1,0)) then hm_bulletHoles={} end
-                if imgui.Button(Fn.T(u8("Очистить всё##hmclearAll")),imgui.ImVec2(-1,0)) then hm_bullets={}; hm_initialMarkers={}; hm_bulletHoles={}; hm_lastMarkerPlace=-1 end
+                if imgui.Button(Fn.T(u8("РћС‡РёСЃС‚РёС‚СЊ РІСЃРµ РјРµС‚РєРё##hmclearM")),imgui.ImVec2(-1,0)) then hm_bullets={}; hm_initialMarkers={}; hm_lastMarkerPlace=-1 end
+                if imgui.Button(Fn.T(u8("РћС‡РёСЃС‚РёС‚СЊ РІСЃРµ РґС‹СЂС‹##hmclearH")),imgui.ImVec2(-1,0)) then hm_bulletHoles={} end
+                if imgui.Button(Fn.T(u8("РћС‡РёСЃС‚РёС‚СЊ РІСЃС‘##hmclearAll")),imgui.ImVec2(-1,0)) then hm_bullets={}; hm_initialMarkers={}; hm_bulletHoles={}; hm_lastMarkerPlace=-1 end
                 imgui.Spacing()
-                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Конфигурация")))
+                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("РљРѕРЅС„РёРіСѓСЂР°С†РёСЏ")))
                 imgui.Separator(); imgui.Spacing()
-                if imgui.Button(Fn.T(u8("Сохранить настройки##hmsave")),imgui.ImVec2(-1,0)) then hm_saveNow() end
+                if imgui.Button(Fn.T(u8("РЎРѕС…СЂР°РЅРёС‚СЊ РЅР°СЃС‚СЂРѕР№РєРё##hmsave")),imgui.ImVec2(-1,0)) then hm_saveNow() end
                 imgui.Spacing()
-                imgui.TextColored(accentVec4(ac,0.5,1.0),Fn.T(u8("Команды: /hm  |  /hitmarker")))
+                imgui.TextColored(accentVec4(ac,0.5,1.0),Fn.T(u8("РљРѕРјР°РЅРґС‹: /hm  |  /hitmarker")))
                 imgui.EndTabItem()
         end
         local function hm_tabSlideshow()
                 drawAnimatedTabGlow(imgui.GetWindowDrawList(), imgui.GetItemRectMin(), imgui.GetItemRectMax(), os.clock())
                 imgui.Spacing()
-                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Очередь изображений")))
+                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("РћС‡РµСЂРµРґСЊ РёР·РѕР±СЂР°Р¶РµРЅРёР№")))
                 imgui.Separator(); imgui.Spacing()
-                imgui.TextWrapped(Fn.T(u8("ЛКМ — выбрать изображение для маркеров. ПКМ — добавить/убрать из очереди. Порядок = порядок кликов.")))
+                imgui.TextWrapped(Fn.T(u8("Р›РљРњ вЂ” РІС‹Р±СЂР°С‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёРµ РґР»СЏ РјР°СЂРєРµСЂРѕРІ. РџРљРњ вЂ” РґРѕР±Р°РІРёС‚СЊ/СѓР±СЂР°С‚СЊ РёР· РѕС‡РµСЂРµРґРё. РџРѕСЂСЏРґРѕРє = РїРѕСЂСЏРґРѕРє РєР»РёРєРѕРІ.")))
                 imgui.Spacing()
                 imgui.BeginChild("##hmsslist",imgui.ImVec2(-1,130),true)
                 local files2=hm_getImagesList()
@@ -28154,53 +28154,53 @@ do
                     end
                 end
                 imgui.EndChild(); imgui.Spacing()
-                if imgui.Button(Fn.T(u8("Очистить очередь##hmssclear")),imgui.ImVec2(-1,0)) then
+                if imgui.Button(Fn.T(u8("РћС‡РёСЃС‚РёС‚СЊ РѕС‡РµСЂРµРґСЊ##hmssclear")),imgui.ImVec2(-1,0)) then
                     HM_IMG_QUEUE={}; HM_IMG_QUEUE_IDX=1; hm_saveNow()
                 end
                 imgui.Spacing()
-                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Авто-переключение")))
+                imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("РђРІС‚Рѕ-РїРµСЂРµРєР»СЋС‡РµРЅРёРµ")))
                 imgui.Separator(); imgui.Spacing()
-                if imgui.Checkbox(Fn.T(u8("Включить авто-слайдшоу##hmacen")),hm_ac_enabled) then
+                if imgui.Checkbox(Fn.T(u8("Р’РєР»СЋС‡РёС‚СЊ Р°РІС‚Рѕ-СЃР»Р°Р№РґС€РѕСѓ##hmacen")),hm_ac_enabled) then
                     hm_autoCycle.enabled=hm_ac_enabled[0]; hm_autoCycle.last_ms=ffi_hm.C.GetTickCount(); hm_saveNow()
                 end
                 imgui.Spacing(); imgui.SetNextItemWidth(260)
-                if hm_eDragInt(u8("Интервал (мс)##hmacspd"),hm_ac_speed,10,1,30000,"%d",260) then
+                if hm_eDragInt(u8("РРЅС‚РµСЂРІР°Р» (РјСЃ)##hmacspd"),hm_ac_speed,10,1,30000,"%d",260) then
                     hm_autoCycle.speed_ms=hm_ac_speed[0]; hm_saveNow()
                 end
                 imgui.SameLine(0,8)
-                imgui.TextDisabled(string.format("%.2f "..Fn.T(u8("сек")),hm_ac_speed[0]/1000.0))
+                imgui.TextDisabled(string.format("%.2f "..Fn.T(u8("СЃРµРє")),hm_ac_speed[0]/1000.0))
                 imgui.Spacing()
                 if hm_autoCycle.enabled and #HM_IMG_QUEUE>0 then
                     local now_ms=ffi_hm.C.GetTickCount(); local rem=hm_autoCycle.speed_ms-(now_ms-hm_autoCycle.last_ms)
                     if rem<0 then rem=0 end
                     imgui.TextColored(imgui.ImVec4(0.3,1.0,0.45,1.0),
-                        string.format(Fn.T(u8("Активно · %d изобр. · след. через %d сек")), #HM_IMG_QUEUE, math.ceil(rem/1000.0)))
+                        string.format(Fn.T(u8("РђРєС‚РёРІРЅРѕ В· %d РёР·РѕР±СЂ. В· СЃР»РµРґ. С‡РµСЂРµР· %d СЃРµРє")), #HM_IMG_QUEUE, math.ceil(rem/1000.0)))
                 elseif hm_autoCycle.enabled and #HM_IMG_QUEUE==0 then
-                    imgui.TextColored(imgui.ImVec4(1.0,0.6,0.3,1.0),Fn.T(u8("Очередь пуста — добавьте изображения (ПКМ)")))
-                else imgui.TextDisabled(Fn.T(u8("Авто-режим выключен"))) end
+                    imgui.TextColored(imgui.ImVec4(1.0,0.6,0.3,1.0),Fn.T(u8("РћС‡РµСЂРµРґСЊ РїСѓСЃС‚Р° вЂ” РґРѕР±Р°РІСЊС‚Рµ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ (РџРљРњ)")))
+                else imgui.TextDisabled(Fn.T(u8("РђРІС‚Рѕ-СЂРµР¶РёРј РІС‹РєР»СЋС‡РµРЅ"))) end
                 imgui.Spacing(); imgui.Separator(); imgui.Spacing()
-                if imgui.Button(Fn.T(u8("Следующее изображение##hmssnext")),imgui.ImVec2(-1,0)) then
+                if imgui.Button(Fn.T(u8("РЎР»РµРґСѓСЋС‰РµРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ##hmssnext")),imgui.ImVec2(-1,0)) then
                     if #HM_IMG_QUEUE>0 then hm_imgQueueAdvance(); hm_autoCycle.last_ms=ffi_hm.C.GetTickCount() end
                 end
                 imgui.EndTabItem()
         end
         if imgui.BeginTabBar(Fn.T(u8("HMTabs##hmtb"))) then
-            if imgui.BeginTabItem(Fn.T(u8(" Метки "))) then
+            if imgui.BeginTabItem(Fn.T(u8(" РњРµС‚РєРё "))) then
                 hm_tabMarkers()
             end
-            if imgui.BeginTabItem(Fn.T(u8(" Текстуры "))) then
+            if imgui.BeginTabItem(Fn.T(u8(" РўРµРєСЃС‚СѓСЂС‹ "))) then
                 hm_tabTextures()
             end
-            if imgui.BeginTabItem(Fn.T(u8(" Дыры "))) then
+            if imgui.BeginTabItem(Fn.T(u8(" Р”С‹СЂС‹ "))) then
                 hm_tabHoles()
             end
-            if imgui.BeginTabItem(Fn.T(u8(" Цвета "))) then
+            if imgui.BeginTabItem(Fn.T(u8(" Р¦РІРµС‚Р° "))) then
                 hm_tabColors()
             end
-            if imgui.BeginTabItem(Fn.T(u8(" Управление "))) then
+            if imgui.BeginTabItem(Fn.T(u8(" РЈРїСЂР°РІР»РµРЅРёРµ "))) then
                 hm_tabControl()
             end
-            if imgui.BeginTabItem(Fn.T(u8(" Слайдшоу "))) then
+            if imgui.BeginTabItem(Fn.T(u8(" РЎР»Р°Р№РґС€РѕСѓ "))) then
                 hm_tabSlideshow()
             end
             imgui.EndTabBar()
