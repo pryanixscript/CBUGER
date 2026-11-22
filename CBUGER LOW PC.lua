@@ -1,4 +1,4 @@
-script_name('CBUGER LOW PC')
+script_name('CBUGER LOW')
 script_author('by Pryanix')
 script_version(1.0)
 
@@ -11559,7 +11559,6 @@ do
         if button(T(u8"Очистить всё") .. '##hmclra') then HM.clear_all() end
         gap(8)
         gap(8)
-        im.TextDisabled(T(u8"Команда: /hm"))
         end
         gap(16)
         HM.save_tick()
@@ -11587,7 +11586,7 @@ do
             ["Не назначена"] = "Not set", ["Нажмите любую клавишу..."] = "Press any key...",
             ["Назначить клавишу"] = "Set hotkey", ["Сбросить клавишу"] = "Clear hotkey",
             ["Очистить метки"] = "Clear markers", ["Очистить дыры"] = "Clear holes", ["Очистить всё"] = "Clear all",
-            ["Команда: /hm"] = "Command: /hm", ["Макс. меток (0="] = "Max markers (0=", ["Попаданий до удаления (0="] = "Hits before removal (0=", ["Макс. дыр (0="] = "Max holes (0=", ["Меток: "] = "Markers: ", ["   Дыр: "] = "   Holes: ",
+["Макс. меток (0="] = "Max markers (0=", ["Попаданий до удаления (0="] = "Hits before removal (0=", ["Макс. дыр (0="] = "Max holes (0=", ["Меток: "] = "Markers: ", ["   Дыр: "] = "   Holes: ",
         }
         for k, val in pairs(tr) do Data.UI_TRANSLATIONS[Fn.decodeSafe(u8(k))] = val end
     end
