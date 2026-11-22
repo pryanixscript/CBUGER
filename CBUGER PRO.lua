@@ -3739,7 +3739,7 @@ do
         [u8("Каждая новая плитка получает случайное\nизображение из папки moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles")] = "Each new tile gets a random image from the moonloader\\CBUGER PRO\\PianoTiles\\pt_tiles folder",
         [u8("Количество полос")] = "Number of lanes",
         [u8("Команды:")] = "Commands:",
-        [u8("Команды: /hm  |  /hitmarker")] = "Commands: /hm  |  /hitmarker",
+
         [u8("Комбо")] = "Combo",
         [u8("ЛКМ — выбрать изображение для маркеров. ПКМ — добавить/убрать из очереди. Порядок = порядок кликов.")] = "LMB selects a marker image. RMB adds/removes it from the queue. Queue order follows click order.",
         [u8("Личная")] = "Personal",
@@ -11703,6 +11703,7 @@ do
         [" Управление "] = " Controls ",
         [" Слайдшоу "] = " Slideshow ",
         ["Положите PNG/JPG в папку: moonloader\\CBUGER PRO\\HitMarker\\"] = "Place PNG/JPG files in: moonloader\\CBUGER PRO\\HitMarker\\",
+        ["Размер дыры"] = "Hole size",
         ["| Меток: %d  | Дыр: %d"] = "| Markers: %d  | Holes: %d",
         ["(всего: %d)"] = "(total: %d)",
         ["Текстура для дыры #"] = "Texture for bullet hole #",
@@ -27484,7 +27485,7 @@ do
         ig.bullet_holes={
             enabled=new.bool(bh.enabled),use_custom_texture=new.bool(bh.use_custom_texture),
             use_marker_style=new.bool(bh.use_marker_style == true or bh.use_marker_style == 1),
-            radius=new.float(bh.radius),max_holes=new.int(bh.max_holes),
+            radius=new.float(math.max(0.5,math.min(80,tonumber(bh.radius) or 3.0))),max_holes=new.int(bh.max_holes),
             fade_time=new.float(bh.fade_time),hole_transparency=new.float(bh.hole_transparency or 1.0),
             degree_polygon=new.int(math.min(bh.degree_polygon or 8,40)),
             color={bh.color[1],bh.color[2],bh.color[3],bh.color[4]},
@@ -27514,7 +27515,7 @@ do
         t.bullet_holes={
             enabled=bh.enabled[0],use_custom_texture=bh.use_custom_texture[0],
             use_marker_style=bh.use_marker_style[0],
-            radius=bh.radius[0],max_holes=bh.max_holes[0],fade_time=bh.fade_time[0],
+            radius=math.max(0.5,math.min(80,bh.radius[0])),max_holes=bh.max_holes[0],fade_time=bh.fade_time[0],
             hole_transparency=bh.hole_transparency[0],degree_polygon=bh.degree_polygon[0],
             color={bh.color[1],bh.color[2],bh.color[3],bh.color[4]},
         }
@@ -27699,7 +27700,8 @@ do
         return hitDone
     end
     HM_onSendBulletSync = function(data)
-        if not hm_isRunning or not hm_ci.my_bullets.draw[0] then return end
+        if not hm_isRunning or not hm_ci or not hm_ci.my_bullets
+            or not hm_ci.my_bullets.draw[0] or not data or not data.target or not data.origin then return end
         if #hm_bullets>0 then if hm_processHit(data) then return end end
         local con=hm_ci.my_bullets; local maxM=con.max_markers[0]
         local nowPlace=os.clock()
@@ -27803,8 +27805,7 @@ do
             if bh.enabled[0] and not hideAll then
                 local fadeTime=bh.fade_time[0]
                 local useMarkerStyle=bh.use_marker_style[0]
-                local markerRadiusScale=math.max(0.01,mb.circle_radius[0]/4.0)
-                local hRadius=useMarkerStyle and math.min(80,math.max(0.5,bh.radius[0]*markerRadiusScale)) or bh.radius[0]
+                local hRadius=math.max(0.5,math.min(80,bh.radius[0]))
                 local hSegs=useMarkerStyle and mb.degree_polygon[0] or bh.degree_polygon[0]
                 local hAlpha=useMarkerStyle and mb.marker_transparency[0] or bh.hole_transparency[0]
                 local bhUseCustom=useMarkerStyle and mb.use_custom_markers[0] or bh.use_custom_texture[0]
@@ -28034,7 +28035,8 @@ do
                 imgui.Spacing()
                 local bhOn=hm_ci.bullet_holes.enabled[0]
                 hm_ci.bullet_holes.use_marker_style[0] = true
-                imgui.TextWrapped(Fn.T(u8("Внешний вид дыр автоматически повторяет настройки HitMarker. Лимит и время исчезновения настраиваются отдельно.")))
+                imgui.SetNextItemWidth(iw)
+                imgui.SliderFloat(Fn.T(u8("Размер дыры")) .. "##hmbhRadius",hm_ci.bullet_holes.radius,0.5,80.0,"%.1f")
                 hm_eDragInt(u8("Макс. кол-во дыр (0=?)##hmbhMax"),hm_ci.bullet_holes.max_holes,1,0,500,"%d",iw)
                 hm_eDragFloat(u8("Время исчезания сек (0=вечно)##hmbhFade"),hm_ci.bullet_holes.fade_time,0.5,0.0,120.0,"%.1f",iw)
                 imgui.Spacing()
@@ -28082,7 +28084,7 @@ do
                     hm_isRunning=not hm_isRunning
                     hm_lastMarkerPlace=-1
                     if not hm_isRunning then hm_bullets={}; hm_initialMarkers={}; hm_bulletHoles={} end
-                    hm_window_open[0]=false
+                    if hm_isRunning then hm_window_open[0]=false end
                 end
                 imgui.PopStyleColor(2); imgui.Spacing()
                 imgui.TextColored(accentVec4(ac,1.0,1.0),Fn.T(u8("Горячая клавиша")))
@@ -28114,7 +28116,6 @@ do
                 imgui.Separator(); imgui.Spacing()
                 if imgui.Button(Fn.T(u8("Сохранить настройки##hmsave")),imgui.ImVec2(-1,0)) then hm_saveNow() end
                 imgui.Spacing()
-                imgui.TextColored(accentVec4(ac,0.5,1.0),Fn.T(u8("Команды: /hm  |  /hitmarker")))
                 imgui.EndTabItem()
         end
         local function hm_tabSlideshow()
@@ -28185,6 +28186,9 @@ do
                 imgui.EndTabItem()
         end
         if imgui.BeginTabBar(Fn.T(u8("HMTabs##hmtb"))) then
+            if imgui.BeginTabItem(Fn.T(u8(" Управление "))) then
+                hm_tabControl()
+            end
             if imgui.BeginTabItem(Fn.T(u8(" Метки "))) then
                 hm_tabMarkers()
             end
@@ -28196,9 +28200,6 @@ do
             end
             if imgui.BeginTabItem(Fn.T(u8(" Цвета "))) then
                 hm_tabColors()
-            end
-            if imgui.BeginTabItem(Fn.T(u8(" Управление "))) then
-                hm_tabControl()
             end
             if imgui.BeginTabItem(Fn.T(u8(" Слайдшоу "))) then
                 hm_tabSlideshow()
