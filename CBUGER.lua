@@ -21,7 +21,11 @@ do
         end
         CBUGER_SHOWCURSOR_PATCH = {
             original = original,
-            wrapper = stable_show_cursor
+            wrapper = stable_show_cursor,
+            hide = function()
+                last_state = false
+                return original(false)
+            end
         }
         rawset(_G, '__CBUGER_SHOWCURSOR_DEDUP', CBUGER_SHOWCURSOR_PATCH)
         showCursor = stable_show_cursor
@@ -39,6 +43,17 @@ local function CBUGER_RESTORE_SHOWCURSOR_PATCH()
     end
 end
 
+function CBUGER_FORCE_HIDE_CURSOR()
+    local patch = CBUGER_SHOWCURSOR_PATCH
+    if type(patch) == 'table' and type(patch.hide) == 'function' then
+        pcall(patch.hide)
+    elseif type(patch) == 'table' and type(patch.original) == 'function' then
+        pcall(patch.original, false)
+    else
+        pcall(showCursor, false)
+    end
+    pcall(sampSetCursorMode, 0)
+end
 do
     local lfs_ = require('lfs')
     local M = {}
@@ -2654,56 +2669,115 @@ local function CBUGER_REPEAT_STAGES(prefix_stages, keys, count, suffix_stages)
 end
 
 S.default_combos = {
-    { name = u8"+C | C-bug", guide_text = "", data = {{u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}} },
-    { name = u8"Отвод | Otvod", guide_text = "", data = {{u8"ЛКМ", u8"Ф", u8"ПКМ", "C"}} },
+    { name = u8"+C | C-bug", guide_text = "", data = {{u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}}, keymap_alternatives = {
+        {{u8"ПКМ", u8"ЛКМ", "D", "C"}}
+    }},
+    { name = u8"Отвод | Otvod", guide_text = "", data = {{u8"ЛКМ", u8"Ф", u8"ПКМ", "C"}}, keymap_alternatives = {
+        {{u8"ЛКМ", "D", u8"ПКМ", "C"}}
+    }},
     { name = u8"Полуслайд | RP Litefoot", guide_text = "", data = {
         {u8"ЛКМ", CBUGER_HOLD(u8"ПКМ", 1.5), CBUGER_HOLD(u8"Ф", 1.5)},
-        {"D", "Q", u8"ПРОБЕЛ"}
-    } },
+        {"D", "Q", "E", u8"ПРОБЕЛ"}
+    }, keymap_alternatives = {
+    {
+        {u8"ЛКМ", CBUGER_HOLD(u8"ПКМ", 1.5), CBUGER_HOLD("D", 1.5)},
+        {u8"Ф", "Q", "E", u8"ПРОБЕЛ"}
+    }
+    }},
     { name = u8"Перекаты | Riffles", guide_text = "", data = {{
         u8"ЛКМ", CBUGER_HOLD(u8"ПКМ", 1.5), "C", u8"ЛКМ",
         CBUGER_HOLD("D", 1.5), CBUGER_HOLD("C", 1.5)
-    }} },
+    }}, keymap_alternatives = {
+        {{u8"ЛКМ", CBUGER_HOLD(u8"ПКМ", 1.5), "C", u8"ЛКМ", CBUGER_HOLD(u8"Ф", 1.5), CBUGER_HOLD("C", 1.5)}}
+    }},
     { name = u8"ДаблХит + Перекаты | DubleHit + Riffles", guide_text = "", data = {{
         u8"ЛКМ", u8"Ф", CBUGER_HOLD(u8"ПКМ", 2.0), "C", u8"ЛКМ", "C", u8"ЛКМ",
         CBUGER_HOLD("D", 1.0), CBUGER_HOLD("C", 1.0)
-    }} },
+    }}, keymap_alternatives = {
+        {{u8"ЛКМ", "D", CBUGER_HOLD(u8"ПКМ", 2.0), "C", u8"ЛКМ", "C", u8"ЛКМ", CBUGER_HOLD(u8"Ф", 1.0), CBUGER_HOLD("C", 1.0)}}
+    }},
     { name = u8"Слайд | Litefoot", guide_text = "", data = {
         {u8"ЛКМ", CBUGER_HOLD("D", 1.0), u8"ПКМ", "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)},
         {u8"ЛКМ", CBUGER_HOLD(u8"Ф", 1.0), u8"ПКМ", "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)}
+    }, keymap_alternatives = {
+    {
+        {u8"ЛКМ", CBUGER_HOLD(u8"Ф", 1.0), u8"ПКМ", "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)},
+        {u8"ЛКМ", CBUGER_HOLD("D", 1.0), u8"ПКМ", "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)}
+    }
     }},
     { name = u8"Рывок | Hardgun Slide", guide_text = "", data = {
         {u8"ЛКМ", "D", u8"ПКМ", "C", "Q", "E", u8"ПРОБЕЛ"},
         {u8"ЛКМ", u8"Ф", u8"ПКМ", "C", "E", "Q", u8"ПРОБЕЛ"}
+    }, keymap_alternatives = {
+    {
+        {u8"ЛКМ", u8"Ф", u8"ПКМ", "C", "Q", "E", u8"ПРОБЕЛ"},
+        {u8"ЛКМ", "D", u8"ПКМ", "C", "E", "Q", u8"ПРОБЕЛ"}
+    }
     }},
     { name = u8"ДаблХит | DoubleHit", guide_text = "", data = {{
         u8"ЛКМ", u8"Ф", CBUGER_HOLD(u8"ПКМ", 1.0), "C", u8"ЛКМ"
-    }} },
+    }}, keymap_alternatives = {
+        {{u8"ЛКМ", "D", CBUGER_HOLD(u8"ПКМ", 1.0), "C", u8"ЛКМ"}}
+    }},
     { name = u8"ДаблХит + Слайд | DoubleHit + Litefoot", guide_text = "", data = {
         {u8"ЛКМ", u8"Ф", CBUGER_HOLD(u8"ПКМ", 0.5), "C", u8"ЛКМ"},
         {CBUGER_HOLD("D", 1.0), "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)}
+    }, keymap_alternatives = {
+    {
+        {u8"ЛКМ", "D", CBUGER_HOLD(u8"ПКМ", 0.5), "C", u8"ЛКМ"},
+        {CBUGER_HOLD(u8"Ф", 1.0), "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)}
+    }
     }},
     { name = u8"ДаблХит + Рывок | DoubleHit + Hardgun Slide", guide_text = "", data = {
         {u8"ЛКМ", u8"Ф", u8"ПКМ", "C", u8"ЛКМ"},
         {"D", "C", "Q", "E", u8"ПРОБЕЛ"}
+    }, keymap_alternatives = {
+    {
+        {u8"ЛКМ", "D", u8"ПКМ", "C", u8"ЛКМ"},
+        {u8"Ф", "C", "Q", "E", u8"ПРОБЕЛ"}
+    }
     }},
-    { name = u8"Фаст | Fast", guide_text = "", data = CBUGER_REPEAT_STAGES({}, {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 6, {}) },
-    { name = u8"Отвод + Фаст | Fast", guide_text = "", data = CBUGER_REPEAT_STAGES({{u8"ЛКМ", u8"ПКМ", u8"Ф", "C"}}, {u8"ПКМ", u8"ПКМ", u8"Ф", "C"}, 6, {}) },
+    { name = u8"Фаст | Fast", guide_text = "", data = CBUGER_REPEAT_STAGES({}, {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 6, {}), keymap_alternatives = {
+        CBUGER_REPEAT_STAGES({}, {u8"ПКМ", u8"ЛКМ", "D", "C"}, 6, {})
+    }},
+    { name = u8"Отвод + Фаст | Otvod + Fast", guide_text = "", data = CBUGER_REPEAT_STAGES({{u8"ЛКМ", u8"Ф", u8"ПКМ", "C"}}, {u8"ПКМ", u8"ЛКМ", "D", "C"}, 5, {}), keymap_alternatives = {
+        CBUGER_REPEAT_STAGES({{u8"ЛКМ", "D", u8"ПКМ", "C"}}, {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 5, {})
+    }},
     { name = u8"ДаблХит + Фаст | Fast + DubleHit", guide_text = "", data = CBUGER_REPEAT_STAGES(
         {{u8"ЛКМ", u8"Ф", u8"ПКМ", "C", u8"ЛКМ"},
          {"C", u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}},
-        {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 3, {}) },
+        {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 3, {}), keymap_alternatives = {
+        CBUGER_REPEAT_STAGES(
+            {{u8"ЛКМ", "D", u8"ПКМ", "C", u8"ЛКМ"},
+             {"C", u8"ПКМ", u8"ЛКМ", "D", "C"}},
+            {u8"ПКМ", u8"ЛКМ", "D", "C"}, 3,
+            {{u8"ПКМ", u8"ПКМ", "D", "C"}})
+    }},
     { name = u8"Фаст + Слайд | Fast + Litefoot", guide_text = "", data = CBUGER_REPEAT_STAGES(
         {}, {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 6,
-        {{"D", "C", u8"ПРОБЕЛ"}}) },
+        {{"D", "C", u8"ПРОБЕЛ"}}), keymap_alternatives = {
+        CBUGER_REPEAT_STAGES(
+            {}, {u8"ПКМ", u8"ЛКМ", "D", "C"}, 6,
+            {{u8"Ф", "C", u8"ПРОБЕЛ"}})
+    }},
     { name = u8"Фаст + Рывок | Fast + Hardgun", guide_text = "", data = CBUGER_REPEAT_STAGES(
         {}, {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 5,
-        {{"D", "C", "Q", "E", u8"ПРОБЕЛ"}}) },
+        {{"D", "C", "Q", "E", u8"ПРОБЕЛ"}}), keymap_alternatives = {
+        CBUGER_REPEAT_STAGES(
+            {}, {u8"ПКМ", u8"ЛКМ", "D", "C"}, 5,
+            {{u8"Ф", "C", "Q", "E", u8"ПРОБЕЛ"}})
+    }},
     { name = u8"ДаблХит + Фаст + Рывок | Fast + DubleHit + Hardgun", guide_text = "", data = CBUGER_REPEAT_STAGES(
         {{u8"ЛКМ", u8"Ф", u8"ПКМ", "C", u8"ЛКМ"},
          {"C", u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}},
         {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 3,
-        {{"D", "C", "Q", "E", u8"ПРОБЕЛ"}}) },
+        {{"D", "C", "Q", "E", u8"ПРОБЕЛ"}}), keymap_alternatives = {
+        CBUGER_REPEAT_STAGES(
+            {{u8"ЛКМ", "D", u8"ПКМ", "C", u8"ЛКМ"},
+             {"C", u8"ПКМ", u8"ЛКМ", "D", "C"}},
+            {u8"ПКМ", u8"ЛКМ", "D", "C"}, 3,
+            {{u8"Ф", "C", "Q", "E", u8"ПРОБЕЛ"}})
+    }},
 }
 S.combos_list = {}
 S.KEY_COLORS  = { NORMAL = 0xFFFFFFFF, HELD = 0xFF006400 }
@@ -5942,22 +6016,31 @@ Fn.KS = (function()
         local out = {}
         local list = S.combos_list or {}
         out[1] = tostring(#list)
-        for _, c in ipairs(list) do
-            out[#out + 1] = tostring(c.name)
-            if type(c.data) == 'table' then
-                for _, p in ipairs(c.data) do
-                    local seg = {}
-                    if type(p) == 'table' then
-                        for _, k in ipairs(p) do
-                            if type(k) == 'table' then
-                                seg[#seg + 1] = tostring(k.name) .. (k.hold and ('~' .. tostring(k.time)) or '')
-                            else
-                                seg[#seg + 1] = tostring(k)
-                            end
+
+        local function append_data_signature(data, prefix)
+            if type(data) ~= 'table' then return end
+            for _, part in ipairs(data) do
+                local seg = {}
+                if type(part) == 'table' then
+                    for _, key in ipairs(part) do
+                        if type(key) == 'table' then
+                            seg[#seg + 1] = tostring(key.name)
+                                .. (key.hold and ('~' .. tostring(key.time)) or '')
+                        else
+                            seg[#seg + 1] = tostring(key)
                         end
                     end
-                    out[#out + 1] = table.concat(seg, ',')
                 end
+                out[#out + 1] = (prefix or '') .. table.concat(seg, ',')
+            end
+        end
+
+        for _, combo in ipairs(list) do
+            out[#out + 1] = tostring(combo.name)
+            append_data_signature(combo.data, 'data:')
+            for variant_index, variant in ipairs(combo.keymap_alternatives or {}) do
+                out[#out + 1] = 'alternative:' .. tostring(variant_index)
+                append_data_signature(variant, 'alt:')
             end
         end
         return table.concat(out, '|')
@@ -5979,6 +6062,20 @@ Fn.KS = (function()
             if c then
                 c.order = i
                 compiled[#compiled + 1] = c
+            end
+
+            if type(combo.keymap_alternatives) == 'table' then
+                for variant_index, variant_data in ipairs(combo.keymap_alternatives) do
+                    if type(variant_data) == 'table' then
+                        local variant_combo = { name = combo.name, data = variant_data }
+                        local variant = compile(variant_combo)
+                        if variant then
+                            variant.order = i
+                            variant.variant_index = variant_index
+                            compiled[#compiled + 1] = variant
+                        end
+                    end
+                end
             end
         end
         reset_runs()
@@ -8115,8 +8212,6 @@ local function CBUGER_MENU_CURSOR_VISIBLE()
         or (neon.main_alpha > 0.01) or (neon.editor_alpha > 0.01)
         or (neon.combo_editor_alpha > 0.01)
         or ui.guide_open[0]
-        or ui.show_logs[0] or ui.show_combo_window[0]
-        or ui.keyboard[0] or ui.mouse[0]
 end
 
 local CBUGER_CURSOR_SUBSCRIPTIONS = {}
@@ -14088,7 +14183,7 @@ function CB.run()
     end
     local standard_combos_changed = false
 
-    local refresh_presets_once = S.cfg.config.cbuger_combo_presets_20261028_v1 ~= true
+    local refresh_presets_once = S.cfg.config.cbuger_combo_presets_20261123_keymap_alternatives_v1 ~= true
 
     local initialize_presets = refresh_presets_once or not loaded
 
@@ -14190,7 +14285,7 @@ function CB.run()
     end
     if refresh_presets_once and combos_saved then
 
-        S.cfg.config.cbuger_combo_presets_20261028_v1 = true
+        S.cfg.config.cbuger_combo_presets_20261123_keymap_alternatives_v1 = true
         pcall(function() Lib.inicfg.save(S.cfg, Data.iniFile) end)
     end
     if not S.cfg.config.language_mode then S.cfg.config.language_mode = 1 end
@@ -14433,6 +14528,11 @@ function CB.run()
             Fn.KS.why = why
             Fn.KS.safe_update(why ~= nil)
         end
+        local cursor_menu_now = CBUGER_MENU_CURSOR_VISIBLE() and true or false
+        if Data.cbuger_cursor_menu_was and not cursor_menu_now then
+            CBUGER_FORCE_HIDE_CURSOR()
+        end
+        Data.cbuger_cursor_menu_was = cursor_menu_now
     end
 end
 function CB.terminate(s)
