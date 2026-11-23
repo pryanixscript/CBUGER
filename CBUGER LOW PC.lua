@@ -22,7 +22,11 @@ do
         end
         CBUGER_SHOWCURSOR_PATCH = {
             original = original,
-            wrapper = stable_show_cursor
+            wrapper = stable_show_cursor,
+            hide = function()
+                last_state = false
+                return original(false)
+            end
         }
         rawset(_G, '__CBUGER_SHOWCURSOR_DEDUP', CBUGER_SHOWCURSOR_PATCH)
         showCursor = stable_show_cursor
@@ -40,6 +44,17 @@ CBUGER_RESTORE_SHOWCURSOR_PATCH = function()
     end
 end
 
+function CBUGER_FORCE_HIDE_CURSOR()
+    local patch = CBUGER_SHOWCURSOR_PATCH
+    if type(patch) == 'table' and type(patch.hide) == 'function' then
+        pcall(patch.hide)
+    elseif type(patch) == 'table' and type(patch.original) == 'function' then
+        pcall(patch.original, false)
+    else
+        pcall(showCursor, false)
+    end
+    pcall(sampSetCursorMode, 0)
+end
 do
     local lfs_ = require('lfs')
     local M = {}
@@ -80,7 +95,7 @@ do
                     or err_text:find('cannot find', 1, true) then
                     return false
                 end
-                return true -- Unknown I/O error: do not overwrite an unverified target.
+                return true
             end)
             if not ok_exists then return nil, true end
             return nil, exists and true or false
@@ -93,8 +108,8 @@ do
         return data, false
     end
 
-    -- Атомарная запись с резервной копией. Старый файл никогда не удаляется
-    -- до тех пор, пока временный файл не записан и не проверен.
+
+
     local pending_safe_writes = rawget(_G, '__CBUGER_PENDING_SAFE_WRITES')
     if type(pending_safe_writes) ~= 'table' then
         pending_safe_writes = {}
@@ -129,10 +144,10 @@ do
             return false
         end
         if old_data ~= nil then
-            -- Обновляем резервную копию только после того, как временный файл проверен.
+
             local ok_remove, remove_result = pcall(os.remove, bak)
             if not ok_remove or remove_result == nil then
-                -- Некоторые реализации возвращают nil, если файла ещё нет.
+
                 local check_bak = read_all(bak)
                 if check_bak ~= nil then
                     pcall(os.remove, tmp)
@@ -168,7 +183,6 @@ do
         if saved then
             pending_safe_writes[path] = nil
         else
-            -- Keep the last complete payload and retry it from the main loop.
             pending_safe_writes[path] = content
         end
         return saved
@@ -312,8 +326,6 @@ do
             out[#out + 1] = ''
         end
         local saved = CBUGER_SAFE_WRITE_FILE(path, table.concat(out, '\r\n'))
-        -- CBUGER_SAFE_WRITE_FILE queues the exact serialized snapshot on failure.
-        -- A later settings change calls M.save again and refreshes that queued snapshot.
         pending_ini_saves[path] = nil
         return saved
     end
@@ -354,9 +366,6 @@ do
         if not force and now < retry_pending_at then return end
         retry_pending_at = now + 5.0
 
-        -- Retry exact, fully serialized snapshots. M.save queues its snapshot
-        -- through CBUGER_SAFE_WRITE_FILE; replaying mutable INI tables here can
-        -- accidentally serialize temporary fields removed by a caller.
         for path, content in pairs(pending_safe_writes) do
             if type(content) == 'string' then
                 pcall(CBUGER_SAFE_WRITE_FILE, path, content)
@@ -364,8 +373,6 @@ do
                 pending_safe_writes[path] = nil
             end
         end
-        -- Clear legacy mutable-table retries left by older script builds;
-        -- their serialized snapshots are already present in pending_safe_writes.
         for path in pairs(pending_ini_saves) do pending_ini_saves[path] = nil end
     end
 
@@ -1865,7 +1872,7 @@ end
         Data.shotmap.current.ref = Data.shotmap.current.ref
         Data.shotmap.current.ts = tonumber(Data.shotmap.current.ts) or os.time()
     else
-        -- Совместимость со старыми версиями shotmap.json, где current не записывался.
+
         Data.shotmap.current = { points = {}, ref = nil, ts = os.time() }
     end
     Data.shotmap.dirty = false
@@ -1969,56 +1976,115 @@ local function CBUGER_REPEAT_STAGES(prefix_stages, keys, count, suffix_stages)
 end
 
 S.default_combos = {
-    { name = u8"+C | C-bug", guide_text = "", data = {{u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}} },
-    { name = u8"Отвод | Otvod", guide_text = "", data = {{u8"ЛКМ", u8"Ф", u8"ПКМ", "C"}} },
+    { name = u8"+C | C-bug", guide_text = "", data = {{u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}}, keymap_alternatives = {
+        {{u8"ПКМ", u8"ЛКМ", "D", "C"}}
+    }},
+    { name = u8"Отвод | Otvod", guide_text = "", data = {{u8"ЛКМ", u8"Ф", u8"ПКМ", "C"}}, keymap_alternatives = {
+        {{u8"ЛКМ", "D", u8"ПКМ", "C"}}
+    }},
     { name = u8"Полуслайд | RP Litefoot", guide_text = "", data = {
         {u8"ЛКМ", CBUGER_HOLD(u8"ПКМ", 1.5), CBUGER_HOLD(u8"Ф", 1.5)},
-        {"D", "Q", u8"ПРОБЕЛ"}
-    } },
+        {"D", "Q", "E", u8"ПРОБЕЛ"}
+    }, keymap_alternatives = {
+    {
+        {u8"ЛКМ", CBUGER_HOLD(u8"ПКМ", 1.5), CBUGER_HOLD("D", 1.5)},
+        {u8"Ф", "Q", "E", u8"ПРОБЕЛ"}
+    }
+    }},
     { name = u8"Перекаты | Riffles", guide_text = "", data = {{
         u8"ЛКМ", CBUGER_HOLD(u8"ПКМ", 1.5), "C", u8"ЛКМ",
         CBUGER_HOLD("D", 1.5), CBUGER_HOLD("C", 1.5)
-    }} },
+    }}, keymap_alternatives = {
+        {{u8"ЛКМ", CBUGER_HOLD(u8"ПКМ", 1.5), "C", u8"ЛКМ", CBUGER_HOLD(u8"Ф", 1.5), CBUGER_HOLD("C", 1.5)}}
+    }},
     { name = u8"ДаблХит + Перекаты | DubleHit + Riffles", guide_text = "", data = {{
         u8"ЛКМ", u8"Ф", CBUGER_HOLD(u8"ПКМ", 2.0), "C", u8"ЛКМ", "C", u8"ЛКМ",
         CBUGER_HOLD("D", 1.0), CBUGER_HOLD("C", 1.0)
-    }} },
+    }}, keymap_alternatives = {
+        {{u8"ЛКМ", "D", CBUGER_HOLD(u8"ПКМ", 2.0), "C", u8"ЛКМ", "C", u8"ЛКМ", CBUGER_HOLD(u8"Ф", 1.0), CBUGER_HOLD("C", 1.0)}}
+    }},
     { name = u8"Слайд | Litefoot", guide_text = "", data = {
         {u8"ЛКМ", CBUGER_HOLD("D", 1.0), u8"ПКМ", "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)},
         {u8"ЛКМ", CBUGER_HOLD(u8"Ф", 1.0), u8"ПКМ", "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)}
+    }, keymap_alternatives = {
+    {
+        {u8"ЛКМ", CBUGER_HOLD(u8"Ф", 1.0), u8"ПКМ", "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)},
+        {u8"ЛКМ", CBUGER_HOLD("D", 1.0), u8"ПКМ", "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)}
+    }
     }},
     { name = u8"Рывок | Hardgun Slide", guide_text = "", data = {
         {u8"ЛКМ", "D", u8"ПКМ", "C", "Q", "E", u8"ПРОБЕЛ"},
         {u8"ЛКМ", u8"Ф", u8"ПКМ", "C", "E", "Q", u8"ПРОБЕЛ"}
+    }, keymap_alternatives = {
+    {
+        {u8"ЛКМ", u8"Ф", u8"ПКМ", "C", "Q", "E", u8"ПРОБЕЛ"},
+        {u8"ЛКМ", "D", u8"ПКМ", "C", "E", "Q", u8"ПРОБЕЛ"}
+    }
     }},
     { name = u8"ДаблХит | DoubleHit", guide_text = "", data = {{
         u8"ЛКМ", u8"Ф", CBUGER_HOLD(u8"ПКМ", 1.0), "C", u8"ЛКМ"
-    }} },
+    }}, keymap_alternatives = {
+        {{u8"ЛКМ", "D", CBUGER_HOLD(u8"ПКМ", 1.0), "C", u8"ЛКМ"}}
+    }},
     { name = u8"ДаблХит + Слайд | DoubleHit + Litefoot", guide_text = "", data = {
         {u8"ЛКМ", u8"Ф", CBUGER_HOLD(u8"ПКМ", 0.5), "C", u8"ЛКМ"},
         {CBUGER_HOLD("D", 1.0), "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)}
+    }, keymap_alternatives = {
+    {
+        {u8"ЛКМ", "D", CBUGER_HOLD(u8"ПКМ", 0.5), "C", u8"ЛКМ"},
+        {CBUGER_HOLD(u8"Ф", 1.0), "C", CBUGER_HOLD(u8"ПРОБЕЛ", 1.0)}
+    }
     }},
     { name = u8"ДаблХит + Рывок | DoubleHit + Hardgun Slide", guide_text = "", data = {
         {u8"ЛКМ", u8"Ф", u8"ПКМ", "C", u8"ЛКМ"},
         {"D", "C", "Q", "E", u8"ПРОБЕЛ"}
+    }, keymap_alternatives = {
+    {
+        {u8"ЛКМ", "D", u8"ПКМ", "C", u8"ЛКМ"},
+        {u8"Ф", "C", "Q", "E", u8"ПРОБЕЛ"}
+    }
     }},
-    { name = u8"Фаст | Fast", guide_text = "", data = CBUGER_REPEAT_STAGES({}, {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 6, {}) },
-    { name = u8"Отвод + Фаст | Otvod + Fast ", guide_text = "", data = CBUGER_REPEAT_STAGES({{u8"ЛКМ", u8"ПКМ", u8"Ф", "C"}}, {u8"ПКМ", u8"ПКМ", u8"Ф", "C"}, 6, {}) },
+    { name = u8"Фаст | Fast", guide_text = "", data = CBUGER_REPEAT_STAGES({}, {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 6, {}), keymap_alternatives = {
+        CBUGER_REPEAT_STAGES({}, {u8"ПКМ", u8"ЛКМ", "D", "C"}, 6, {})
+    }},
+    { name = u8"Отвод + Фаст | Otvod + Fast", guide_text = "", data = CBUGER_REPEAT_STAGES({{u8"ЛКМ", u8"Ф", u8"ПКМ", "C"}}, {u8"ПКМ", u8"ЛКМ", "D", "C"}, 5, {}), keymap_alternatives = {
+        CBUGER_REPEAT_STAGES({{u8"ЛКМ", "D", u8"ПКМ", "C"}}, {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 5, {})
+    }},
     { name = u8"ДаблХит + Фаст | Fast + DubleHit", guide_text = "", data = CBUGER_REPEAT_STAGES(
         {{u8"ЛКМ", u8"Ф", u8"ПКМ", "C", u8"ЛКМ"},
          {"C", u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}},
-        {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 3, {}) },
+        {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 3, {}), keymap_alternatives = {
+        CBUGER_REPEAT_STAGES(
+            {{u8"ЛКМ", "D", u8"ПКМ", "C", u8"ЛКМ"},
+             {"C", u8"ПКМ", u8"ЛКМ", "D", "C"}},
+            {u8"ПКМ", u8"ЛКМ", "D", "C"}, 3,
+            {{u8"ПКМ", u8"ПКМ", "D", "C"}})
+    }},
     { name = u8"Фаст + Слайд | Fast + Litefoot", guide_text = "", data = CBUGER_REPEAT_STAGES(
         {}, {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 6,
-        {{"D", "C", u8"ПРОБЕЛ"}}) },
+        {{"D", "C", u8"ПРОБЕЛ"}}), keymap_alternatives = {
+        CBUGER_REPEAT_STAGES(
+            {}, {u8"ПКМ", u8"ЛКМ", "D", "C"}, 6,
+            {{u8"Ф", "C", u8"ПРОБЕЛ"}})
+    }},
     { name = u8"Фаст + Рывок | Fast + Hardgun", guide_text = "", data = CBUGER_REPEAT_STAGES(
         {}, {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 5,
-        {{"D", "C", "Q", "E", u8"ПРОБЕЛ"}}) },
+        {{"D", "C", "Q", "E", u8"ПРОБЕЛ"}}), keymap_alternatives = {
+        CBUGER_REPEAT_STAGES(
+            {}, {u8"ПКМ", u8"ЛКМ", "D", "C"}, 5,
+            {{u8"Ф", "C", "Q", "E", u8"ПРОБЕЛ"}})
+    }},
     { name = u8"ДаблХит + Фаст + Рывок | Fast + DubleHit + Hardgun", guide_text = "", data = CBUGER_REPEAT_STAGES(
         {{u8"ЛКМ", u8"Ф", u8"ПКМ", "C", u8"ЛКМ"},
          {"C", u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}},
         {u8"ПКМ", u8"ЛКМ", u8"Ф", "C"}, 3,
-        {{"D", "C", "Q", "E", u8"ПРОБЕЛ"}}) },
+        {{"D", "C", "Q", "E", u8"ПРОБЕЛ"}}), keymap_alternatives = {
+        CBUGER_REPEAT_STAGES(
+            {{u8"ЛКМ", "D", u8"ПКМ", "C", u8"ЛКМ"},
+             {"C", u8"ПКМ", u8"ЛКМ", "D", "C"}},
+            {u8"ПКМ", u8"ЛКМ", "D", "C"}, 3,
+            {{u8"Ф", "C", "Q", "E", u8"ПРОБЕЛ"}})
+    }},
 }
 S.combos_list = {}
 S.KEY_COLORS  = { NORMAL = 0xFFFFFFFF, HELD = 0xFF006400 }
@@ -2895,10 +2961,10 @@ Data.UI_TRANSLATIONS_RAW = {
     [u8"Шестерёнка (настройки)"] = "Gear (settings)",
     [u8"Эффекты"] = "Effects",
     [u8"Язык клавиатуры"] = "Keyboard language",
-    [u8"←→"] = "<->",
-    [u8"↑↓"] = "^v",
-    [u8"→←"] = "-><-",
-    [u8"↓↑"] = "v^",
+    [u8"<>"] = "<->",
+    [u8"^v"] = "^v",
+    [u8"><"] = "-><-",
+    [u8"v^"] = "v^",
     [u8"Гайд: "] = "Guide: ",
     [u8"Обычный"] = "Normal",
     [u8"Крестики"] = "Crosses",
@@ -3001,7 +3067,6 @@ Fn.T = function(s)
         local tr = Data.UI_TRANSLATIONS[safe]
         if tr then return tr end
 
-        -- Translate the visible part while preserving ImGui IDs and original padding.
         local visible, hidden = safe:match('^(.-)(##.*)$')
         if visible and hidden then
             local base_tr = Data.UI_TRANSLATIONS[visible]
@@ -3012,7 +3077,6 @@ Fn.T = function(s)
             end
             if base_tr then return base_tr .. hidden end
         else
-            -- Many legacy controls add indentation directly to their label.
             local leading, core, trailing = safe:match('^(%s*)(.-)(%s*)$')
             if core and core ~= '' and core ~= safe then
                 tr = Data.UI_TRANSLATIONS[core]
@@ -3299,7 +3363,7 @@ do
     end
 end
 
-Fn.L = function(ru, en)   -- выбор строки по языку интерфейса (для чата и т.п.)
+Fn.L = function(ru, en)
     if ui and ui.interface_lang and ui.interface_lang[0] == 2 then return en end
     return ru
 end
@@ -3311,7 +3375,6 @@ Fn.translateList = function(list)
     return out
 end
 
--- Translation audit additions: labels shared by the standard and LOW PC builds.
 do
     local audit_translations = {
         [u8"КПД"] = "Efficiency",
@@ -3339,11 +3402,8 @@ do
 end
 
 
--- Shared translation for the folder hint used by image-backed modules.
 Data.UI_TRANSLATIONS[Fn.decodeSafe(u8"Положите PNG/JPG/BMP в папку:")] = "Place PNG/JPG/BMP files in the folder:"
 
--- A small UI boundary guard: labels passed directly to ImGui are translated too.
--- Fn.T keeps widget IDs (##...) intact and only changes known Russian labels.
 local CBUGER_IMGUI_TRANSLATION_PATCH = { originals = {}, wrappers = {} }
 local function CBUGER_WRAP_IMGUI_TRANSLATION(name, arg_index)
     local original = imgui[name]
@@ -3617,8 +3677,8 @@ end
     if type(key) == 'string' then
         local safe = Fn.decodeSafe(key)
 
-        -- Русские обозначения переводим в физические клавиши латинской раскладки.
-        -- Й = Q (0x51), У = E (0x45), Ф = A (0x41).
+
+
         if safe == Fn.decodeSafe(u8"Й") then return "Q" end
         if safe == Fn.decodeSafe(u8"У") then return "E" end
         if safe == Fn.decodeSafe(u8"Ф") then return "A" end
@@ -4026,9 +4086,9 @@ end
     end
     return log_type
 end
- -- Комбинация фактически выполнена: последняя часть полностью введена без ошибок
-    -- (ждём лишь отпускания зажатых клавиш). Любые дальнейшие нажатия/удержания
-    -- уже не должны считаться ошибками.
+
+
+
  Fn.isComboEffectivelyDone = function()
     local st = S.state
     if not st.current_combo or not st.combo_started or st.combo_completed then return false end
@@ -4110,9 +4170,9 @@ end
                         local pending_name = Fn.decodeSafe(first_name)
                         st.tap_keys_last_part[pending_name] = nil
                         st.tap_keys_released[pending_name] = true
-                        -- Клавиша уже обрабатывается вручную при переходе между частями.
-                        -- Помечаем её как удерживаемую в edge-detector, чтобы основной
-                        -- опрос клавиатуры в этом же кадре не зарегистрировал её повторно.
+
+
+
                         local pending_code = Fn.nameToCode(first_name)
                         if pending_code then S.prev_key_states[pending_code] = true end
                         Fn.addComboLog(first_name)
@@ -4371,10 +4431,6 @@ end
         local expectedName = Fn.normalizeKeyName(expected)
         local expectedIsHold = Fn.getKeyHoldSettings(expected)
 
-        -- Q/E (Й/У) can be sampled in the same frame in a fixed scan order.
-        -- If the first key was accepted as the swapped Q/E key, accept its
-        -- counterpart BEFORE duplicate-key checks, otherwise the already
-        -- completed first slot is incorrectly reported as an extra press.
         local is_ryvok_followup = st.ryvok_swapped and not expectedIsHold and
             ((expectedName == "E" and key_name == "Q") or
              (expectedName == "Q" and key_name == "E"))
@@ -4970,29 +5026,29 @@ Data.wave_cycle       = 0
     end
     return nil, best_idx
 end
--- ============================================================================
---  CBUGER: Статистика нажатий
---  1) Тепловая карта клавиш: чем чаще нажимаешь клавишу, тем она краснее
---     (зелёный -> жёлтый -> оранжевый -> красный).
---  2) Счётчик комбинаций: все комбо из списка отслеживаются одновременно
---     (выбирать комбо в списке не нужно). Засчитывается только комбо,
---     выполненное правильно. Добавленные в список комбо подхватываются сами.
---  Включается чекбоксом во вкладке "Основные". Данные хранятся в key_stats.json.
--- ============================================================================
+
+
+
+
+
+
+
+
+
 Fn.KS = (function()
     local KS = {}
 
-    KS.SETTLE         = 1.5    -- пауза (сек), после которой комбо считается завершённым окончательно
-    KS.RUN_TIMEOUT    = 3.0    -- простой внутри незавершённого комбо (сек)
-    KS.TAP_MAX        = 0.5    -- обычную клавишу нельзя держать дольше (сек)
-    KS.HOLD_SLACK     = 0.25   -- допуск к времени удержания (движок использует +0.2)
-    KS.HEAT_MIN_SCALE = 30     -- сколько нажатий нужно, чтобы клавиша стала полностью красной
+    KS.SETTLE         = 1.5
+    KS.RUN_TIMEOUT    = 3.0
+    KS.TAP_MAX        = 0.5
+    KS.HOLD_SLACK     = 0.25
+    KS.HEAT_MIN_SCALE = 30
     KS.AUTOSAVE_SEC   = 30
 
     KS.enabled      = Lib.new.bool(false)
     KS.show_counts   = Lib.new.bool(false)
-    KS.counts       = {}       -- [vk-код] = число нажатий
-    KS.combo_counts = {}       -- [имя комбо] = сколько раз выполнено правильно
+    KS.counts       = {}
+    KS.combo_counts = {}
     KS.max          = 0
     KS.total        = 0
     KS.dirty        = false
@@ -5010,7 +5066,7 @@ Fn.KS = (function()
     local seq = 0
     local active = false
 
-    -- ------------------------------------------------------------------ утилиты
+
     local function key_down(code)
         local api = Data.key_state_user32
         if api then
@@ -5071,12 +5127,12 @@ Fn.KS = (function()
         recalc()
     end
 
-    -- ------------------------------------------------------------ тепловая карта
+
     local HEAT_STOPS = {
-        { 0.00, 0.10, 0.80, 0.25 },   -- зелёный
-        { 0.35, 0.95, 0.90, 0.10 },   -- жёлтый
-        { 0.65, 1.00, 0.55, 0.05 },   -- оранжевый
-        { 1.00, 0.90, 0.08, 0.08 },   -- красный
+        { 0.00, 0.10, 0.80, 0.25 },
+        { 0.35, 0.95, 0.90, 0.10 },
+        { 0.65, 1.00, 0.55, 0.05 },
+        { 1.00, 0.90, 0.08, 0.08 },
     }
 
     local function heat_rgb(t)
@@ -5096,13 +5152,13 @@ Fn.KS = (function()
         if type(code) ~= 'number' then return nil end
         local n = KS.counts[code]
         if not n or n <= 0 then return nil end
-        -- ОТНОСИТЕЛЬНЫЙ цвет (как в карте выстрелов): самая редкая клавиша - зелёная,
-        -- самая частая - красная, остальные - между ними в зависимости от чужих нажатий
+
+
         local mx, mn = KS.max, KS.min or 0
         local t = 0.5
         if mx > mn then t = (n - mn) / (mx - mn) end
         local r, g, b = heat_rgb(t)
-        if cur[code] then   -- нажатая прямо сейчас клавиша чуть светлее
+        if cur[code] then
             r = r + (1 - r) * 0.35
             g = g + (1 - g) * 0.35
             b = b + (1 - b) * 0.35
@@ -5112,7 +5168,7 @@ Fn.KS = (function()
         return { r, g, b, a }
     end
 
-    -- Отображение счётчика вместо подписи клавиши; цвет применяется только к цифре.
+
     function KS.display_text(code, fallback, secondary_code)
         if not (KS.enabled[0] and KS.show_counts[0]) or type(code) ~= 'number' then
             return fallback, nil, false
@@ -5138,7 +5194,7 @@ Fn.KS = (function()
         return tostring(n), color, true
     end
 
-    -- подключаем к общей функции цвета клавиш (её используют все раскладки и мышь)
+
     local orig_get_state_color = Fn.getKeyStateColor
     Fn.getKeyStateColor = function(keyName, comboVisualsActive, code)
         local color, idx = orig_get_state_color(keyName, comboVisualsActive, code)
@@ -5149,7 +5205,7 @@ Fn.KS = (function()
         return color, idx
     end
 
-    -- ---------------------------------------------------- распознавание комбо
+
     local function ensure_poll()
         if not poll_ready then
             poll_ready = true
@@ -5167,7 +5223,7 @@ Fn.KS = (function()
                 end
             end
         end
-        if type(keyboards) == 'table' then   -- клавиши тренировочной раскладки (W A S D Q E / C / ПРОБЕЛ)
+        if type(keyboards) == 'table' then
             for _, line in ipairs(keyboards) do
                 if type(line) == 'table' then
                     for _, v in ipairs(line) do
@@ -5191,8 +5247,6 @@ Fn.KS = (function()
             return
         end
 
-        -- Prefer ImGui's frame id. The time fallback is for older mimgui builds
-        -- where GetFrameCount is not exposed.
         local frame_id
         local ok_frame, frame_value = pcall(function()
             return Lib.imgui.GetFrameCount()
@@ -5266,7 +5320,7 @@ Fn.KS = (function()
             end
         end
         if #steps == 0 then return nil end
-        -- обычная клавиша, которую в этой же части ещё и зажимают: её "залипание" не ошибка
+
         for i, st in ipairs(steps) do
             if not st.hold then
                 local p = parts[st.part]
@@ -5285,22 +5339,31 @@ Fn.KS = (function()
         local out = {}
         local list = S.combos_list or {}
         out[1] = tostring(#list)
-        for _, c in ipairs(list) do
-            out[#out + 1] = tostring(c.name)
-            if type(c.data) == 'table' then
-                for _, p in ipairs(c.data) do
-                    local seg = {}
-                    if type(p) == 'table' then
-                        for _, k in ipairs(p) do
-                            if type(k) == 'table' then
-                                seg[#seg + 1] = tostring(k.name) .. (k.hold and ('~' .. tostring(k.time)) or '')
-                            else
-                                seg[#seg + 1] = tostring(k)
-                            end
+
+        local function append_data_signature(data, prefix)
+            if type(data) ~= 'table' then return end
+            for _, part in ipairs(data) do
+                local seg = {}
+                if type(part) == 'table' then
+                    for _, key in ipairs(part) do
+                        if type(key) == 'table' then
+                            seg[#seg + 1] = tostring(key.name)
+                                .. (key.hold and ('~' .. tostring(key.time)) or '')
+                        else
+                            seg[#seg + 1] = tostring(key)
                         end
                     end
-                    out[#out + 1] = table.concat(seg, ',')
                 end
+                out[#out + 1] = (prefix or '') .. table.concat(seg, ',')
+            end
+        end
+
+        for _, combo in ipairs(list) do
+            out[#out + 1] = tostring(combo.name)
+            append_data_signature(combo.data, 'data:')
+            for variant_index, variant in ipairs(combo.keymap_alternatives or {}) do
+                out[#out + 1] = 'alternative:' .. tostring(variant_index)
+                append_data_signature(variant, 'alt:')
             end
         end
         return table.concat(out, '|')
@@ -5323,6 +5386,20 @@ Fn.KS = (function()
                 c.order = i
                 compiled[#compiled + 1] = c
             end
+
+            if type(combo.keymap_alternatives) == 'table' then
+                for variant_index, variant_data in ipairs(combo.keymap_alternatives) do
+                    if type(variant_data) == 'table' then
+                        local variant_combo = { name = combo.name, data = variant_data }
+                        local variant = compile(variant_combo)
+                        if variant then
+                            variant.order = i
+                            variant.variant_index = variant_index
+                            compiled[#compiled + 1] = variant
+                        end
+                    end
+                end
+            end
         end
         reset_runs()
     end
@@ -5338,7 +5415,7 @@ Fn.KS = (function()
         end
     end
 
-    -- true: ход принят, комбо продолжается; false: ошибка, этот забег закончился
+
     local function try_press(run, id, now)
         if run.swap_wait then
             if id == run.swap_wait then
@@ -5355,7 +5432,7 @@ Fn.KS = (function()
             accept(run, run.pos, now)
             return true
         end
-        -- Q и E можно нажимать в любом порядке (как в основном движке)
+
         local nx = steps[run.pos + 1]
         if nx and not st.hold and not nx.hold and nx.part == st.part and id == nx.id
            and ((st.id == 'Q' and nx.id == 'E') or (st.id == 'E' and nx.id == 'Q')) then
@@ -5385,7 +5462,7 @@ Fn.KS = (function()
         runs = survivors
     end
 
-    -- 'dead' - забег провален, 'done' - комбо выполнено, nil - идёт дальше
+
     local function tick_run(run, now)
         local c = run.c
         local steps = c.steps
@@ -5463,9 +5540,9 @@ Fn.KS = (function()
         pending = np
     end
 
-    -- Выполненное комбо ждёт: вдруг игрок продолжит и получится более длинное
-    -- (например, "ДаблХит" -> "ДаблХит + Слайд"). Пока такая возможность жива
-    -- (пауза меньше KS.SETTLE), комбо не засчитывается.
+
+
+
     local function settle_pending(now)
         if #pending > 1 then
             table.sort(pending, function(a, b)
@@ -5492,7 +5569,7 @@ Fn.KS = (function()
         end
     end
 
-    -- ----------------------------------------------------------------- главный цикл
+
     function KS.update(blocked)
         local now = os.clock()
         if KS.enabled[0] ~= KS.enabled_saved then
@@ -5524,27 +5601,27 @@ Fn.KS = (function()
             KS.stat[w] = (KS.stat[w] or 0) + 1
         else
             KS.stat.ok = KS.stat.ok + 1
-        end   -- не зависит от "Общей активации" (она по умолчанию выключена)
+        end
         if gate or not active then
-            -- меню/чат открыты (или только что включили): запоминаем состояние, ничего не считаем
+
             for code, d in pairs(cur) do prev[code] = d end
             active = not gate
             if gate then reset_runs() end
             return
         end
 
-        -- События для счётчика комбинаций. Счётчик тепловой карты обновляется
-        -- отдельно в refresh_counts, чтобы текст клавиш брал актуальные значения.
+
+
         local pressed = {}
         for code in pairs(poll) do
             if cur[code] and not prev[code] then
                 pressed[code] = true
             end
         end
-        -- prev обновляем сразу: ошибка в разборе комбо ниже не должна ломать подсчёт
+
         for code, d in pairs(cur) do prev[code] = d end
 
-        -- события для распознавания комбо (порядок как в основном движке)
+
         local events = {}
         for _, k in ipairs(S.all_monitored_keys or {}) do
             local id = name_id(k.name)
@@ -5589,7 +5666,7 @@ Fn.KS = (function()
         KS.save()
     end
 
-    -- ------------------------------------------------------------------ интерфейс
+
     function KS.combo_rows()
         local rows, seen = {}, {}
         for i, combo in ipairs(S.combos_list or {}) do
@@ -5629,7 +5706,7 @@ Fn.KS = (function()
             Fn.T(u8"Чем чаще нажимаете клавишу, тем краснее она"))
         im.SetWindowFontScale(1.0)
 
-        -- шкала: редко -> часто
+
         local dl = im.GetWindowDrawList()
         if Data.ofs_row then Data.ofs_row('gr_keymap_scale') end
         local p = im.GetCursorScreenPos()
@@ -5645,8 +5722,8 @@ Fn.KS = (function()
 
         im.Dummy(im.ImVec2(0, 4))
 
-        -- кнопка сброса (нужно нажать дважды)
-        -- кнопка как остальные в «Тренировке»: размер (cw - 40) x 28, тот же сдвиг
+
+
         local armed = KS.reset_until ~= nil and os.clock() < KS.reset_until
         local label = armed and Fn.T(u8"Нажмите ещё раз для сброса") or Fn.T(u8"Сбросить статистику")
         local bw = (type(cw) == 'number') and (cw - 40) or math.max(40, im.GetContentRegionAvail().x)
@@ -5662,7 +5739,7 @@ Fn.KS = (function()
             end
         end
 
-        -- список выполненных комбинаций
+
         im.Dummy(im.ImVec2(0, 8))
         im.TextColored(im.ImVec4(dcol[1], dcol[2], dcol[3], alpha), Fn.T(u8"Комбинации") .. ":")
         local rows = KS.combo_rows()
@@ -5682,7 +5759,7 @@ Fn.KS = (function()
         end
     end
 
-    -- переводы для английского интерфейса
+
     do
         local tr = {
             [u8"Статистика нажатий"]                         = "Key statistics",
@@ -7879,7 +7956,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                            Data.nfn.ios_slider(Fn.T(u8"Прозрачность"),    ui.wave_transparency, 0.0, 1.0, neon.main_alpha); fixed_gap("s10", 7)
                             do
                                 fixed_row_begin("gr_wave_dir")
-                                local wm_names = {Fn.T(u8"←→"), Fn.T(u8"→←"), Fn.T(u8"↑↓"), Fn.T(u8"↓↑")}
+                                local wm_names = {Fn.T(u8"<>"), Fn.T(u8"><"), Fn.T(u8"^v"), Fn.T(u8"v^")}
                                 local wm_btn_w = 44
                                 do local td_=Data.neon_active_colors[Lib.imgui.Col.TextDisabled] or {0.5,0.7,0.9,1}
 Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(u8"Направление:")) end
@@ -8408,7 +8485,7 @@ Lib.imgui.TextColored(Lib.imgui.ImVec4(td_[1],td_[2],td_[3],(td_[4] or 1)),Fn.T(
                                     Data.hm.save(true)
                                 end
                                 local ic = neon_fx.section_icon_color
-                                -- стрелка секции зелёная, если режим внутри секции включён
+
                                 local _on = false
                                 pcall(function()
                                     if id == 'target' then _on = Data.hm.v.obj_target[0] and true or false
@@ -10851,7 +10928,7 @@ function CBUGER_ModeMsg(name, on)
     local WORD_ON  = '\226\234\235\254\247\229\237'
     local WORD_OFF = '\238\242\234\235\254\247\229\237'
     local label = tostring(name or '')
-    -- Все тренировочные режимы в чате обозначаются командой со слешем.
+
     if label:sub(1, 1) ~= '/' then label = '/' .. label end
     if ui and ui.interface_lang and ui.interface_lang[0] == 2 then WORD_ON, WORD_OFF = 'enabled', 'disabled' end
     local word  = on and WORD_ON or WORD_OFF
@@ -10972,7 +11049,7 @@ do
     HM.bullets, HM.initial, HM.holes = {}, {}, {}
     HM.pending_markers = {}
     HM.next_marker_place = 0.0
-    -- Единая временная шкала: все метки двигаются в одной фазе.
+
     HM.movement_epoch = os.clock()
     HM.hotkey      = Lib.new.int(0)
     HM.capturing   = false
@@ -11196,9 +11273,9 @@ do
         local toRem = {}
         for i = #HM.bullets, 1, -1 do
             local m = HM.bullets[i]
-            -- Используем ту же экранную позицию, по которой маркер был отрисован
-            -- в последнем кадре. Повторная проекция из сетевого callback могла
-            -- отличаться от позиции на экране и ошибочно засчитывать попадание.
+
+
+
             if m.isVisible and m.screenX and m.screenY then
                 local r = v.circle_radius[0]
                 local dx, dy = hX - m.screenX, hY - m.screenY
@@ -11218,8 +11295,8 @@ do
                         table.insert(HM.holes, {
                             worldPos = { x = data.target.x, y = data.target.y, z = data.target.z },
                             markerRef = m,
-                            -- Смещение рассчитано относительно той же экранной позиции,
-                            -- которая использовалась для проверки попадания по метке.
+
+
                             screenOffset = { x = hX - m.screenX, y = hY - m.screenY },
                             hitColor = { m.hitColor[1], m.hitColor[2], m.hitColor[3], m.hitColor[4] },
                             spawnTime = os.clock(),
@@ -11377,16 +11454,16 @@ do
                 else
                     local holeX, holeY
                     if h.markerRef and h.screenOffset then
-                        -- Рисуем отверстие относительно текущей экранной позиции маркера.
-                        -- Не проектируем мировую позицию дыры повторно: при перспективе камеры
-                        -- это давало бы другое смещение и визуальное отставание при движении.
+
+
+
                         local m2 = h.markerRef
                         if m2.isVisible and m2.screenX and m2.screenY then
                             holeX = m2.screenX + h.screenOffset.x
                             holeY = m2.screenY + h.screenOffset.y
                         end
                     else
-                        -- Совместимость с отверстиями старого формата (если они уже созданы в памяти).
+
                         local wx, wy, wz = h.worldPos.x, h.worldPos.y, h.worldPos.z
                         if h.markerRef and h.localOffset then
                             local m2 = h.markerRef
@@ -11524,7 +11601,7 @@ do
 
         if tsec('hm_holes', safe_icon({ "CIRCLE_NOTCH", "CIRCLE" }, fa.GEAR), T(u8"Дыры от пуль")) then
         toggle('tg_vklyuchit_dyry_ot_pul', u8"Включить дыры от пуль", v.holes_enabled)
-        -- Дыры всегда наследуют стиль HitMarker; размер регулируется отдельно.
+
         v.hole_use_marker_style[0] = true
         slider('sl_radius_dyry', u8"Размер дыры", v.hole_radius, 0.5, 80, '%.1f')
         slider('sl_maks_dyr_0', { u8"Макс. дыр (0=" }, v.max_holes, 0, 500)
@@ -11568,8 +11645,8 @@ do
         local tr = {
             ["Тренировка"] = "Training", ["Хитмаркер"] = "Hitmarker",
             ["Включить хитмаркер"] = "Enable hitmarker", ["Метки"] = "Markers",
-            ["Радиус метки"] = "Marker radius", ["Макс. меток (0=∞)"] = "Max markers (0=inf)",
-            ["Прозрачность меток"] = "Marker opacity", ["Попаданий до удаления (0=∞)"] = "Hits before removal (0=inf)",
+            ["Радиус метки"] = "Marker radius", ["Макс. меток (0=?)"] = "Max markers (0=inf)",
+            ["Прозрачность меток"] = "Marker opacity", ["Попаданий до удаления (0=?)"] = "Hits before removal (0=inf)",
             ["Углы (0=квадрат)"] = "Corners (0=square)", ["Скрыть метки и дыры"] = "Hide markers and holes",
             ["Текст внутри метки"] = "Text inside marker", ["Размер текста"] = "Text size",
             ["Цвета меток"] = "Marker colors", ["Базовый цвет метки"] = "Base marker color",
@@ -11580,7 +11657,7 @@ do
             ["Дистанция движения"] = "Movement distance", ["Скорость движения"] = "Movement speed",
             ["Дыры от пуль"] = "Bullet holes", ["Включить дыры от пуль"] = "Enable bullet holes",
             ["Размер дыры"] = "Hole size", ["Прозрачность дыр"] = "Hole opacity",
-            ["Макс. дыр (0=∞)"] = "Max holes (0=inf)", ["Исчезание, сек (0=вечно)"] = "Fade time, s (0=never)",
+            ["Макс. дыр (0=?)"] = "Max holes (0=inf)", ["Исчезание, сек (0=вечно)"] = "Fade time, s (0=never)",
             ["Форма дыры (0=квадрат)"] = "Hole shape (0=square)", ["Цвет дыры"] = "Hole color",
             ["Управление хитмаркером"] = "Hitmarker control", ["Горячая клавиша: "] = "Hotkey: ",
             ["Не назначена"] = "Not set", ["Нажмите любую клавишу..."] = "Press any key...",
@@ -11838,9 +11915,6 @@ do
 
     function CS.save_stats()
         local st, run = cfg.stats, CS.run
-        -- Move the current delta into the in-memory totals before attempting I/O.
-        -- This avoids losing new shots/hits that arrive while a previous disk write
-        -- is still pending, and avoids counting the same delta twice on retries.
         local session_shots = tonumber(run.session_shots) or 0
         local session_hits = tonumber(run.session_hits) or 0
         st.total_shots = (tonumber(st.total_shots) or 0) + session_shots
@@ -11854,7 +11928,6 @@ do
         CS.playtime_start = os.clock()
 
         if not save() then
-            -- Totals remain in memory and the common INI retry queue retains cfg.
             CS.stats_dirty = true
             return false
         end
@@ -11862,7 +11935,6 @@ do
         return true
     end
     Data_cbug_save_stats = function() return CS.save_stats() end
-    -- Persist active-session counters periodically, not only when the script exits.
     if not CS.stats_autosave_started then
         CS.stats_autosave_started = true
         lua_thread.create(function()
@@ -12004,10 +12076,10 @@ do
 end
 
 do
-    -- ===== Тренировка: шахматная доска (Board Trainer) =====
-    -- Доска появляется в мире там, где упал первый выстрел (как в Piano Tiles),
-    -- внутри неё появляются чёрные плитки. Есть отдельный режим реакции: зелёная
-    -- клетка появляется с задержкой 1-5 секунд и измеряет время попадания в мс.
+
+
+
+
     local B = {}
     Data.board = B
     local im = Lib.imgui
@@ -12015,11 +12087,11 @@ do
     local CFG_NAME = 'cbuger_board'
     local INSET = 0.92
     local FX_TIME = 0.18
-    local FAIL_WHITE = 0.1   -- как в Piano Tiles (PRO): сначала белый,
-    local FAIL_RED   = 0.9   -- затем красный
+    local FAIL_WHITE = 0.1
+    local FAIL_RED   = 0.9
     local FAIL_TOTAL = FAIL_WHITE + FAIL_RED
 
-    -- Локальный генератор случайных чисел: не меняет math.random в остальных модулях.
+
     local reaction_seed = ((os.time() or 1) * 1000 + math.floor((os.clock() or 0) * 1000000)) % 2147483647
     if reaction_seed <= 0 then reaction_seed = 1 end
     local function reaction_random(lo, hi)
@@ -12050,8 +12122,8 @@ do
     local s = cfg.settings
     local rec = cfg.records
 
-    -- Сохранение возвращает фактический результат. При временной ошибке
-    -- общий INI-модуль оставляет точный снимок файла в очереди повторной записи.
+
+
     local function save()
         local ok, result = pcall(Lib.inicfg.save, cfg, CFG_NAME)
         return ok and result == true
@@ -12079,7 +12151,7 @@ do
         set_normalized(tbl, key, value)
     end
 
-    -- Добавляем отсутствующие параметры, не затрагивая существующие значения.
+
     for k, v in pairs(default.settings) do
         if s[k] == nil then set_normalized(s, k, v) end
     end
@@ -12087,7 +12159,7 @@ do
         if rec[k] == nil then set_normalized(rec, k, v) end
     end
 
-    -- Проверяем сохранённые параметры до передачи их в ImGui и игровую логику.
+
     normalize_number(s, 'grid', 3, 1, 8, true)
     normalize_number(s, 'tiles', 1, 1, 6, true)
     normalize_number(s, 'cell_size', 0.6, 0.1, 3.0)
@@ -12121,7 +12193,7 @@ do
     normalize_number(rec, 'reaction_avg_ms', 0, 0, 2147483647, true)
     normalize_number(rec, 'best_reaction_ms', 0, 0, 2147483647, true)
 
-    -- Эти параметры прицела фиксированы в интерфейсе.
+
     set_normalized(s, 'cr_enabled', true)
     set_normalized(s, 'cr_size', 10)
     set_normalized(s, 'cr_gap', 4)
@@ -12130,14 +12202,14 @@ do
     set_normalized(s, 'cr_outline_px', 2)
     set_normalized(s, 'cr_dot', false)
 
-    -- Доска не должна самопроизвольно включаться после перезапуска.
+
     set_normalized(s, 'active', false)
 
-    -- Lib.inicfg.load() дополняет существующий INI значениями по умолчанию
-    -- ещё до нашей проверки. Поэтому сохраняем полный нормализованный снимок
-    -- при каждом запуске, чтобы новые поля не оставались только в памяти.
+
+
+
     save()
-    -- При значении 1 доска состоит из двух клеток в один ряд: светлой и тёмной.
+
     local function grid_dims(n)
         n = math.max(1, math.floor(tonumber(n) or 1))
         if n == 1 then return 2, 1 end
@@ -12165,7 +12237,7 @@ do
     B.light_col = { s.light_r, s.light_g, s.light_b, s.light_a }
     B.dark_col  = { s.dark_r,  s.dark_g,  s.dark_b,  s.dark_a }
 
-    -- ---------- состояние игры ----------
+
     local G = { phase = 'idle', board = nil, tiles = {}, fx = {}, hits = 0,
                 t0 = 0, paused = false, pause_t0 = 0, paused_total = 0,
                 end_active = 0, over_t = 0, fail_t = 0, hud_o = nil, sum_ms = 0, last_ms = 0, new_record = false,
@@ -12183,7 +12255,7 @@ do
     end
     B.reset = reset_game
 
-    -- штатный прицел GTA скрываем так же, как это делает Piano Tiles (PRO)
+
     local HUD_CR_ADDR = 0x58E020
     local native_hidden = false
     local function setGtaCrosshairVisible(on)
@@ -12277,7 +12349,7 @@ do
         G.reaction_target = nil
         G.reaction_fail_target = nil
         G.reaction_visible_at = 0
-        -- Ровно 1000..5000 мс: не раньше секунды и не позже пяти секунд.
+
         G.reaction_wait_until = (tonumber(now) or os.clock()) + reaction_random(1000, 5000) / 1000
     end
 
@@ -12313,7 +12385,7 @@ do
         end
     end
 
-    -- применить изменённые настройки к уже стоящей доске (без сброса)
+
     local function apply_live()
         local b = G.board
         if not b then return end
@@ -12344,7 +12416,7 @@ do
         rec.games = (tonumber(rec.games) or 0) + 1
         local el = G.end_active
         if G.hits > (tonumber(rec.best_hits) or 0) then rec.best_hits = G.hits; G.new_record = true end
-        -- Обычные рекорды не смешиваем с замерами режима реакции.
+
         if not s.reaction_mode and G.hits >= 3 and el > 0.05 then
             local sp = G.hits / el
             if sp > (tonumber(rec.best_speed) or 0) then
@@ -12356,7 +12428,7 @@ do
         save()
     end
 
-    -- Пересечение луча (камера -> точка попадания) с плоскостью доски.
+
     local function shot_uv(tg)
         local b = G.board
         local cx, cy, cz = getActiveCameraCoordinates()
@@ -12383,8 +12455,8 @@ do
         local u, v = shot_uv(tg)
 
         if s.reaction_mode then
-            -- До появления сигнала выстрелы не засчитываются. После появления
-            -- зелёной клетки любой промах завершает серию и подсвечивает цель красным.
+
+
             if G.reaction_state ~= 'visible' or not G.reaction_target then return end
             local rt = G.reaction_target
             local cu = (rt.i - ((b.W or b.N) - 1) / 2) * b.cs
@@ -12436,7 +12508,7 @@ do
         end
     end
 
-    -- Пауза при перезарядке (как в Piano Tiles): обойма опустела -> пауза.
+
     local function poll_reload(now)
         if G.phase ~= 'run' then return end
         if not s.pause_reload then G.paused = false; return end
@@ -12471,7 +12543,7 @@ do
         end
     end
 
-    -- ---------- отрисовка ----------
+
     local function U32(c) return CBUGER_ApplyOverlayAlphaU32(im.ColorConvertFloat4ToU32(c)) end
 
     local function proj(x, y, z)
@@ -12678,7 +12750,7 @@ do
         end
         local DL = im.GetBackgroundDrawList()
         if G.phase == 'fail' and now - G.fail_t >= FAIL_TOTAL then
-            -- мигание закончилось: доска исчезает до следующего выстрела
+
             G.phase = 'over'; G.over_t = now
             G.board = nil; G.tiles = {}; G.fx = {}
             G.reaction_target = nil; G.reaction_fail_target = nil; G.reaction_state = 'idle'
@@ -12715,7 +12787,7 @@ do
             end
             local tr_, tg_, tb_, ta_ = tc[1], tc[2], tc[3], (tc[4] or 1)
             if G.phase == 'fail' then
-                -- мигание плиток при промахе: белый -> красный
+
                 if now - G.fail_t < FAIL_WHITE then tr_, tg_, tb_, ta_ = 1, 1, 1, 1
                 else tr_, tg_, tb_, ta_ = 1, 0, 0, 1 end
             end
@@ -12760,7 +12832,7 @@ do
     board_render.HideCursor = true
     board_render.ShowCursor = false
 
-    -- ---------- интерфейс (вкладка «Тренировка») ----------
+
     Fn.drawBoardUI = function(cw)
         local T = Fn.T
         local a = neon.main_alpha
@@ -12838,7 +12910,7 @@ do
         picker(u8"Цвет тёмных клеток", 'board_dark_col', B.dark_col, 'dark')
         gap(2)
 
-        -- ===== Прицел: настройки фиксированные (размер 10, зазор 4, толщина 2, обводка 2) =====
+
         im.TextDisabled(T(u8"Прицел"))
         gap(4)
         picker(u8"Цвет прицела", 'board_cr_col', B.cr_col, 'cr')
@@ -12897,7 +12969,7 @@ do
     Data_board_save = function() save(); B.restore_native() end
     Data_board_register = function()
         pcall(sampRegisterChatCommand, 'board', function()
-            -- просто включает/выключает режим (окно не открывается)
+
             B.set_active(not s.active)
         end)
     end
@@ -13216,9 +13288,9 @@ do
     end
 end
 
--- ============================================================================
---  CBUGER: режим «Тепловая карта клавиш» (вкладка «Тренировка», команда /keymap)
--- ============================================================================
+
+
+
 do
     local im = Lib.imgui
     Fn.drawKeymapUI = function(cw)
@@ -13276,9 +13348,9 @@ do
     end
 end
 
--- ============================================================================
---  CBUGER: дополнительные английские переводы (добавляются, только если ключа ещё нет)
--- ============================================================================
+
+
+
 do
     local extra = {
         ["КПД"] = "Efficiency",
@@ -13302,7 +13374,7 @@ do
         local dk = Fn.decodeSafe(u8(k))
         if not Data.UI_TRANSLATIONS[dk] then Data.UI_TRANSLATIONS[dk] = val end
     end
-    -- названия эффектов и анимаций: как в старой версии (перезаписываем)
+
         local names_old = {
             ["Обычный"] = "Normal",
             ["Крестики"] = "Crosses",
@@ -13400,7 +13472,7 @@ function CB.run()
     end
     local standard_combos_changed = false
 
-    local refresh_presets_once = S.cfg.config.cbuger_combo_presets_20261028_v1 ~= true
+    local refresh_presets_once = S.cfg.config.cbuger_combo_presets_20261123_keymap_alternatives_v1 ~= true
 
     local initialize_presets = refresh_presets_once or not loaded
 
@@ -13502,7 +13574,7 @@ function CB.run()
     end
     if refresh_presets_once and combos_saved then
 
-        S.cfg.config.cbuger_combo_presets_20261028_v1 = true
+        S.cfg.config.cbuger_combo_presets_20261123_keymap_alternatives_v1 = true
         pcall(function() Lib.inicfg.save(S.cfg, Data.iniFile) end)
     end
     if not S.cfg.config.language_mode then S.cfg.config.language_mode = 1 end
@@ -13573,7 +13645,7 @@ function CB.run()
         wait(0)
         pcall(Fn.ModeSyncAll)
         S.state.runtime_frame = (S.state.runtime_frame or 0) + 1
-       Data.space_as_shift_enabled = ui.space_as_shift[0] and ui.keyboard_type[0] == 0   -- только тренировочная клавиатура
+       Data.space_as_shift_enabled = ui.space_as_shift[0] and ui.keyboard_type[0] == 0
         for _, k in ipairs(S.all_monitored_keys) do
             if k.name == u8"ПРОБЕЛ" then
                 k.code = Fn.getSpaceCode()
@@ -13664,8 +13736,8 @@ function CB.run()
                         end
                     end
                     if not samp_chat_open and S.state.current_combo and S.state.combo_completed then
-                        -- комбо уже выполнено правильно: любые другие нажатия до отпускания
-                        -- последней клавиши игнорируем (не ошибка, без сообщений в чат)
+
+
                         for _, info in ipairs(S.all_monitored_keys) do
                             if Fn.isPhysicalKeyDown(info.code) and not (S.state.completed_wait_keys or {})[info.code] then
                                 S.state.hold_triggered[info.code] = true
@@ -13733,7 +13805,7 @@ function CB.run()
                         end
                     end
         end
-        -- CBUGER: статистика нажатий (тепловая карта + счётчик комбинаций)
+
         do
             local why = ((ui.guide_open and ui.guide_open[0]) and 'guide')
                         or (Data.samp_chat_is_open and 'chat') or nil
@@ -13743,6 +13815,10 @@ function CB.run()
         local any_ui_open = neon_open or ui.guide_open[0]
         neon_render.HideCursor = not any_ui_open
         neon_render.ShowCursor = any_ui_open
+        if Data.cbuger_cursor_ui_was_open and not any_ui_open then
+            CBUGER_FORCE_HIDE_CURSOR()
+        end
+        Data.cbuger_cursor_ui_was_open = any_ui_open and true or false
     end
 end
 function CB.terminate(s)
